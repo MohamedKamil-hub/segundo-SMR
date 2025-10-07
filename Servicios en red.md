@@ -40,3 +40,7 @@ Objetivo general: Integrar redes privadas con redes públicas y desplegar soluci
 comunicación por Voz IP.  
 Sesión 13 – Pasarelas, NAT, proxys, enrutamiento entre interfaces, acceso a Internet.  
 Sesión 14 – VoIP: SIP, codecs, centralitas IP, softphones. Configuración básica y casos de uso.
+
+ffff
+
+![[Pasted image 20251007113444.png]]

@@ -21,7 +21,7 @@ Raíz (.) → TLD (.com, .org, .es) → Dominio (example.com) → Subdominio (bl
 - **Recursiva**: Servidor busca completa la respuesta por el cliente
 
 ## 2. SERVIDOR DNS - CONFIGURACIÓN Y GESTIÓN
-![Pasted image 20251007162804](fotos/Pasted%20image%2020251007162804.png)
+![Pasted image 20251007162804](fotos/pasted_20251007162717.png)
 
 ![Pasted image 20251007162717](fotos/Pasted%20image%2020251007162717.png)
 

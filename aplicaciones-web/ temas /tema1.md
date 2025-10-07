@@ -1,155 +1,63 @@
-## 🧱 **Introducción general**
 
-Una **aplicación web** es un software que funciona en un navegador sin necesidad de instalación.
-Existen **tres tipos principales**:
+# Unidad 1: Introducción a las aplicaciones web
+Una aplicación web es un software que no necesitas instalar y  que funciona directamente desde tu navegador .
 
-```
-─ WEB ESTÁTICA
-│   └── Contenido fijo (HTML/CSS)
-│
-├── WEB DINÁMICA
-│   └── Contenido variable (base de datos)
-│
-└── SPA (Single Page Application)
-    └── Una página, actualización dinámica
-```
+==Tres grandes tipos:==
 
-### 🧩 Tipos de aplicaciones web
+**Web estática**
+Su contenido no cambia, salvo que el desarrollador edite el código. 
+rápidas, ligeras y seguras, pero muy limitadas en interactividad.
 
-| Tipo                              | Descripción                                                                                                 | Ejemplo                            |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| **Web estática**                  | Contenido fijo, editado manualmente por el desarrollador. Rápida y segura, pero con poca interactividad.    | Página corporativa simple          |
-| **Web dinámica**                  | Genera contenido según la interacción del usuario o base de datos.                                          | Blog, ecommerce, periódico digital |
-| **SPA (Single Page Application)** | Carga única, actualiza solo secciones sin recargar toda la página. Fluidez similar a una app de escritorio. | Gmail, Trello, Canva               |
+**Web dinámica**
+El contenido se genera en función de la interacción del usuario o de una base de datos. cada visita puede mostrar información distinta.
 
----
+**SPA (Single Page Application)**
+evolución de las dinámicas. Se cargan una única vez y luego actualizan solo la parte de la pantalla que cambia, sin recargar todo el sitio. 
+experiencia muy fluida,  como si fuera una aplicación de escritorio.
+Gmail 
 
-## 💻 **Conceptos básicos de desarrollo**
 
-### 🔧 HTML (Lenguaje de Etiquetado)
 
-HTML es el **lenguaje base de las páginas web**, que estructura el contenido mediante **etiquetas**.
+tres tipos principales de aplicaciones web y describe sus características:
 
-```html
-<apertura>Contenido</cierre>
-<meta etiqueta="información" />
-```
+**Web Dinámica y SPA**
+Dinámica: BD y contenido variable. 
+SPA: una carga inicial y actualizaciones sin recarga
+**Web Estática**
+Contenido fijo 4 HTML/CSS 4 Ej: página corporativa 
 
----
+**Aplicaciones Web**
+Concepto general de software accesible vía navegador
 
-## 🧭 **Control de versiones con Git y Sourcetree**
+## Herramientas y Consejos
 
-### 🔗 Git
+**Identificación de SPAs**
+Consejo:  Si navegas entre secciones y la URL cambia poco o nada, probablemente sea una SPA.
 
-Git es un sistema de **control de versiones distribuido** que permite gestionar cambios en el código.
+Herramienta: DevTools del navegador (F12). En la pestaña Network, revisa si hay muchas
+peticiones pequeñas en lugar de recargas completas.
 
-📂 Ruta común en Linux:
+**Experimentación y aprendizaje**
+ Pingdom Tools o GTmetrix para medir velocidad de carga y rendimiento.
 
-```
-/usr/bin/git
-```
+**Desarrollo profesional**
+Consejo: si quieres crear SPAs, empieza por frameworks modernos como React.
+Herramienta: CodeSandbox o StackBlitz.
 
-### 🪶 Sourcetree
 
-[Sourcetree](https://www.sourcetreeapp.com) es una interfaz visual para trabajar con Git sin usar la terminal.
-Permite realizar las principales operaciones con facilidad:
 
-| Acción               | Descripción                                            |
-| -------------------- | ------------------------------------------------------ |
-| **Bus (Fetch/Pull)** | Trae los últimos cambios del repositorio remoto.       |
-| **Commit**           | Guarda los cambios locales con un mensaje descriptivo. |
-| **Push**             | Envía los commits locales al repositorio remoto.       |
+Mito: "Las aplicaciones web son siempre más lentas que las de escritorio."
+	Con la potencia de los navegadores actuales , apps como Figma o Canva funcionan con un rendimiento equiparable al de software instalado.
 
----
+Mito: "Con HTML y CSS solo se pueden hacer páginas básicas."
+	se puede construir desde juegos 3D hasta editores de
+	vídeo . El verdadero potencial aparece al combinar HTML y CSS con JavaScript y APIs modernas.
 
-## 🗓️ **Temporalización del curso**
 
-### 📘 Tema 1: Introducción a las aplicaciones web *(1 sesión)*
-
-* **Objetivo:** Comprender qué es una aplicación web y sus principales tipologías.
-* **Sesión:** Web estática, dinámica y SPA.
-* **Ejemplos:** Gmail, Canva, Trello.
-
----
-
-### 📘 Tema 2: Navegadores, protocolos y arquitectura web *(1 sesión)*
-
-* **Objetivo:** Analizar el funcionamiento cliente-servidor y protocolos.
-* **Sesión:** HTTP/HTTPS, cookies, sesiones, DevTools y Postman.
-
----
-
-### 📘 Tema 3: HTML5 y estructuras básicas *(2 sesiones)*
-
-* **Objetivo:** Comprender la estructura de HTML5 y aplicar etiquetas semánticas y accesibles.
-* **Sesiones:**
-
-  * Estructura básica y validación W3C.
-  * Formularios, multimedia y atributos ARIA (accesibilidad).
-
----
-
-### 📘 Tema 4: CSS3 y diseño responsive *(3 sesiones)*
-
-* **Objetivo:** Aplicar estilos y diseño adaptable.
-* **Sesiones:**
-
-  * Selectores, modelo de caja, tipografía web, Google Fonts.
-  * Responsive design con *media queries*, Flexbox y Grid.
-  * Frameworks: **Bootstrap** y **Tailwind**.
-
----
-
-### 📘 Tema 5: Introducción a JavaScript *(1 sesión)*
-
-* **Objetivo:** Programar interactividad básica en la web.
-* **Sesión:** DOM, eventos y validación de formularios.
-
----
-
-### 📘 Tema 6: Servidores web y despliegue *(2 sesiones)*
-
-* **Objetivo:** Configurar servidores locales y publicar apps en la nube.
-* **Sesiones:**
-
-  * Apache, Nginx, XAMPP.
-  * Despliegue en **GitHub Pages**, **Netlify** y **Firebase Hosting**.
-
----
-
-### 📘 Tema 7: CMS (Gestores de Contenido) *(2 sesiones)*
-
-* **Objetivo:** Crear aplicaciones dinámicas con CMS.
-* **Sesiones:**
-
-  * Instalación de **WordPress**.
-  * Personalización de plantillas y plugins.
-
----
-
-### 📘 Tema 8: Seguridad y buenas prácticas *(1 sesión)*
-
-* **Objetivo:** Aplicar medidas de seguridad y cumplimiento normativo.
-* **Temas:** HTTPS, contraseñas, backups, RGPD, cookies.
-
----
-
-### 📘 Tema 9: Optimización y tendencias *(1 sesión)*
-
-* **Objetivo:** Mejorar rendimiento, SEO y accesibilidad.
-* **Temas:**
-
-  * SEO básico con *Google Search Console*.
-  * Rendimiento con *PageSpeed Insights*.
-  * Accesibilidad con *WCAG*.
-
----
-
-## 💬 **Conclusión**
-
-Las aplicaciones web son la base del ecosistema digital actual.
-Con herramientas como **HTML5, CSS3, JavaScript, Git y CMS**, es posible crear proyectos escalables, seguros y modernos.
-
-> **Recordatorio:**
-> No creas los mitos: las apps web **no son lentas** ni están **limitadas al HTML simple**.
-> Con frameworks modernos (React, Vue, Angular), ofrecen experiencias potentes y fluidas.
+**Resumen Final**
+Aplicación web = software que funciona en navegador.
+Tres tipos principales: Estática, Dinámica, SPA.
+Ejemplos: página corporativa, blog, Gmail.
+SPAs = experiencia fluida sin recargas completas.
+Herramientas clave: DevTools, frameworks como React/Vue.
+Mitos desmentidos: no son más lentas ni limitadas a HTML/CSS simples.5

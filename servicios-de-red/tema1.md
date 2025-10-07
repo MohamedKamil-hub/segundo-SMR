@@ -22,6 +22,8 @@ Raíz (.) → TLD (.com, .org, .es) → Dominio (example.com) → Subdominio (bl
 
 ## 2. SERVIDOR DNS - CONFIGURACIÓN Y GESTIÓN
 
+![[Pasted image 20251007162717.png]]
+![[Pasted image 20251007162804.png]]
 ### Registros DNS Esenciales
 | Registro | Función | Ejemplo |
 |----------|---------|---------|

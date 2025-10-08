@@ -1,4 +1,6 @@
-notas para guardar cambios del obsidian
+# notas 
+
+**para guardar cambios del obsidian:**
 
     cd "/home/user-pc/Documentos/Obsidian Vault/segundo-SMR"
     git add .
@@ -6,7 +8,7 @@ notas para guardar cambios del obsidian
     git push
 
 
-si hay error por que el repositorio remoto (segundo-SMR) ya tiene cambios que no existen en tu copia local,
+**si hay error por que el repositorio remoto ya tiene cambios que no existen en la copia local,**
 
     cd "/home/user-pc/Documentos/Obsidian Vault/segundo-SMR"
     git pull --rebase origin main

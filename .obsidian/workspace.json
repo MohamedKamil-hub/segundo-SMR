@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6ffa9b76fe62665a",
+        "id": "db5ad32fd4ed335c",
         "type": "tabs",
         "children": [
           {
-            "id": "e32408f2744cec64",
+            "id": "d21ad948d001076b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -169,8 +169,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "e32408f2744cec64",
+  "active": "d21ad948d001076b",
   "lastOpenFiles": [
+    "README.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temp.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 2.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 1.md",
@@ -215,7 +216,6 @@
     "sistemas-operativos-en-red/clases/01-10-2025.md",
     "sistemas-operativos-en-red/temp.md",
     "servicios-de-red/temas/tema1.md",
-    "servicios-de-red/clases/02-10-2025.md",
     "fotos/pasted_20251007162804.png"
   ]
 }

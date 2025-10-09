@@ -1,15 +1,21 @@
-# notas 
 
-**para guardar cambios del obsidian:**
+**Para guardar cambios del Obsidian en GitHub desde WSL:**
 
-    cd "/home/user-pc/Documentos/Obsidian Vault/segundo-SMR"
-    git add .
-    git commit -m "Actualización de notas"
-    git push
+```bash
+cd /mnt/c/Users/mohamed/Downloads/segundo-SMR-main
+git add .
+git commit -m "Actualización de notas"
+git push origin main
+```
 
+---
 
-**si hay error por que el repositorio remoto ya tiene cambios que no existen en la copia local,**
+**Si hay error porque el repositorio remoto tiene cambios que tu copia local no tiene:**
 
-    cd "/home/user-pc/Documentos/Obsidian Vault/segundo-SMR"
-    git pull --rebase origin main
-    git push
+```bash
+cd /mnt/c/Users/mohamed/Downloads/segundo-SMR-main
+git pull --rebase origin main
+git add .
+git commit -m "Actualización de notas"
+git push origin main
+```

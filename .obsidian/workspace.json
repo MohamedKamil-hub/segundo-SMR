@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "4f054f7acf12de2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ffa9b76fe62665a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e32408f2744cec64",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a12743ef6374f773",
+    "type": "split",
+    "children": [
+      {
+        "id": "59f785db031d2684",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2760b7f93780c72",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a3f2ff213fd5d4ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1f806d79dbc35d98",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bfec538248f76455",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a95b7b68ff797e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97dfb44b3d97f456",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "9475f31cebf81f80",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "0a02a67b754c8a94",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "975386cf4ae72d57",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b2760b7f93780c72",
+  "lastOpenFiles": [
+    "segundo-SMR-main/sistemas-operativos-en-red/temp.md",
+    "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 2.md",
+    "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 1.md",
+    "segundo-SMR-main/sistemas-operativos-en-red/temas",
+    "segundo-SMR-main/sistemas-operativos-en-red/clases/08-10-2025.md",
+    "segundo-SMR-main/sistemas-operativos-en-red/clases/01-10-2025.md",
+    "segundo-SMR-main/sistemas-operativos-en-red/clases",
+    "segundo-SMR-main/sistemas-operativos-en-red",
+    "segundo-SMR-main/servicios-de-red/tempo.md",
+    "segundo-SMR-main/servicios-de-red/temas/tema1.md",
+    "segundo-SMR-main/servicios-de-red/temas",
+    "segundo-SMR-main/servicios-de-red/clases/02-10-2025.md",
+    "segundo-SMR-main/servicios-de-red/clases",
+    "segundo-SMR-main/servicios-de-red",
+    "segundo-SMR-main/seguridad-informatica/temp.md",
+    "segundo-SMR-main/seguridad-informatica/temas/tema1.md",
+    "segundo-SMR-main/seguridad-informatica/temas/GLOSARIO.md",
+    "segundo-SMR-main/seguridad-informatica/temas",
+    "segundo-SMR-main/seguridad-informatica",
+    "segundo-SMR-main/itinerario-de-empleabilidad-profesional/temas/tema1.md",
+    "segundo-SMR-main/itinerario-de-empleabilidad-profesional/temas",
+    "segundo-SMR-main/itinerario-de-empleabilidad-profesional/clases/07-10-2025.md",
+    "segundo-SMR-main/itinerario-de-empleabilidad-profesional/clases",
+    "segundo-SMR-main/ingles/29-09-2025.md",
+    "segundo-SMR-main/ingles/06-10-2025.md",
+    "segundo-SMR-main/fotos/untitled.md",
+    "segundo-SMR-main/fotos/pasted_20251007162804.png",
+    "segundo-SMR-main/fotos/pasted_20251007162717.png",
+    "segundo-SMR-main/fotos/comporobacionusers.png",
+    "segundo-SMR-main/fotos/activedirectory1.png",
+    "segundo-SMR-main/fotos/Pasted image 20251008172158.png",
+    "segundo-SMR-main/fotos/Pasted image 20251008165719.png",
+    "segundo-SMR-main/fotos/Pasted image 20251008162145.png",
+    "segundo-SMR-main/fotos/Pasted image 20251007195059.png",
+    "segundo-SMR-main/aplicaciones-web/temp.md",
+    "segundo-SMR-main/aplicaciones-web/temas/tema1.md",
+    "segundo-SMR-main/aplicaciones-web/img/mono.jpg",
+    "segundo-SMR-main/aplicaciones-web/clases/14-10-2025/notas.md",
+    "sistemas-operativos-en-red/temas/tema 2.md",
+    "sistemas-operativos-en-red/temas/tema 1.md",
+    "sistemas-operativos-en-red/clases/08-10-2025.md",
+    "sistemas-operativos-en-red/clases/01-10-2025.md",
+    "sistemas-operativos-en-red/temp.md",
+    "servicios-de-red/temas/tema1.md",
+    "servicios-de-red/clases/02-10-2025.md",
+    "fotos/pasted_20251007162804.png"
+  ]
+}

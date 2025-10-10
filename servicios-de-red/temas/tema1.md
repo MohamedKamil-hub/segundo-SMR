@@ -132,21 +132,15 @@ intentos de servidores DHCP "rogue" (no
 autorizados).
 
 
-Mitos y Realidades
-o
+## Mitos y Realidades
+
 Mito
 "DHCP solo sirve para dar direcciones IP." ³
-FALSO. El servidor DHCP puede proporcionar
-múltiples parámetros de red: puerta de enlace,
-DNS, servidores de tiempo, servidores PXE para
-arranque remoto, entre otros. Limitarlo a la IP
-es desconocer su potencial real.
-o
+ El servidor DHCP puede proporcionar: puerta de enlace, DNS, servidores de tiempo, servidores PXE para arranque remoto, entre otros. 
+ 
 Mito
-"El DHCP funciona de forma caótica, los clientes
-se autoconfiguran sin control." ³ FALSO. El
-proceso está totalmente controlado por el
-servidor. Es este quien decide qué IP entregar,
+"El DHCP funciona de forma caótica, los clientes se autoconfiguran sin control." ³ FALSO. El
+proceso está totalmente controlado por el servidor. Es este quien decide qué IP entregar,
 por cuánto tiempo y bajo qué condiciones. El
 cliente simplemente solicita y acepta lo que el
 servidor autoriza.

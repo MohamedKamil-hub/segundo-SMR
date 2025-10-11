@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d21ad948d001076b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "seguridad-informatica/temas/tema2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "tema2"
-            }
-          },
-          {
             "id": "d394010806b99c18",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,15 +169,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "d394010806b99c18",
+  "active": "b2760b7f93780c72",
   "lastOpenFiles": [
-    "seguridad-informatica/temas/tema2.md",
-    "Pasted image 20251010192906.png",
-    "seguridad-informatica/clases/10-10-2025.md",
+    "servicios-de-red/temas/tema2.md",
+    "fotos/Pasted image 20251010225727.png",
     "servicios-de-red/temas/tema1.md",
-    "seguridad-informatica/clases",
+    "seguridad-informatica/temas/tema2.md",
+    "fotos/Pasted image 20251010205616.png",
+    "seguridad-informatica/clases/10-10-2025.md",
     "servicios-de-red/clases/09-10-2025.md",
     "README.md",
+    "fotos/Pasted image 20251010192906.png",
+    "seguridad-informatica/clases",
     "segundo-SMR-main/sistemas-operativos-en-red/temp.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 2.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 1.md",
@@ -225,11 +213,8 @@
     "segundo-SMR-main/fotos/Pasted image 20251008172158.png",
     "segundo-SMR-main/fotos/Pasted image 20251008165719.png",
     "segundo-SMR-main/fotos/Pasted image 20251008162145.png",
-    "segundo-SMR-main/fotos/Pasted image 20251007195059.png",
     "segundo-SMR-main/aplicaciones-web/temp.md",
     "segundo-SMR-main/aplicaciones-web/temas/tema1.md",
-    "segundo-SMR-main/aplicaciones-web/img/mono.jpg",
-    "segundo-SMR-main/aplicaciones-web/clases/14-10-2025/notas.md",
-    "segundo-SMR-main/aplicaciones-web/clases/07-10-2025/notas.md"
+    "segundo-SMR-main/aplicaciones-web/clases/14-10-2025/notas.md"
   ]
 }

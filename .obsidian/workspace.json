@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "SMR/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -169,18 +169,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "b2760b7f93780c72",
+  "active": "d394010806b99c18",
   "lastOpenFiles": [
-    "servicios-de-red/temas/tema2.md",
-    "fotos/Pasted image 20251010225727.png",
-    "servicios-de-red/temas/tema1.md",
-    "seguridad-informatica/temas/tema2.md",
-    "fotos/Pasted image 20251010205616.png",
-    "seguridad-informatica/clases/10-10-2025.md",
-    "servicios-de-red/clases/09-10-2025.md",
-    "README.md",
-    "fotos/Pasted image 20251010192906.png",
-    "seguridad-informatica/clases",
+    "SMR",
+    "SMR/servicios-de-red/temas/tema2.md",
+    "SMR/fotos/Pasted image 20251010225727.png",
+    "SMR/servicios-de-red/temas/tema1.md",
+    "SMR/seguridad-informatica/temas/tema2.md",
+    "SMR/fotos/Pasted image 20251010205616.png",
+    "SMR/seguridad-informatica/clases/10-10-2025.md",
+    "SMR/servicios-de-red/clases/09-10-2025.md",
+    "SMR/README.md",
+    "SMR/fotos/Pasted image 20251010192906.png",
+    "SMR/seguridad-informatica/clases",
     "segundo-SMR-main/sistemas-operativos-en-red/temp.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 2.md",
     "segundo-SMR-main/sistemas-operativos-en-red/temas/tema 1.md",

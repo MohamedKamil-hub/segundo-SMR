@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheatsheet de Formularios HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card h2 {
+            color: #2575fc;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .example {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #2575fc;
+        }
+        
+        .code {
+            font-family: 'Courier New', monospace;
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        
+        .tip {
+            background-color: #e8f4fd;
+            border-left: 4px solid #4dabf7;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .form-element {
+            margin: 10px 0;
+        }
+        
+        .form-preview {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #2575fc;
+        }
+        
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input, select, textarea {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #fff9db;
+            padding: 3px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cheatsheet de Formularios HTML</h1>
+            <p class="subtitle">Guía visual para aprender y recordar elementos de formulario</p>
+        </header>
+        
+        <div class="grid">
+            <!-- Elementos Básicos -->
+            <div class="card">
+                <h2>Estructura Básica</h2>
+                <p>Todo formulario comienza con la etiqueta <span class="highlight">&lt;form&gt;</span> y puede contener múltiples campos agrupados con <span class="highlight">&lt;fieldset&gt;</span>.</p>
+                
+                <div class="example">
+                    <h3>Ejemplo:</h3>
+                    <div class="code">
+&lt;form&gt;<br>
+  &lt;fieldset&gt;<br>
+    &lt;legend&gt;Título del grupo&lt;/legend&gt;<br>
+    &lt;!-- campos aquí --&gt;<br>
+  &lt;/fieldset&gt;<br>
+&lt;/form&gt;
+                    </div>
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Usa <span class="highlight">&lt;fieldset&gt;</span> para agrupar campos relacionados y mejorar la accesibilidad.
+                </div>
+            </div>
+            
+            <!-- Campos de Texto -->
+            <div class="card">
+                <h2>Campos de Texto</h2>
+                <p>Para capturar texto libre del usuario.</p>
+                
+                <div class="form-element">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                </div>
+                
+                <div class="code">
+&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+&lt;input type="text" id="nombre" placeholder="Escribe tu nombre"&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Siempre usa el atributo <span class="highlight">for</span> en las etiquetas label que coincida con el <span class="highlight">id</span> del input para mejor accesibilidad.
+                </div>
+            </div>
+            
+            <!-- Botones de Radio -->
+            <div class="card">
+                <h2>Botones de Radio</h2>
+                <p>Para seleccionar una única opción entre varias.</p>
+                
+                <div class="form-element">
+                    <input type="radio" id="amd" name="cpu" value="amd">
+                    <label for="amd">AMD</label><br>
+                    
+                    <input type="radio" id="intel5" name="cpu" value="intel5">
+                    <label for="intel5">Intel i5</label><br>
+                    
+                    <input type="radio" id="intel7" name="cpu" value="intel7">
+                    <label for="intel7">Intel i7</label>
+                </div>
+                
+                <div class="code">
+&lt;input type="radio" id="amd" name="cpu" value="amd"&gt;<br>
+&lt;label for="amd"&gt;AMD&lt;/label&gt;<br><br>
+&lt;input type="radio" id="intel5" name="cpu" value="intel5"&gt;<br>
+&lt;label for="intel5"&gt;Intel i5&lt;/label&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Todos los botones de radio del mismo grupo deben tener el mismo valor en el atributo <span class="highlight">name</span>.
+                </div>
+            </div>
+            
+            <!-- Casillas de Verificación -->
+            <div class="card">
+                <h2>Casillas de Verificación</h2>
+                <p>Para seleccionar múltiples opciones.</p>
+                
+                <div class="form-element">
+                    <input type="checkbox" id="matematicas" name="materias" value="matematicas">
+                    <label for="matematicas">Matemáticas</label><br>
+                    
+                    <input type="checkbox" id="historia" name="materias" value="historia">
+                    <label for="historia">Historia</label><br>
+                    
+                    <input type="checkbox" id="geografia" name="materias" value="geografia">
+                    <label for="geografia">Geografía</label>
+                </div>
+                
+                <div class="code">
+&lt;input type="checkbox" id="matematicas" name="materias" value="matematicas"&gt;<br>
+&lt;label for="matematicas"&gt;Matemáticas&lt;/label&gt;<br><br>
+&lt;input type="checkbox" id="historia" name="materias" value="historia"&gt;<br>
+&lt;label for="historia"&gt;Historia&lt;/label&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Usa el atributo <span class="highlight">checked</span> para que una casilla aparezca seleccionada por defecto.
+                </div>
+            </div>
+            
+            <!-- Selectores -->
+            <div class="card">
+                <h2>Listas Desplegables</h2>
+                <p>Para seleccionar una opción de una lista.</p>
+                
+                <div class="form-element">
+                    <label for="idioma">Idioma:</label>
+                    <select id="idioma" name="idioma">
+                        <option value="español">Español</option>
+                        <option value="ingles">Inglés</option>
+                        <option value="frances">Francés</option>
+                    </select>
+                </div>
+                
+                <div class="code">
+&lt;label for="idioma"&gt;Idioma:&lt;/label&gt;<br>
+&lt;select id="idioma" name="idioma"&gt;<br>
+  &lt;option value="español"&gt;Español&lt;/option&gt;<br>
+  &lt;option value="ingles"&gt;Inglés&lt;/option&gt;<br>
+  &lt;option value="frances"&gt;Francés&lt;/option&gt;<br>
+&lt;/select&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Puedes usar <span class="highlight">&lt;optgroup&gt;</span> para agrupar opciones dentro de un select.
+                </div>
+            </div>
+            
+            <!-- Área de Texto -->
+            <div class="card">
+                <h2>Área de Texto</h2>
+                <p>Para capturar texto más extenso.</p>
+                
+                <div class="form-element">
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu comentario aquí"></textarea>
+                </div>
+                
+                <div class="code">
+&lt;label for="comentario"&gt;Comentario:&lt;/label&gt;<br>
+&lt;textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu comentario aquí"&gt;&lt;/textarea&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Usa los atributos <span class="highlight">rows</span> y <span class="highlight">cols</span> para definir el tamaño del área de texto.
+                </div>
+            </div>
+            
+            <!-- Campos de Fecha y Hora -->
+            <div class="card">
+                <h2>Fecha y Hora</h2>
+                <p>Para seleccionar fechas y horas específicas.</p>
+                
+                <div class="form-element">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha"><br><br>
+                    
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+                
+                <div class="code">
+&lt;label for="fecha"&gt;Fecha:&lt;/label&gt;<br>
+&lt;input type="date" id="fecha" name="fecha"&gt;<br><br>
+&lt;label for="hora"&gt;Hora:&lt;/label&gt;<br>
+&lt;input type="time" id="hora" name="hora"&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> También existen <span class="highlight">datetime-local</span> para fecha y hora juntas, y <span class="highlight">month</span> y <span class="highlight">week</span> para seleccionar meses o semanas completas.
+                </div>
+            </div>
+            
+            <!-- Selector de Color -->
+            <div class="card">
+                <h2>Selector de Color</h2>
+                <p>Para seleccionar un color.</p>
+                
+                <div class="form-element">
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color" value="#3498db">
+                </div>
+                
+                <div class="code">
+&lt;label for="color"&gt;Color favorito:&lt;/label&gt;<br>
+&lt;input type="color" id="color" name="color" value="#3498db"&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Puedes establecer un color por defecto usando el atributo <span class="highlight">value</span> con un código hexadecimal.
+                </div>
+            </div>
+            
+            <!-- Subida de Archivos -->
+            <div class="card">
+                <h2>Subida de Archivos</h2>
+                <p>Para permitir al usuario subir archivos.</p>
+                
+                <div class="form-element">
+                    <label for="archivo">Selecciona un archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                </div>
+                
+                <div class="code">
+&lt;label for="archivo"&gt;Selecciona un archivo:&lt;/label&gt;<br>
+&lt;input type="file" id="archivo" name="archivo"&gt;
+                </div>
+                
+                <div class="tip">
+                    <strong>Tip:</strong> Para permitir múltiples archivos, añade el atributo <span class="highlight">multiple</span> al input.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ejemplo Completo -->
+        <div class="form-preview">
+            <h2>Ejemplo Completo de Formulario</h2>
+            <p>Basado en tu código de clase, aquí tienes un formulario completo con todos los elementos:</p>
+            
+            <form>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
+                    <div class="form-element">
+                        <label for="nombreCompleto">Nombre:</label>
+                        <input type="text" id="nombreCompleto" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos">
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="colorFavorito">Color favorito:</label>
+                        <input type="color" id="colorFavorito" name="colorFavorito" value="#3498db">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    
+                    <div class="form-element">
+                        <p>Selecciona tu procesador preferido:</p>
+                        <input type="radio" id="amd2" name="procesador" value="amd">
+                        <label for="amd2">AMD</label><br>
+                        
+                        <input type="radio" id="intel52" name="procesador" value="intel5">
+                        <label for="intel52">Intel i5</label><br>
+                        
+                        <input type="radio" id="intel72" name="procesador" value="intel7">
+                        <label for="intel72">Intel i7</label>
+                    </div>
+                    
+                    <div class="form-element">
+                        <p>Selecciona tus materias favoritas:</p>
+                        <input type="checkbox" id="matematicas2" name="materias" value="matematicas">
+                        <label for="matematicas2">Matemáticas</label><br>
+                        
+                        <input type="checkbox" id="historia2" name="materias" value="historia">
+                        <label for="historia2">Historia</label><br>
+                        
+                        <input type="checkbox" id="geografia2" name="materias" value="geografia">
+                        <label for="geografia2">Geografía</label><br>
+                        
+                        <input type="checkbox" id="lengua2" name="materias" value="lengua">
+                        <label for="lengua2">Lengua</label>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="idioma2">Idioma:</label>
+                        <select id="idioma2" name="idioma">
+                            <option value="español">Español</option>
+                            <option value="ingles">Inglés</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="comentario2">Comentarios:</label><br>
+                        <textarea id="comentario2" name="comentario" rows="4" cols="50" placeholder="Escribe tus comentarios aquí"></textarea>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="fecha2">Fecha:</label>
+                        <input type="date" id="fecha2" name="fecha">
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="hora2">Hora:</label>
+                        <input type="time" id="hora2" name="hora">
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="archivo2">Subir archivo:</label>
+                        <input type="file" id="archivo2" name="archivo">
+                    </div>
+                    
+                    <div class="form-element">
+                        <p>Género:</p>
+                        <input type="checkbox" id="mujer" name="genero" value="mujer">
+                        <label for="mujer">Mujer</label><br>
+                        
+                        <input type="checkbox" id="hombre" name="genero" value="hombre" checked>
+                        <label for="hombre">Hombre</label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-element">
+                    <input type="submit" value="Enviar Formulario" style="background-color: #2575fc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                    <input type="reset" value="Limpiar" style="background-color: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <p>Cheatsheet de Formularios HTML - Basado en tu código de clase</p>
+            <p>Recuerda practicar regularmente para memorizar estos elementos</p>
+        </footer>
+    </div>
+</body>
+</html>

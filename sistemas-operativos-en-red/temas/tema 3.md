@@ -74,7 +74,8 @@ En conjunto, los permisos, las ACL, sudo y las cuotas son el sistema inmunológi
 
 Esquema Visual 
 ![[{71EC78E9-96F3-4745-AFB7-B3340C4E8B90}.png]]
- Windows Los permisos se basan en NTFS y ACL, que permite una configuración detallada. Linux El modelo tradicional rwx gestiona accesos de forma clara, con la opción de sudo para tareas administrativas puntuales. 
+ **Windows** permisos se basan en NTFS y ACL, permite configuración detallada. 
+ Linux El modelo tradicional rwx gestiona accesos , con sudo para tareas administrativas puntuales. 
  Ambos sistemas se benefician de cuotas de disco, que controlan el uso del almacenamiento y evitan abusos. 
 
 

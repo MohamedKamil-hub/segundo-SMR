@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -152,7 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -169,6 +170,9 @@
   "active": "4f47a4b6af621e74",
   "lastOpenFiles": [
     "sistemas-operativos-en-red/clases/22-10-2025.md",
+    "fotos/{427E4417-2FE4-418B-ACA5-EE23BF4D1E6F}.png",
+    "fotos/{6A57EF82-2BF4-4C9C-BD78-A5AE097C1CBD}.png",
+    "README.md",
     "sistemas-operativos-en-red/temas/tema 3.md",
     "MPO-Arquitecturas-en-la-nube/AWS.md",
     "fotos/{60BF4901-6A9A-4137-B952-0AD3A9536F60}.png",
@@ -195,10 +199,7 @@
     "ingles/20-10-2025.md",
     "fotos/{7BC4BFA9-2B42-46C9-BE36-1CC6931BAC5A}.png",
     "fotos/{CE37244E-0FEF-4A23-BA92-FE775177513A}.png",
-    "fotos/{8F21215F-ACA1-49FB-9C0C-3AE52E2B9579}.png",
-    "fotos/{D03EFDA5-A5E3-49E7-B65C-F20050084D16}.png",
     "Sostenibilidad-aplicada-al-sistema-productivo/20-10-2025.md",
-    "README.md",
     "servicios-de-red/actividad ssh.md",
     "servicios-de-red/Untitled.md",
     "servicios-de-red/clases/16-10-2025.md",
@@ -211,7 +212,6 @@
     "Sostenibilidad-aplicada-al-sistema-productivo/temp.md",
     "Digitalización-aplicada-a-los-sectores-productivos/temas",
     "Sostenibilidad-aplicada-al-sistema-productivo/temas/tema2.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/temas/tema1.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/temas",
     "MPO-Arquitecturas-en-la-nube/temas/Untitled"
   ]

@@ -164,3 +164,174 @@ combinar columnas<!
 
 
 
+
+# css basico
+
+``` html
+<h1> iniciando en html </h1>
+css interno poco usado
+css innterno
+   atributo style nunca se suele usar
+   <h1 style="color: red;">intro css</h1>
+   etiqueta styles
+   <style>
+
+    h1{color: aqua;}
+</style>
+
+usar css externo
+
+crear un archivo .css
+como style.css
+ponerle esto por ejemplo
+p{color: aquamarine;}
+
+h1{color: red;}
+
+
+y en tu archivo index.hrtml debajo de la metaetiqueta poner
+<link rel="stylesheet" href="style.css">
+con la ruta relativa
+css es en cascada prevalece lo ultimo
+/*
+
+para hacer comentarios en css
+
+*/
+
+y la estructura siempre es igual slector{
+
+propiedad:
+
+valor;
+
+
+propiedades usadas
+color 
+font-size
+font-family para tipografia
+con defercto o google fonts con apis o local
+
+con api
+h1{color: red; font-family:
+
+.bitcount-grid-single-<uniquifier> {
+
+  font-family: "Bitcount Grid Single", system-ui;
+
+  font-optical-sizing: auto;
+
+  font-weight: <weight>;
+
+  font-style: normal;
+
+  font-variation-settings:
+
+    "slnt" 0,
+
+    "CRSV" 0.5,
+
+    "ELSH" 0,
+
+    "ELXP" 0;
+
+;}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+  
+
+    <title>introduccion css</title>
+
+</head>
+
+
+@font-face {
+
+  font-family: 'bit';
+
+  src: url('bitcount.ttf') format('truetype');
+
+}
+
+  
+
+p {
+
+  color: aquamarine;
+
+  font-size: xx-large;
+
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+  
+
+h1 {
+
+  color: red;
+
+  font-family: 'bit';
+
+}
+
+  
+
+<body>
+
+   <h1 >intro css</h1>
+
+   <!--css innterno
+
+   atributo style
+
+   etiqueta styles-->
+
+   <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, repellat. Consectetur molestiae accusamus nulla et tenetur beatae. Id excepturi odit, ipsam quisquam vitae, commodi nulla dignissimos debitis deleniti enim laboriosam.</p>
+
+  
+  
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, animi dolor! Unde illo alias quaerat tenetur. Eius reprehenderit corrupti ex. Voluptatibus doloribus repudiandae non modi perferendis aliquam vel eligendi eveniet.</p>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, magnam architecto natus cupiditate sit vero minima necessitatibus perferendis magni sint velit unde dolorum ipsam molestias id voluptatibus quam nihil? Nisi.</p>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus fugiat mollitia ad exercitationem deleniti veniam laudantium. Recusandae porro repellat laboriosam numquam dolore odio sit placeat ipsum corporis? Cumque, minima?</p>
+
+</body>
+
+</html>
+
+
+
+otro delector es body y con background color 
+
+body{background-color: antiquewhite; margin: 3cm;}
+
+*{
+
+    margin:
+
+    ;
+
+     padding: auto
+
+}
+
+
+
+font-style italic
+
+
+<span> </span>

@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "servicios-de-red/actividad ssh.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "actividad ssh"
+            }
+          },
+          {
+            "id": "5f9053e244b06d82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "README.md",
                 "mode": "source",
                 "source": false
@@ -20,8 +34,23 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "207e885803a1cd23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sistemas-operativos-en-red/temas/tema 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tema 4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "sistemas-operativos-en-red/clases/22-10-2025.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for 22-10-2025"
             }
           },
           {
@@ -167,52 +196,52 @@
       "bases:Create new base": false
     }
   },
-  "active": "4f47a4b6af621e74",
+  "active": "5f9053e244b06d82",
   "lastOpenFiles": [
-    "sistemas-operativos-en-red/clases/22-10-2025.md",
-    "README.md",
-    "fotos/{427E4417-2FE4-418B-ACA5-EE23BF4D1E6F}.png",
-    "fotos/{6A57EF82-2BF4-4C9C-BD78-A5AE097C1CBD}.png",
-    "sistemas-operativos-en-red/temas/tema 3.md",
-    "MPO-Arquitecturas-en-la-nube/AWS.md",
-    "fotos/{60BF4901-6A9A-4137-B952-0AD3A9536F60}.png",
-    "fotos/{C29E5C78-1962-40D1-95BB-96C10D7FDBED}.png",
-    "sistemas-operativos-en-red/clases/15-10-2025.md",
-    "aplicaciones-web/clases/07-10-2025/notas.md",
-    "aplicaciones-web/repaso.md",
-    "aplicaciones-web/clases/notas.md",
-    "aplicaciones-web/notas.html",
-    "aplicaciones-web/clases/14-10-2025/ej-tablas2.html",
-    "aplicaciones-web/clases/21-10-2025/Untitled.md",
-    "aplicaciones-web/clases/14-10-2025/notas.md",
-    "aplicaciones-web/clases/21-10-2025/ejerciciocc.html",
-    "aplicaciones-web/clases/21-10-2025/css",
-    "aplicaciones-web/clases/21-10-2025/index.html",
-    "aplicaciones-web/clases/21-10-2025.md",
-    "aplicaciones-web/clases/21-10-2025/UNO.html",
-    "aplicaciones-web/clases/21-10-2025",
-    "fotos/{49EDC8BF-47B6-49B9-844B-EE067A5B6F71}.png",
-    "fotos/{12880E18-CF31-4DA6-8502-B4D4EAB15539}.png",
-    "fotos/{ED45F6D0-05A6-486E-8BC8-97F12BCE6C81}.png",
-    "fotos/{02F80697-81A0-413F-B6E6-CDFA93677F78}.png",
-    "MPO-Arquitecturas-en-la-nube/20-10-2025.md",
-    "ingles/20-10-2025.md",
-    "fotos/{7BC4BFA9-2B42-46C9-BE36-1CC6931BAC5A}.png",
-    "fotos/{CE37244E-0FEF-4A23-BA92-FE775177513A}.png",
-    "Sostenibilidad-aplicada-al-sistema-productivo/20-10-2025.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "aplicaciones-web/{4D67EC11-7B07-4262-9D6A-48BBC40FB53B}.png",
+    "sistemas-operativos-en-red/clases/29-10-2025.md",
+    "sistemas-operativos-en-red/temas/tema 4.md",
+    "Horario.png",
+    "fotos/{7A7C323E-C30D-45D2-8890-89B7B7402866}.png",
+    "fotos/{758C015D-15D9-4602-80E7-FF8AC49CD912}.png",
     "servicios-de-red/actividad ssh.md",
+    "servicios-de-red/tempo.md",
     "servicios-de-red/Untitled.md",
-    "servicios-de-red/clases/16-10-2025.md",
-    "seguridad-informatica/GlosarioAtaques.md",
-    "seguridad-informatica/GestionDeUsuarios (1).md",
-    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema2.md",
-    "seguridad-informatica/Actualizaciones.md",
+    "MPO-Arquitecturas-en-la-nube/AWS.md",
+    "fotos/{E73C0B2B-2D84-4EE7-8522-970C3EFF06A7}.png",
+    "aplicaciones-web/clases/notas.md",
+    "aplicaciones-web/clases/28-10-2025/bitcount.ttf",
+    "aplicaciones-web/clases/28-10-2025/bi",
+    "aplicaciones-web/clases/28-10-2025/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf",
+    "aplicaciones-web/clases/28-10-2025/Bitcount_Grid_Single.zip",
+    "aplicaciones-web/clases/21-10-2025/Bitcount_Grid_Single.zip",
+    "aplicaciones-web/clases/28-10-2025/style.css",
+    "aplicaciones-web/clases/28-10-2025/css",
+    "aplicaciones-web/clases/28-10-2025/Untitled.md",
+    "aplicaciones-web/clases/28-10-2025/ejercicio.html",
+    "fotos/{57309DAD-A2DC-416C-A1D2-02A02BD02814}.png",
+    "aplicaciones-web/clases/28-10-2025/index.html",
+    "aplicaciones-web/clases/28-10-2025",
+    "fotos/{CB2F8444-C4BD-4102-ABE7-6D7F217415F2}.png",
+    "fotos/{FD895F0D-91A3-4D23-AA84-4E2823BB0DCB}.png",
+    "fotos/{6626BE42-8DA2-4E32-A30E-E0163A90B599}.png",
+    "fotos/{177A89D3-6F22-4769-8B97-FF773AA1E062}.png",
+    "MPO-Arquitecturas-en-la-nube/27-10-2027.md",
+    "MPO-Arquitecturas-en-la-nube/20-10-2025.md",
+    "ingles/Proyecto Professional Introductions.md",
+    "ingles/27-10-2025.md",
+    "ingles/29-09-2025.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/27-10-2025.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/temas/tema4.md",
+    "servicios-de-red/temas/tema4.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema4.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema4.md",
+    "aplicaciones-web/temas/tema4.md",
+    "seguridad-informatica/temas/tema4.md",
     "seguridad-informatica/PoliticaContrasenas.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema3.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/temp.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/temas",
-    "Sostenibilidad-aplicada-al-sistema-productivo/temas/tema2.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/temas",
-    "MPO-Arquitecturas-en-la-nube/temas/Untitled"
+    "seguridad-informatica/GestionDeUsuarios (1).md",
+    "seguridad-informatica/clases/24-10-2025.md"
   ]
 }

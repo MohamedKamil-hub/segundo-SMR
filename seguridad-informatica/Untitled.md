@@ -99,3 +99,65 @@ COPIAS DE SEGURIDAD
 completas no se suelen hacer muy amenudo ya que toman mucho tiempo, y se se hacen se hacen por la noche o momentos no frecuentados.
 diferencial, guarda solo el contenido que cambio desde la ultima copia completa , se puede hacer mucho mas frecuentemente.
 incremental, guarda , todos los datos desde la ultima copia de cualquier tipocompleta o incremental
+
+
+
+SEGURIDAD EN SISTEMA OPERATIVO
+
+PROTEGER SERVIDORES
+separacion de servicios, no ejecutar muchos servicios en un solo servidor para reducir superficie de atque, poner otros servicicos en servidores separados
+
+endurecimiento
+reducir superficie de ataque, quitando aplicaciones, perifericos, servicios y cuentas innecesarios.
+
+gestion de parches
+siempre tengan los parches mas recientes de manera automatica
+
+
+politica de grupo 
+con gpupdate y gpresult
+
+mantener servidores actualizados
+
+
+actualizaciones de DNS 
+
+QUITAR PROTOCOLOS INSEGUROS COMO FTP, TELNET,
+
+
+RODC controlador de dominio de solo lectura
+
+
+PROTECCION CONTRA INSTALACION DE SOFTWARE NO DESEADO
+
+politicas de grupo o restriccion de software de terceros
+
+cifrar carpetas sin conexion
+
+
+politicas de restriccion de software no deseado
+
+
+autenticacion multifactor
+medida adicional de seguridad que requiere algo que puede ser lo que sabes , lo que tienes o lo que eres.
+
+complejidad de contraseña
+mayususculas minimo 7 caracteres
+
+tarjeta inteligent
+
+
+radius autentica conexiones remotas
+tacacs de cisco
+
+biometria
+
+
+tareas administrativas con cuentas secundarias
+con sudo
+
+
+grupo de distribucion es de correo eletronico
+
+
+active 

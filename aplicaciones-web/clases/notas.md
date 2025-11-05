@@ -167,171 +167,287 @@ combinar columnas<!
 
 # css basico
 
-``` html
-<h1> iniciando en html </h1>
-css interno poco usado
-css innterno
-   atributo style nunca se suele usar
-   <h1 style="color: red;">intro css</h1>
-   etiqueta styles
-   <style>
+# Notas rápidas (MD) — **CSS básico** — para entender y memorizar fácil
 
-    h1{color: aqua;}
-</style>
+---
 
-usar css externo
+# ¿Qué es CSS?
 
-crear un archivo .css
-como style.css
-ponerle esto por ejemplo
-p{color: aquamarine;}
+CSS (Cascading Style Sheets) controla el aspecto de HTML: colores, tipografías, márgenes, disposición, etc.
 
-h1{color: red;}
+**Regla mnemotécnica:** **S·P·V** → **Selector · Propiedad · Valor**
 
+---
 
-y en tu archivo index.hrtml debajo de la metaetiqueta poner
-<link rel="stylesheet" href="style.css">
-con la ruta relativa
-css es en cascada prevalece lo ultimo
-/*
+# Estructura básica
 
-para hacer comentarios en css
+```css
+selector {
+  propiedad: valor;
+  propiedad2: valor2;
+}
+```
 
-*/
+Ejemplo:
 
-y la estructura siempre es igual slector{
+```css
+h1 {
+  color: red;
+  font-size: 32px;
+}
+```
 
-propiedad:
+---
 
-valor;
+# 3 formas de usar CSS
 
+**1. Inline (no recomendado)**
 
-propiedades usadas
-color 
-font-size
-font-family para tipografia
-con defercto o google fonts con apis o local
+```html
+<h1 style="color: red;">Hola</h1>
+```
 
-con api
-h1{color: red; font-family:
+**2. Interno (dentro de `<head>`)**
 
-.bitcount-grid-single-<uniquifier> {
-
-  font-family: "Bitcount Grid Single", system-ui;
-
-  font-optical-sizing: auto;
-
-  font-weight: <weight>;
-
-  font-style: normal;
-
-  font-variation-settings:
-
-    "slnt" 0,
-
-    "CRSV" 0.5,
-
-    "ELSH" 0,
-
-    "ELXP" 0;
-
-;}
-
-<!DOCTYPE html>
-
-<html lang="en">
-
+```html
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
-  
-
-    <title>introduccion css</title>
-
+  <style>
+    h1 { color: aqua; }
+  </style>
 </head>
+```
 
+**3. Externo (recomendado)**  
+Crear `style.css`:
 
+```css
+p { color: aquamarine; }
+h1 { color: red; }
+```
+
+En `index.html` (ponerlo en `<head>` justo después de meta tags):
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+> Ruta relativa: `href="style.css"` (si el archivo está en la misma carpeta)
+
+---
+
+# Comentarios
+
+```css
+/* Esto es un comentario en CSS */
+```
+
+---
+
+# Cascada y prioridad
+
+- **Cascada:** gana la regla más _reciente_ si tienen misma especificidad.
+    
+- **Especificidad (resumen):** inline (atributo `style`) > `#id` > `.clase` > `elemento`.
+    
+- `!important` fuerza prioridad pero úsalo con moderación.
+    
+
+---
+
+# Selectores comunes
+
+```css
+/* Elemento */
+p {}
+
+/* Clase */
+.card {}
+
+/* Id */
+#menu {}
+
+/* Descendiente */
+nav a {}
+
+/* Hijo directo */
+ul > li {}
+
+/* Universal */
+* { box-sizing: border-box; }
+
+/* Atributo */
+input[type="text"] {}
+
+/* Pseudo-clases / pseudo-elementos */
+a:hover {}
+p::first-line {}
+```
+
+---
+
+# Propiedades útiles (cheat-sheet)
+
+- Texto: `color`, `font-size`, `font-family`, `font-style`, `font-weight`
+    
+- Caja: `margin`, `padding`, `border`, `width`, `height`
+    
+- Fondo: `background-color`, `background-image`, `background-size`
+    
+- Display/Layout: `display`, `position`, `top/right/bottom/left`, `float`, `flex`, `grid`
+    
+- Visual: `opacity`, `box-shadow`, `border-radius`
+    
+- Otras: `text-align`, `line-height`, `z-index`
+    
+
+---
+
+# Tipos de fuente
+
+**@font-face** (local)
+
+```css
 @font-face {
-
-  font-family: 'bit';
-
-  src: url('bitcount.ttf') format('truetype');
-
+  font-family: 'MiFuente';
+  src: url('mi-fuente.ttf') format('truetype');
 }
+h1 { font-family: 'MiFuente', sans-serif; }
+```
 
-  
+**Google Fonts** (ejemplo)
 
-p {
+```html
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+```
 
-  color: aquamarine;
+```css
+body { font-family: 'Roboto', system-ui, sans-serif; }
+```
 
-  font-size: xx-large;
+---
 
-  font-family: 'Courier New', Courier, monospace;
+# Ejemplo completo mínimo (index.html + style.css)
 
+`index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Intro CSS</title>
+</head>
+<body>
+  <h1>Intro CSS</h1>
+  <p>Parrafo de ejemplo.</p>
+</body>
+</html>
+```
+
+`style.css`
+
+```css
+body {
+  background-color: antiquewhite;
+  margin: 3cm;
 }
-
-  
 
 h1 {
-
-  color: red;
-
-  font-family: 'bit';
-
+  color: red;
+  font-family: 'MiFuente', sans-serif;
 }
 
-  
-
-<body>
-
-   <h1 >intro css</h1>
-
-   <!--css innterno
-
-   atributo style
-
-   etiqueta styles-->
-
-   <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, repellat. Consectetur molestiae accusamus nulla et tenetur beatae. Id excepturi odit, ipsam quisquam vitae, commodi nulla dignissimos debitis deleniti enim laboriosam.</p>
-
-  
-  
-
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, animi dolor! Unde illo alias quaerat tenetur. Eius reprehenderit corrupti ex. Voluptatibus doloribus repudiandae non modi perferendis aliquam vel eligendi eveniet.</p>
-
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, magnam architecto natus cupiditate sit vero minima necessitatibus perferendis magni sint velit unde dolorum ipsam molestias id voluptatibus quam nihil? Nisi.</p>
-
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit delectus fugiat mollitia ad exercitationem deleniti veniam laudantium. Recusandae porro repellat laboriosam numquam dolore odio sit placeat ipsum corporis? Cumque, minima?</p>
-
-</body>
-
-</html>
-
-
-
-otro delector es body y con background color 
-
-body{background-color: antiquewhite; margin: 3cm;}
-
-*{
-
-    margin:
-
-    ;
-
-     padding: auto
-
+p {
+  color: aquamarine;
+  font-size: 1.25rem;
 }
+```
+
+---
+
+# Errores comunes (a memorizar)
+
+- Olvidar `;` al final de una propiedad.
+    
+- No cerrar `}`.
+    
+- Poner `<style>` fuera de `<head>`.
+    
+- Ruta incorrecta en `href` (`index.hrtml` → `index.html`).
+    
+- Confundir `padding` con `margin`.
+    
+
+---
+
+# Trucos para memorizar rápido
+
+1. **Tarjetas (flashcards)**: una tarjeta = un selector / propiedad / ejemplo.
+    
+2. **5-min practice**: en un archivo `index.html`, cambia color, margin y font-size cada día.
+    
+3. **Regla S·P·V**: repítela en voz alta antes de escribir CSS.
+    
+4. **DevTools**: inspecciona un elemento, modifica propiedades y observa resultados.
+    
+5. **Pequeños retos** (10 min):
+    
+    - Cambia color de todos los `p`.
+        
+    - Crea `.card` con `padding` y `border-radius`.
+        
+    - Haz que `h1` use una fuente local con `@font-face`.
+        
+
+---
+
+# Ejercicios prácticos (resuelto rápido)
+
+**1. Poner fondo gris y centrar texto en `h1`:**
+
+```css
+body { background-color: #f0f0f0; }
+h1 { text-align: center; }
+```
+
+**2. Clase `.btn` con padding y borde redondeado:**
+
+```css
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+```
+
+---
+
+# Resumen ultra-rápido (para repasar)
+
+- CSS = **Selector { propiedad: valor; }**
+    
+- 3 formas: inline, interno `<style>`, externo `link` (usar externo).
+    
+- Comentarios: `/* ... */`
+    
+- Cascada: lo **último** vence; especificidad importa.
+    
+- Practica en el navegador con DevTools.
+    
+
+---
+
+Si quieres, te genero 10 tarjetas flash en MD para practicar (pregunta → respuesta). ¿Lo hago?
+selector universal
+selector de etiqueta
+propiedad 
+valor
 
 
 
-font-style italic
+divs
 
 
-<span> </span>
+![[Pasted image 20251104193322.png]]

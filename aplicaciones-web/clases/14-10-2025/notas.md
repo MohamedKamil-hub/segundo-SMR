@@ -100,3 +100,14 @@ combinar varias cloumnas
 `<td colspan="2">1 eso a</td>`
 
 combinar columnas<!
+
+
+`    <form >
+
+        <fieldset>
+
+            <legend> Mi Primer formulario</legend>
+
+        </fieldset>
+
+    </form>`

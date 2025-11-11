@@ -45,18 +45,19 @@ Config correcta y `systemctl restart zabbix-server`
 Usé **Expression constructor** → `last(/Windows-Client/system.cpu.util)>80`
 
 ## Resultado final
-- Zabbix corriendo: **Yes**
-- Windows conectado: **ZBX verde**
-Trigger CPU > 80%: **Aparece y se resuelve solo**
+  login
+  ![Pasted image 20251111134644](./../../fotos/Pasted%20image%2020251111134644.png)
 
+![Pasted image 20251111152442](./../../fotos/Pasted%20image%2020251111152442.png)
+para aumentar la cpu en Powershell
+![Pasted image 20251111152830](./../../fotos/Pasted%20image%2020251111152830.png)
+![Pasted image 20251111152904](./../../fotos/Pasted%20image%2020251111152904.png)
+aumento a 99%
+![Pasted image 20251111153016](./../../fotos/Pasted%20image%2020251111153016.png)
+lo que se vio reflejado en las alertas
+![Pasted image 20251111153050](./../../fotos/Pasted%20image%2020251111153050.png)
 
+![Pasted image 20251111153212](./../../fotos/Pasted%20image%2020251111153212.png)
+y se soluciono automáticamente
 
-![[Pasted image 20251111134644.png]]
-
-![[Pasted image 20251111152442.png]]
-
-![[Pasted image 20251111152830.png]]![[Pasted image 20251111152904.png]]
-
-
-![[Pasted image 20251111153016.png]]![[Pasted image 20251111153050.png]]
-![[Pasted image 20251111153212.png]]![[Pasted image 20251111153300.png]]
+![Pasted image 20251111153300](./../../fotos/Pasted%20image%2020251111153300.png)

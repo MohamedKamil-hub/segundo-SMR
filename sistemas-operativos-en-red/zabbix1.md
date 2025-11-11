@@ -41,8 +41,8 @@ Añadí `ListenPort=10051` + `DBPassword` + reinicié
 **Puerto 10051 no aparecía**  ss -tulpn | grep 10051` 
 Config correcta y `systemctl restart zabbix-server`
 
- **Trigger no se creaba**  Error de sintaxis  
-Usé **Expression constructor** → `last(/Windows-Client/system.cpu.util)>80`
+**Trigger no se creaba**  Error de sintaxis  
+Usé Expression constructor `last(/Windows-Client/system.cpu.util)>80`
 
 ## Resultado final
   login
@@ -50,7 +50,7 @@ Usé **Expression constructor** → `last(/Windows-Client/system.cpu.util)>80`
   ![Pasted image 20251111134644](<../fotos/Pasted image 20251111134644.png>)
 
 ![Pasted image 20251111152442](<../fotos/Pasted image 20251111152442.png>)
-para aumentar la cpu en Powershell  
+para aumentar consumo de cpu en Powershell   mientras monitoreo el panel
 
 ![Pasted image 20251111152830](<../fotos/Pasted image 20251111152830.png>)
 ![Pasted image 20251111152904](<../fotos/Pasted image 20251111152904.png>)
@@ -60,7 +60,7 @@ aumento a 99%
 lo que se vio reflejado en las alertas  
 
 ![Pasted image 20251111153050](<../fotos/Pasted image 20251111153050.png>)
-
+el dashboard con los hosts
 ![Pasted image 20251111153212](<../fotos/Pasted image 20251111153212.png>)
 y se solucionó automáticamente  
 

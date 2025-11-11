@@ -45,19 +45,21 @@ Config correcta y `systemctl restart zabbix-server`
 Usé **Expression constructor** → `last(/Windows-Client/system.cpu.util)>80`
 
 ## Resultado final
-  login
-  ![Pasted image 20251111134644](./../../fotos/Pasted%20image%2020251111134644.png)
+  login![Pasted image 20251111134644](./../../fotos/Pasted%20image%2020251111134644.png)
 
 ![Pasted image 20251111152442](./../../fotos/Pasted%20image%2020251111152442.png)
-para aumentar la cpu en Powershell
+para aumentar la cpu en Powershell  
+
 ![Pasted image 20251111152830](./../../fotos/Pasted%20image%2020251111152830.png)
 ![Pasted image 20251111152904](./../../fotos/Pasted%20image%2020251111152904.png)
-aumento a 99%
+aumento a 99%  
+
 ![Pasted image 20251111153016](./../../fotos/Pasted%20image%2020251111153016.png)
-lo que se vio reflejado en las alertas
+lo que se vio reflejado en las alertas  
+
 ![Pasted image 20251111153050](./../../fotos/Pasted%20image%2020251111153050.png)
 
 ![Pasted image 20251111153212](./../../fotos/Pasted%20image%2020251111153212.png)
-y se soluciono automáticamente
+y se solucionó automáticamente  
 
 ![Pasted image 20251111153300](./../../fotos/Pasted%20image%2020251111153300.png)

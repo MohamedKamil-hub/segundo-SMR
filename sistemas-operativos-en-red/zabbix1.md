@@ -47,21 +47,21 @@ Usé **Expression constructor** → `last(/Windows-Client/system.cpu.util)>80`
 ## Resultado final
   login
   
-  ![Pasted image 20251111134644](<./../../fotos/Pasted image 20251111134644.png>)
+  ![Pasted image 20251111134644](<../fotos/Pasted image 20251111134644.png>)
 
-![Pasted image 20251111152442](<./../../fotos/Pasted image 20251111152442.png>)
-para aumentar la cpu en Powershell
+![Pasted image 20251111152442](<../fotos/Pasted image 20251111152442.png>)
+para aumentar la cpu en Powershell  
 
-![Pasted image 20251111152830](<./../../fotos/Pasted image 20251111152830.png>)
-![Pasted image 20251111152904](<./../../fotos/Pasted image 20251111152904.png>)
-aumento a 99%
+![Pasted image 20251111152830](<../fotos/Pasted image 20251111152830.png>)
+![Pasted image 20251111152904](<../fotos/Pasted image 20251111152904.png>)
+aumento a 99%  
 
-![Pasted image 20251111153016](<./../../fotos/Pasted image 20251111153016.png>)
-lo que se vio reflejado en las alertas
+![Pasted image 20251111153016](<../fotos/Pasted image 20251111153016.png>)
+lo que se vio reflejado en las alertas  
 
-![Pasted image 20251111153050](<./../../fotos/Pasted image 20251111153050.png>)
+![Pasted image 20251111153050](<../fotos/Pasted image 20251111153050.png>)
 
-![Pasted image 20251111153212](<./../../fotos/Pasted image 20251111153212.png>)
-y se solucionó automáticamente
+![Pasted image 20251111153212](<../fotos/Pasted image 20251111153212.png>)
+y se solucionó automáticamente  
 
-![Pasted image 20251111153300](<./../../fotos/Pasted image 20251111153300.png>)
+![Pasted image 20251111153300](<../fotos/Pasted image 20251111153300.png>)

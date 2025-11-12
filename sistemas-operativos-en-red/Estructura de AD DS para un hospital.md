@@ -83,6 +83,7 @@ Informatica
 
 
 **Esta es la estructura en active directory**
+
 ![](../fotos/Pasted%20image%2020251112092548.png)
 ![](../fotos/Pasted%20image%2020251112092626.png)
 

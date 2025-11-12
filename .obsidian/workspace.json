@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estructura de AD DS para un hospital"
+              "title": "README"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,9 +181,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "158bd80dea85910e",
+  "active": "dab39ec054a6cb13",
   "lastOpenFiles": [
+    "Horario.png",
     "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
+    "README.md",
     "sistemas-operativos-en-red/Untitled.md",
     "sistemas-operativos-en-red/zabbix1.md",
     "fotos/Pasted image 20251112121136.png",
@@ -204,7 +205,6 @@
     "aplicaciones-web/clases/11-11-2025",
     "aplicaciones-web/clases/Untitled.md",
     "aplicaciones-web/repaso.md",
-    "README.md",
     "sistemas-operativos-en-red/temas/tema 4.md",
     "seguridad-informatica/clases/07-11-2025.md",
     "seguridad-informatica/REPASO.md",

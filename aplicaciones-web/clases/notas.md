@@ -451,3 +451,78 @@ divs
 
 
 ![[Pasted image 20251104193322.png]]
+
+
+https://tickets.nerdearla.es?invited_by=Mzk3NzY0
+
+media queries / modelo responsive mejor dicho
+
+
+modelo
+
+![[Pasted image 20251111182359.png]]tamaño de width depende de content box o borderbox
+contenido padding izq  + der+  borde izq + borde derecha
+
+borderbox buena practica
+
+imagenes
+
+width 100%   height auto
+
+ejercicio
+
+pagina conn div con texto dentro
+en movil fondo rojo fuente pequeña alineacion centrado
+mtablet azul mediana izquierda ordenador verde grande derecha
+
+
+float: left
+
+
+  
+
+@media (max-width: 599px) {
+
+    .caja1{
+
+        background-color: red;
+
+        font-size: small;      
+
+        text-align: center;    
+
+  }
+
+}
+
+  
+
+@media (max-width: 1023px) and (min-width: 600px )  {
+
+    .caja1{
+
+        background-color: blue;
+
+        font-size: medium;
+
+        text-align: center;
+
+    }
+
+}
+
+  
+
+@media (min-width: 1024px )  {
+
+    .caja1{
+
+        background-color: green;
+
+        font-size: large;
+
+        text-align: right;
+
+    }
+
+}

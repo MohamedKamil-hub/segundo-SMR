@@ -296,3 +296,332 @@ Roles y responsabilidades del personal clave.
 **Pruebas y Mantenimiento** 
 Simulaciones periódicas de desastres. 
 Actualización constante del plan según cambios tecnológicos o de negocio.
+
+
+
+
+
+
+
+
+
+
+
+tema 3: Seguridad Física y Lógica 
+
+Clasificación de la Seguridad Informática 
+
+  
+ #### **Dependiendo del MOMENTO DE ACTUACION** 
+	 **Seguridad Activa**  Conjunto de medidas preventivas con objetivo de evitar i
+	 ncidentes antes de que ocurran. 
+	 
+	**Seguridad Pasiva**  Su objetivo es minimizar el impacto de un incidente una  
+	vez que ya ha ocurrido. Es complementaria a la seguridad activa. 
+
+ #### **Según el ACTIVO a proteger**
+## **Seguridad Física** 
+Se centra en proteger elementos tangibles (hardware, instalaciones, servidores, cableado, etc.) frente a daños, robos o desastres naturales.
+
+El primer paso para establecer la seguridad de un equipo es decidir dónde instalarlo. 
+Los planes de seguridad física aplican barreras físicas y procedimientos de control, como medidas de prevención y contramedidas para proteger los recursos y la información, tanto para mantener la seguridad dentro y alrededor del Centro de Cálculo como los medios de acceso remoto a él o desde él. 
+
+Cada sistema informático es único. no podemos pensar que existe un plan de seguridad general aplicable a cualquier tipo de instalación. 
+
+**Factores para elegir la ubicación**
+tratamiento acustico, menos cirtico
+suministro electico cpd  
+seguridad fisica del edificio
+otros factores
+
+
+
+**Control de acceso** • Es necesario un férreo control de acceso al mismo. 
+Servicio de Vigilancia, donde el acceso es controlado por personal de seguridad. 
+Detectores de Metales y escáneres de control de pertenencias. 
+Utilización de Sistemas Biométricos 
+Protección Electrónica, sensores conectados a alarmas que reaccionan ante distintas señales. 
+
+
+**Seguridad eléctrica** • un sis informático puede tener problemas con la alimentación eléctrica, como: 
+• PICO 
+• RUIDO ELÉCTRICO 
+• CORTE DE LUZ 
+• CAÍDAS DE TENSIÓN
+
+Para tratar de minimizar estos problemas,, la mejor alternativa es un Sistema de Alimentación Ininterrumpida (Uninterrupted Power Supply) 
+
+SAI (UPS - Uninterrupted Power Supply) permite dar energía eléctrica constante a un pc incluso si el suministro principal de energía se ve interrumpido. utiliza una batería cargada. también suelen funcionar como reguladores de voltaje eléctrico. 
+
+**Sais Off-Line** • suministra la corriente eléctrica sin ningún filtro a los dispositivos conectados, carece de Regulador de voltaje. solamente empezará a funcionar cuando detecte un fallo de corriente eléctrica, es en este momento cuando se comenzará a suministrar la energía que ha ido almacenando en sus baterías a los dispositivos. 
+Estos Sais necesitan un tiempo de conmutación 2-10 ms, para pasar a modo baterías,
+solo recomendables en una red estable ya que al no realizar ningún filtrado de la corriente, solo protegen ante un corte de suministro eléctrico. • Dispositivos poco sensibles como ordenadores personales de gama baja, televisores, monitores, router, etc.. 
+es recomendable utilizar este tipo de SAIS en zonas con pocas anomalías eléctricas y buena calidad de red. 
+
+
+**SAI Interactivo In-Line**
+sistema de protección eléctrica **intermedio** entre el Off-Line y el On-Line.
+**regula y filtra** siempre la tensión de la red eléctrica ±15% con filtros activos y un microprocesador.
+**Mejora la corriente** que reciben los aparatos **sin usar las baterías**, protegiéndolos no solo de apagones, sino también de subidas y bajadas de voltaje.
+
+**Salida:** Proporciona una onda **pseudo-sinusoidal** o **sinusoidal pura** 
+**Tiempo de conmutación:**  interrupción (2-10 ms) al cambiar a batería, como los SAI Off-Line.
+**Ruido:** Los modelos con onda sinusoidal pura son **muy silenciosos**.
+
+**Ideales para:** Ordenadores, consolas , routers, cámaras de seguridad y pequeños servidores.
+No recomendables para dispositivos muy sensibles a microcortes .
+**Para equipos sensibles:** es **obligatorio** usar un SAI con **salida sinusoidal pura**.
+
+
+**Sais OnLine** realiza una doble conversión de la energía eléctrica que recibe, transformándola en continua y después a alterna de nuevo, 
+siempre proporciona energía eléctrica directamente desde sus baterías mientras estas se van cargando de la red, garantiza la protección total contra cualquier problema de la red eléctrica.
+destinada a proteger cualquier instalacion informática crítica o imprescindible 
+
+
+
+¿Qué SAI elegir? 
+![[Pasted image 20251115153452.png]]
+
+La capacidad de un SAI se mide en **Voltiamperios (VA)** o **KiloVoltioamperios (kVA)**.
+Los dispositivos que conectamos muestran su consumo en **Vatios (W)**. 
+**Para calcular el SAI necesario:**
+    1.  Suma los vatios (W) de todos los aparatos a conectar.
+    2.  **Añade un 20%** extra a ese total para cubrir picos de consumo.
+    3.  El resultado son los vatios que tu SAI debe poder suministrar.
+
+
+#### Almacenamiento de la Información
+Se basa en tres aspectos:
+*   **Rendimiento:** Velocidad para guardar/recuperar datos.
+*   **Disponibilidad:** Garantía de poder recuperar la información cuando se necesite.
+*   **Accesibilidad:** Facilidad de acceso para usuarios autorizados.
+
+• HDD • SSD a. SATA b. mSATA c. M.2 • SCSI
+
+![[Pasted image 20251115154205.png]]
+
+**Sistemas de Almacenamiento Externo:**
+*   **NAS (Almacenamiento Conectado en Red):** Dispositivos de almacenamiento que se acceden por la red local (ej: usando Samba o NFS). Suelen usar discos en RAID.
+*   **SAN (Red de Área de Almacenamiento):** Una red dedicada y de alta velocidad solo para almacenamiento.
+*   **Almacenamiento en la Nube:** Guardar archivos en servicios de Internet.
+
+#### Almacenamiento Redundante (RAID)
+RAID usa varios discos para distribuir o copiar datos, aumentando la velocidad o la seguridad.
+*   **RAID 0 (Dividido):** Mejora la velocidad, pero **si un disco falla, se pierden todos los datos**. No hay copia de seguridad.
+![[Pasted image 20251115154906.png]]
+*   **RAID 1 (Espejo):** Duplica los datos en otro disco. Si uno falla, el sistema sigue funcionando. El espacio útil se reduce a la mitad.
+![[Pasted image 20251115154646.png]]
+*   **RAID 5 (Dividido con Paridad):** Usa al menos 3 discos. Los datos y la información de recuperación (paridad) se reparten entre todos. Soporta el fallo de un solo disco. Se pierde la capacidad de un disco.
+ ![[Pasted image 20251115154939.png]]
+
+**LVM (Gestor de Volúmenes Lógicos):** Es una herramienta que permite agrupar discos físicos (PV) en grupos de volúmenes (VG) para crear unidades lógicas (LV) de forma flexible, sin depender del hardware físico.
+
+#### 4. Centros de Procesamiento de Datos (CPD)
+Un CPD es el lugar donde una organización concentra sus recursos para procesar información.
+
+**Requisitos clave:**
+*   **Disponibilidad 24/7** y alta fiabilidad (ej. 99.999%).
+*   **Redundancia:** Múltiples fuentes de electricidad, SAIs, etc.
+*   **Seguridad física:** Paredes resistentes al fuego (ej. RF-60), puertas con cierre, materiales incombustibles y sellado contra agua.
+*   **Control ambiental:** Temperatura controlada de forma muy precisa (alrededor de **22.3°C**).
+*   **Extintores** de dióxido de carbono (CO₂).
+
+
+
+## **Seguridad Lógica** 
+criptografia
+Los algoritmos de cifrado se clasifican en dos grandes tipos: 
+a. De cifrado en bloque: dividen el texto origen en bloques de bits de un tamaño fijo y los cifran de manera independiente. 
+b. De cifrado de flujo: el cifrado se realiza bit a bit, byte a byte o carácter a carácter. 
+• Las dos técnicas más sencillas de cifrado son: 
+a. La sustitución: supone el cambio de significado de los elementos básicos del mensaje, las letras, los dígitos o los símbolos. 
+b. La transposición: supone una reordenación de los mismos, pero los elementos básicos no se modifican en sí mismos. 
+
+El descifrado es el proceso inverso que recupera el texto plano a partir del criptograma y la clave. 
+
+Un buen sistema de cifrado pone toda la seguridad en la clave y ninguna en el algoritmo. 
+### Tipos de algoritmos de cifrado 
+#### **Criptografía Simétrica** 
+es un método criptográfico en el cual se usa una misma clave para cifrar y descifrar mensajes.  
+Las dos partes han de ponerse de acuerdo sobre la clave a usar.
+el remitente cifra un mensaje usándola, lo envía al destinatario y éste lo descifra con la misma. 
+
+**Algunos ejemplos de algoritmos de cifrado simétrico son:** 
+• El algoritmo de cifrado DES usa una clave de 56 bits, 2^56 claves posibles
+• Algoritmos de cifrado como 3DES, Blowfish e IDEA usan claves de 128 bits, 2^128 claves posibles.
+• Otros algoritmos de cifrado muy usados son RC5 y AES, Advanced Encryption Standard,
+
+**Los principales problemas de cifrado simétrico :** 
+a. El intercambio de claves: una vez que el remitente y el destinatario hayan intercambiado las claves pueden usarlas para comunicarse con seguridad, pero, ¿qué canal de comunicación seguro han usado para transmitirse las claves? Sería mucho más fácil para un atacante intentar interceptar una clave que probar las posibles combinaciones del espacio de claves
+b. El número de claves que se necesitan: si tenemos un número n de personas que necesitan comunicarse entre sí, se necesitan n/2 claves diferentes para cada pareja de personas que tengan que comunicarse de modo privado. Esto puede funcionar con un grupo reducido de personas, pero sería imposible llevarlo a cabo con grupos más grandes. Para solucionar estos problemas se mejora la seguridad de los sistemas, mediante la criptografía asimétrica y la criptografía híbrida. 
+
+#### **Criptografía Asimétrica** 
+cada usuario del sistema criptográfico ha de poseer una pareja de claves: 
+**a. Clave privada:** será custodiada por su propietario y no se dará a conocer a ningún otro. 
+**b. Clave pública:** será conocida por todos los usuarios. 
+Esta pareja es complementaria: lo que cifra una solo lo puede descifrar la otra y viceversa. 
+es imposible conocer una clave a partir de la otra. 
+
+Una función de un solo sentido es aquella cuya computación es fácil, y su inversión es difícil.
+Un hash de un sentido es algo parecido, pero tiene una simplificación o atajo, si se conoce alguna parte de la información, sería fácil computar el inverso. .
+
+La seguridad de un sistema no se puede comparar solo por el tamaño de la clave, ya que las claves simétricas (ej. 128 bits) y asimétricas (ej. 1024 bits) requieren longitudes diferentes para un mismo nivel de protección, siendo la asimétrica más lenta y con mayor sobrecarga
+
+Herramientas software como PGP o en comunicaciones TCP/IP, protocolos como SSH o la capa de seguridad TLS/SSL, utilizan un cifrado híbrido formado por la criptografía asimétrica para intercambiar claves de criptografía simétrica y la criptografía simétrica para la transmisión de la información. 
+• Algunos algoritmos de técnicas de clave asimétrica son: a. Diffie-Hellman, RSA, DSA, ElGamal, criptografía de curva elíptica. • Algunos protocolos y software que usan los algoritmos antes citados son: a. DSS (Digital Signature Standard) con el algoritmo DSA (Digital Signature Algorithm). PGP y GPG, una implementación de OpenPGP, SSH, SSL y TLS. 
+
+#### **Criptografía Híbrida** 
+1. **Se genera una clave simétrica NUEVA y única** para esta comunicación.
+2. **Se cifra el mensaje** con esa clave simétrica.
+3. **Se cifra la clave simétrica** con la clave pública del destinatario (criptografía asimétrica).
+4. **Se envían AMBAS cosas cifradas:**
+    - El mensaje cifrado con la clave simétrica.
+        
+    - La clave simétrica cifrada con la clave pública.
+
+
+#### **Firma Digital** 
+permite al receptor verificar la autenticidad del origen de la información y verificar que dicha info no ha sido modificada desde su generación.  la firma digital ofrece el soporte para la autenticación e integridad de los datos así como para el no repudio en origen, ya que la persona que origina un mensaje firmado digitalmente no puede argumentar que no lo hizo. 
+
+Mecánica de la generación y comprobación de una firma digital. lo que comprueba:
+a. Autenticación: la firma digital es equivalente a la firma física de un documento. 
+b. Integridad: el mensaje no podrá ser modificado. 
+c. No repudio en origen: el emisor no puede negar haber enviado el mensaje. 
+
+**Certificados Digitales** 
+Para garantizar la unicidad de las claves privadas se suele recurrir a soportes físicos tales como tarjetas inteligentes que garantizan la imposibilidad de la duplicación de las claves. las tarjetas criptográficas suelen estar protegidas por un PIN.
+
+**un certificado digital** es un archivo que puede emplear un software para firmar digitalmente archivos y mensajes
+y que contienen información sobre una persona o entidad, nombre, dirección, mail, el ámbito de utilización de la clave pública, las fechas de inicio y fin de la validez del certificado, etc., así como una clave pública y una firma digital de una autoridad certificadora u organismo de confianza, 
+
+
+**Terceras partes de confianza** 
+La validez de un certificado es la confianza en que la clave pública contenida en el certificado pertenece al usuario indicado en el certificado. La manera en que se puede confiar en el certificado de un usuario con el que nunca hemos tenido ninguna relación previa es mediante la confianza en terceras partes. 
+ambos usuarios tienen relación con una tercera parte y ésta puede dar fe de la fiabilidad de los dos. 
+
+
+**DNI electrónico o DNIE** 
+similar al tradicional y su principal novedad es que incorpora un pequeño circuito integrado (chip), capaz de guardar de forma segura, mediante medidas específicas de seguridad para impedir su falsificación, contiene: 
+a. Un certificado electrónico para autenticar la personalidad del ciudadano. 
+b. Un certificado electrónico para firmar electrónicamente, con la misma validez jurídica que la firma manuscrita. 
+c. Certificado de la Autoridad de Certificación emisora. 
+d. Claves para su utilización. e. La plantilla biométrica de la impresión dactilar.
+
+Para la utilización del DNI electrónico es necesario contar con : 
+i. Hardware específico: lector de tarjetas inteligentes que cumpla el estándar ISO-7816. 
+ii. Software específico: controladores o módulos criptográficos que permitan el acceso al chip de la tarjeta y, por tanto la utilización de los certificados contenidos en él. En Windows es el servicio CryptographicService Provider (CSP), y en los entornos GNU/Linux o MAC el módulo criptográfico se denomina PKCS#11. 
+
+
+# Resumen para Examen: DNIe 4.0, MFA y SSH
+
+## DNI Electrónico 4.0 (DNIe 4.0) - 2022
+
+**Características Principales:**
+- Se puede llevar en el teléfono móvil
+- Permite realizar operaciones bancarias (sacar dinero, ir al banco) solo con el móvil
+
+**Tecnología:**
+- Microchip con tecnología **contactless (NFC)**
+- Almacena: foto, firma, huellas dactilares, certificados de autenticación y firma electrónica
+
+**Seguridad:**
+- Diseñado por Policía Nacional y Fábrica Nacional de Moneda y Timbre
+- Características que 'blindan' el documento y lo hacen difícil de falsificar
+
+**Usos del 'DNI Europeo':**
+- Acceder a servicios públicos
+- Solicitar certificados (nacimiento, médico)
+- Comunicar cambio de domicilio
+- Abrir cuentas bancarias
+- Presentar declaración de impuestos
+- Solicitar plaza en universidades
+- Almacenar recetas médicas válidas en Europa
+- Alquilar coches con permiso de conducir digital
+- Registrarse en hoteles
+
+---
+
+## Autenticación Multifactor (MFA)
+
+**Definición:**
+- Mecanismo de seguridad que requiere **más de un factor** para verificar la identidad
+- Protege incluso si alguien obtiene tu contraseña
+
+**Factores de Autenticación:**
+1. **Algo que sabes**: Contraseña, PIN, patrón
+2. **Algo que tienes**: Token físico, smartphone con app
+3. **Algo que eres**: Biométricos (huella, reconocimiento facial, iris, voz)
+4. **Factores adicionales**: Ubicación, comportamiento, hora de acceso
+
+**Ejemplos de MFA:**
+- **Código OTP (One-Time Password)**
+  - Apps: Google Authenticator, Authy, Microsoft Authenticator
+  - Cambia cada 30 segundos
+  - Ejemplo: Gmail pide código de 6 dígitos después de la contraseña
+
+- **SMS o Email con código**
+  - Código temporal por SMS o correo
+  - Ejemplo: bancos envían SMS con código único
+
+- **Llave de seguridad física (hardware token)**
+  - Dispositivo como YubiKey (USB o NFC)
+  - Ejemplo: GitHub, Google
+
+- **Notificación push**
+  - App pregunta: "¿Estás intentando iniciar sesión?"
+  - Ejemplo: Duo Mobile, Microsoft Authenticator
+
+- **Biometría**
+  - Face ID en iPhone, huella digital en Android para apps bancarias
+
+---
+
+## Configuración con Claves SSH para Git/GitHub
+
+**Verificar si existen claves SSH:**
+```bash
+ls -al ~/.ssh
+```
+Si existen, se verán archivos como: `id_rsa` (privada) y `id_rsa.pub` (pública)
+
+**Generar nuevas claves (si no existen):**
+```bash
+mkdir $HOME/.ssh
+ssh-keygen -t rsa -b 4096 -C your@email.com
+```
+
+**Importante:**
+- **Clave pública** (`id_rsa.pub`): Para autenticación (compartir)
+- **Clave privada** (`id_rsa`): NUNCA revelar
+
+**Configurar ssh-agent:**
+- Verificar ejecución:
+  ```bash
+  eval "$(ssh-agent -s)"  # Mac/Linux
+  ssh-agent -s           # Windows
+  ```
+- Añadir clave privada:
+  ```bash
+  ssh-add ~/.ssh/id_rsa
+  ```
+
+**Copiar clave pública:**
+- Linux/Mac: `cat ~/.ssh/id_rsa.pub`
+- Windows: `clip < ~/.ssh/id_rsa.pub`
+
+**Añadir clave a GitHub:**
+1. Ir a Settings → SSH and GPG keys
+2. Click "New SSH key"
+3. Pegar clave pública
+
+**Verificar autenticación:**
+```bash
+ssh -T git@github.com
+```
+Mensaje esperado: `Hi your_user_name! You've successfully authenticated...`
+
+
+
+
+
+

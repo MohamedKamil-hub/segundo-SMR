@@ -13,26 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "seguridad-informatica/REPASO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "REPASO"
+            }
+          },
+          {
+            "id": "5794402ba1266b86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "README"
-            }
-          },
-          {
-            "id": "666eb51a94817850",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Estructura de AD DS para un hospital"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "81319c3c2f1c279a",
@@ -183,22 +182,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "666eb51a94817850",
+  "active": "5794402ba1266b86",
   "lastOpenFiles": [
+    "sistemas-operativos-en-red/project.md",
+    "seguridad-informatica/REPASO.md",
+    "fotos/Pasted image 20251115154939.png",
+    "fotos/Pasted image 20251115154906.png",
+    "fotos/Pasted image 20251115154646.png",
+    "fotos/Pasted image 20251115154205.png",
+    "fotos/Pasted image 20251115153452.png",
+    "seguridad-informatica/clases/14-11-2025.md",
+    "fotos/Pasted image 20251114165543.png",
+    "fotos/Pasted image 20251114165445.png",
+    "fotos/Pasted image 20251114162720.png",
+    "fotos/Pasted image 20251114162604.png",
+    "fotos/Pasted image 20251114162115.png",
+    "servicios-de-red/clases/13-11-2025.md",
+    "sistemas-operativos-en-red/clases/12-11-2025.md",
     "README.md",
     "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
-    "Horario.png",
-    "sistemas-operativos-en-red/Untitled.md",
     "sistemas-operativos-en-red/zabbix1.md",
-    "fotos/Pasted image 20251112121136.png",
-    "fotos/Pasted image 20251112120152.png",
-    "fotos/Pasted image 20251112114746.png",
-    "fotos/Pasted image 20251112094523.png",
-    "fotos/Pasted image 20251112094328.png",
-    "fotos/Pasted image 20251112094222.png",
-    "fotos/Pasted image 20251112093552.png",
-    "fotos/Pasted image 20251112093511.png",
-    "fotos/Pasted image 20251112093021.png",
     "sistemas-operativos-en-red/temp.md",
     "aplicaciones-web/clases/notas.md",
     "aplicaciones-web/clases/11-11-2025/style.css",
@@ -208,7 +211,6 @@
     "aplicaciones-web/repaso.md",
     "sistemas-operativos-en-red/temas/tema 4.md",
     "seguridad-informatica/clases/07-11-2025.md",
-    "seguridad-informatica/REPASO.md",
     "itinerario-de-empleabilidad-profesional/clases/06-11-2025.md",
     "servicios-de-red/clases/06-11-2025.md",
     "servicios-de-red/redes.md",
@@ -223,9 +225,6 @@
     "aplicaciones-web/clases/28-10-2025/Untitled.md",
     "MPO-Arquitecturas-en-la-nube/AWS.md",
     "servicios-de-red/temas/tema4.md",
-    "MPO-Arquitecturas-en-la-nube/Untitled.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/temas/tema5.md",
-    "seguridad-informatica/temas/tema2.md",
     "aplicaciones-web/clases/28-10-2025/bitcount.ttf",
     "aplicaciones-web/clases/28-10-2025/bi",
     "aplicaciones-web/clases/28-10-2025/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf",

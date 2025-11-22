@@ -1,3 +1,89 @@
+`<!DOCTYPE html>`
+le indica a la pagina que todo va a estar escrito en html entonces el buscador esperara sintaxis de html
+
+
+tags
+`<p> contenido antes del tag de /cierre </p>`
+hay otros tags que se cierran a si mismos
+`<img src="imagen.png" alt="imagen de un gato">`
+ de h1 a `<h6>`  son encabezados
+ `<p> es para parrafos`
+ `<ul> y <ol> es para listas y <div> es para agrupar contenido`
+`<a> para links`
+`<img> para imagenes y <span> para estilo de contenido`
+
+
+comentarios
+<!-- esto es un comentario-->
+
+
+tag html
+
+es el mas importante ya que define  la pagina web
+
+
+**sección head**
+
+contiene informacion usada por el buscador para dar e interactuar con la pagina web
+
+incluye:  
+`<tittle> que es el titulo de la pagina web`
+`<meta>  metadatos que incluyen palabras clave como el autor ej.`
+`links a archivos externos como`
+``- `<link rel="stylesheet" href="styles.css"> <script src="script.js"></script>```
+`codificacion de caracteres le dice al buscador que caracteres se van a usar en la pagina ej.`
+`<meta charset="UTF-8">`
+
+**seccion body**
+es el contenido actual de la pagina con la que el user va a interactuar
+```html
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>John Smith Photography</title>
+      <meta name="description" content="John Smith Photography specializes in capturing authentic and compelling images that tell the story of your business, project, or cause.">
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <h1>Bringing Your Brand to Life with Striking Visuals</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="/resources/media/html-ess-1-7-1-apple-photo.jpg" alt="Apple photo">
+   </body>
+</html>
+```
+
+
+
+en imagenes se usa `<img>`
+con alt="para el texto de la imagen"
+y src si es un link externo o href si es interno
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indoor Plants</title>
+    <meta name="description" content="Explore a variety of indoor plants for your home or office.">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- Title -->
+    <h1>Indoor Plants</h1>
+
+    <!-- Peace Lily Section -->
+    <h2>Peace Lily</h2>
+    <p>The Peace Lily, known for its elegant white flowers, is a popular choice for indoor spaces.</p>
+    <p>Price: $15</p>
+    <img src="https://edube.org/uploads/media/default/0001/04/spathiphyllum-peace-lily.jpg" alt="Peace Lily">
+
+    <!-- Zanzibar Gem Section -->
+    <h2>Zanzibar Gem</h2>
+    <p>The Zanzibar Gem, with its glossy green foliage, is a low-maintenance indoor plant perfect for beginners.</p>
+    <p>Price: $20</p>
+    <img src="https://edube.org/uploads/media/default/0001/04/zamioculcas-zanzibar-gem.jpg" alt="Zanzibar Gem">
+</body>
+</html>
+
 **vemos mas etiquetas html**
 
 index es el primer archivo que consulta el servidor web

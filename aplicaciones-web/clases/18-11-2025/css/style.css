@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.fondo{
+    background: url("../img/imagen.jpg") 50% 50% no-repeat;
+    
+    height: 100vh;
+    background-size: cover;
+}
+
+.titulo{
+    padding: 1em;
+    text-align: center;
+
+}
+
+.titulo h1{
+    font-family: sans-serif ;
+    color: #f9f3f4;
+    font-size: 500%;
+    margin-bottom: 0.5em;
+}
+
+.titulo .btn {
+    border-radius: 9px;
+    color: #f9f3f4;
+    text-decoration: none;
+    font-family: sans-serif;
+    border: 3px solid;
+    padding: 7px 13px;
+    font-weight: bold;
+
+}
+
+.titulo .btn:hover {
+    background: #2196f3;
+}
+
+#inicio {
+    background-color: #2196f3;
+    text-align: center;
+}
+nav {
+    padding: 1em;
+}
+
+nav li {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0.7em 1em;
+    color: white;
+    transition: 2s;
+}
+nav a:hover{
+    background: rgb(82, 4, 155);
+}
+
+p {
+    border: 1px solid #2196f3;
+    font-size: 160%;
+    line-height: 200%;
+    text-align: justify;
+    margin: 3%;
+    padding: 3%;
+    font-family: sans-serif;
+}
+
+.leyenda {
+    font-family: sans-serif;
+    color: #2196f3;
+    font-size: 200%;
+    padding: 1em;
+    text-shadow: 2px 2px 8px #000;
+
+}

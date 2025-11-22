@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"4b96f4e691b642be","x":-160,"y":-415,"width":250,"height":60,"type":"text","text":"router"},
+		{"id":"bf71f3adbd90b16a","x":360,"y":-415,"width":250,"height":60,"type":"text","text":"pihole dns server"},
+		{"id":"48ecee1b620d3629","type":"text","text":"ENDPOINTS\nPC \nPHONE..","x":-620,"y":-440,"width":140,"height":110}
+	],
+	"edges":[
+		{"id":"881cdf13b4ca3bed","fromNode":"48ecee1b620d3629","fromSide":"right","toNode":"4b96f4e691b642be","toSide":"left","label":"dns query "},
+		{"id":"fa8d40199e2d37e8","fromNode":"4b96f4e691b642be","fromSide":"right","toNode":"bf71f3adbd90b16a","toSide":"left","label":"dns query"}
+	]
+}

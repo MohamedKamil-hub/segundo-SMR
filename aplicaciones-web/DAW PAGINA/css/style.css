@@ -1,0 +1,169 @@
+body {
+    background-color: #474747;
+    color: #aaaaaa;
+    overflow: auto; /* permite hacer scroll */
+    scrollbar-width: none; /* Firefox */
+}
+
+.navbar{
+ 
+
+    border-bottom: 2px solid aliceblue;
+    background-color: #0c0b0e;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    width: 100vw;
+    box-sizing: border-box;
+
+    
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 50px;
+    font-weight: bolder;
+    font-size: large;
+    text-transform: uppercase;
+    
+
+}
+.navbar a:hover{
+    color: red;
+    text-decoration: underline;
+
+
+
+}
+
+.navbar a.active{
+    color: red;
+}
+
+.arriba img{
+    position: fixed;
+    color: white;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    right: 20px;
+    background-color: white;
+    border: solid;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+
+.fondo .contenido {
+
+
+}
+
+
+
+.fondo .contenido .css{
+    color: blue;
+}
+
+
+.fondo .contenido .js{
+    color: yellow;
+}
+
+
+/*seccion incio */
+
+.seccionindex {
+    background-color: #172033;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 50px;
+    padding-bottom: 1%
+}
+
+.seccionindex h1{
+    border-bottom: 1px  solid aliceblue;
+    margin-right: 6%;
+    margin-left: 6%;
+    color: #38bdf8;
+    padding-top: 1%;
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 4%;
+
+}
+
+.seccionindex p{
+    color: #c2ccd8;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: x-large ;
+}
+
+
+
+/* para solo el html.html*/
+.seccionhtml {
+    color: white;
+
+    padding-bottom: 1%;
+    background-color: #e54c21;
+    margin-right: 5%;
+    margin-left: 2%;
+    border-radius: 50px;
+}
+
+.seccionhtml h1{
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin-left: 2%;
+    text-transform: uppercase;
+    padding-top: 2%;
+    margin-top: 4%;
+
+}
+.seccionhtml p{
+    text-align: justify;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+
+/* seccion para el css */
+.seccioncss {
+    background-color: #2465f1;
+    color: white;
+    padding-bottom: 1%;
+    margin-right: 3%;
+    border-radius: 50px;
+    padding-top: 3px;
+    margin-left: 2%;
+
+}
+
+.seccioncss h1{
+    color: black;
+    text-transform: uppercase;
+    margin-left: 2%;
+}
+.seccioncss p{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+
+

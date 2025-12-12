@@ -1,5 +1,7 @@
 **Mohamed  Kamil El Kouarti**
 **12 de diciembre de 2025**  
+[Repositorio de GitHub: Estructura AD DS del hospital](https://github.com/MohamedKamil-hub/segundo-SMR/blob/main/sistemas-operativos-en-red/Estructura%20de%20AD%20DS%20para%20un%20hospital.md)
+
 
 Se ha hecho la estructura de Active Directory requerida mediante comandos PowerShell.
 #### 1. Creación de la OU raíz
@@ -37,7 +39,7 @@ Ana lopez -> urgencias
 Carlos Ruíz  -> UCI
 Laura garcia  -> administración
 
-Con la contraseña inicial siendo A123456. , pero hay que cambiarla después del primer inicio de sesión.
+Con la contraseña inicial siendo A123456.    pero hay que cambiarla después del primer inicio de sesión.
 ``` powershell
 
 New-ADUser -Name "Mohamed Kamil" ` -GivenName "Mohamed" ` -Surname "Kamil" ` -SamAccountName "mkamil" ` -UserPrincipalName "mkamil@hospital.local" ` -Path "OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local" ` -AccountPassword (ConvertTo-SecureString "A123456." -AsPlainText -Force) ` -Enabled $true ` -ChangePasswordAtLogon $true

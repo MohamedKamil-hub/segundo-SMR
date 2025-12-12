@@ -1,5 +1,5 @@
-Mohamed  Kamil El Kouarti
-12 de diciembre de 2025  
+**Mohamed  Kamil El Kouarti**
+**12 de diciembre de 2025**  
 
 Se ha hecho la estructura de Active Directory requerida mediante comandos PowerShell.
 #### 1. Creación de la OU raíz
@@ -44,7 +44,7 @@ New-ADUser -Name "Mohamed Kamil" ` -GivenName "Mohamed" ` -Surname "Kamil" ` -Sa
 
 Add-ADGroupMember -Identity "GG_Informatica" -Members "mkamil"
 ``` 
-![[../fotos/Pasted image 20251212115019.png]]
+![Comprobación OU](../fotos/Pasted%20image%2020251212115019.png)
 
 
 
@@ -68,16 +68,19 @@ Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 ```
 
 **Los usuarios, sus grupos y sus Unidades Organizativas**
-![[../fotos/Pasted image 20251212121145.png]]
+![Usuarios](../fotos/Pasted%20image%2020251212121145.png)
+
 
 **los grupos de seguridad y su ambito**
-![[../fotos/Pasted image 20251212121417.png]]
+![Grupos de seguridad](../fotos/Pasted%20image%2020251212121417.png)
+
 
 **Esta es la estructura en active directory**
+![Estructura AD - parte 1](../fotos/Pasted%20image%2020251212115511.png)
 
-![[../fotos/Pasted image 20251212115511.png]]
 
-![[../fotos/Pasted image 20251212115635.png]]
+![Estructura AD - parte 2](../fotos/Pasted%20image%2020251212115635.png)
+
 
 
 

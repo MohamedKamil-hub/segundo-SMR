@@ -1,0 +1,8 @@
+- Instalar servidor FTP y que haya conexión.
+- Instalar SSH y que haya acceso remoto.
+- Instalar Apache2 o nginx.
+- Crear **mínimo 2 virtual hosts**.
+- Configurar **HTTPS (SSL)** en  un virtual host.
+- Instalar 2 CMS (WordPress y prestashop
+- Crear una página con IA dentro del CMS.
+- Demostrarlo con capturas o mostrando que funciona.

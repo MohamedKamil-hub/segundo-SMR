@@ -135,7 +135,7 @@ B) Too formal with close colleagues > (x) distance/  coldness ( ) clarity ( ) sp
 Complete: Getting register wrong can damage  relations and credibility because it may not be appropiate.
 
 
-# Proyecto Professional Introductions
+# Proyecto Introducing yourself in the professional world
 
 1. **Formal** Good morning sir. My name is Mohamed Kamil El Kouarti. I am a systems and network technician from the IT department. I work on installing, repairing, and maintaining computer systems and networks. I look forward to help the company with its technical projects. https://youtu.be/kGEZSzVPiu0 
 
@@ -240,4 +240,103 @@ Usually: “I usually study English on mondays”
 Right now: “Right now, I’m attending to the class _____” 
 This week: “This week, I’m studying english” 
 Always: “I always listen in English class” 
+
+# 01-17-2025
+Emails
+
+**Practice A1: Register Impact Analysis Analyze Phase:**
+**Explain what would happen if María used the wrong register:** 
+
+Using informal style with CEO: you would get fired
+Using formal style with close colleague: the energy would feel off with the colleage
+Professional impact: Wrong email register affects workplace relationships by giving the wrong image. of yourself.
+
+**Practice A2: Recipient Analysis Decide Phase: Choose the appropriate formality level for each recipient:** 
+1 Your direct manager (everyday communica- tion): Formal / ==Standard== / Informal 
+2 The company CEO: ==Formal== / Standard / Informal 
+3 Your desk neighbor: Formal / Standard / ==Informal== 
+4 A new important client: ==Formal== / Standard / Informal 
+5 Your best work friend: Formal / Standard / ==Informal==
+
+![[Pasted image 20251204133144.png]]
+
+**Practice B1: Email Structure Recognition**
+
+Analyze Phase:  Label each part of this email   Underline the action needed and circle any time detail  
+
+Hi everyone,
+I hope you’re all well
+I’m writing to remind you about tomorrow’s training session
+Please bring your laptops and notebooks
+The session starts at 9 AM in Room B
+Let me know if you have any questions
+Thanks, Ana
+
+• 1 _____  subject training session tomorrow
+• 2 _____  greeting hi everyone
+• 3 _____  context to remind about tomorrows training session
+• 4 _____  main message the session starts 9 am you need to bring paper
+• 5 _____  action needed
+• 6 _____  polite closing let me know if you have any questions thanks
+• 7 _____ name Ana
+
+**Practice B2: Subject Line Effectiveness**
+Decide Phase: Choose the most professional subject line:
+
+Situation 1: Asking for vacation approval  
+a) “Vacation”  
+==b) “Request for Annual Leave - March 15-22”==  
+c) “I need time off”
+
+Situation 2: Confirming meeting time  
+a) “About tomorrow”  
+==b) “Meeting Confirmation - Tuesday 2 PM”==  
+c) “Time check”
+
+---
+
+**Essential Professional Email Language:**
+
+Opening Phrases:  
+• Formal: “I hope this email finds you well”  
+• Standard: “I hope you’re having a good week”  
+• Friendly: “I hope you’re well”
+
+Stating Purpose:  
+• “I’m writing to…”  
+• “I would like to…”  
+• “I’m contacting you about…”
+
+Making Requests:  
+• Formal: “I would be grateful if you could…”  
+• Standard: “Could you please…?”  
+• Direct: “Would you be able to…?”
+
+Providing Information:  
+• “I wanted to let you know that…”  
+• “Please note that…”  
+• “I’m pleased to inform you that…”
+
+Professional Closing:  
+• “Please let me know if you need anything else”  
+• “I look forward to hearing from you”  
+• “Thank you for your time”
+
+---
+# Email Writing Practice
+
+<span style="color:red"><b>Subject:</b> Request for CCNA Certification Exam Approval</span>
+
+<span style="color:orange">Dear Mr. Smith,</span>
+
+<span style="color:blue">I hope this email finds you well.</span>
+
+<span style="color:green">I am writing to request approval to take the CCNA certification exam.</span>
+
+<span style="color:purple">I have already completed all the required courses and the previous certifications related to it. For that reason, I believe that I am fully prepared for the exam and I would really appreciate the company’s support.</span>
+
+<span style="color:brown">Thank you for your time and consideration.</span>
+
+<span style="color:pink">Kind regards,<br>  
+Mohamed Kamil Kouarti</span>
 

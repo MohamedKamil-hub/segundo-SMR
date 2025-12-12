@@ -166,4 +166,33 @@ body {
 }
 
 
+/* seccion para js */
+
+.seccionjs {
+    background-color: #eed94d;
+    border-radius: 50px;
+    margin-top: 4%;
+    padding-bottom: 3%;
+    margin-right: 6%;
+    margin-left: 3%;
+
+
+}
+
+.seccionjs h1 {
+    color: #000000;
+    margin-left: 2%;
+    padding-top: 2%;
+
+}
+
+.seccionjs p{
+    color: white;
+    margin-left: 3%;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-right: 5%;
+    text-decoration: solid;
+    text-decoration: #000000 ;
+}
 

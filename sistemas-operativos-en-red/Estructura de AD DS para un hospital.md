@@ -1,99 +1,95 @@
-Mohamed  Kamil
-12 de noviembre de 2025  
+Mohamed  Kamil El Kouarti
+12 de diciembre de 2025  
 
-montar una estructura de Active Directory para un hospital, **todo desde PowerShell**, sin tocar la GUI.  
+Se ha hecho la estructura de Active Directory requerida mediante comandos PowerShell.
+#### 1. Creación de la OU raíz
+Cree la unidad organizativa raíz "HOSPITAL" y le puse protección de borrado accidental
+``` powershell
+New-ADOrganizationalUnit -Name "HOSPITAL" -Path "DC=hospital,DC=local" -ProtectedFromAccidentalDeletion $true
+```
+#### 2. Creación de las sub-OUs principales
 
+Dentro de HOSPITAL cree las 4 sub-unidades organizativas
+ejecute este comando 4 veces cambiando únicamente el nombre (departamentos, usuarios, grupos y equipos) y también les puse protección contra borrado.
+``` powershell
+New-ADOrganizationalUnit -Name "Departamentos" -Path "OU=HOSPITAL,DC=hospital,DC=local" -ProtectedFromAccidentalDeletion $true
+``` 
 
+#### 3. Creación de las OUs de departamentos
+Dentro de la unidad organizativa de departamentos cree las OU correspondientes
+urgencias, UCI, administración e informática
+``` powershell
+New-ADOrganizationalUnit -Name "Urgencias" -Path "OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local" 
+``` 
 
-**Abrí PowerShell como admin** y cargué el módulo:  
-```powershell
-Import-Module ActiveDirectory   
+#### 4. Creación de grupos de seguridad globales
+una vez tenia la estructura formada cree los 4 grupos de seguridad globales GG_Urgencias GG_UCI
+GG_Administracion y GG_Informatica
+``` powershell
+New-ADGroup -Name "GG_Urgencias" -SamAccountName "GG_Urgencias" -GroupCategory Security -GroupScope Global -Path "OU=Grupos,OU=HOSPITAL,DC=hospital,DC=local"
 ```
 
-**Creé la OU raíz:**  
-``` powershell
-New-ADOrganizationalUnit -Name "HOSPITAL" -Path "DC=mohamed,DC=local" -ProtectedFromAccidentalDeletion $true
-```
-**Dentro de HOSPITAL creé las 4 sub-OUs:**  
-``` powershell
-New-ADOrganizationalUnit -Name "Departamentos" -Path "OU=HOSPITAL,DC=mohamed,DC=local"
-```
-![](../fotos/Pasted%20image%2020251112094222.png)
+#### 5. Creación de usuarios y asignación a grupos
+A cada departamento le añadí un usuario correspondiente en la OU de Usuarios :
 
+Mohamed Kamil -> informática
+Ana lopez -> urgencias
+Carlos Ruíz  -> UCI
+Laura garcia  -> administración
 
-**Dentro de Departamentos creé las OUs de cada área:**  
-![](../fotos/Pasted%20image%2020251112094328.png)
-``` powershell
-New-ADOrganizationalUnit -Name "Administracion" -Path "OU=Departamentos,OU=HOSPITAL,DC=mohamed,DC=local" ProtectedFromAccidentalDeletion $true
-```
-
-
-**Creé los 4 grupos globales de seguridad en la OU Grupos:**  
-``` powershell
-New-ADGroup -Name "GG_Urgencias" -GroupScope Global -GroupCategory
-Security -Path "OU=Grupos,OU=HOSPITAL,DC=mohamed,DC=local" ```
-![](../fotos/Pasted%20image%2020251112094523.png)
-
-   
-
-
-**Creé 2 usuarios por departamento (8 en total) en la unidad organizativa Usuarios:**  
- Contraseña: A123456.  
- con cambio obligatorio al primer login  
-
-
-**Los metí en su grupo correspondiente**  
-
+Con la contraseña inicial siendo A123456. , pero hay que cambiarla después del primer inicio de sesión.
 ``` powershell
 
-New-ADUser -Name "Ana López" -SamAccountName "a.lopez" -UserPrincipalName "a.lopez@hospital.local" -Path "OU=Usuarios,OU=HOSPITAL,DC=mohamed,DC=local" -AccountPassword (ConvertTo-SecureString "A123456." -AsPlainText -Force) -Enabled $true -ChangePasswordAtLogon $true
-Add-ADGroupMember -Identity "GG_Urgencias" -Members "a.lopez"
+New-ADUser -Name "Mohamed Kamil" ` -GivenName "Mohamed" ` -Surname "Kamil" ` -SamAccountName "mkamil" ` -UserPrincipalName "mkamil@hospital.local" ` -Path "OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local" ` -AccountPassword (ConvertTo-SecureString "A123456." -AsPlainText -Force) ` -Enabled $true ` -ChangePasswordAtLogon $true
 
-```
-### **CAMBIAR UPN a @hospital.local **
+Add-ADGroupMember -Identity "GG_Informatica" -Members "mkamil"
+``` 
+![[../fotos/Pasted image 20251212115019.png]]
+
+
+
+#### 6. Comprobaciónes finales 
+Se ve la OU raiz , las 4 sub OU directas de raiz y las 4 OUs de departamentos dentro de departamentos
 
 ``` powershell
-Get-ADUser -Filter * -SearchBase "OU=Usuarios,OU=HOSPITAL,DC=mohamed,DC=local" | ForEach-Object {
-    $sam = $_.SamAccountName
-    Set-ADUser -Identity $sam -UserPrincipalName "$sam@hospital.local"
-}
+PS C:\Users\Administrador> Get-ADOrganizationalUnit -Filter * -SearchBase "OU=HOSPITAL,DC=hospital,DC=local" -Properties Name | Select-Object Name, DistinguishedName | Sort-Object DistinguishedName | Format-Table -AutoSize
 
+Name           DistinguishedName
+----           -----------------
+Administracion OU=Administracion,OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local
+Departamentos  OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local
+Equipos        OU=Equipos,OU=HOSPITAL,DC=hospital,DC=local
+Grupos         OU=Grupos,OU=HOSPITAL,DC=hospital,DC=local
+HOSPITAL       OU=HOSPITAL,DC=hospital,DC=local
+Informatica    OU=Informatica,OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local
+UCI            OU=UCI,OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local
+Urgencias      OU=Urgencias,OU=Departamentos,OU=HOSPITAL,DC=hospital,DC=local
+Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 ```
 
-#### **Comprobación final (lo que me salió en PowerShell)**
- ``` powershell
- 
- PS C:\Users\Administrador> Get-ADOrganizationalUnit -Filter * -SearchBase "OU=HOSPITAL,DC=mohamed,DC=local" | Select Name
+**Los usuarios, sus grupos y sus Unidades Organizativas**
+![[../fotos/Pasted image 20251212121145.png]]
 
-Name
-----
-HOSPITAL
-Departamentos
-Usuarios
-Grupos
-Equipos
-Urgencias
-UCI
-Administracion
-Informatica
- ```
-
-**Los usuarios, sus grupos y sus UO**
-![](../fotos/Pasted%20image%2020251112121136.png)
-
+**los grupos de seguridad y su ambito**
+![[../fotos/Pasted image 20251212121417.png]]
 
 **Esta es la estructura en active directory**
 
-![](../fotos/Pasted%20image%2020251112092548.png)
-![](../fotos/Pasted%20image%2020251112092626.png)
+![[../fotos/Pasted image 20251212115511.png]]
+
+![[../fotos/Pasted image 20251212115635.png]]
 
 
 
-**al iniciar sesión por primera vez me pide un cambio de contraseña**
+**Al iniciar sesión por primera vez me pide un cambio de contraseña**
 ![](../fotos/Pasted%20image%2020251112093511.png)
-
 
 ![](../fotos/Pasted%20image%2020251112093552.png)
 
 
 
+**Conclusión** 
+Se han cumplido todos los requisitos del proyecto: 
+estructura de OUs completa, 
+grupos de seguridad globales en su OU correspondiente, 
+usuarios con atributos requeridos contraseña inicial con obligación de cambio y pertenencia correcta a los grupos departamentales.

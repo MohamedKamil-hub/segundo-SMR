@@ -84,7 +84,8 @@ Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 
 ![Estructura AD - parte 2](../fotos/Pasted%20image%2020251212115635.png)
 
-![[Pasted image 20251217162644.png]]
+![Imagen](../fotos/Pasted%20image%2020251217162644.png)
+
 
 
 **Al iniciar sesión por primera vez me pide un cambio de contraseña**

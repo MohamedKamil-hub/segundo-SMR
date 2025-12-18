@@ -46,7 +46,7 @@ New-ADUser -Name "Mohamed Kamil" ` -GivenName "Mohamed" ` -Surname "Kamil" ` -Sa
 
 Add-ADGroupMember -Identity "GG_Informatica" -Members "mkamil"
 ``` 
-![Comprobación OU](../fotos/Pasted%20image%2020251212115019.png)
+
 
 
 ![Imagen](../fotos/Pasted%20image%2020251217162507.png)
@@ -82,7 +82,6 @@ Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 ![Estructura AD - parte 1](../fotos/Pasted%20image%2020251212115511.png)
 
 
-![Estructura AD - parte 2](../fotos/Pasted%20image%2020251212115635.png)
 
 ![Imagen](../fotos/Pasted%20image%2020251217162644.png)
 

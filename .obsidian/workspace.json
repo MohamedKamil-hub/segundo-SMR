@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estructura de AD DS para un hospital"
+              "title": "README"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "clases apuntes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,11 +209,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "83e44b8b7b1159d9",
+  "active": "7c434e2717d411a1",
   "lastOpenFiles": [
-    "sistemas-operativos-en-red/clases/clases apuntes.md",
     "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
     "README.md",
+    "sistemas-operativos-en-red/clases/clases apuntes.md",
     "fotos/Pasted.md",
     "sistemas-operativos-en-red/temp.md",
     "MPO-Arquitecturas-en-la-nube/AWS ARQUITECTURA.md",

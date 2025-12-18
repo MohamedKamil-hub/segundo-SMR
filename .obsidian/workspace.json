@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "servicios-de-red/preguntas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "preguntas"
+            }
+          },
+          {
+            "id": "83e44b8b7b1159d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "README.md",
                 "mode": "source",
                 "source": false
@@ -22,31 +36,17 @@
             }
           },
           {
-            "id": "83e44b8b7b1159d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "servicios-de-red/1. Práctica de Servicios en Red.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. Práctica de Servicios en Red"
-            }
-          },
-          {
             "id": "ac5c5331adbe42bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seguridad-informatica/clases/apuntes.md",
+                "file": "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "apuntes"
+              "title": "Tarea Evaluable 01 Validando la idea de negocio"
             }
           },
           {
@@ -55,15 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sistemas-operativos-en-red/clases/clases apuntes.md",
+                "file": "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "clases apuntes"
+              "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,12 +210,18 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7c434e2717d411a1",
+  "active": "83e44b8b7b1159d9",
   "lastOpenFiles": [
-    "servicios-de-red/Sin título.md",
-    "servicios-de-red/clases/apuntes.md",
-    "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
+    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
+    "README.md",
     "servicios-de-red/1. Práctica de Servicios en Red.md",
+    "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
+    "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
+    "servicios-de-red/preguntas.md",
+    "servicios-de-red/clases/apuntes.md",
+    "sistemas-operativos-en-red/clases/clases apuntes.md",
+    "seguridad-informatica/clases/apuntes.md",
+    "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
     "fotos/Pasted image 20251218105942.png",
     "fotos/Pasted image 20251218160911.png",
     "fotos/Pasted image 20251218160737.png",
@@ -225,8 +232,6 @@
     "fotos/Pasted image 20251218155911.png",
     "fotos/Pasted image 20251218155721.png",
     "fotos/Pasted image 20251218155514.png",
-    "README.md",
-    "sistemas-operativos-en-red/clases/clases apuntes.md",
     "fotos/Pasted.md",
     "sistemas-operativos-en-red/temp.md",
     "MPO-Arquitecturas-en-la-nube/AWS ARQUITECTURA.md",
@@ -245,9 +250,6 @@
     "ingles/Englishcoursev2Students.pdf",
     "Sostenibilidad-aplicada-al-sistema-productivo/IMPLEMENTACIÓN DE UN SISTEMA DE ECONOMÍA CIRCULAR EN UN CENTRO DE DATOS.md",
     "MPO-Arquitecturas-en-la-nube/notas clase.md",
-    "ingles/Portofolio.md",
-    "itinerario-de-empleabilidad-profesional/Untitled.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/clases.md",
     "aplicaciones-web/codigo/css/style.css",
     "aplicaciones-web/codigo/css",
     "aplicaciones-web/codigo/javascript.js",

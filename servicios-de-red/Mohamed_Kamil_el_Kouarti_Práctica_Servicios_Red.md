@@ -3,6 +3,7 @@
 **Nombre del estudiante:** Mohamed Kamil El Kouarti  
 **Fecha:** 18/12/2025  
 **Dominio utilizado:** mohamedcamil.es (registrado previamente, pero implementado en entorno local como mohamedkamil.local para simulación)  
+[]()
 
 ## Introducción
 

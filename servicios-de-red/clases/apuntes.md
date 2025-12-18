@@ -745,3 +745,8 @@ indicar como hacerlo en un servidor
 instalar ftp que herramientas necesitas
 
 ## 18/12/2025
+webmin
+dms
+https://www.softaculous.com/apps/ecommerce
+https://rustdesk.com/es/
+jellyfin

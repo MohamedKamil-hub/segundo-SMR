@@ -725,3 +725,187 @@ si los endpoints tiene distinto motor es heterogenea se usa AWS DMS fleet adviso
 
 evalua como las compensaciones afectan a los clientes y a la eficiencia de la arquitectura
 implementa una administracion segura de claves y aplicar el cifrado en reposo usa AWS KMS
+
+# Módulo 7: creación de un entorno de redes
+
+**VPC**
+cada región tiene zonas de disponibilidad, y cada una de estas tiene centros de datos con routers
+
+una red virtual se construye sobre esta red física y la emula , aislada
+una VPC pertenece a una región esta por defecto aislada de otras redes
+al crearla especificas su rango de ips CIDR para determinar el tamaño de la red
+2 componentes importantes son las tablas de enrutamiento y las subredes
+una regla de enrutamiento que no se puede cambiar es que los elementos dentro del vpc se puedan ver entre si
+una subred es un contenedor de políticas de enrutamiento que pertenece a una zona de disponibilidad
+una subred puede ser publica o privada, una instancia ec2 que necesite acceder a internet necesita IP publica para asegurarte de que no cambie la ip usa una ip publica elástica
+los recursos de una red privada no pueden acceder ni pueden accederse desde internet
+
+un dispositivo **NAT** reemplaza la IP privada del solicitante con su IP publica por lo que no se expone la IP real del recurso privado
+puedes usar un NAT gateway o crear tu propio ec2 dispositivo para hacer esa función.
+
+
+
+**Proteccion recursos de red**
+seguridad en todas las capas
+**grupos de seguridad** para proteger recursos , son firefalls , por defecto no hay reglas de entrada asi que no se permite trafico de entrada y si de salida. se puede cambiar, en grupos de seguridad solo puedes crear reglas para permitir no para denegar, puede estar en varias zonas de disponibilidad
+**ACL de red para proteger subredes** sin estado permiten o denegan trafico cada subnet en la vpc tiene que estar asociada con el ACL y por defecto se permite todo el trafico * deniega todo
+![[Pasted image 20251214154152.png]]
+
+**firewall de red de AWS** añade una capa extra de seguridad, administrado por AWS detecta y previene intrusiones
+
+host bastion minimiza ataques y mantiene acceso restringido suele correr en una instancia ec2 y se accede  a ella mediante grupos de seguridad
+
+**Conexión a los servicios administrados de AWS**
+no hay conexion de una instancia ec2 a un bucket s3 sin ir por el internet
+un punto de conexion VPC es un recurso que se usa para conectarse de manera directa y privada a productors de AWS desde la VPC se le pueden poner politicas IAM
+tambien se puede usar un un punto de conexion VPC de puerta de enlace que se conecte deirectamente a amazon
+![[Pasted image 20251214161434.png]]
+
+gateway load balance endpoint como funciona:
+
+se usa con balanceadores de carga de puerta de enlace para inspeccionar trafico con aplicaciones de seguridad
+
+**supervision de red**
+flow logs permite capturar informacion del trafico de los VPC y acptar denegar y capturar informacion especifica y enviarlo a s3 o  cloudwatch en registro de flujos
+
+analizador de alcance; para testear la conectividad entre un recurso destino y uno fuente en un VPC
+analizador de accceso de red para identificar acceso no deseado a  tus recursos AWS
+
+duplicacion de trafico hace una copia del trafico de red y la envia para seguridad y monitoreo
+
+**Aplicación de los principios del Marco de AWS Well-Architected a una red**
+para fiabilidad asegurate de de que la asignacion de la subred IP cuente para la expansion y la disponibilidad.
+para seguridad crea capas de red y aplica control , inspección y protección a cada capa
+para eficiencia de rendimiento entiende como la red afecta el rendimiento y escoge protocolos que ayuden a mejorar el rendimiento y evalua las caracteristicas de la red disponibles
+para optimizacion de coste eliga regiones basandote en el precio
+
+
+# Módulo 8: conexión de redes
+hay dos tipos de diseño de red con varias VPC
+arquitectura de malla completa ; cada nodo esta conectado con los demas nodos, util solo en redes pequeñas
+arquitectura hub-and-spoke; haz un hub central  un nodo solo necesita conectarse a ese hub
+
+
+AWS gateway de transito
+es un router regional centralizado para conectar redes VPC y en premisa a un unico gateway llamado gateway de transito, escala automaticamente, se pueden conectar entre si en  misma region o entre regiones , basandose en la arquitectura hub-and-spoke
+tiene flow logs para capturar
+
+transit gateway peering attachment para conectar vpc de 2 cuentas aws
+es seguro porque no va por internet publico
+
+cobra por hora por el numero de conexiones y la cantidad de trafico
+
+conectar varias vpc en aws con vpc peering
+para ello se debe de hacer una solicitud a la otra vpc y que esta la acepte
+y en sus tablas de enrutamiento cada uno tiene que agregar la ip del otro 
+si las CIDR se  sobreponen de las vpc usa link privado con balanceador de carga de red.
+
+
+como conectarse a una vpc desde una red remota
+por defecto la vpc no puede comunicarse con la red de premisa
+
+para ello se usa AWS site-to-site VPN
+crea una conexion segura entre el gateway de un cliente en premisa y el gw¡ateway de AWS
+usa IPsec para cear tuneles VPN
+
+VPN cloudhub
+
+AWS global accelerator para acelerar conexiones VPN site-to-site
+pudes conectar varias redes en premisa a un gateway privado virtual
+
+aws direct connect usa vlan para hacer una conexion remota desde tu premisa
+se usa en entornos hibridos, centros de datos grandes
+requiere rendimiento de red predecible y seguridad.
+tienes 2 opciones
+dedicada o de host
+puedes crear 3 tipos de interfaces de red, publica privada o de transito
+
+Aplicación de los principios del Marco de AWS Well-Architected a la conectividad de red
+fiabilidad 
+provisiona conectividad redundante entr redes privadas en la nube y entornos en premisa
+prefiere topologias hub-and-spoke antes que malla
+
+seguridad controla el trafico de toodas las capas y fuerza la encripcion en transito
+
+eficiencia de rendimiento
+escoge bien la conectividad dedicada o vpn para cargas hibridas y escoge la localizacion de tus cargas basandote en requerimientos de red
+
+optimizacion de coste 
+
+# Módulo 9: protección del acceso de los usuarios, las aplicaciones y los datos
+**manejar permisos**
+AWS IAM
+los grupos de IAM se usan para darle permisos a multiples usuarios de una, le das permisos a un grupo añades a usuarios a dicho grupo y estos los heredan.
+no puedes iniciar sesion con un grupo, solo son una forma de administrar permisos de usuarios.
+los usuarios pueden pertencer a mas de un grupo
+no se pueden anidar grupos
+aunque un grupo permita algo si ese usuario tiene una politica de usuario que se lo deniega explicitamente no puede hacer esa accion
+
+role based acces control RBAC
+attribute based access control ABAC define permisos basado en atributos que son pares de llaves llamados tags que se pueden aplicar a recursos AWS y IAM, es mejor que RBAC para escalar manejo depermisos
+
+**federar usuarios**
+un sistema de confianza entre dos lados para autenticar usuarios y convergir informacion que se necesite para autorizar acceso a recursos quien proporciona la identidad es responsable para la autencticacion del usuario
+quien proporciona el servicio es responsable de controlar el acceso a sus recursos
+
+AWS centro de identidades IAM 
+puede crear o conectar identidades y manejar acceso centralmente a traves de tus cuentas AWS
+
+AWS STS es un servicio web API que permite hacer solicitudes temporales con credenciales con privilegios limitdaos, estas credenciales pueden ser usadas por usuarios IAM , usuarios federados o aplicaciones
+
+Amazon Cognito 
+es un servicio administrado que da autenticacion, autorizacion y manejo de usuarios para aplicaciones webs y moviles. identidades federadas para firmar con proveedores de identidad, grupos de usuarios que mantienen un directorio con perfiles de usuario de tokens de autenticación, grupos  de identidad que permiten habilitar la creacion de identidades unqicas y permisos de asignacion para usuarios.
+
+
+Administracion del acceso a multiples cuentas
+AWS organizations se usa para eso, crear, manejar y facturar cuentas de manera centralizada
+y agrupar cuentas en una jerarquia
+SCP de organizaciones ofrecen control central sobre el maximo de permisos disponibles para todas las cuentas en la organizacion
+habilita control sobre que servicios son accesibles a los usuarios de IAM in cuentas miembri
+define permisos que afectan a una cuenta entera
+maneja y limita las acciones que un admin de cuenta puede delgera a usuarios y roles de IAM
+los SCPs no pueden ser sobreescritos por el administrador local
+mejor que IAM mas facil de escalar
+solo da permisos que no esten explicitamente denegados y si esten explicitamente permitidos
+los limites de permiso solo se aplican a una entidad IAM , determinar a que recursos puede acceder un usuario y los SCP se aplican a una organizacion denegar acceso a un conjunto de recursos
+
+![[Pasted image 20251217201045.png]]
+
+AWS control tower
+permite poner control y manejo
+
+**encriptar datos en reposo**
+encripcion simetrica
+usa la misma llave para encriptar y desenciptar 
+mas rapido y eficiento para grandes cantidades de datos util en local de la red AWS
+muy usado y bastante seguro
+
+encripcion asimetrica 
+usa llave publica para encriptar y privada para decriptar
+mas seguro pero mas lento
+
+
+encipcion del lado del cliente , antes de enviar a AWS , manejas tu tus llaves y solo tu lo sabes
+encripcion del lado del servidor, encriptan tus datos antes de escribirlo al dusco y lo decriptan antes de que accedas a ellos llaves manejadas por AWS
+
+
+AWS KMS  da la habilidad de crear y manejar llaves criptograficas y las protege con modulos de seguridad de hardware y permite usar politicas para determinar que usarios pueden usar las llaves
+![[Pasted image 20251217204636.png]]
+
+
+servicios de seguridad adicionales
+aplicar seguridad a todas las capas
+**bordes**
+	AWS WAF firewall de aplicaciones web monitorea solicitudes http https 
+	AWS shield
+ 
+**datos** 
+	Amazon Marcie usa ML para descubrir y clasificar datos sensibles que migran a AWS y notidfica al admin EC2 contenedores y funciones de lambda
+
+**deteccion y respuesta a amenazas** 
+	Amazon Inspector, servicio de manejo de vulnerabilidades que escanea cargas de trabajo continuamente
+	Amazon Detective, recolecta datos de registro de tus recursos AWS
+	AWS Security Hub, recolecta datos de seguridad en todas las cuentas, servicios y productos AWS e identifica problemas de seguridad
+![[Pasted image 20251217213148.png]]
+
+# Módulo 10: implementación de la supervisión, la elasticidad y la alta disponibilidad

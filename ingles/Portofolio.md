@@ -340,3 +340,8 @@ Professional Closing:
 <span style="color:pink">Kind regards,<br>  
 Mohamed Kamil Kouarti</span>
 
+
+# 15-12-2025
+pagina 10
+11 A1 A2 A3
+

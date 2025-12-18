@@ -49,7 +49,7 @@ Add-ADGroupMember -Identity "GG_Informatica" -Members "mkamil"
 ![Comprobación OU](../fotos/Pasted%20image%2020251212115019.png)
 
 
-
+![[Pasted image 20251217162507.png]]
 #### 6. Comprobaciónes finales 
 Se ve la OU raiz , las 4 sub OU directas de raiz y las 4 OUs de departamentos dentro de departamentos
 
@@ -83,7 +83,7 @@ Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 
 ![Estructura AD - parte 2](../fotos/Pasted%20image%2020251212115635.png)
 
-
+![[Pasted image 20251217162644.png]]
 
 
 **Al iniciar sesión por primera vez me pide un cambio de contraseña**

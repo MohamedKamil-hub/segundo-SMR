@@ -81,8 +81,6 @@ Usuarios       OU=Usuarios,OU=HOSPITAL,DC=hospital,DC=local
 **Esta es la estructura en active directory**
 ![Estructura AD - parte 1](../fotos/Pasted%20image%2020251212115511.png)
 
-
-
 ![Imagen](../fotos/Pasted%20image%2020251217162644.png)
 
 

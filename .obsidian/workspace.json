@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "83e44b8b7b1159d9",
+            "id": "a332a5612fcb3425",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,34 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "README"
-            }
-          },
-          {
-            "id": "ac5c5331adbe42bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tarea Evaluable 01 Validando la idea de negocio"
-            }
-          },
-          {
-            "id": "a332a5612fcb3425",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
             }
           }
         ],
@@ -96,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Pasted%20image%2020251218135597.png",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +76,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -210,28 +182,46 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "83e44b8b7b1159d9",
+  "active": "a332a5612fcb3425",
   "lastOpenFiles": [
-    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
-    "README.md",
-    "servicios-de-red/1. Práctica de Servicios en Red.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/mohamed_kamil_kouarti_mechhidan_sostenibilidad.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/google-app-script",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/google-app-script.py",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/readme.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel.zip.zip",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel.zip",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/js/chatbot.js",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/js",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/css/styles.css",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/css",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/index.html",
+    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel",
+    "Sostenibilidad-aplicada-al-sistema-productivo/IMPLEMENTACIÓN DE UN SISTEMA DE ECONOMÍA CIRCULAR EN UN CENTRO DE DATOS.md",
     "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
-    "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
     "servicios-de-red/preguntas.md",
+    "README.md",
+    "Sin título.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/temas/17-11-2025.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/clases.md",
+    "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
+    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
+    "fotos/Pasted image 20251218200120.png",
+    "servicios-de-red/Sin título.md",
+    "fotos/Pasted image 20251218185504.png",
+    "fotos/Pasted image 20251218185435.png",
+    "fotos/Pasted image 20251218185409.png",
+    "fotos/Pasted image 20251218185017.png",
+    "fotos/Pasted image 20251218184622.png",
+    "fotos/Pasted image 20251218184517.png",
+    "fotos/Pasted image 20251218184328.png",
+    "itinerario-de-empleabilidad-profesional/clases/27-11-2025.md",
+    "servicios-de-red/1. Práctica de Servicios en Red.md",
     "servicios-de-red/clases/apuntes.md",
     "sistemas-operativos-en-red/clases/clases apuntes.md",
     "seguridad-informatica/clases/apuntes.md",
     "sistemas-operativos-en-red/Estructura de AD DS para un hospital.md",
     "fotos/Pasted image 20251218105942.png",
     "fotos/Pasted image 20251218160911.png",
-    "fotos/Pasted image 20251218160737.png",
-    "fotos/Pasted image 20251218160703.png",
-    "fotos/Pasted image 20251218160226.png",
-    "fotos/Pasted image 20251218160129.png",
-    "fotos/Pasted image 20251218160005.png",
-    "fotos/Pasted image 20251218155911.png",
-    "fotos/Pasted image 20251218155721.png",
-    "fotos/Pasted image 20251218155514.png",
     "fotos/Pasted.md",
     "sistemas-operativos-en-red/temp.md",
     "MPO-Arquitecturas-en-la-nube/AWS ARQUITECTURA.md",
@@ -239,25 +229,6 @@
     "sistemas-operativos-en-red/zabbix1.md",
     "sistemas-operativos-en-red/Untitled.canvas",
     "sistemas-operativos-en-red/clases/26-11-2025.md",
-    "sistemas-operativos-en-red/clases/19-11-2025.md",
-    "sistemas-operativos-en-red/clases/22-10-2025.md",
-    "sistemas-operativos-en-red/clases/12-11-2025.md",
-    "sistemas-operativos-en-red/clases/05-11-2025.md",
-    "sistemas-operativos-en-red/clases/29-10-2025.md",
-    "sistemas-operativos-en-red/clases/15-10-2025.md",
-    "sistemas-operativos-en-red/clases/08-10-2025.md",
-    "sistemas-operativos-en-red/clases/01-10-2025.md",
-    "ingles/Englishcoursev2Students.pdf",
-    "Sostenibilidad-aplicada-al-sistema-productivo/IMPLEMENTACIÓN DE UN SISTEMA DE ECONOMÍA CIRCULAR EN UN CENTRO DE DATOS.md",
-    "MPO-Arquitecturas-en-la-nube/notas clase.md",
-    "aplicaciones-web/codigo/css/style.css",
-    "aplicaciones-web/codigo/css",
-    "aplicaciones-web/codigo/javascript.js",
-    "aplicaciones-web/codigo/index.html",
-    "aplicaciones-web/codigo",
-    "aplicaciones-web/DAW PAGINA/pages/js.html",
-    "aplicaciones-web/DAW PAGINA/pages/index.html",
-    "aplicaciones-web/DAW PAGINA/pages/html.html",
-    "aplicaciones-web/DAW PAGINA/pages/css.html"
+    "sistemas-operativos-en-red/clases/19-11-2025.md"
   ]
 }

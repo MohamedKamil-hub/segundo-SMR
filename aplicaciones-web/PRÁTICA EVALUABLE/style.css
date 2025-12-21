@@ -1,0 +1,182 @@
+/* estilos generales */
+body {
+background-color:#f4f4f4;
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+line-height:1.6
+}
+
+/* encabezado que se queda fijo*/
+header {
+background-color:#2c3e50;
+padding:30px 20px;
+text-align:center;
+position:sticky;
+top:0;
+z-index: 100000;
+
+}
+header h1 {
+color:#fff;
+font-size: 48px;
+margin:0;
+padding:0
+}
+header p {
+color:#ecf0f1;
+font-size:20px;
+margin:10px 0 0 0;
+font-style:italic
+}
+
+
+main {
+padding:20px 0
+}
+
+/* las secciones */
+section {
+background-color:#fff;
+margin:4% auto;
+padding:2.5rem;
+border-radius:15px;
+max-width:1200px;
+width:90%;
+box-shadow:0 3px 8px rgba(0,0,0,0.3)
+}
+section h2 {
+color:#2c3e50;
+margin-bottom:20px;
+padding-bottom:10px;
+font-size: 34px;
+border-bottom:3px solid #3498db
+}
+section p {
+color:#333;
+line-height:1.8;
+font-size: 18px;
+text-align:justify
+}
+
+/*  destacada y imagen */
+.destacar {
+background-color:#3498db;
+display:flex;
+align-items:center;
+justify-content:  space-between;
+flex-wrap:  wrap;
+gap:30px;
+
+}
+.destacar h2 {
+color:#fff;
+border-bottom:3px solid #fff
+}
+.destacar .texto {
+flex:1;
+min-width:300px
+}
+.destacar .texto p {
+color:#fff;
+font-size:18px
+}
+.destacar img {
+max-width:350px;
+width:100%;
+height:auto;
+}
+
+/* lista */
+section ul {
+list-style-type:none;
+padding:0;
+margin:0
+}
+section li {
+border-left:5px solid #3498db;
+padding:15px 20px;
+margin-bottom:15px;
+background-color:#ecf0f1;
+transition:all 0.4s ;
+font-size:1.05em
+}
+section li:hover {
+background-color:#3498db;
+color:#fff;
+font-weight:bold;
+transform:translateX(-10px)
+}
+
+/* formulario  */
+.formulario label {
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+color:#2c3e50;
+font-size: 18px
+}
+.formulario input,
+.formulario textarea {
+width:100%;
+max-width:500px;
+padding:12px 15px;
+margin-bottom:20px;
+border:2px solid #ddd;
+border-radius: 5px;
+font-size:1em;
+font-family:Arial,Helvetica,sans-serif;
+box-sizing:border-box
+}
+.formulario input:focus,
+.formulario textarea:focus {
+outline:none;
+border-color:#3498db;
+
+}
+.formulario textarea {
+height:130px;
+resize:none
+}
+.formulario button {
+background-color: #3498db;
+color:#fff;
+padding:12px 35px;
+font-size: 18px;
+font-weight:bold;
+border:none;
+border-radius:50px;
+
+transition:all 0.3s;
+
+}
+.formulario button:hover {
+background-color: #27ae60;
+transform:translateY(-5px);
+box-shadow:0 5px 12px rgba(0,0,0,0.3)
+}
+.formulario .mensaje {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.formulario .mensaje textarea {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+
+/*la parte de abajo*/
+footer {
+text-align:center;
+background-color:#2c3e50;
+padding:25px 20px;
+color:#ecf0f1;
+margin-top:40px
+}
+footer p {
+margin:8px 0;
+font-size:1em;
+color:#3498db;
+}

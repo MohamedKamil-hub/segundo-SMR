@@ -1,4 +1,4 @@
-[ver en GitHub]()
+[ver en GitHub](https://github.com/MohamedKamil-hub/segundo-SMR/tree/main/itinerario-de-empleabilidad-profesional/proyecto_navidad_fol)
 ### 1. La idea
 Soy Mohamed Kamil el kouarti la idea que e propuesto se me ocurrió mientras trabajaba con Zabbix. Estaba ajustando umbrales de alerta para CPU y pensé que en vez de solo avisar cuando ya está todo mal, sería mucho mejor que el sistema pudiera predecir problemas y dejar probar sus soluciones sin riesgo.
 

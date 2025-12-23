@@ -2,9 +2,9 @@
 **mohamed kamil el kouarti mecchidan**
 Seguridad Informática 2º SMR  |  Práctica JTR
 23/12/2025
-[Repositorio en GitHub]
+[Repositorio en GitHub](https://github.com/MohamedKamil-hub/segundo-SMR/blob/main/seguridad-informatica/mohamed_kamil_el_kouarti_mecchidan.md.md)
 ## Objetivo
-El objetivo de esta práctica es aprender a usar John the Ripper Jumbo para crackear diferentes tipos de hashes con varios modos. Aunque muchos hashes son ficticios a propósito (como dijo la profesora), el foco está en demostrar que se usan los comandos correctos y se entiende el proceso en auditorías de seguridad.
+El objetivo de esta práctica es aprender a usar John the Ripper para crackear varios tipos de hashes con varios modos. con el foco está en demostrar que se usan los comandos correctos y se entiende el proceso en auditorías de seguridad.
 ## Preparación del entorno
 Instalé las herramientas necesarias y descargué los archivos con estos comandos:
 ```bash
@@ -32,7 +32,6 @@ asi que robé forzando el formato:
 Resultado: `No password hashes loaded (see FAQ)`
 
 **Por qué:** El modo auto es el primero que se usa en auditorías para probar métodos rápidos. 
-Aquí no funcionó porque el hash es ficticio.
 También probé modo single y comprobé que mi version de John si tiene soporte para SHA-512.
 ![](../fotos/Pasted%20image%2020251223154303.png)
 

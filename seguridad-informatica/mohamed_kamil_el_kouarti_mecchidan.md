@@ -41,7 +41,7 @@ También probé modo single y comprobé que mi version de John si tiene soporte 
 Comando usado:
 `john --show hashes_sistema.txt`
 Resultado: 0 password hashes cracked, 0 left
-Por qué: Este comando lee el archivo john.pot donde se guardan las contraseñas ya crackeadas. Es útil para ver resultados sin repetir el ataque.
+Este comando lee el archivo john.pot donde se guardan las contraseñas ya crackeadas. Es útil para ver resultados sin repetir el ataque.
 ### ¿Qué contraseñas aparecen como crackeadas?
 Ninguna, porque el formato ficticio impidió cargar el hash.
 
@@ -58,7 +58,8 @@ John the Ripper ha detectado automáticamente los hashes del archivo **hashes_wo
 Por eso solo cargo 4 hashes tipo LM e ignoro otros formatos como SHA1, NT....
 Además al usar el rockyou que contiene contraseñas en minúsculas y mixtas, no ha encontrado coincidencias porque LM convierte todo a mayúsculas y divide la contraseña en dos partes de 7 caracteres .
 
-- Resultado: 0 contraseñas crackeadas.
+Resultado: 0 contraseñas crackeadas.
+
 ![](../fotos/Pasted%20image%2020251223161223.png)
 
 Liste el contenido para ver el formato de los hashes:
@@ -77,7 +78,7 @@ john --format=NT --wordlist=rockyou.txt hashes_wordlist.txt
 ```
 ![](../fotos/Pasted%20image%2020251223161450.png)
 
-**Por qué:** Los hashes son puros de diferentes algoritmos. Cuando John no detecta bien el formato o estan mezclados, hay que usar `--format=` para que el ataque funcione bien. Esta es una práctica común en auditorías para asegurar que el ataque se aplique al algoritmo correcto.
+**Porque** Los hashes son puros de diferentes algoritmos. Cuando John no detecta bien el formato o estan mezclados, hay que usar `--format=` para que el ataque funcione bien. Esta es una práctica común en auditorías para asegurar que el ataque se aplique al algoritmo correcto.
 ### Muestra las contraseñas crackeadas.
 Comandos usados:
 ```bash
@@ -108,7 +109,7 @@ Comando usado:
 
 Resultado: `No password hashes loaded (see FAQ)`
 
-**Por qué:** El modo de fuerza bruta se usa cuando fallan los ataques más rápidos (diccionario, reglas, máscara). John  prueba todas las combinaciones posibles empezando por las más cortas. 
+**Porque** el modo de fuerza bruta se usa cuando fallan los ataques más rápidos (diccionario, reglas, máscara). John  prueba todas las combinaciones posibles empezando por las más cortas. 
 este modo se usa como último recurso porque puede tardar hasta meses dependiendo de la contraseña y el hardware.  como los hashes están preparados, la contraseña será corta para que se crackee rapido.
 
 Contenido del archivo:
@@ -118,7 +119,7 @@ Contenido del archivo:
 Aquí no cargó porque el prefijo hash_inc: no existe en John
 ### Muestra la contraseña encontrada.
 `john --show hashes_incremental.txt`
-Resultado: `0 password hashes cracked, 0 left`
+`0 password hashes cracked, 0 left`
 no cargó ningún hash `No password hashes loaded`
 
 El hash no tiene formato estándar `hash_inc:ABC123FICTICIO`.  john al no saber el tipo de hash, no puede cargarlo ni aplicar ningún ataque.
@@ -140,7 +141,7 @@ Patrón: 3 letras minúsculas + 1 número
 ### Lanza un ataque con la máscara ?l?l?l?d.
 Comando usado:
 `john --mask=?l?l?l?d hash_mask.txt`
-Resultado: `No password hashes loaded`
+`No password hashes loaded`
 
 Contenido del archivo:
 mask_hash:XYZ987FICTICIO
@@ -161,7 +162,7 @@ John responde `No password hashes loaded`.
 El hash tiene un formato no estándar `mask_hash:XYZ987FICTICIO`. John solo procesa hashes en formatos conocidos (MD5, sha512crypt, NT, etc.). Al no reconocer el tipo, no carga el hash y no puede aplicar ningún ataque, ni siquiera el modo máscara.
 ### Muestra la contraseña encontrada.
 `john --show hash_mask.txt`
-Resultado: `0 password hashes cracked, 0 left`
+ `0 password hashes cracked, 0 left`
 
 No se ha crackeado ninguna contraseña porque el hash no fue cargado debido a su formato desconocido.
 El ataque por máscara es muy potente porque aprovecha información parcial del patrón para reducir el número de candidatos frente a la fuerza bruta.
@@ -181,7 +182,7 @@ John no reconoce este formato. Por eso devuelve **No password hashes loaded**.
 ![](../fotos/Pasted%20image%2020251223162742.png)
 
 
-**Por qué:** En WPA-PSK real, diccionario con rockyou.txt es el ataque más efectivo porque muchas claves Wi-Fi son débiles. 
+En WPA-PSK real, diccionario con rockyou.txt es el ataque más efectivo porque muchas claves Wi-Fi son débiles. 
 El cracking de redes Wi-Fi WPA/WPA2 se hace en modo offline una vez capturado el handshake. JTR soporta nativamente este tipo de hashes.
 
 El ataque más efectivo es con rockyou.txt, ya que muchas claves Wi-Fi son contraseñas débiles.
@@ -267,7 +268,7 @@ flujo completo de trabajo en un ataque real a archivos RAR protegidos: extracci�
 esto es efectivo contra contraseñas débiles. El cifrado RAR5 es robusto pero depende de la contraseña elegida por el usuario. lo importante es la clave no el cifrado.
 ### Muestra la contraseña encontrada.
 `john --show documento.rar.hash`
-Resultado: 0 password hashes cracked, 0 left
+ 0 password hashes cracked, 0 left
 ![](../fotos/Pasted%20image%2020251223163348.png)
 
 En RAR reales con contraseña débil, diccionario funciona bien. El cifrado es fuerte, pero depende de la contraseña elegida.
@@ -290,7 +291,7 @@ se fuerza `--format=Raw-SHA256` para indicar a John que es un hash SHA-256 puro 
 El ataque de diccionario con rockyou.txt es el más eficiente en este escenario, ya que las contraseñas de usuarios suelen ser débiles y comunes.
 ### Muestra la contraseña crackeada.
 `john --show --format=Raw-SHA256 aplicacion_web.sha256`
-Resultado: `0 password hashes cracked, 0 left`
+ `0 password hashes cracked, 0 left`
 
 En aplicaciones reales se crackea rápido con contraseña común. eso es mala práctica; mejor usar bcrypt  con sal.
 Aunque el comando y el enfoque son completamente correctos para un hash SHA-256 real de una aplicación web, el formato ficticio impide el cracking.

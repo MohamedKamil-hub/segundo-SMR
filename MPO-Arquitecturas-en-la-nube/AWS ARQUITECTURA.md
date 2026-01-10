@@ -909,3 +909,354 @@ aplicar seguridad a todas las capas
 ![[Pasted image 20251217213148.png]]
 
 # Módulo 10: implementación de la supervisión, la elasticidad y la alta disponibilidad
+**Supervision de recursos**
+aplicaciones deben responder con la menor latencia posible 
+metricas sobre la salud operacional, utilizacion de recursos y el rendimiento de la aplicacion.
+
+
+**cloudwatch**
+colecciona y rastrea metricas para servicios AWS atraves de regiones en un repositorio de mtricas
+colecciona logs con Amazon CloudWatch Logs
+calcula estadisticas de metricas y los muestra graficos de las estadisticas de la metricas
+da alarmas para arquitecturas que responden a eventos
+da notificaciones para hacer cambios a recursos monitoreados.
+
+puedes centralizar los registros de todas las aplicaciones en un unico flujo de eventos ordenados por tiempo.
+cuando creas una alarma cloudwatch compara la metrica actual con el umbral que se ha especificado y realiza una accion , enviando una notificacion
+
+Cloudwatch dashboards puede usar los paneles para comparar metricas o alarmas que podrian estar en diferentes regiones
+
+las metricas se tienen que agregar a lo largo del tiempo
+puedes especificar un periodo
+
+**EventBridge**
+usa eventos para conectar los componentes de la aplicacion con buses (usan reglas para hacer coincidir eventos entrantes y enviarlos a los objetivos para su procesamiento ) y pipes que son integraciones entre una fuente y un objetivo
+
+toma decisiones de enrutamiento con reglas configurables 
+
+**Escalado de los recursos de cómputo**
+aplicaciones necesitan manejar grandes cantidades de datos en menos de segundo y estar siempre encendidas y operativas.
+escalado elastico escala dinamica mente
+
+**EC2 auto scaling**
+maneja una coleccion logica de instancias EC2 llamado grupo de auto escalado EC2 a traves de varias zonas de disponibilidad.
+lanza o retira instancias EC2 configuradas por plantillas de lanzamientos
+cambia el tamaño de la instancia basandose en eventos de politicas de escalafo, notificaciones de salud o acciones programadas.
+se integra con ELB elastic load balancing para enviar nuevas registros de instancias y recibir notificaciones de salud.
+balancea el numero de instancias a traves de zonas de disponibilidad.
+**mecanismos de escalado**
+acciones pprogramadas; basandose en una fecha y hora para cargas predecibles
+politicas dinamicas; basado en  metricas para cargas impredecibles.
+politicas predictivas; escala basado en patrones previos de trafico 
+**AWS autocaling**
+	usa un plan de excalado para varios recursos y servicios
+**AWS aplication auti scaling** 
+	escala varios recyrsis con un registro objetivo y escala varios servicios
+
+
+**Escalado de las bases de datos**
+cada servicio de base de datos escala diferente
+en **Amazon Aurora** puedes escalar verticalmente para aumentar almacenamiento y puedes escalar horizontalmente y poner replicas, el volumen cluster abarca las 3 zonas de disponibilidad.
+en **una base  de datos relacional RDS** se puede escalar verticalmente cambiando la clase o tamaño de la instancia o horizonatlmente añadiendo una base de datos de replica .
+en **una tabla de DynamoDB** se puede usar el modo de capacidad bajo demanda para escalar bandose en lecturas y escrituras reales, reduce la carga en la tabla de la base con un index global secundario tablausa el modo de capacidad provisionada que encadena DynamoDB autoscaling, cloudwatch y aplicacion autoscaling para ajustar aprovisionamiento basado en patrones de trafico.
+es util para aplicaciones con rendimiento consitente y predecible 
+
+
+**Uso de equilibradores de carga para crear entornos de alta disponibilidad**
+**ELB**
+distibuye trafico a traves de varios objetivos en una o mas zona de disponibilidad, puede recivbir trafico publico o privado, monitorea la slud de los objetivos con chequeos de salud. enruta trafico a objetivos saludables y escala basandose en el trafico entrante.
+**tipos de balanceadores de carga**
+de aplicacion; se usa para trafico de HTTP, HTTPS, opera en la capa 7 de OSI se usa para arquitecturas de aplicacion
+de red ; funcion en la capa de transporte y se usa para UDP, Ips estatica..
+puerta de entrada; opera en la capa 3 del modelo OSI 
+balanceador de carga clasico; se usa para EC2 de red clasicos, opera en la capa 3 y 7 del modelo OSI
+
+cuando un balanceador de carga recibe una solicitud, evalua las reglas de escucha por orden de prioridad, y selecciona un objetivo del grupo de ojetivos d¡para hacer la accion.
+si hay un problema en la zona de disponibilidad solo se envia trafico a las instancias de EC2 en buen estado de otra zona de disponibilidad.
+
+usando un balanceador de carga de puerta de enlace  especifica para analizar el trafico entrante y saliente mediante dispositivos virtuales escucha y reenvia trafico en una region.
+
+**Route 53**
+es un servicio web DNS que maneja registros de nombres de dominio y les da zonas alojadas.
+da servidores de nombre autorizativos para resolucion DNS y realiza enrutamiento DNS para enrutar trafico a  puntos finales saludables.
+realiza chequeos de estado a direcciones ip o dominios para manejar fallos regionales o de zonas de disponibilidad.
+puede ninnitorear alarmas de CloudWatch
+tiene varias politicas de enrutamiento
+para enrutar trafico de VPC se usan zonas alojadas privadas,
+para enrutar trafico a internet se usan zonas alojadas publicas,
+
+**Aplicación de los principios del marco de AWS Well-Architected a sistemas de alta disponibilidad**
+fiabilidad;  despliega las cargas en varias localizaciones, automatiza la recuperacion para componentes de una sola localizacion.,
+envia notificaciones cuando un evento impacte la disponibilidad.
+
+eficiencia de rendimiento; escala tus recursos de computo dinamicamente
+
+# Módulo 11: automatización de la arquitectura
+Los procesos manuales son propensos a errores, poco fiables e inadecuados para respaldar un negocio ágil.
+donde te esfuerzas mas, en el diseño o el la implementacion
+
+
+**riesgos derivados de los procesos manuales**
+no permite repetibilidad a escala, se añaden cosas manualmente
+no tienes control de versiones, no se puede revertir a una version anterior
+carece de pistas de auditoria, ver cambios en la configuracion
+tiene configuraciones inconsistentes, mantener coherencia
+
+**Beneficios de la automatización**
+**Reduce la intervención manual o el acceso**, te centras en en la configuracion, implementacion y soporte de la infraestructura y aplicaciones de los entornos de produccion
+**Permite entornos reproducibles** escalado  automatico
+**Mejora la productividad**
+**Automatiza las pruebas y el escalado**
+
+
+**Informacion general de la IaC**
+IaC es el proceso de escribir una **plantilla** que aprovisiona y administra tus recursos en la nube
+los humanos la pueden leer y las maquinas lo pueden enteneder y permite que puedas replicar volver a implementar y reasignar infraestructura.
+
+permite implementar entornos complejos rapidamente con  ima sola o varias plantillas. por ejemplo una pila puede incluir todos los recursos necesarios para ejecutar  una aplicacion web, como servidor web base de datos y reglas de redes si ya no necesitas es aplicacion web solo eliminas la pila y ya
+
+se puede crear una plantilla con 3 pilas diferentes una para desarrollo otra para pruebas y otra para el entorno de produccion,
+para actualizar se puede enviar la actualizacion a la plantilla para actualizar todas las pilas 
+
+![[Pasted image 20260109122045.png]]
+
+**cloudformation**
+forma simple de modelar, crear y administrar una coleccion de recursos AWS
+un grupo de recursos  se denomina pila de CloudFormation, solo pagas por uso.
+permite cargar actualizar y eliminar pilas
+permite control de versiones de las implementaciones
+tratas la infraestructura como codigo
+
+**servicios de IaC de AWS que usan CloudFormation** 
+**AWS Elastic Beanstalk;** servicio administrado que auto inicia un entorno  de AWS con el codigo de aplicacion cargado.
+**AWS Quick Starts;** arquitecturas de referencia automatizadas basadas en plantillas de CloudFormation.  de codigo abierto
+**AWS Serverless Aplication Model SAM;** extension de CloudFormation con sintaxis abreviada oara crear infraestructura comun sin servidores.
+**AWS Amplify** un marco de trabajo de desarrollo de aplicaciones web y moviles que necista menos codigo y conocimiento.
+**AWS Cloud Development Kit AWS CDK;** un marco de trabajo de desarrollo de codigo abierto para modelar y aprovisionar recursos con CloudFormation usando lenguajes de programacion ya existentes.
+
+
+**Funcionamiento de CloudFormation**
+1. defines los recursos de AWS que deseas crear, los recursos se definen en una plantilla de CloudFormation, puedes crear una plantilla de 0 o usar un prediseño, si la caracteristica no esta soportada por cloudformation puedes  invocar una funcion AWS Lmbda  durante la creacion de la pila que llame a la API.
+2. cargas la plantilla en CloudFormation o puedes almacenar la plantila en S3 y decir a cloudformation donde esta
+3. ejecutas la accion create stack, cloudformation lee lo que pone la plantilla y crea los recursos deseados en su cuenta AWS. una sola pila puede crear y configurar recursos en un region en varios servicios.
+4. puedes ver el progreso del proceso de creacion de pila  y cuando acabe , el objeto de la pila queda como id 
+la plantilla puede estar en JSON o YAML  ( YAMLmas facil de leer ocupa menos lineas, admite comentarios  y es mas facil de depurar que JSON,
+JSON  es mas confiable  y menos complejo de generar y analizar que YAML)
+.Elija YAML para un formato más legible para humanos y JSON para la compatibilidad cruzada
+
+
+**Anatomía de una plantilla de CloudFormation**
+**Metadatos:**  incluye objetos que proporcionan información adicional sobre la plantilla.
+**Parámetros:**  los valores que se pasan a la plantilla en el tiempo de ejecución (cuando se crea o actualiza una pila).
+**Reglas:**  valida un parámetro o una combinación de parámetros pasados a una plantilla durante la creación o actualización de una pila.
+**Mapeos:**  incluye un mapeo de claves y valores asociados que puede usar para especificar valores de parámetros condicionales, de forma similar a una tabla de búsqueda.
+**Condiciones:** incluye las condiciones que controlan si ciertos recursos se crean o si se asigna un valor a ciertas propiedades de recursos durante la creación o actualización de la pila.
+**Transformación:**  En el caso de aplicaciones sin servidor, la sección Transformación especifica la versión de **AWS SAM** que se va a utilizar.  
+Al especificar una transformación, puede usar la sintaxis de AWS SAM para declarar los recursos de la plantilla.
+**Recursos (obligatorio):**  En esta sección se especifican los recursos de la pila y sus propiedades, como una instancia de **EC2** o un **bucket de S3**.
+**Salidas:**  
+Esta sección describe los valores que se devuelven cuando se consultan las propiedades de su pila.
+
+**Plantilla de recursos: creación de una instancia de EC2**
+los recursos (seccion obligatoria) definen lo que debe crearse en la cuenta AWS
+Las salidas especifican los valores devueltos al crear la pila
+
+**AWS CloudFormation Designer (Designer)**
+herramienta grafica para ver crear y modificar plantillas de cloudformation
+editor de JSON y YAML integrado
+
+**Condiciones de uso**
+Una misma plantilla de CloudFormation permite crear y mantener consistencia entre entornos como desarrollo y producción, mientras que condiciones dentro de la plantilla permiten adaptar diferencias específicas como la escala, garantizando repetibilidad y reduciendo riesgos.
+
+
+**Conjuntos de cambios de CloudFormation**
+se pueden usar conjuntos de cambios para obtener una vista previa de los cambios antes de implementarlos
+creas un conjunto de cambios
+ves el conjunto de cambios
+usas DeletionPolicy para conservar o hacer una copia de segurdidad de un recurso cuando se elmine o actualice su pila.
+
+**Deteccion de desviaciones**
+se puede ejecutar en una pila para detectar desviaciones y ver si la pila se ha desviado de la configuracion de plantilla esperada, la deteccion de desviaciones devuelve info detallada sobre el estado de desviaciones de cada recurso que admite la deteccion de desviaciones en la pila.
+si al eliminar la pila  hay dependencias de recursos sin resolver es posible que falle
+
+**Determinación del alcance y organización de plantillas**
+![[Pasted image 20260109142951.png]]
+las plantillas anidadas son parte de otras pilas
+
+**AWS Quick Starts**
+son implementaciones de referencia , basadas en las prácticas recomendadas de AWS en materia de seguridad y alta disponibilidad
+se pueden usar para crear arquitecturas completas rápidamente o para experimentar o como base de una arquitectura propia.
+cada Quick Start  tiene una plantilla de CloudFormation y una guía con detalles de implementación y configuración.
+
+
+**Desafios de escribir la infraestructura como codigo**
+errores humanos
+diferentes niveles de habilidad y estilos entre los desarrolladores
+tamaño y complejidad de las plantillas
+vulnerabilidades de seguridad
+
+**Amazon Q Developer**
+asistente de codificacion impulsado por IA generativa
+genera codigo y ayuda acomprender, crear, ampliar y operar las aplicaciones de AWS
+escanea codigo en busca de vulnerabilidades 
+realiza actualizaciones y mejoras en el codigo 
+
+
+**planificar** Amazon Q para hacer preguntas y recibir recomendaciones y practicas
+**crear** recomienda código en linea y genera nuevas características , puedes hacerle preguntas a Amazon Q
+**probar y asegurar** ayuda a confirmar que el código funciona y es seguro
+**operar** Amazon Q ayuda a solucionar errores
+**Mantener y modernizar** moderniza código y lo mantiene  acorde a versiones del lenguaje mas recientes.
+
+
+**Prácticas recomendadas de automatización del marco de AWS Well Architected**
+**excelencia operativa** efectué operaciones como código, haz cambios frecuentes, pequeños y reversibles, automatice por completo la integración e implementación.
+**seguridad** automatice las practicas recomendadas de seguridad.
+**fiabilidad** implemente cambios con automatizacion  y use la automatizacion para obtener o escalar recursos.
+**optimizacion de costos** realice la automatizacion de las operaciones.
+
+![[Pasted image 20260109145859.png]]
+
+# Módulo 12: almacenamiento de contenido en caché
+**Almacenar contenido en cache**
+el cache es una capa de almacenamiento de datos de alta velocidad que almacena un subconjunto de datos para que solicitudes futuras de esos datos se entreguen mas rapido y reduce la frequencia con la que se accede a la base de datos principal.
+el cache es mas veloz que una base de datos
+
+**En el cache se deberia almacenar**
+datos estaticos y de acceso frecuente, solo si es una ventaja en velocidad y coste.
+resultados de calculos con uso intensivo de computos
+resultados de consultas de bases de datos complejas de uso frecuente
+
+**beneficios del almacenamiento en cache**
+- **reduce latenica de respuesta**
+- **reduce costos**
+- **alivia la carga en el origen de los datos**
+- **da un rendimiento predecible**
+- **mejora la disponibilidad**
+
+**desafios del almacenamiento en cache**
+- **requiere ingenieria adicional**
+- **requiere que alguien determine como almacenr el cache y tratar objetos obsoletos**
+
+
+**tipos de almacenamiento en cache  y servicios de almacenamiento en cache AWS**
+- **Almacenamiento en cache estatico, periferico** usa servidores de almacenamiento en cache para guardar el contenidor mas cerca de los usarios mediante la CDN que usa la ubicacion mas cercana al cliente para enviarle una copia en cache del contenido. CLOUDFRONT
+- **Almacenamiento en cache de bases de datos** la cache es una capa cercana a la base de datos para mejorar el rendimiento de las aplicaciones **ElastiCache**
+
+**Red de entrega de contenido CDN**
+es un sistema distribuido globalmente de servidores de cache , tiene servidores intermediarios entre el cliente y la acplicacion, almacena en cache copias de archivos solicitados communmente (contenido estatico)
+entrega una copia local del contenido solicitado desde una periferia de cache cercano o un punto de presencia.
+
+puede almacenar imagenes, videos, objetos web, 
+NO puede almacenar datos generados por el usuario ni contendio generado dinamicamente
+
+**CloudFront**
+Es un servicio CDN que entrga contenido de forma segura con baja latencia y altas velocidades.
+Proporciona una dsitribucion de contenido de alta velocidad mediante la entrega de velocidades perifericas.
+mejora la resiliencia de las aplicaciones frente a DDoS 
+
+**La red global periferica de Amazon CloudFront se compone de**
+- **ubiaciones perifericas de CloudFront** mas numerosas y cerca de los usuarios, tienen caches mas pequeñas, ayudan a garantizar que el contenido popular se pueda ofrecer rapidamente a los espectadores
+- **caches perifericas regionales en CloudFront** son menos y estan mas alejadas de los usuarios, tienen caches mas grandes. ayudan con el contenido menos poular.
+
+![[Pasted image 20260110144410.png]]
+**como funciona el almacenamiento en cache en CloudFront**
+1. el usuario solicita acceso a una imagen
+2. el DNS dirige la solicitus a la ubicacion periferica con menor latencia , si el contenido esta en el cache, lo entrega directamente al usuario (paso5) y acaba
+3. si no esta en la cache, cloudfront solicita a la ubicacion de origen
+4. la ubicacion de origen devuelve el objeto a la ubicacion periferica
+5. luego cloudfront reenvia el archivo al usario y lo guarda en su cache para la proxima vez.
+
+TTL es la configuracion que determina cuanto tiempo la ubicaciones deben guardar en cache el contenido.
+
+
+**distribucion en Cloudfront**
+-- especifica una ubicacion de origen de la cual cloudfront obtiene los archivos.
+-- configure la distribucion , indica a cloudfront origenes personalizados de los que obtener archivos
+-- cloudfront pasa a estar disponible 
+-- cloudfront envia la configuracion de su distribucion a las ubicaciones perifericas.
+
+**controlar por cuanto tiempo se almacena contenido en cache**
+poner un TTL maximo, mas bajo mas rapido expira el contenido.
+implementar el control de versiones de contenido, obtiene y almacena en cache nuevos archivos de forma inmediata. con id de version
+especificar encabezados de control de cache, para ver el vencimiento de l contenido de los archivos individuales.
+
+utilizar las solicitudes de invalidacion de cloudfront para provocar el vencimiento de caches perifericas
+
+**Uso de CloudFront para streaming de video**
+se usa un codificador como (Amazon Elastic Transcoder) para formatear  y empaquetar el contenido de video antes de que Cloudfront pueda distribuirlo.
+![[Pasted image 20260110150735.png]]
+
+
+**Mitigación de ataques de DDoS**
+CloudFront mejora la resiliencia de las aplicaciones en AWS ante ataques DDoS, distribuyendo el contenido estatico y dinamico
+ademas un servicio DNS como Route 53  conecta solicitudes de usuarios  con CloudFront y la distribucion de CloudFront envia por procy las solicitudes de contenido dinamico a la infraestructura 
+AWS WAF analiza solicitudes entrantes y bloque amenaxzas antes de que lleguen a los servidores.
+Shield inspecciona el trafico en busca de Cloudfront y permite que solo el trafico valido para las aplicaciones pasen al servicio
+
+**¿Cuándo almacenar en caché la base de datos?**
+- te preocupan los tiempos de respuesta del cliente
+- tienes muchas solicitudes que sobrecargan la base de datos
+- quieres reducir los costos de las bases de datos
+
+
+**ElastiCache**
+es un almacen de datos en memoria de valor clave completamente administrado con latencia de menos de 1 milisegundo, automatiza tareas comunes como deteccion de errores
+esta entre la app y un almacen de datos de origen
+reduce la latencia de acceso y alivia la carga de bases de datos y aplicaciones
+proporciona una cache en memoria rentable y de alto rendimiento
+compatible con motores Redis y  MemCached de codigo abierto
+
+
+**ElastiCache para Memcached**
+es mas basico , puede ejecutar nodos grandes con varios nucleos o subprocesos puede escala horizontalmente, requiere menos matenimiento, multiproceso
+
+**ElastiCache para Redis**
+admite tipos de datos mas complejos
+ordena o clasifica los conjuntos de datos en memoria
+proporciona alta disponibilidad con conmutacion or  error automatica
+admite mensajeria de publicacion y suscripcion
+persiste el almacen de claves
+
+
+
+
+**Componentes de ElastiCache**
+
+Un nodo es el bloque mas pequeño de una implementacion de elasticache.
+es una porcion de RAM segura conectada a la red de tamaño fijo
+Un clúster de ElastiCache es una agrupación lógica de uno o más nodos
+
+Con el motor Memcached, los datos se dividen en hasta 20 nodos de un clúster. Con el motor Redis , puede escalar verticalmente hasta 250 nodos.
+
+
+**TTL**
+se agrega un valor TTL a cada escritura y especifica el numero de segundos o milisegundos que transcurren hasta que vence la clave.
+si el TTL acabo se trata como si los datos no estuvieran en la cache
+Una vez se vence el TTL, la aplicacion consulta la base de datos en busca de los datos.
+
+**Gestion datos obsoletos**
+![[Pasted image 20260110154404.png]]
+
+
+La **carga diferida** 
+la aplicación primero consulta la caché. Si los datos están disponibles, se produce un _hit de caché_ y la respuesta es rápida. Si no están, ocurre un _error de caché_, la solicitud se envía a la base de datos, los datos se devuelven al usuario y se guardan en la caché para futuras peticiones. útil cuando los datos se leen con frecuencia pero se modifican poco, . Su ventaja es que solo se almacena en caché lo que realmente se solicita, evitando llenar la memoria con datos innecesarios. Su desventaja es la latencia en los errores de caché y el riesgo de que los datos queden obsoletos.
+
+La **escritura indirecta** es una estrategia en la que cada vez que se actualizan los datos, primero se escriben en la base de datos y luego se actualiza inmediatamente la caché. Es un enfoque proactivo que garantiza que la caché siempre esté actualizada y reduce la probabilidad de errores de caché. Su principal desventaja es que puede almacenar datos que no se usarán, lo que puede aumentar los costos. Se recomienda cuando los datos necesitan estar actualizados en tiempo real.
+
+
+**Prácticas recomendadas de almacenamiento en caché del Marco de AWS Well Architected**
+
+**Eficiencia de rendimiento**
+implementa patrones de acceso a los datos que usen el almacenamiento en cache
+implementa estrategias para mejorar el rendimiento de las consultas en el almacen de datos
+
+**Fiabilidad**
+Utilice una conectividad de red de alta disponibilidad para los puntos de conexion publicos de su carga de trabajo.
+
+**Optimizacion de Costos**
+haz un modelado de transferencia de datos.
+selecciona los componentes para optimizar los costos de la transferencia de datos.
+implemente servicios para reducir los costos de la transferencia de datos.
+
+# Módulo 13: creación de arquitecturas desacopladas

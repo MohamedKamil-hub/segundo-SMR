@@ -1,6 +1,3 @@
-tarea ftp ssh http virtual host s encrypt  CMS pagina hecha con IA wordpress prestashop
-
-# primer trimestre
 ## 2-10-2025
 DNS bind9
 gestionar dns’s
@@ -750,3 +747,75 @@ dms
 https://www.softaculous.com/apps/ecommerce
 https://rustdesk.com/es/
 jellyfin
+
+##  08-01-2025
+**servicios de streaming  audio y video**
+**streaming** es transmision continua del contenido multimedia  atraves de internet , permite al usuario consumir el contenido a tiempo real sin descargarlo.
+a diferencia de la descarga donde se requiere el archivo completo antes de reproducir , en **streaming se reproduce a tiempo real o bajo demanda mientras se reciben los datos.**
+
+
+**un servicio de streaming se compone de :**
+- **Emisor** servidor de origen que codifica y prepara el contenido para su distribucion
+- **red CDN** content delivery network , distribuye globalmente y reduce latencia
+- **Receptor** Dispositivo cliente que recibe, decodifica y reproduce el flujo multimedia.
+
+
+**Protocolos de Streaming**
+- **RTMP/RTSP** Protocolos clasicos para ingestion de contenido y  control de reproduccion.
+- **HTLS** HTTP LIVE STREAMING segmenta contenido en fragmentos y adapta calidad dinamicamente segun el ancho de banda disponible.
+- **DASH** dynamic adaptive streaming over http, estandar abierto similar a HLS
+- **WebRTC** comunicacion a tiempo real con latencia baja  ideal para videollamdas y streaming se usa UDP 
+
+
+**YOUTUBE** DSH y HLS
+**NETFLIX**  DASH principalmente y HLS para apple 
+**SPOTIFY** Protocolo personalizado sobre HTTP
+**TWITCH** HLS
+**GOOGLE MEET** WEBRTC
+**INSTAGRAM LIVE** RTMP para ingerir contenido en vivo y HLS para distribuir a espectadores
+
+**Infraestructura y Escalabilidad**
+1. **Servidores Origen** codifican el contenido y generan varias versiones con diferentes bitrates
+2. **CDN global** replica contenido en nodos cercanos a los clientes usuarios
+3. **Balanceadores** distribuyen carga entre servidores y autoescala en picos de demanda
+4. **Monitorizacion** sistemas vigilan rendimiento y activan recursos adicionales automaticamente
+
+**Calidad de servicio QoS**
+es un conjunto de tecnologias y tecnicas que gestionan el trafico de red para garantizar un rendimiento optimo de aplicaciones criticas.
+- **latencia** tiempo que tarda un paquete de datos en ir desde el origen hasta el destino
+- **Jitter** variacion en el retardo de la llegada de paquetes jitter alto inestabilidad
+- **Perdida de paquetes** porcentaje de paquetes de datos que se pierden o descartan en transito
+- **ancho de banda** cantidad maxima de datos que se puedn transmitir  en una conexion y periodo de tiempo
+
+**Seguridad y control en streaming**
+- **Autenticacion de Usuarios** login y gestion de sesiones
+- **cifrado de flujos** TLS/SSL para cifrar la comunicacion entre servidor y cliente 
+- **control parental** filtrar contenido por edades
+- **DRM** digital rights management para proteger derechos de autor y revenir plagio
+
+
+**Icecast**
+servidor de streaming de audio profesional de codigo abierto  usado para radio podcast en directo
+tiene funte de audio, servidor inecast que procesa gestiona multiples streams y distribuye a oyentes simultaneos
+
+
+**Jellyfin**
+lo montaremos y es como tener netflix con contenido personal sin dependencias externas y en casa
+es un sistema de medios completo y gratis
+
+**owncast**
+plataforma de streaming en directo como twitch  de codigo abierto
+
+
+**nginx con modulo HLS**
+permite recibir flujos RTMP y distriburilos como HLS 
+![[Pasted image 20260110222042.png]]
+
+
+**Resumen final**
+el streaming es un servicio de red complejo que integra multiples tecnologias:
+- **HTTP**  para la entrega de contenido
+- **ESCALABILIDAD**  CDN y nube para alcance global
+- **DNS** para descubrimiento de servicios
+- **BALANCEO DE CARGA** distribuir para alto trafico
+- **SEGURIDAD** cifrado y DRM para proteccion de contenido

@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seguridad-informatica/mohamed_kamil_el_kouarti_mecchidan.md.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mohamed_kamil_el_kouarti_mecchidan.md"
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,22 +182,30 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a332a5612fcb3425",
+  "active": "83dceeab65e71f2c",
   "lastOpenFiles": [
-    "seguridad-informatica/mohamed_kamil_el_kouarti_mecchidan.md.md",
+    "servicios-de-red/clases/apuntes.md",
+    "fotos/Pasted image 20260110222042.png",
+    "MPO-Arquitecturas-en-la-nube/AWS ARQUITECTURA.md",
+    "fotos/Pasted image 20260110154404.png",
+    "fotos/Pasted image 20260110150735.png",
+    "fotos/Pasted image 20260110144410.png",
+    "fotos/Pasted image 20260109145859.png",
+    "fotos/Pasted image 20260109142951.png",
+    "fotos/Pasted image 20260109122045.png",
+    "MPO-Arquitecturas-en-la-nube/temp.md",
+    "servicios-de-red/preguntas.md",
+    "servicios-de-red/1. Práctica de Servicios en Red.md",
+    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
+    "servicios-de-red/clases/actividad ssh.md",
+    "servicios-de-red/test.md",
+    "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
     "README.md",
+    "seguridad-informatica/mohamed_kamil_el_kouarti_mecchidan.md",
     "seguridad-informatica/clases/Untitled.md",
     "fotos/Pasted image 20251223173544.png",
     "fotos/Pasted image 20251223173131.png",
     "fotos/Pasted image 20251223170304.png",
-    "fotos/Pasted image 20251223163348.png",
-    "fotos/Pasted image 20251223163058.png",
-    "fotos/Pasted image 20251223162742.png",
-    "fotos/Pasted image 20251223162619.png",
-    "fotos/Pasted image 20251223162254.png",
-    "fotos/Pasted image 20251223161809.png",
-    "fotos/Pasted image 20251223161450.png",
-    "servicios-de-red/preguntas.md",
     "seguridad-informatica/clases/REPASO.md",
     "seguridad-informatica/clases/apuntes.md",
     "aplicaciones-web/PRÁTICA EVALUABLE/GitHub.md",
@@ -214,19 +223,12 @@
     "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol/Tarea Evaluable 01 Validando la idea de negocio.md",
     "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol.zip",
     "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol/buyer-persona.pdf",
-    "itinerario-de-empleabilidad-profesional/mohamed_kamil_el_kouarti_modelcanvas.pdf",
     "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/readme.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/mohamed_kamil_kouarti_mechhidan_sostenibilidad.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/IMPLEMENTACIÓN DE UN SISTEMA DE ECONOMÍA CIRCULAR EN UN CENTRO DE DATOS.md",
     "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
     "Sin título.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/temas/17-11-2025.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/clases.md",
-    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
-    "servicios-de-red/Sin título.md",
-    "itinerario-de-empleabilidad-profesional/clases/27-11-2025.md",
-    "servicios-de-red/1. Práctica de Servicios en Red.md",
-    "servicios-de-red/clases/apuntes.md",
     "sistemas-operativos-en-red/Untitled.canvas"
   ]
 }

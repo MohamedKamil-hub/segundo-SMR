@@ -1260,3 +1260,115 @@ selecciona los componentes para optimizar los costos de la transferencia de dato
 implemente servicios para reducir los costos de la transferencia de datos.
 
 # Módulo 13: creación de arquitecturas desacopladas
+**acoplamiento ajustado** sistema en el que los componentes enlazados dependen unos de los otros en la medida en que los cambios o errores en  e un componentes hacen lo mismo en otros.
+esto aumenta la complejidad del escalado ya que una interrupcion de la aplicacion afecta a todos los servidores web conectados y cada servidor neesita varias conexiones que deben actualizarse en el codigo.
+
+una forma de aliviar los problemas de una arquitectura de acoplamiento es introducir un componente intermedio entre la capas dependientes.
+![[Pasted image 20260111125052.png]]
+
+el acoplamiento ajustado tambien puede aplicarse dentro de una aplicacion donde los cambios en una funcion requieren mantenimiento de toda la aplicacion.
+
+**arquitectura de microservicios** divide las funciones de la aplica ion en partes que pueden escalarse y fallar de forma independiente, cada microservicio es atonomo para que las aplicaciones tengan componentes reutilisables y escalables, se recomienda que las interraciones de los componentes sean asincronas, asi la interracion no necesita respuesta inmediata.
+
+**boker de Amazon MQ** el boker almacena los mensajes mediante el servicio Amazon Elastic File System o Amazon elastic block store.
+
+**Acoplamiento debil** resuelve problemas de integracion ajustada .
+ayuda a asilar el comportamiento de un componente de otros componentes que dependen de el , lo que aumenta la resiliencia y la agilidad, la implementacion de un  acoplamiento debil entre dependencias avita que un error en un componente afecte  a otro componente.
+puede ser sincrona( un intermediario entre capas) o asincrona (mediante mensajes o colas)
+
+**mensajería punto a punto**
+puede desacoplar las aplicaciones de forma asincrona 
+se usa cuando la aplicación remitente envia un mensaje solo a una aplicacion receptora especifica
+aplicacion remitente es productor
+aplicacion receptora es consumidor.
+el productor coloca un mensaje en la cola, la cola almacena el mensaje hasta que se recupera, el consumidor obtiene el mensaje de la cola
+
+
+**Amazon Simple Queue Service SQS**
+servicio de cola de mensaje administrado por aws
+integra y desacopla sistemas de software y componentes de aplicaciones. y asi las aplicaciones se ejecuten y fallen de forma independiente.
+proporciona capacidades de colocacion en cola de mensajes de alta disponibilidad, seguras y duraderas.
+proporciona una interfaz de la consola de administracion de AWS y una API de servicios web.
+
+- evitas la necesidad de administrar el software de mensajeria o mantener la infraestructura.
+- entregas grandes valumenes de datos sin perder mensajes
+- envia informacion confidencial de forma segura entre aplicaciones
+- escala automaticamente segun uso
+
+**componentes basicos de amazon SQS**
+- **mensaje** 256 KB max, puede estar en ka cola hasta que se elimine explicitamente o supere el periodo de retencion de mensajes en cola.
+- **cola** 2 tipos: estandar, primero en entrar primero en salir FIFO
+- **cola de mensajes fallidos** se puede asociar a cualquier cola y almacena mensajes que no se pueden consumir bien.
+
+**tipos de cola**
+- **cola estandar** entrega al menos una vez, mensajes pueden entregarse a distinto orden del que fueron enviados, rendimiento ilimitado
+- **cola FIFO** entrega FIFO, procesa solo 1 vez, alto rendimiento. 300 llamadas a APi por segundo por operacion API
+usa cola estándar cuando la aplicacion del consumidor pueda procesar mensajes no ordenados y que llegan mas de una vez, si no usa cola FIFO
+
+
+**configuracion de colas**
+
+**tipo de sondeo**
+- **sondeo breve** tiempo de espera para recibir mensajes es 0 segundos
+- **sondeo prolongado** de mas de 0 segundos hasta 20 seg
+
+**visibilidad de los mensajes**
+periodo durante el cual ammazon SQS impide que otros consumidores reciban y procesen el mismo mensaje
+ayuda a garantizar que un mensaje no se procese varias veces y provoque duplicaciones.
+
+**Cómo funciona la cola de mensajes de SQS**
+1. un productor envia mensaje a la cola y  el mensaje se distribuye entre los servidores de la cola redundantemente.
+2. el consumidor  recupera el mensaje  de la cola y comienza el tiempo de espera de visibilidad, durante este tiempo otros consumidores no pueden procesar el mensaje.
+3. tras procesar el mensaje el consumidor lo elimina de la cola durante el tiempo de espera para evitar que el mensaje se reciba de unuevo cuando caduque el tiempo.
+
+
+**casos practicos de amazon SQS**
+- para colas de trabajo
+- operaciones por lote y bufer
+- descarga de solicitudes
+- activacion de amazon ec2 auto scaling
+
+**mensajeria de publicacion y suscripcion**
+puede desacoplar las aplicaciones de forma asincronica, la mensajeria de pub/sub se usa cuando la aplicacion remitente envia un mensaje a varias aplicaciones receptoras y tiene poco o ningun conocimiento sobre las aplicaciones receptoras
+aplicacion remitente es publicador
+receptora es suscriptor
+
+**Amazon Simple Notification Service SNS**
+es un servicio de mensajeria ilimitada en cualquier mmento de pub/sub completamente administrado
+ayuda a desacoplar aplicaciones mediante notificaciones.
+proporciona capacidades de notificacion escalables , seguras y rentables.
+proporciona una interfaz de la consola de administracion de AWS y una API de servicios web
+
+
+**tipos de suscriptores**
+- **Correo electrónico:** Mensaje enviado a una dirección de correo registrada (texto o JSON).
+- **Mensajería de texto móvil (SMS):** Mensaje enviado a un número de teléfono registrado.
+- **Notificaciones push móviles:** Mensaje enviado a dispositivos móviles como notificación push.
+- **Punto de conexión HTTP/HTTPS:** Mensaje enviado a una URL mediante HTTP POST.
+- **Función AWS Lambda:** Mensaje enviado a una función Lambda para ejecutar lógica personalizada.
+- **Cola SQS:** Mensaje enviado a una cola SQS para su procesamiento posterior.
+- **Amazon Kinesis Data Firehose:** Mensaje enviado a un flujo de Firehose para almacenamiento y análisis.
+
+**casos practicos de Amazon SNS**
+notificacion de alertas de aplicaciones y sistemas
+notificacion por correo electronico y mensaje de texto
+notificaciones push moviles
+
+**consideraciones importantes a la hora de utilizar Amazon SNS:**
+cada mensaje de notificacion contiene un unico mensaje publicado
+cuando un mensaje se entrega no se puede recuperar
+
+**Comparación de Amazon SNS y Amazon SQS**
+![[Pasted image 20260111155759.png]]
+
+**Amazon MQ**
+es un servicio de broker de mensajes completamente administrado.
+facilita la configuracion , funcionamiento y administracion de un broker de mensajes Apache ActiveMQ o RabbitMQ
+proporciona una solucion basada en temas y colas para aplicaciones de acoplamiento debil
+permite que las aplicaciones y los componentes de software se comuniquen mediante varios lenguajes de programacion , sistemas operativos y protocolos  de mensajeeria formales.
+
+si intentas integrar aplicaciones en las instalaciones con aplicaciones en la nube AWS, recomienda utilizar Amazon MQ, es compatible con API y protocolos de estandares abiertos
+![[Pasted image 20260111160408.png]]
+
+# Módulo 14: creación de arquitecturas y microservicios sin servidor
+

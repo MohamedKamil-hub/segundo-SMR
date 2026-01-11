@@ -625,3 +625,131 @@ Mensaje esperado: `Hi your_user_name! You've successfully authenticated...`
 
 
 
+## tema 4 legislacion administracion y servicios de impresion
+
+legislacion en seguridad informatica
+
+**ley**: niorma juridica que debe se cumplida por todos  y tiene un rango superiror a los reglamentos
+**reglamentos;** norma de rango inferior a la ley que desarrolla y concreta lo establecido en esta , facilita la aplicacion de las leyes
+
+la ley establece los principios generales y el reglamento proporciona detalles especificos obre como aplicar esos principios.
+
+**proteccion de datos**
+conjunto de medidas y politicas destinadas a salvaguardarla privacidad y la seguridad de la informacion personal
+lo mas importante es la ley organica de protecion de datos LOPD y luego el reglamento general de proteccion de datos  RGPD son los principales normativas que regular la proteccion de datos en españa
+
+
+ **ley organica de protecion de datos LOPD**
+ normativa española que regula el tratamiento de datos personales, busca garantizar y proteger los derechos fundamentales de las persona, su derecho a la intimidad personal y familiar.
+ establece principios y obligaciones para el trataminto de datos presonales, derechos de los individuos en relacion con su informacion personal.
+
+inluye:
+- **derecho de acceso:** permite conocer que datos personales se tratan y con que finalidad
+- **derecho a la rectificación:** permite solicitar correccion de datos personales
+- **derecho a cancelacion** solicitar eliminacion de datos personales cuando ya no sean necesarios
+- **derecho de oposicion** oponerse al tratamiento de mis datos personales en circunstancias
+
+la LOPD tambien establece obligaciones para las organizaciones que manejan datos personales como necesitar consentimiento expklicito de los individuos para tratar sus datos y proteger estos datos.
+
+
+**agencia española de proteccion de datos AEPD**
+organismo encargado de velar por cumplimiento de normativa de protección de datos española
+garantiza y protege los derechos de las personas en relación con el tratamiento de sus datos personales.
+- vela por el cumplimiento de la LOPD y el RGPD por parte de organizaciones y empresas
+- ofrece orientacion a ciudadanos sobre sus derechos y obligaciones de porteccion de datos
+- impone sanciones a quien no cummpla la normativa
+- conciencia y forma en materia de proteccion de datos
+
+
+**tratamiento de datos personales**
+- la voluntad se manifiesta a traves del consentimiento
+- pleno conocimiento del tratamiento que se les va a hacer a los datos
+- ![[Pasted image 20260111201625.png]]
+- principios para el tratamiento de los datos por parte del responsable del fichero , principios y obligaciones impuestas para garantizar su correcto tratamiento, conservacion, acceso y destruccion.
+-
+
+**niveles de seguridad**
+- basico, medidas de seguridad simples como la identificacion y la autenticacion de usuarios
+![[Pasted image 20260111202657.png]]
+- medio, incluye control de acceso y registro de actividad
+![[Pasted image 20260111202718.png]]
+- alto, como encriptacion de datos y auditorias de seguridad periodicas.
+![[Pasted image 20260111202738.png]]
+
+**sanciones**
+- administrativas, impuestas por la agencia española de proteccion de datos
+- penales, los responsables pueden entrar a prision
+- civiles, pueden reclamar indemnizaciones por daños y prejuicios
+
+**reglamento general de proteccion de datos RGPD**
+auditoria del flujo de datos
+contar con una base legal solida
+aplicar medidas de seguridad RGPD
+registro de actividades de tratamiento
+gestion segura de derechos
+delegacion de proteccion de datos
+
+
+
+**reglamento general de proteccion de datos RGPD**
+normativa europea que regula el tratamiento de datos personales
+**principios fundamentales**
+
+1. licitud, leatad y transparencia  en tratamiento de datos
+2. limitacion y especifidad de la finalidad de los datos
+3. minimizacion de datos, solo adecuados
+4. exactitud de los datos
+5. limitacion del plazo de conservación de los datos
+6. integridad y confidencialidad
+7. responsabilidad proactiva
+**derechos de los intresados**
+- obtener confirmacion de si  se estan tratando los dato y acceder a ellos
+- correccion de datos personales
+- solicitar eliminacion de datos cuando no sean necesarios
+- solicitar info del tratamiento de los datos personales
+- recibir datos personales
+- opnerse al tratamiento de los datos personales
+
+**donde se aplica**
+estados miembros de la union europea y  empresas que manegen datos de la union europea
+![[Pasted image 20260111210800.png]]
+
+
+**LSSI ley de servicios de la sociedad de la informacion**
+ley que garantiza que las actividades comerciales en internet tengan el mismo trato que las fisicas.
+con la diferenciacion de que el producto que adquirimos puede ser digital
+**obligacion de informar, incluir  aviso legal , politica de privacidad y politica de cookies**
+comunicaciones comerciales, no se puede enviar correo sin consentimiento
+contratacion electronica, condiciones generales de contratacion
+
+**disposicion**
+1. proporcionar info clara y accesible sobre la identidad del servicio y su precio
+2. consentimiento expreso del usuario para el tratamiento de sus datos personales  y envió de correo
+3. identificar claramente mensajes publicitarios y dar opcion de opnerse a recibirlo
+4. responsabilidad a los prestadores de servicios en relación con el contenido que transmiten o alojan
+![[Pasted image 20260111212127.png]]
+
+**COMO CUMPLIR CON LSSICE 34/2002**
+1. incluir info clara sobre la identidad de la empresa
+2. publicar politica de privacidad que informe sobre el tratamiento de datos personales
+3. obtener consentimiento expreso de los usuarios para tratamiento de sus datos y envio de de comunicaciones comerciales
+4. establecer condiciones de uso del sitio web
+5. implementar mecanismos de reclamacion
+
+![[Pasted image 20260111213213.png]]
+
+
+**sanciones por incumplimiento de la LSSICE**
+sanciones administrativas, multas, suspensión.
+ infracciones que pueden ser leves, graves y muy graves
+
+**normas de gestión  de seguridad de la información**
+establece un marco de referencia para la implementación mantenimiento y mejora de un **sistema de gestión  se seguridad de la información. SGSI**
+
+**ISO 27001**
+estándar internacional que especifica requisitos para establecer implementar y mejorar un SGSI
+se centra en la gestion de la seguridad de la informacion.
+**SGSI**
+**sistema de gestión  se seguridad de la información. SGSI** enfoque sistematico para gestionar info sensible  de una organizacion
+**ISO**
+organizacion internacional de la normalizacion, entidad no gubernamental que desarrolla y publica normas internacionales

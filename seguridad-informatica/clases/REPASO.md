@@ -1,4 +1,7 @@
 
+
+
+## Tema 2: Medidas de seguridad y controles
 la seguridad informática es un conjunto de principios, procesos y controles que se aplican de forma continua para proteger la información y los servicios. 
 ![[Pasted image 20251107163411.png]]
 ## Aspectos de la seguridad 
@@ -307,7 +310,7 @@ Actualización constante del plan según cambios tecnológicos o de negocio.
 
 
 
-tema 3: Seguridad Física y Lógica 
+## **tema 3: Seguridad Física y Lógica** 
 
 Clasificación de la Seguridad Informática 
 
@@ -703,19 +706,19 @@ normativa europea que regula el tratamiento de datos personales
 6. integridad y confidencialidad
 7. responsabilidad proactiva
 **derechos de los intresados**
-- obtener confirmacion de si  se estan tratando los dato y acceder a ellos
-- correccion de datos personales
-- solicitar eliminacion de datos cuando no sean necesarios
-- solicitar info del tratamiento de los datos personales
-- recibir datos personales
-- opnerse al tratamiento de los datos personales
+- **acceso** obtener confirmacion de si  se estan tratando los dato y acceder a ellos
+- **rectificacion** correccion de datos personales
+- **supresion** solicitar eliminacion de datos cuando no sean necesarios
+- **limitacion del tratamoiento** solicitar info del tratamiento de los datos personales
+- **portabilidad** recibir datos personales
+- **oposicion** oponerse al tratamiento de los datos personales
 
 **donde se aplica**
 estados miembros de la union europea y  empresas que manegen datos de la union europea
 ![[Pasted image 20260111210800.png]]
 
 
-**LSSI ley de servicios de la sociedad de la informacion**
+**ley de servicios de la sociedad de la informacion y del comercio electronico**   **(LSSICE / LSSI)**
 ley que garantiza que las actividades comerciales en internet tengan el mismo trato que las fisicas.
 con la diferenciacion de que el producto que adquirimos puede ser digital
 **obligacion de informar, incluir  aviso legal , politica de privacidad y politica de cookies**
@@ -740,16 +743,71 @@ contratacion electronica, condiciones generales de contratacion
 
 
 **sanciones por incumplimiento de la LSSICE**
-sanciones administrativas, multas, suspensión.
+sanciones administrativas, multas, suspensión. de 30.000 a hasta 600.000 euros
  infracciones que pueden ser leves, graves y muy graves
 
 **normas de gestión  de seguridad de la información**
 establece un marco de referencia para la implementación mantenimiento y mejora de un **sistema de gestión  se seguridad de la información. SGSI**
 
-**ISO 27001**
-estándar internacional que especifica requisitos para establecer implementar y mejorar un SGSI
-se centra en la gestion de la seguridad de la informacion.
 **SGSI**
 **sistema de gestión  se seguridad de la información. SGSI** enfoque sistematico para gestionar info sensible  de una organizacion
+
 **ISO**
 organizacion internacional de la normalizacion, entidad no gubernamental que desarrolla y publica normas internacionales
+se usan en la Union Europea y el NIST para Estados Unidos
+
+
+**ISO 27001**
+estándar internacional que especifica requisitos para establecer implementar y mejorar un SGSI
+se centra en la gestión de la seguridad de la información.
+**requisitos**
+1. **contexto de la organización** comprender el contexto interno y externo de la organización y de las partes interesadas.
+2. **liderazgo** en la gestión de la seguridad de la información
+3. **planificación** identificar riesgos y oportunidades
+4. **soporte** provision de recursos , formacion y concienciacion para el personal
+5. **operacion** controles de seguridad y gestion de incidentes
+6. **evaluacion del desempeño** del SGSI 
+7. **mejora continua**
+
+protege la info sensible y reduce riesgos, mejora la confianza de los clientes y partes interesadas, cumple requisitos legales y normativos
+y mejora la reputación de la organización
+
+la ISO 9001 es la de calidad
+
+
+**ISO/IEC 27002**
+complementa a la 27001, orientada a la implementación de medidas de seguridad y cubre aspectos como la gestión de incidentes, la seguridad en las relaciones con proveedores, seguridad en recursos humanos y la gestión de la continuidad de la seguridad, da directrices de los controles de seguridad que se deben adoptar para mitigar los riesgos identificados . permite rectificación.
+
+**NIST SP 800-53**
+en Estados Unidos regula el marco de ciberseguridad en el marco publico y privado. si no lo cumples pa la carcel.
+
+**delitos informáticos en el código penal**
+- **articulo 197** delitos contra intimidad y el derecho a la propia imagen, intercepción de comunicaciones y acceso no autorizado a datos personales. descubrir secretos o vulnerar intimidad de otros sin su consentimiento. difundir, modificar, usar o acceder de datos reservados personales, agravantes si  la realizan informaticos  y si revelan la religion, orientacion o si se realiza con fines lucrativos
+- **articulo 248** delitos de estafa, fraude informático. con animo de lucro, la persona que cae en la trampa no puede caer intencionalmente.
+- **articulo 264** delitos de daños, destrucción e inutilización a datos informáticos y a sistemas informáticos.
+
+![[Pasted image 20260117170555.png]]
+
+**PREVENCION DELITOS INFORMATICOS
+- prevencion y concienciacion sobre ciberseguridad.
+- uso de tecnologias de proteccion
+- auditorias de seguridad, periodicas
+- protocolos de respuesta  ante incidentes
+
+si afecta a varios paises  miembros lo juzga el parlamento europeo
+
+**modelo COSO**  organizacion de organismos privados, establecida por EEUU, orienta sobre la gestion ejecutiva y de gobierno, etica, empresarial, control interno, gestion del riesgo empresarial , control de fraude y prestacion de informes financieros.
+
+**modelo CobIT** buenas practicas para la gestion de los sistemas de informacion de las compañias.
+
+
+**controles de servicio y organizacion 2 (SOC 2) - estandar internacional realizado por el instituto americano de contables publicos certificados (AICPA)**
+SOC tipo 1; evaluacion puntual en un momento concreto para determinar si los controles implantados por la organizacion han sido diesñados correctamente y son apropiados
+SOC tipo 2; revision mas duradera, los controles de la organizacion son evaluados por un tiempo para determinar que funcionan de manera adecuada por un periodo de evaluacion.
+
+**marco CIS CSC** marco de 18 controles de seguridad
+**Marco SCF** proyecto que provee de una guia gratis de controles de privacidad y de ciberseguridad.
+
+**NIST cyberscurity framework**
+marco de ciberseguridad para ayudar a empresas a comprender, gestionar y reducir los riesgos cibernéticos y proteger sus redes  y datos 
+![[Pasted image 20260117180149.png]]

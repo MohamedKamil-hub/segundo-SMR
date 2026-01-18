@@ -867,3 +867,51 @@ Get-Process -computer "127.0.0.1" | where cpu -GT 3 | sort cpu
 con que permisos se ejecuta el script en programador de tareas en la parte de propiedades del script
 
 linux
+# 14-01-2026
+en powershell cada resultado es un objeto
+alias
+
+un hash es un identificador unico de cada cosa
+
+get process -name notrpad | select modlues) .modules
+foreach (elemento in 1..10)
+elemento
+start sleep seconds 5
+get filehash elemento | select hash.path
+
+
+este mismo script en linux
+whereis init
+
+cd proc tiene identificadores de los procesos
+
+
+readlink -f proc 9 exe 
+
+
+fichero =readlink -f proc/i/exe
+ps -eo pid | while read pid; do ficherosreadlink -f proc pid exe
+sha256sum "fichero"
+done
+
+
+![[Pasted image 20260116193325.png]]
+
+sudo ps -eo pid= | while read pid; do readlink -f /proc/$pid/exe  ;done | sort -u | xargs sha256sum
+
+
+
+
+mezcalar powershell y linux  en un script que saque procesos y se los pase a a powershell
+foreach ($fichero in (ps name notepad) modules.filename
+
+wsl sha256sum $fichero.replace(/"/".  replace ":"."")
+procesos.txt
+
+
+#da la url en con la barra lateral mal como cambiar eso convirtiendo la ruta haciendo que llas barras vayan a un lado a otro c
+
+![[Pasted image 20260116194433.png]]
+
+o wslpath -a
+wsl wslpath -a $fichero

@@ -1,5 +1,8 @@
+Mohamed Kamil El Kouarti Mechhidan
+2º SMR ONLINE
+
 # 29-09-2025
-## Presentation
+Presentation
 
 Hi my name is Mohamed Kamil am 18 years old  i was born Avila  , i spend my free time reading comics , playing videogames and  practicing boxing, i choosed SMR cuz i like the freedom it gives and the future it has in the jobs industry specially i like Linux 
 i wanna improve my english mainly because i alwasy find myself in english resources courses fimls and all that major stuff is mainly in english
@@ -15,17 +18,63 @@ Listening
 4. she gives her an introduction to an employee to where they are going to work 
 5. It's an orientation. Ana is speaking,she is the supervisor. She is welcoming new employees to the workplace
 
-Maria
-ana garcia y carlos
-Maria
-room
-extension 205
 
-1. her main porpuse is welcoming an employee
+**p11**
 
-tall
-quite young
+**Practice A1 – Strategic Listening Recognition**  
+Decide Phase
+Listen once for global understanding.
+What is Ana’s main purpose?
 
+- ☐ Giving directions around the city
+- ==☐ Welcoming and orienting a new employee==
+- ☐ Explaining company problems
+- ☐ Introducing the management team
+
+
+
+**Practice A2 – Key Information Extraction**  
+Decide Phase
+Listen again and extract specific details:
+
+- **Your supervisor’s name:** Maria
+- **Ana’s appearance:** with carlos
+- **Your desk number:** 
+- **Who sits next to you:** Maria
+- **Carlos’s appearance:** _____ with ana garcia
+- **Coffee break time:** 
+- **Ana’s phone:** extension 205
+- **First meeting:** _____ at _____ in Room _____
+
+
+
+**Practice A3 – Professional Purpose Analysis**  
+Analyze Phase Why does Ana include physical descriptions in workplace orientation?
+Read the lines again:
+> “I’m tall with short brown hair.”  
+> “He’s very friendly and helpful — quite young with glasses.”
+
+**1. Identify the words**
+
+- **Appearance:** _____
+tall, short brown hair, quite young, with glasses
+- **Personality:** _____
+friendly and helpful
+
+**2. Professional adjectives**  
+Which adjectives sound professional (neutral, respectful)?   Circle:
+
+==friendly== / hot / ==organized== / fat / slim / ==helpful== / bossy
+
+**3. Analysis**
+
+- How do physical descriptions help workplace integration?  help new employees visualize people , recognize other workers easily, 
+- What problems do they solve for new employees?  reduce confusion, awkward interactions, and anxiety about identifying the right people
+- What would happen if she didn’t include these details? New employees feel lost, make social mistakes, or take longer to adapt to the workplace.
+
+
+**Your analysis:**  
+Physical descriptions serve professional purposes because  they help people identify colleagues easily, navigate social interactions smoothly, and integrate more quickly into the workplace.
 
 **vocabulary**
 height tall medium short
@@ -38,9 +87,34 @@ positive traits, friendly, helpul, patient, organized, reliable
 work style hardworking, creative, effcient, careful
 social outgoing, quiet, proffesional, easy-going
 
-
+p12 
 **Describe people**
 Jade, shes a ginger, quite young woman with red lipstick and thin eyebrows, she looks joyful, friendly and trustworthy as an employee
+
+
+p14
+**Practice B1 – Professional Description Categories**  
+Decide Phase
+Sort these workplace description words.
+- **Physical Appearance:** tall, glasses, blonde,, slim, beard,
+- **Personality:**  helpful, organized, patient reliable, young
+
+
+**Practice B2 – Professional Appropriateness**  
+Decide Phase
+Choose the most professional workplace description.
+
+**1. Describing your manager to a client:**
+
+- a) “She’s quite old with grey hair”
+- ==b) “She’s middle-aged with short grey hair and very professional”==
+- c) “She’s ancient and bossy”
+
+**2. Telling a colleague about the new IT person:**
+
+- a) “He’s tall and skinny with thick glasses”
+- ==b) “He’s tall, slim, wears glasses and he’s very helpful”==
+- c) “He’s a tall guy who fixes computers”
 
 
 # 20-10-2025
@@ -51,7 +125,8 @@ Jade, shes a ginger, quite young woman with red lipstick and thin eyebrows, she 
 
 ![[{CE37244E-0FEF-4A23-BA92-FE775177513A}.png]]
 ![[{7BC4BFA9-2B42-46C9-BE36-1CC6931BAC5A}.png]]
-Practice B3: Present Simple Form Application  
+**p15**
+**Practice B3: Present Simple Form Application**  
 Decide Phase: Complete with correct Present  
 Simple forms:  
 1 Ana is (be) tall and has (have) short brown hair  
@@ -62,18 +137,14 @@ Simple forms:
 6 do you  (know) where the IT department is?
 
 
-UNIT 1  
-Practice B4: Error Recognition and Analysis  
-Analyze Phase: Find the errors and explain why  
-they’re wrong:  
+
+**Practice B4: Error Recognition and Analysis**  
+Analyze Phase: Find the errors 
 1 “She always arrive at 9 AM ” >Error:   arrives
-Why wrong: _____  
 2 “Do he work in marketing?” > Error: does  
-Why wrong: _____  
 3 “The cafeteria close at 4 PM ” > Error: closes  
-Why wrong: _____  
 4 “Carlos don’t wear glasses ” > Error: doesn't  
-Why wrong: _____  
+
 
 Produce Phase: Professional Colleague Description  
 Create a complete professional description (60-80  
@@ -102,37 +173,70 @@ formal
 communication
 you may offend the other person
 
+**p18**
+
+**Practice A1 – Register Pattern Recognition**  
+Analyze Phase
+Compare the three introductions and identify what changes.
+
+| **Element**  | **Formal**        | **Standard**    | **Informal** |
+| ------------ | ----------------- | --------------- | ------------ |
+| **Greeting** | Hi everyone       | Hi              | hey          |
+| **Name**     | Full name + title | First name only | nickname     |
+| **Job**      | Job description   | What you do     | no mention   |
+| **Ending**   | polite closing    | Simple closing  | Question     |
+
+**1. Constant elements**
+
+List two elements that stay constant across all three:
+theres always a greeting and a way of closing the conversation. and usually you must give your name to the other person.
+
+**2. Micro-rule**
+More formal = more professional details, more polite endings, more complete names
+
+**Analysis**
+Register changes serve professional purposes because 
 
 
-Analyze Phase: Compare the three introductions and identify what changes:
 
+Greeting + Name + Job/Role + What you do + Polite ending
 
-Element Formal Standard Informal  
-Greeting - Hi everyone -  Name Full name + title  
-- First name  only  Job  description  
-- What you do  
-Ending - - Question  
-1 List two elements that stay constant across  all three  
-2 Micro-rule: More formal = more ______ details, more ______ endings, more ______  names  
-Analysis: Register changes serve professional purposes because _____  
-Professional Introduction Formula: Greeting + Name  
-+ Job/Role + What you do + Polite ending  
-
-Practice A2: Audience Appropriateness  
-Decide Phase: Match each introduction style to the  
-appropriate situation:  
+**Practice A2: Audience Appropriateness**  
+**Decide Phase: Match each introduction style to the**  
+**appropriate situation:**  
 1 Meeting a new client >Introduction _____  
 2 First day team meeting > Introduction _____  
 3 Casual lunch conversation > Introduction  
-_____  
+  
 Analyze Phase: Explain why using the wrong register  
 could cause problems:  
 Wrong register problems (match the mistake with the  
 most likely consequence):  
-A) Too informal with senior management >(x) reduced credibility ( ) friendly rapport ( ) clear hierarchy  
+**A)** Too informal with senior management >(x) reduced credibility ( ) friendly rapport ( ) clear hierarchy  
 
-B) Too formal with close colleagues > (x) distance/  coldness ( ) clarity ( ) speed  
-Complete: Getting register wrong can damage  relations and credibility because it may not be appropiate.
+**B)** Too formal with close colleagues > (x) distance/  coldness ( ) clarity ( ) speed  
+Complete: Getting register wrong because it could damage  relations and credibility which may not be appropiate.
+
+**Practice A3 – Register Selection Challenge**  
+Decide Phase
+Choose the most appropriate introduction.
+**Situation:** Meeting an important client
+- a) “Hey, I’m John I do stuff with computers”
+- ==b) “Good morning, I’m John Smith, Senior IT Consultant. I specialize in system security”==
+- c) “Hi there, I’m John from IT. I fix things when they break”
+
+
+Analyze Phase
+In your selected option, highlight:
+
+- Specific role/title: IT consultant
+- Area of expertise: system security
+- Polite greeting/ending: good morning / i specialize in system scurity
+
+**Question:**  
+Why is that option most effective for this professional context?
+its the one that give the most relevant information for a professional environment
+
 
 
 # Proyecto Introducing yourself in the professional world
@@ -148,11 +252,9 @@ comparativos
 ![[Pasted image 20251117171009.png]]
 ![[Pasted image 20251117171245.png]]
 
-
-Practice B1: Formation Rule Application  
-
-
-Decide Phase: Choose the correct comparative form:  
+**p22**
+**Practice B1: Formation Rule Application**  
+**Decide Phase: Choose the correct comparative form:**  
 1 tall: ==taller than== / more tall than  
 2 helpful: helpfuler than / ==more helpful than==  
 3 good: gooder than / ==better than==  
@@ -160,8 +262,8 @@ Decide Phase: Choose the correct comparative form:
 5 modern: moderner than / ==more modern than==  
 6 bad: badder than / ==worse than==  
 
-Practice B2: Professional Comparison Building  
-Decide Phase: Complete with appropriate comparatives:  
+**Practice B2: Professional Comparison Building**  
+**Decide Phase: Complete with appropriate comparatives:**  
 1 Ana is _taller (tall) than Carlos  
 2 The new office is more modern (modern) than the old one  
 3 Marketing is busier (busy) than HR during  campaign season  
@@ -170,14 +272,13 @@ Decide Phase: Complete with appropriate comparatives:
 6 The morning shift is quieter (quiet) than the  afternoon shift 
 
 
-Practice B3: Professional Context Analysis  
-Analyze Phase: Explain why these workplace compa-  
-risons are useful:  
-Look at the pairs:  
-• “The new system is more efficient than the old one.”  
-• “She is more experienced than other candidates ”  
-1 Underline the compared items  
-3. Circle the criterion (efficient / experienced).
+**Practice B3: Professional Context Analysis**  
+**Produce Phase – Workplace Comparison Creation**
+Compare your current and previous study/work situations using appropriate comparatives:
+The teachers here are **more helpful** than in my previous school.
+The building is **bigger** than my old school.
+The schedule is **more flexible** than before.
+The students are **friendlier** than I expected.
 
 UNIT 1  
 Analysis: Workplace comparisons serve professional  
@@ -213,7 +314,7 @@ we are cooking
 he is walking to the school now
 
 
-
+p25
 **Practice C1: Time Signal Recognition** 
 Decide Phase: Choose Present Simple or Present Continuous based on time signals: 
 1 “I usually start work at 9 AM ” >P. SIMPLE 
@@ -230,8 +331,8 @@ Decide Phase: Choose Present Simple or Present Continuous based on time signals:
 4 We (==have==/are having) meetings every Tues- day We (have/==are having==) one right now
 
 **Practice C3: Usage Analysis Analyze Phase: Explain why each tense is used:** 
-1 “I work in marketing ” (Present Simple) Why: _____ 
-2 “I’m working on a special project ” (Present Continuous) Why: _____  
+1 “I work in marketing ” (Present Simple) Why: it describes a permanent or regular situation 
+2 “I’m working on a special project ” (Present Continuous) u are doing it right now
 3 “We have meetings every Tuesday ” (Present Simple) Why: es un habito
 4 “We’re having a meeting now ” (Present Con- tinuous) Why: lo haces ahora mismo 
 
@@ -241,9 +342,40 @@ Right now: “Right now, I’m attending to the class _____”
 This week: “This week, I’m studying english” 
 Always: “I always listen in English class” 
 
-# 01-17-2025
+# 01-12-2025
 Emails
+**Notice Phase – Professional Email Register Adaptation**
+Read these three emails about the same topic. Notice how formality changes.
 
+**Formal Email (to senior management)**  
+**Subject:** Request for Meeting
+Dear Mr Johnson,  
+I hope this email finds you well. I would like to request a meeting to discuss the new project timeline. Would next Tuesday at 2 PM be convenient for you? I look forward to hearing from you.
+Best regards,  
+María López
+
+---
+**Standard Email (to colleagues)**  
+**Subject:** Question about meeting
+Hi Ana,  
+Could you tell me what time tomorrow’s meeting starts? Also, do I need to bring anything? Thanks for your help.
+María
+
+---
+**Informal Email (to close colleagues)**  
+**Subject:** Printer problem
+Hi Carlos,  
+The printer is broken again! Can you have a look when you have time? Thanks!
+María
+
+**Notice the differences:**
+- **How does the greeting change?** It becomes less formal
+- **What happens to sentence structure?** Sentences get shorter and simpler as formality decreases
+- **How do requests change across formality levels?** Formal are polite and indirect,standard  are clear but friendly,informal  are casual and direct
+- **Why might the same person use different styles?** To match the relationship with the context
+
+
+**p38**
 **Practice A1: Register Impact Analysis Analyze Phase:**
 **Explain what would happen if María used the wrong register:** 
 
@@ -259,9 +391,8 @@ Professional impact: Wrong email register affects workplace relationships by giv
 5 Your best work friend: Formal / Standard / ==Informal==
 
 ![[Pasted image 20251204133144.png]]
-
+p39
 **Practice B1: Email Structure Recognition**
-
 Analyze Phase:  Label each part of this email   Underline the action needed and circle any time detail  
 
 Hi everyone,
@@ -280,6 +411,7 @@ Thanks, Ana
 • 6 _____  polite closing let me know if you have any questions thanks
 • 7 _____ name Ana
 
+p40
 **Practice B2: Subject Line Effectiveness**
 Decide Phase: Choose the most professional subject line:
 
@@ -345,3 +477,83 @@ Mohamed Kamil Kouarti</span>
 pagina 10
 11 A1 A2 A3
 
+
+# 12-01-2026
+professional phone conversation
+**Notice the conversation flow:** 
+**• How does Carlos answer professionally?** he says his full name and department
+**• What does María include in her problem description?** what the problem is about and what did she tried to fix it.
+**• How does Carlos show sympathy and gather information?** he apologizes and aks questions
+**• What makes this conversation efficient and polite?** they give solutions
+**• Which phrases could you use in other workplace phone calls?** 
+
+**p28**
+
+**Practice A1: Phone Structure Recognition Decide Phase: Put these phone conversation elements in logical order (1-6):**
+4 Explain the problem clearly
+1 Answer the phone professionally 
+5 Offer a specific solution 
+6 Thank and close politely 
+3 Express sympathy and ask for details 
+2 Give your name and reason for calling
+
+---
+**vocabulario**
+good morning / afternoon tarde / evening
+thanks for calling
+identify
+express empathy with any generic phrase like am so sorry
+gather info with questions
+offer a solution
+confirm and close
+
+always be polite thank you  high regards  dear
+
+presente perfecto
+he leido comido ...
+cuando se usa
+acciones recientes o relevantes en el momento
+![[Pasted image 20260115124640.png]]
+
+
+lleva
+just, already, yet, ever
+![[Pasted image 20260115125020.png]]
+![[Pasted image 20260115125202.png]]
+
+p32
+**Practice B1 – Form Recognition and Application**  
+Decide Phase
+Choose **have** or **has**:
+
+1. I have tried calling three times today
+2. She has worked here since 2020
+3. have you finished the report yet?
+4. Carlos has fixed my computer
+5. We have never had this problem before
+6. has the meeting started?
+
+
+**Practice B2 – Past Participle Mastery**  
+Decide Phase
+Write the correct **past participle**:
+
+**Regular verbs:**
+- work > worked
+- try > tried
+- help > helped
+- call > called
+- finish > finished
+- start > started
+- check > checked
+- fix > fixed
+
+**Irregular verbs:**
+- make > made
+- take > taken
+- see > seen
+- do > done
+- go > gone
+- be > been
+- get > got / gotten
+- know > known

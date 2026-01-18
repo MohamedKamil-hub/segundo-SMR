@@ -9,7 +9,7 @@ red de contactos
 
 La búsqueda de empleo actual es una estrategia activa que requiere gestionar tu
 marca personal en plataformas digitales como LinkedIn. El networking es
-fundamental para acceder al "mercado oculto" de ofertas, que representa la mayoría
+fundamental para acceder al "mercado oculto" de ofertas, que representa el 70%
 de las oportunidades. La clave es pasar de ser un solicitante pasivo a un profesional
 proactivo y visible en tu sector
 

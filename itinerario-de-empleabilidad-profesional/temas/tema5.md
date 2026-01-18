@@ -1,7 +1,3 @@
-Claro, aquí tienes un resumen estructurado del contenido teórico de las sesiones 12, 13 y 14, enfocado en los conceptos clave para preparar un examen tipo test.
-
----
-
 ### **Sesión 12: Design Thinking y Modelos de Negocio con Impacto**
 
 **Design Thinking (DT)**
@@ -33,14 +29,14 @@ Claro, aquí tienes un resumen estructurado del contenido teórico de las sesion
 **Viabilidad Económica-Financiera**
 *   **Concepto:** Capacidad de un proyecto para generar ingresos suficientes para cubrir costes y obtener beneficios.
 *   **Tres Variables Clave:**
-    1.  **Ingresos:** Fuentes de dinero por ventas. Se analiza quién paga, cuánto y con qué frecuencia.
+    1.  **Ingresos:** el dinero que entra, Fuentes de dinero por ventas. Se analiza quién paga, cuánto y con qué frecuencia.           es escalable?
     2.  **Costes:**
         *   **Fijos:** No varían con el volumen de ventas (alquiler, salarios).
         *   **Variables:** Dependen del volumen de ventas (materiales, transporte).
     3.  **Rentabilidad:** Resultado de que los ingresos superen a los costes.
 *   **Punto de Equilibrio (Break-even Point):**
     *   Nivel de ventas donde **Ingresos = Costes totales**.
-    *   **Fórmula:** Costes Fijos / (Precio de venta - Coste variable unitario).
+    *   **Fórmula:** Costes Fijos / (Precio de venta - Coste variable unitario) ese resultado es lo minimo que puedes vender para estar a 0 
     *   A partir de este punto, el negocio genera beneficios.
 
 **Fuentes de Financiación**

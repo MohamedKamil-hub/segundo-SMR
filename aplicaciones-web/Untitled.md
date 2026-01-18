@@ -870,3 +870,42 @@ if     else  y else if
 
 menu responsive siempre a la derecha
 cuando hagas click en un boton acticas clase que no existe
+
+
+## XML tipo de documento similar a html
+almacena y transporta datos
+parte de un nodo principal
+![[Pasted image 20260116162607.png]]
+
+
+![[Pasted image 20260116163423.png]]
+
+poner prologo es importante
+info que indica que es un xml que indica la version y el tipo de codificacion
+`<?xml version="1.0" encoding="UTF-8"?>`
+siempre tener un unico nodo principal
+
+atributos
+``` xml
+<ciudades>
+
+    <ciudad>
+
+        <persona edad="30" idioma="español">pepe </persona> no abusar de ellos
+
+    </ciudad>
+    
+    element isntituto (ciclos, profesores)
+    attlist instituto id cdata #required
+    
+    element ciclo empty
+    
+    element email #pcdata 
+    +? son para si quieres nada uno ...
+    
+```
+
+
+
+``` xml
+``` 

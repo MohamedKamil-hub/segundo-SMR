@@ -1,3 +1,5 @@
+
+
 #  [Módulo 2: Presentación de Cloud Architecting](https://awsacademy.instructure.com/courses/145509/modules/1877558)
 
 Arquitectura en la nube 
@@ -1371,4 +1373,497 @@ si intentas integrar aplicaciones en las instalaciones con aplicaciones en la nu
 ![[Pasted image 20260111160408.png]]
 
 # Módulo 14: creación de arquitecturas y microservicios sin servidor
+
+**Perspectiva sin servidor**
+**diseño de tres niveles de aplicaciones web en una vpc**
+- nivel web; responsable de la capa de presentacion del cliente del navegador
+- nivel aplicacion; logica empresarial de la aplicacion web
+- nivel de datos;
+**beneficios de la tecnologia sin servidor de AWS**
+sin administración de servidores
+servicios de pago por valor
+escalado continuo
+alta disponibilidad integrada
+adecuado para arquitecturas de microservicios y basadas en eventos.
+
+![[Pasted image 20260112110059.png]]
+
+
+**diseño de tres niveles de aplicaciones web con los servicio sin servidor de aws**
+![[Pasted image 20260112111527.png]]**caracteristicas de un microservicio**
+- **autonomo** se puede desarrollar e implementar sin afectar a otros microservicios, escala independientemente, no comparte codigo con otros microservicios, se comunica a traves de API.
+- **especializado** realiza una funcion empresarial para resolver un problema especifico. es propiedad de un pequeño equipo de desarrollo que elige las herramientas de desrrollo no tiene estado y tiene su propio almacen de datos.
+**beneficios de un microservicios**
+1. mejoran agilidad del equipo de desarrollo
+2. divide el software en modulos pequeños y bien definidos
+3. permiten un escalado flexible , e independiente para cada microservicio
+4. permiten a los equipos la libertad de tomar decisiones tecnicas de forma autonoma
+5. cuando un servicio falla se degrada su funcion en vez de bloqurear la aplicacion
+6. simplifica la implementacion mediante canalizaciones de integracion y entrga continua
+
+**patrones de microservicios sin servidor en AWS**
+- **API RESTful** usuario para comunicacion entre servicios que necesitan que el computo no tenga estado.
+- **contenedores** si un microservicio requiere mas de 15 min para completarse se puden usar contenedores.
+- **streaming** tambien pueden invocar microservicios
+
+
+**Microservicios en una arquitectura de tres niveles sin servidor web**
+![[Pasted image 20260112113319.png]]
+
+
+
+**Creación de arquitecturas sin servidor con AWS Lambda**
+![[Pasted image 20260112114642.png]]
+
+con las aplicaciones sin servidor nunca hay instancias, sistemas operativos o servidores que administrar, AWS administra todo lo necesario para ejecutar y escalar la aplicacion.
+
+
+**AWS Lambda**
+permite ejecutar funciones de codigo sin aprovisionar ni administrar servidores
+las funciones de Lambda se pueden configurar con el lenguaje de ejecucion la cantidad de memoria y la duracion del tiempo de espera.
+una funcion tiene una durcion maxima de 15 minutos
+las funciones se puden implementar como xip o imagenes de contenedor
+
+una funcion de Lambda puede ejecutarse en una VPC propiedad del servicio AWS Lambda o en una cache regional de amazon cloudfront.
+
+de forma predeterminada una funcion de lambda no esta conectada a las VPC  de su cuenta, si la funcion de Lmabda necesita acceder a recursos de VPC, se puede configurar la funcion para que se conecte a la VPC, y puedes hacer que la VPC le proporcione acceso a internet  la funcion.
+
+**identificación de escenarios sin servidor de Lambda**
+![[Pasted image 20260112115720.png]]
+sincrono es cuando un solicitante hace una solicitud y espera la respuesta en un periodo determinado.
+asincrono es cuando hace una solicitud para descargar el proceso mas adelante
+procesamiento de streaming es necesario cuando los datos llegan en un flujo continuo.
+
+
+**invocar funcion cincrona** servicio lambda ejecuta la funcion y espera una respuesta y mientras puedes llmar a otros servicios AWS, si la funcion encuentra un error este se devuelve como respuesta. tambien se puede usar la URL  de funcion
+
+**invocar una funcion lambda asincrona** no se espera una respuesta del codigo de la funcion, se coloca un evento en cola y devuelve una respuesta correcta sin info adicional
+
+
+**mapeo de fuente de eventos** recurso de lambda que lee de una fuente de eventos e invoca una funcion de Lambda.
+
+**controlador de funciones de lambda** punto de entrada en el codigo de la funcion que procesa los eventos, cuando se invoca su funcion, lambda ejecuta el metodo de controlador,
+la funcion se ejecuta hasta que el controlador devuelva una respuesta, salga o se afote el tiempo.
+
+**capas de Lambda**
+**sin capas:** dos funciones cada una con su propio codigo de funcion y dependencias, la funcion 1 incluye tiempo de ejecucion personalizado
+
+**con capas:** cada funcion incluye solo el codigo de la funcion y usan su capa para su  tiempo de ejecucion o dependencias de codigo.
+el uso de capas reduce el tamaño de los paquetes de implementacion, sperara la logica de las funciones principales de las dependencias, cmparte dependencias entre varias funciones, utilice el editor de codigo de la consola de Lambda.
+
+
+**eleccion de contenedores en lugar de funciones lambda**
+- se ejecuta durante mas de 15 minutos, a lambda no l serive
+- cargas de trabajo de mas de 10gb de memoria no son adecuadas para las funciones de lambda
+- los contenedores ayudan a migarar aplicaciones heredadas
+- los contenedores pueden funcionar con costo dijo y el precio de lambda aumenta con el numero de invocaciones.
+
+**ventajas de los contenedores**
+los paquetes contenedores son notablemente mas pequeños que los paquetes de las maquinas virtuales
+los contenedores son mas livianos y se ejecutan rapaidamente y pueden escalar rapidamente, son autonomos y se ejecutan de manera independiente al sistemas operativo y la plataforma de hardware.
+
+**caoso practivos de contenedores**
+1. aplicaciones de microservicios
+2. escalado de modelos de machine learning
+3. procesamiento por lotes
+4. estandarizacion de las aplicaciones de arquitectura hibrida
+5. migracion de aplicaciones a la nube
+
+**creacion e implementacion de contenedores de Docker**
+1. crear dockerfile, archivo de texto con instrucciones de como crear la imagen del contenedor. 
+2. crear la imagen del contenedor con la ejecucion de un comando de creacion del motor de contenedores
+
+![[Pasted image 20260112131910.png]]
+
+
+**beneficios de AWS fargate**
+- sin aprovisionamiento ni mantenimiento de servidores y sin optimizacion del empaquetado de clusteres
+- pagas solo por lo que usas
+- escala las tareas de forma dinamica en funcion de las CPU , memoria u otras metricas, el uso de AWS forgate no requiere conocimiento exhaustivo de la tecnologia de contenedores
+
+**Implementación e invocación de contenedores en Amazon ECS**
+antes debes crear un cluster de ECS compuesto de nodos de computo en una plataforma de computo como AWS fargate y EC2.
+
+**Implementación e invocación de contenedores en Amazon EKS**
+antes debes crear un cluster de EKS  compuesto de nodos de instancia de AWS fargate y EC2.
+
+
+**Elección entre Amazon ECS y Amazon EKS**
+![[Pasted image 20260112135349.png]]
+
+
+**Desafíos de las aplicaciones de microservicios**
+gestionar dependencias de los microservicios
+los microservicios suelen estar encadenados de forma secuancial o paralela
+
+gestionar reintentos tras un error
+
+coordinar microservicios
+escalado de una aplicacion
+mantener el estado de los microservicios sin estado 
+transferencia de datos entre microservicios
+supervision y solucion de problemas
+
+
+
+**AWS step functions**
+servicio de orquestracion sin servidor para administrar los componentes de aplicaciones y microservicios distribuidos mediante flujos de trabajo entre varios servicios de AWS.
+tiene maquinas de estado que contienen una serie de estados basados en eventos
+administra el estado los puntos de control y los reinicios de cada flujo de trabajo
+proporciona capacidad de administracion de errores
+puede transferir datos entre estados
+los estados pueden filtrar y manipular los datos
+
+**Tipos de flujo de trabajo estándar o exprés**
+![[Pasted image 20260112141333.png]]
+
+
+**casos practicos de step functions**
+orquestracion de microservicios
+procesamiento de datos 
+machine learning
+automatizacion de la seguridad
+
+
+**coordinacion del estado del flujo de trabajo**
+step functions administra automaticamente los errores y las excepciones gracias a las funciones integradas  
+
+
+**tipos de estados de maquinas de estados (pasos)**
+**estados de trabajo**
+	task: se integra con servicios de AWS
+	activity: realiza una tarea alojada en cualquier lugar 
+	Pass: pasa o filtra datos al siguiente estado
+	wait: retrasa el flujo de trabajo durante un tiempo
+	state has wait for callback state option
+**estados de transicion**
+	choice: agregar condiciones
+	parallel: agrega ramas de maquinas de estados anidadas dentro de una maquina de estados
+	mapping: separa el flujo de trabajopara cada  registro de datos en el conjunto de datos que se ejecuta en paralelo
+**detener estados**
+	success: detiene la maquina de estados y marca ejecucion como completada
+	fail: detiene la maquina de estados y marca como fallida
+	sate has the end parameter: detiene la mquina de estados
+
+
+**Definición de una máquina de estados con Amazon**
+**State Language**
+![[Pasted image 20260112142408.png]]
+
+**beneficios de las API**
+Las API actuan como puente para conectar aplicaciones escritas en diferentes lenguajes y formatos,
+la aplicacion cliente que realiza la solicitud no necesita entender la complejiddad o los detalles tecnicos de la implementacion del microservicio.
+
+
+estandarizan la comunicacion entre aplicaciones
+	conectan aplicaciones de software escritas en diferentes idiomas de forma estandarizada
+	ocultan la complejidad de la  implementacion
+protegen los microservicios
+	eligen si solicitar autorizacion
+	comprueban formatos de solicitud, limitan el numero de solicitudes
+	restringen el acceso a los recursos
+monetizan la api y relizan un seguimiento de las estadisticas
+	realizan un seguimiento del uso de los clientes para fines de facturacion
+	proporcionan estadisticas de uso por cliente
+
+
+
+**Amazon API gateway**
+proporciona la capacidad de crear , publicar y mantener las API REST  , HTTP y WebSocket.
+ofrece administracion del trafico autorizacion y control de acceso a los recursos configurables
+proporciona acceso a los servicios de AWS y alos puntos de conexion de acceso publico
+aloja varias versiones y etapas de la PAI  de una aplicacion
+estblece planes de uso de los clientes para monetizar y controlar las API
+puede almacenar en cache respuestas comunes
+
+
+**Elección del tipo de API**
+- **API REST**: para aplicaciones que necesitan gestión avanzada de API, como planes de uso, validación de datos, endpoints privados y control de recursos. Es sin estado y admite CORS.
+- **API HTTP**: para microservicios. más simple, con menor latencia y costo que REST. También es sin estado y soporta CORS.
+- **API WebSocket**: a aplicaciones en tiempo real. Mantiene una conexión persistente entre cliente y backend, es con estado y permite validación de esquemas y transformaciones de datos.
+
+**Integraciones de backend de API Gateway**
+![[Pasted image 20260112145134.png]]
+
+
+**El servicio de carrito de compras** pequeñas transacciones de milisegundos. Utilice el servicio de API HTTP del sitio web de compras de Amazon API Gateway para dirigir las solicitudes de carrito de compras a la función de carrito de compras de AWS Lambda. Las transacciones del carrito de la compra se almacenan en la tabla del carrito de compras de Amazon DynamoDB. satisfará el requisito de rendimiento de tiempos de segunda respuesta de un solo dígito.
+
+
+**Aplicación de los principios del Marco de AWS Well-Architected a microservicios y arquitecturas sin servidor**
+
+- **fiabilidad** use un mecanismo de cola de mensajes fallidos para retener, investigar y volver a intentar las transacciones fallidad revierta las transacciones fallidas.
+- **seguridad** controle el acceso a su API sin servidor, controle el acceso a su aplicacion sin servidor, cifre los datos en transito y en reposo, implemente la seguridad de las aplicaciones en su carga de trabajo.
+- **eficiencia d rendimiento**  optimice el rendimiento de su aplicacion sin servidor
+- **optimizacion de costos** optimiza el costo de las aplicaciones y use las integraciones directas de los servicios de AWS
+
+
+
+# Módulo 15: patrones de ingeniería de datos
+
+**Características de los datos**
+- **valor** 
+- **veracidad**
+- **volumen**
+- **velocidad**
+- **variedad**
+![[Pasted image 20260113112811.png]]
+
+**estrategia triple para construir infraestructuras de datos**
+**modernizar** infraestructura
+**unificar** fuentes de datos
+**innovar** con ia y ml
+
+**Canalizaciones de datos**
+guarda datos  y ya guardados los ingiere procesa y analiza de manera no secuencial
+![[Pasted image 20260113114155.png]]
+
+
+ingesta homogenea extrae datos de un almacenamiento de datos a un almacenamiento de datos  destino, manteniendo el mismo formato de datos 
+
+**ingesta heterogenea**
+**ETL** trabaja con datos estructurados que van a a un almacen de datos y guarda datos que estan listos para ser analizados  (extrae, transforma carga )
+**ELT** extrae carga y transforma datos no estructurados (extrae, carga y transforma)
+
+**procesamiento por lote:** computa resultados basandose en sets de datos completos, no necesita analisis en tiempo real.
+
+**procesamiento en transmision**  la transmision de datos es continua en paquetes pequeños de datos y necesita analisis en tiempo real para datos.
+
+**Herramientas de AWS para ingerir datos**
+amazon appflow coge datos de plicaciones SaaS software como servicio
+aws datasync copia archivos de recursos en instalaciones hacia la nube e AWS o compartir archivos
+aws data exchange , busca e incorpora conjuntos de datos de terceros
+
+**Procesamiento de datos por lotes**
+para trabajos que requierean completar periodicamente trabajos de datos de alto volumen y repetitivos
+se procesan por lotes los trabajos intensivos en horarios fuera de picos
+para investigacion
+secuenciacion genomica
+grandes cantidades de datos que no necesitan ser analizados individualmente
+
+**AWS glue**
+servicio de integracion de datos que da  la habilidad de leer y escribir datos de multiples sistemas y bases de datos
+simplifica la ingestion de  lotes y flujos
+
+**componentes**
+1. rastreadores se ejecutan sobre sus datos y descubren el esquema  subyacente y agregan esa info al catalogo de datos 
+2. se puede usar catalog para hacer comprobaciones de calidad
+usar cuando no requiere agregacion de tiempo real de datos
+
+**Procesamiento de datos en tiempo real**
+transmision de datos es a alto volumen de manera continua e incremental con el objetivo de procesamiento de baja latencia
+
+los productores coleccionan datos de recursos y lo llevan al servico de trnsmision de datos
+el glujo es un mecanismo para entregar mensajes o registros de datos que producen crearon para consumidores para leer y procesar
+los consumidores leen datos de los flujos y almacenamiento de datos y procesan esos datos.
+
+![[Pasted image 20260113132955.png]]
+
+
+**amazon msk**
+es un  servicio completamente administrado por apache kafka
+reduce el sobre costo  operacional
+se puede deplegar con herramientas existentes de apache kafka
+trabaja con integraciones existentes de AWS
+
+**Almacenamiento en la canalización de datos**
+S3 PROPORCIONA ALMACENAMIENTO DE DATOS
+AWS FLUE DA CATALOGACION Y TRANSFORMACION DE DATOS
+ATHENA DA UN MOTOR DE ACCESO DE DATOS
+LAKE FORMATION MANEJO DE LAGOS DE DATOS Y ACCESO SEGURO
+
+
+**CUANDO USAR ALMACENAMIENTO DE DATOS Y CUANDO USAR LAGO DE DATOS**
+![[Pasted image 20260113134320.png]]
+![[Pasted image 20260113134458.png]]
+
+**RETENCION DE DATOS**
+![[Pasted image 20260113134547.png]]
+
+**Procesamiento paralelo en la canalización de datos**
+PORQUE UN SOLO SERVIDOR NO TIENE POTENCIA PARA PROCESAR DATOS CONUJTOS MUY GRANDES
+divide el conjunto de datos en pertes, procesa esas partes en paralelo y los resultados se juntan
+
+**amazon EMR**
+manega clusteres que reduce la complejidad
+
+![[Pasted image 20260113135256.png]]
+
+**Análisis y visualización**
+
+saber el consumidor
+![[Pasted image 20260113135449.png]]
+
+se puede usar amazonquicksight para visualizacion para graficos
+
+para explorar se puede usar athena 
+
+combinados para crear paneles con los datos 
+
+para datos de tiempo real opensearch dashboards
+
+**Aplicación de los principios del Marco de AWS Well-Architected a las canalizaciones de datos**
+define la carga de trabajo
+evalua la carga ante los principios de diseño de pilares
+implementa las mejores practicas
+
+**seguridad** implementa politicas de minimo privilegio para fuentes y ssistemas posteriores 
+**eficiencia de rendimiento** identifica soluciones analiticas que mejor entran con tus desafios tecnicos
+**optimizacion de coste** quita datos e infraestructura que no uses reduce el sobre aprovisionamiento de la infraestructura
+**fiabilidad** entiende los requerimientos del negocio  sobre analiticas y trabajos ETL
+
+# Módulo 16: planificación para desastres
+**los errpres pueden ocurrir a cualquier escala**
+**pequeña** un servidor no responde
+**mediana** varios recursos de una zona de disponibilidad no estan disponibles
+**evntos globales** los errores son generalizados y afectan a muchos usarios y sistemas
+
+**planificacion y prevencion de desastres**
+**tolerancia a errores** minimizr frecuencia con la que sus aplicaciones y datos no estan disponibles
+**repaldo** asegurarse de tener un plan de respaldo para gestionar los datos en caso de desastre
+**recuperacion de desastres** recuperar datos y volver a tener sus aplicaciones en linea despues de un desastre
+
+**factores que influyen en las estrategias de planificacion para desastres**
+**dependencia de tiempo**
+**perdida de datos**
+**ubicacion geografica**
+**costo**
+
+**RPO**
+El RPO es la cantidad máxima aceptable de pérdida de datos que se mide en el tiempo
+
+**RTO**
+El RTO es la cantidad máxima de tiempo aceptable después de que ocurre un desastre para que un proceso empresarial pueda permanecer fuera de servicio.
+
+**Preparación de un BCP**
+Un plan de continuidad de actividades (BCP) es un sistema de prevención y recuperación de posibles amenazas para una empresa.
+
+**Componentes básicos de almacenamiento y respaldo**
+![[Pasted image 20260113161012.png]]
+
+**Los planes de DR abarcan más de una región**
+![[Pasted image 20260113161056.png]]
+**Componentes básicos de almacenamiento y respaldo**
+![[Pasted image 20260113161125.png]]
+
+
+
+**Configuración de la replicación entre regiones**
+![[Pasted image 20260113161159.png]]
+
+
+
+**Instantáneas de volumen de EBS**
+![[Pasted image 20260113161232.png]]
+
+**Replicación del sistema de archivos**
+![[Pasted image 20260113161304.png]]
+
+**Recuperación de la infraestructura de cómputo**
+![[Pasted image 20260113161334.png]]
+
+**Uso de EventBridge para la conmutación por error regiona**
+![[Pasted image 20260113161442.png]]
+
+
+**Diseñar en función de la resistencia y la recuperación**
+**Route 53**
+Proporciona equilibrio de carga basado en DNS Proporciona una conmutación por error básica entre puntos de conexión o sitios web de S3
+
+**ELB**
+Proporciona distribución del tráfico Hace que la implementación de la recuperación de desastres sea sencilla
+
+**VPN de Amazon**
+Proporciona acceso seguro a los recursos de red en las instalaciones desde su Amazon VPC con una conexión de VPN
+
+**AWS Direct Connect**
+Proporciona la conexión de red dedicada para una transferencia de datos rápida y uniforme entre las instalaciones y AWS
+
+
+
+**Soporte de recuperación de bases de datos**
+**Amazon RDS**
+Guarde una instantánea en una región diferente.
+Utilice réplicas de lectura e implementaciones Multi AZ.
+Conserve respaldos automatizados.
+
+**DynamoDB**
+Realice respaldos de tablas enteras.
+Utilice la recuperación puntual para restaurar tablas.
+Cree respaldos.
+Utilice tablas globales para crear una base de datos multirregional y multiactiva.
+
+**Replicación y reimplementación de entornos CloudFormation**
+Utilice plantillas para implementar rápidamente recopilaciones de recursos según sea necesario.
+Duplique los entornos de producción en una nueva región o nube virtual privada (VPC) en cuestión de minutos.
+
+**OpsWorks**
+Administre e implemente aplicaciones en todas las flotas
+
+
+**patrones comunes de recuperacion de desastres de AWS**
+**respaldo y restauracion** 
+![[Pasted image 20260113163329.png]]
+
+
+**Patrón de respaldo y restauración de AWS Storage Gateway**
+![[Pasted image 20260113163412.png]]
+
+**Implementación de respaldos y restauración**
+**Fase de preparación**
+Cree respaldos de los sistemas actuales.
+Almacene respaldos en Amazon S3.
+Procedimiento documental para restaurar a partir de respaldos.
+
+**En caso de desastre**
+Recupere respaldos de Amazon S3.
+Restaure la infraestructura requerida.
+Restaure el sistema desde el respaldo.
+Dirija el tráfico al nuevo sistema.
+
+**Patrón de luz piloto**
+![[Pasted image 20260113164140.png]]
+
+
+**Implementación del patrón de luz piloto**
+**Fase de preparación**
+	Configure instancias de EC2 para replicar servidores.
+	Cree y mantenga imágenes de máquina de Amazon (AMI) de servidores claves en los que se necesite una recuperación rápida.
+	Ejecute, pruebe y actualice estos servidores con regularidad.
+
+**En caso de desastre**
+	Active los recursos del conjunto de datos principal replicado.
+	A continuación, escale el sistema según sea necesario para gestionar el tráfico de producción actual.
+	Cambie al nuevo sistema.
+
+**Patrón de espera semiactiva**
+![[Pasted image 20260113164357.png]]
+![[Pasted image 20260113164419.png]]
+
+
+![[Pasted image 20260113164440.png]]
+
+**Implementación de un patrón multisitio**
+**Fase de preparación** Es similar a la espera semiactiva.
+Está configurado para escalarlo o reducirlo horizontalmente por completo para la carga de producción.
+Considere el costo de licencia de un sistema duplicado completo.
+
+**En caso de desastre** Conmute inmediatamente por error toda la carga de producción.
+
+
+**Resumen de los patrones comunes de DR**
+![[Pasted image 20260113164644.png]]
+
+![[Pasted image 20260113164703.png]]
+
+
+**fiabilidad**
+defina los objetivos de recuperacion para el tiempo de inactividad y la perdida de datos
+utilice estrategias de recuperacion definidas para cumplir con los objetivos de recuperacion
+pruebe la implementacion de la recuperacion de desastres para validarla
+
+**excelencia operativa**
+defina un plan de comunicacion con el cliente para las interrupciones
+
+**seguridad**
+establezca un proceso de acceso de emergencia
 

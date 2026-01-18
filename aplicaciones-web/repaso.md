@@ -1,6 +1,0 @@
-# etiquetas
-
-
-# listas
-# tablas
-# formularios

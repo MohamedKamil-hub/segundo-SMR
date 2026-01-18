@@ -163,3 +163,5 @@ pruebas de intrusion pentest
 escaner de vulnerabilidaes
 pruebas de intrusio externa y interna
 PTES para sistemas y OWASP para aplicaciones y sus metodologias
+
+# 16-01-2026

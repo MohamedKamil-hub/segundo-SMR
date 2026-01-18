@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ciudades [
+    <!ELEMENT ciudades (#PCDATA)>
+    <!ELEMENT persona (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+<ciudades>
+    <ciudad> 
+        <persona edad="30" idioma="español">pepe </persona>
+        
+    </ciudad>
+    <ciudad> </ciudad>
+    <ciudad> </ciudad>
+    <ciudad> </ciudad>
+
+
+</ciudades>

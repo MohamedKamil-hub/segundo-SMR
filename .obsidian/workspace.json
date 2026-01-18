@@ -20,6 +20,44 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "072039f022670fa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "checklist.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "checklist"
+            }
+          },
+          {
+            "id": "e2e7d087906384de",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ingles/Englishcoursev2Students.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Englishcoursev2Students"
+            }
+          },
+          {
+            "id": "f0c8f3a60d94fee6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Horario.png"
+              },
+              "icon": "lucide-image",
+              "title": "Horario"
+            }
           }
         ]
       }
@@ -169,51 +207,52 @@
   },
   "active": "83dceeab65e71f2c",
   "lastOpenFiles": [
-    "seguridad-informatica/clases/REPASO.md",
-    "fotos/Pasted image 20260111213213.png",
-    "fotos/Pasted image 20260111212127.png",
-    "fotos/Pasted image 20260111210800.png",
-    "fotos/Pasted image 20260111202738.png",
-    "fotos/Pasted image 20260111202718.png",
-    "fotos/Pasted image 20260111202657.png",
-    "fotos/Pasted image 20260111201625.png",
-    "seguridad-informatica/clases/PoliticaContrasenas.md",
-    "seguridad-informatica/clases/GlosarioAtaques.md",
-    "seguridad-informatica/clases/GestionDeUsuarios (1).md",
-    "seguridad-informatica/clases/apuntes.md",
+    "checklist.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema3.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema2.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema1.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema5.md",
+    "itinerario-de-empleabilidad-profesional/clases/clases apuntes.md",
+    "itinerario-de-empleabilidad-profesional/repaso total.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema4.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/UD2_sesion4_Gemelo_Digital_Wokwi_ArduinoUNO.pdf",
+    "ingles/Englishcoursev2Students.pdf",
     "README.md",
+    "Horario.png",
+    "MPO-Arquitecturas-en-la-nube/test.md",
+    "MPO-Arquitecturas-en-la-nube/notas clase.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/test.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/notas_clase.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/Practica_IoT__version_simulada__UD2_Sesion_3_27102025 (2).pdf",
+    "seguridad-informatica/clases/REPASO.md",
+    "fotos/Pasted image 20260117180149.png",
+    "fotos/Pasted image 20260117170555.png",
     "seguridad-informatica/clases/Untitled.md",
-    "MPO-Arquitecturas-en-la-nube/AWS ARQUITECTURA.md",
-    "fotos/Pasted image 20260111160408.png",
-    "fotos/Pasted image 20260111155759.png",
-    "fotos/Pasted image 20260111125052.png",
-    "servicios-de-red/clases/apuntes.md",
-    "MPO-Arquitecturas-en-la-nube/temp.md",
-    "servicios-de-red/preguntas.md",
-    "servicios-de-red/1. Práctica de Servicios en Red.md",
-    "servicios-de-red/Mohamed_Kamil_el_Kouarti_Práctica_Servicios_Red.md",
-    "servicios-de-red/clases/actividad ssh.md",
-    "servicios-de-red/test.md",
-    "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
-    "seguridad-informatica/mohamed_kamil_el_kouarti_mecchidan.md",
-    "aplicaciones-web/PRÁTICA EVALUABLE/GitHub.md",
-    "aplicaciones-web/PRÁTICA EVALUABLE.zip",
-    "aplicaciones-web/PRÁTICA EVALUABLE/enunciado.md",
-    "aplicaciones-web/PRÁTICA EVALUABLE/img",
+    "seguridad-informatica/clases/apuntes.md",
     "seguridad-informatica/clases/Actualizaciones.md",
+    "seguridad-informatica/clases/GestionDeUsuarios (1).md",
+    "seguridad-informatica/clases/GlosarioAtaques.md",
+    "seguridad-informatica/clases/PoliticaContrasenas.md",
+    "servicios-de-red/clases/apuntes.md",
+    "sistemas-operativos-en-red/clases apuntes.md",
+    "fotos/Pasted image 20260116194433.png",
+    "fotos/Pasted image 20260116193325.png",
+    "aplicaciones-web/Untitled.md",
+    "fotos/Pasted image 20260116163423.png",
+    "aplicaciones-web/hola.xml",
+    "fotos/Pasted image 20260116162607.png",
+    "aplicaciones-web/temp.md",
+    "aplicaciones-web/repaso.md",
+    "fotos/Pasted image 20260115171100.png",
+    "fotos/Pasted image 20260115170801.png",
+    "fotos/Pasted image 20260115165459.png",
+    "Sostenibilidad-aplicada-al-sistema-productivo/plantilla_respuestas_opciones.pdf",
+    "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
+    "aplicaciones-web/PRÁTICA EVALUABLE.zip",
+    "aplicaciones-web/PRÁTICA EVALUABLE/img",
     "aplicaciones-web/PRÁTICA EVALUABLE/style.css",
     "aplicaciones-web/PRÁTICA EVALUABLE/index.html",
-    "aplicaciones-web/PRÁTICA EVALUABLE",
-    "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol/buyer-personav2.pdf",
-    "seguridad-informatica/practica_jtr_archivos.zip",
-    "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol/Tarea Evaluable 01 Validando la idea de negocio.md",
-    "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol.zip",
-    "itinerario-de-empleabilidad-profesional/proyecto_navidad_fol/buyer-persona.pdf",
-    "Digitalización-aplicada-a-los-sectores-productivos/chatbot-hotel/readme.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/mohamed_kamil_kouarti_mechhidan_sostenibilidad.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/IMPLEMENTACIÓN DE UN SISTEMA DE ECONOMÍA CIRCULAR EN UN CENTRO DE DATOS.md",
-    "itinerario-de-empleabilidad-profesional/clases/Untitled.md",
-    "Sin título.md",
     "sistemas-operativos-en-red/Untitled.canvas"
   ]
 }

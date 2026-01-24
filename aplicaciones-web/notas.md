@@ -873,7 +873,7 @@ cuando hagas click en un boton acticas clase que no existe
 
 
 ## XML tipo de documento similar a html
-almacena y transporta datos
+almacena y sobretodo transporta datos
 parte de un nodo principal
 ![[Pasted image 20260116162607.png]]
 
@@ -907,5 +907,25 @@ atributos
 
 
 
-``` xml
+## RSS
+roling symbol sig
+permite recibir actualizaciones 
+es un fichero xml 
+wordpress.com no es lo mismo que wordpress.org
+``` rss
+xml version 1.0 encoding  utf 8
+
+rss version="2.0"
+channel
+tittle prometeo tittle
+
+link href https:prometeo.es
+description centro fp oficial
+lastbuildate Tue 20 ,
+language es
 ``` 
+
+lenguaje cliente javascript
+lenguaje servidor php
+
+antes de base de datos tener apache encendido

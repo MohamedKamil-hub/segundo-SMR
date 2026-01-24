@@ -915,3 +915,6 @@ procesos.txt
 
 o wslpath -a
 wsl wslpath -a $fichero
+
+
+

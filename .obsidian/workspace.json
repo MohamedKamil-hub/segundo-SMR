@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f24470b697a0f64f",
+        "id": "9cb57b4068032357",
         "type": "tabs",
         "children": [
           {
-            "id": "83dceeab65e71f2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "072039f022670fa3",
+            "id": "522df99ae2088e6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,30 +22,21 @@
             }
           },
           {
-            "id": "e2e7d087906384de",
+            "id": "9be4db266799abda",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ingles/Englishcoursev2Students.pdf"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Englishcoursev2Students"
-            }
-          },
-          {
-            "id": "f0c8f3a60d94fee6",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Horario.png"
-              },
-              "icon": "lucide-image",
-              "title": "Horario"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,50 +182,50 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "83dceeab65e71f2c",
+  "active": "9be4db266799abda",
   "lastOpenFiles": [
+    "proyecto intermodular.md",
     "checklist.md",
-    "itinerario-de-empleabilidad-profesional/temas/tema3.md",
-    "itinerario-de-empleabilidad-profesional/temas/tema2.md",
-    "itinerario-de-empleabilidad-profesional/temas/tema1.md",
-    "itinerario-de-empleabilidad-profesional/temas/tema5.md",
-    "itinerario-de-empleabilidad-profesional/clases/clases apuntes.md",
-    "itinerario-de-empleabilidad-profesional/repaso total.md",
-    "itinerario-de-empleabilidad-profesional/temas/tema4.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/temas/UD2_sesion4_Gemelo_Digital_Wokwi_ArduinoUNO.pdf",
-    "ingles/Englishcoursev2Students.pdf",
-    "README.md",
-    "Horario.png",
-    "MPO-Arquitecturas-en-la-nube/test.md",
-    "MPO-Arquitecturas-en-la-nube/notas clase.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/notas.md",
     "Digitalización-aplicada-a-los-sectores-productivos/test.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
     "Digitalización-aplicada-a-los-sectores-productivos/notas_clase.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/notas.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/test.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/repaso todo.md",
+    "servicios-de-red/test.md",
+    "sistemas-operativos-en-red/test.md",
+    "itinerario-de-empleabilidad-profesional/temas/tema5.md",
+    "fotos/Pasted image 20260123234548.png",
+    "fotos/Pasted image 20260123234506.png",
+    "fotos/Pasted image 20260123234214.png",
+    "itinerario-de-empleabilidad-profesional/repaso total.md",
+    "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
+    "servicios-de-red/notas.md",
+    "sistemas-operativos-en-red/notas.md",
+    "aplicaciones-web/notas.md",
+    "MPO-Arquitecturas-en-la-nube/test.md",
+    "seguridad-informatica/notas.md",
+    "seguridad-informatica/test.md",
+    "sistemas-operativos-en-red/clases apuntes.md",
+    "MPO-Arquitecturas-en-la-nube/AWS.md",
+    "fotos/Pasted image 20260120205527.png",
+    "MPO-Arquitecturas-en-la-nube/apuntes.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema5.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema4.md",
+    "MPO-Arquitecturas-en-la-nube/notas.md",
+    "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
+    "ingles/Englishcoursev2Students.pdf",
+    "Horario.png",
+    "Digitalización-aplicada-a-los-sectores-productivos/temas/UD2_sesion4_Gemelo_Digital_Wokwi_ArduinoUNO.pdf",
     "Digitalización-aplicada-a-los-sectores-productivos/temas/Practica_IoT__version_simulada__UD2_Sesion_3_27102025 (2).pdf",
-    "seguridad-informatica/clases/REPASO.md",
     "fotos/Pasted image 20260117180149.png",
     "fotos/Pasted image 20260117170555.png",
-    "seguridad-informatica/clases/Untitled.md",
-    "seguridad-informatica/clases/apuntes.md",
-    "seguridad-informatica/clases/Actualizaciones.md",
-    "seguridad-informatica/clases/GestionDeUsuarios (1).md",
-    "seguridad-informatica/clases/GlosarioAtaques.md",
-    "seguridad-informatica/clases/PoliticaContrasenas.md",
-    "servicios-de-red/clases/apuntes.md",
-    "sistemas-operativos-en-red/clases apuntes.md",
     "fotos/Pasted image 20260116194433.png",
     "fotos/Pasted image 20260116193325.png",
-    "aplicaciones-web/Untitled.md",
     "fotos/Pasted image 20260116163423.png",
     "aplicaciones-web/hola.xml",
-    "fotos/Pasted image 20260116162607.png",
-    "aplicaciones-web/temp.md",
-    "aplicaciones-web/repaso.md",
-    "fotos/Pasted image 20260115171100.png",
-    "fotos/Pasted image 20260115170801.png",
-    "fotos/Pasted image 20260115165459.png",
     "Sostenibilidad-aplicada-al-sistema-productivo/plantilla_respuestas_opciones.pdf",
-    "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
     "aplicaciones-web/PRÁTICA EVALUABLE.zip",
     "aplicaciones-web/PRÁTICA EVALUABLE/img",
     "aplicaciones-web/PRÁTICA EVALUABLE/style.css",

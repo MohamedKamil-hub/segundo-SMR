@@ -748,7 +748,7 @@ https://www.softaculous.com/apps/ecommerce
 https://rustdesk.com/es/
 jellyfin
 
-##  08-01-2025
+##  08-01-2026
 **servicios de streaming  audio y video**
 **streaming** es transmision continua del contenido multimedia  atraves de internet , permite al usuario consumir el contenido a tiempo real sin descargarlo.
 a diferencia de la descarga donde se requiere el archivo completo antes de reproducir , en **streaming se reproduce a tiempo real o bajo demanda mientras se reciben los datos.**
@@ -819,3 +819,4 @@ el streaming es un servicio de red complejo que integra multiples tecnologias:
 - **DNS** para descubrimiento de servicios
 - **BALANCEO DE CARGA** distribuir para alto trafico
 - **SEGURIDAD** cifrado y DRM para proteccion de contenido
+# g

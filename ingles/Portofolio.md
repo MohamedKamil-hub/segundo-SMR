@@ -1,6 +1,6 @@
 Mohamed Kamil El Kouarti Mechhidan
 2º SMR ONLINE
-
+dia-mes-año
 # 29-09-2025
 Presentation
 
@@ -557,3 +557,88 @@ Write the correct **past participle**:
 - be > been
 - get > got / gotten
 - know > known
+
+# 19-01-2026
+**present perfect**  solo si sigue pasando o es reciente
+**past simple** se ha acabado
+
+p33
+**Practice B3: Present Perfect vs. Past Simple**
+**Analysis – Decide Phase:**   Choose **Present Perfect** or **Past Simple** based on time connection:
+
+**1.** “I (tried / ==have tried==) to call you this morning”  _(if it’s still morning)_  
+**2.** “I (==called== / have called) you yesterday”  _(yesterday is finished)_  
+**3.** “She (worked / ==has worked==) here for five years.”   _(still working here)_  
+**4.** “He (==started== / has started) work at 9 AM”   _(9 AM is past, finished time)_  
+**5.** “We (never had / ==have never had==) this problem before”   _(up to now)_  
+
+**Practice B4: Professional Experience Description**
+**Produce Phase:**  Complete the sentences about your work or study experience:
+
+**1.** I **have studied** (study) English for **3** years.
+**2.** I **have tried** (try) to improve my pronunciation many times this year.
+**3.** I **have never worked** (never / work) in an international company before.
+**4.** This week, I **have learnt** (learn) a lot about workplace English.
+**5.** **have** you ever **used** (use) English on the phone?
+
+
+**Direct:** “Fix my computer ” 
+**Polite:** “Could you fix my computer, please?” 
+**Very polite:** “I’m sorry to bother you, but could you possibly help me with my computer when you have a moment?”
+
+**Professional Politeness Language**
+**Making Requests (increasing politeness):**
+
+**1. Could you please…?**  “Could you send me the report, please?”
+**2. Would you mind…?**  “Would you mind checking this for me?”
+**3. I wonder if you could…**  “I wonder if you could help me with this?”
+**4. Would it be possible to…?**  “Would it be possible to reschedule the meeting?”
+
+**Offering Help:**
+**1. I can… if you like**  “I can show you the system if you like.”
+**2. I’d be happy to…**  “I’d be happy to help you with that.”
+**3. Would you like me to…?**  “Would you like me to call them for you?”
+
+**Apologizing and Softening:**
+**1. Sorry to bother you, but…**  “Sorry to bother you, but could you help me?”
+**2. I’m afraid…**  “I’m afraid I don’t understand the procedure.”
+**3. I apologize for…**  “I apologize for the confusion.”
+
+**Thanking (increasing formality):**
+**1. Thanks**  “Thanks for your help.”
+**2. Thank you very much**  “Thank you very much for your assistance.”
+**3. I really appreciate it**  “I really appreciate your time and help.
+
+
+p35
+**Practice C1: Politeness Level Recognition**
+**Decide Phase:**  Order these requests from most direct **(1)** to most polite **(3)**:
+( 2 ) “Could you please help me with this?”
+( 1 ) “Help me.”
+( 3 ) “I wonder if you could possibly help me with this when you’re free?”
+
+**Practice C2: Professional Request Transformation**
+**Decide Phase:**  Make these direct requests more professionally polite:
+**1.** “Tell me your phone number.”
+i am sorry to bother you but could you please tell me your phone number?
+
+**2.** “Send me the report.”
+would you mind sending me the report?
+
+**3.** “Come to my office.”
+could you please come to my office?
+
+**4.** “Fix this problem.”
+would it be possible for you to fix this problem?
+
+
+**Practice C4: Complete Professional Phone Conversation**
+**Produce Phase:**  Complete this phone conversation with appropriate polite language:
+
+**A:** “Good morning, HR Department. This is Ana speaking.”
+**B:** “Hi Ana, this is David from Sales, but **could you please** help me with something?”
+**A:** “How can I help?”
+**B:** “**would you mind giving me** information about the training schedule?”
+**A:** “Of course. The training is next Tuesday at 10 AM.”
+**B:** “**thank you** for your help.”
+**A:** “**you are welcome** Have a good day!”

@@ -60,3 +60,5 @@ apagar maquinas no usadas, eliminar recursos olvidados, usar almacenamiento adec
 **firebase**
 plataforma paas porque
 ![[Pasted image 20260115154604.png]]
+
+# 19-01-2026

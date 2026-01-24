@@ -1,299 +1,299 @@
-**1. Un ecosistema está en equilibrio cuando:**  
-a) Todas las especies tienen el mismo tamaño poblacional  
-b) Las relaciones entre especies permiten su supervivencia y evolución  
-c) No existe intervención humana  
-d) La producción de residuos es cero
+P: Un ecosistema está en equilibrio cuando:
+A) Todas las especies tienen el mismo tamaño poblacional
+B) Las relaciones entre especies permiten su supervivencia y evolución *
+C) No existe intervención humana
+D) La producción de residuos es cero
 
-**2. La actividad económica depende de los ecosistemas porque estos:**  
-a) Regulan el comercio internacional  
-b) Proporcionan impuestos ambientales  
-c) Son fuente de materias primas y energía  
-d) Garantizan el crecimiento económico
+P: La actividad económica depende de los ecosistemas porque estos:
+A) Regulan el comercio internacional
+B) Proporcionan impuestos ambientales
+C) Son fuente de materias primas y energía *
+D) Garantizan el crecimiento económico
 
-**3. El desarrollo sostenible se caracteriza por:**  
-a) Aumentar el PIB sin límites  
-b) Usar solo energías renovables  
-c) Priorizar a las generaciones futuras sobre las presentes  
-d) Satisfacer las necesidades actuales sin comprometer las futuras
+P: El desarrollo sostenible se caracteriza por:
+A) Aumentar el PIB sin límites
+B) Usar solo energías renovables
+C) Priorizar a las generaciones futuras sobre las presentes
+D) Satisfacer las necesidades actuales sin comprometer las futuras *
 
-**4. El principal reto medioambiental asociado al agotamiento de los ecosistemas es:**  
-a) La pobreza  
-b) La desigualdad  
-c) El cambio climático  
-d) La inflación
+P: El principal reto medioambiental asociado al agotamiento de los ecosistemas es:
+A) La pobreza
+B) La desigualdad
+C) El cambio climático *
+D) La inflación
 
-**5. Según la ONU, para 2030 las emisiones de CO₂ deben reducirse en aproximadamente:**  
-a) 10 %  
-b) 25 %  
-c) 45 %  
-d) 75 %
+P: Según la ONU, para 2030 las emisiones de CO₂ deben reducirse en aproximadamente:
+A) 10 %
+B) 25 %
+C) 45 % *
+D) 75 %
 
-**6. La Agenda 2030 es:**  
-a) Un tratado comercial de la UE  
-b) Una estrategia conjunta basada en los ODS  
-c) Un acuerdo climático europeo  
-d) Un plan de inversión verde
+P: La Agenda 2030 es:
+A) Un tratado comercial de la UE
+B) Una estrategia conjunta basada en los ODS *
+C) Un acuerdo climático europeo
+D) Un plan de inversión verde
 
-**7. Los Objetivos de Desarrollo Sostenible son:**  
-a) 12  
-b) 15  
-c) 17  
-d) 25
+P: Los Objetivos de Desarrollo Sostenible son:
+A) 12
+B) 15
+C) 17 *
+D) 25
 
-**8. Una característica esencial de los ODS es que:**  
-a) Solo afectan a los gobiernos  
-b) Son voluntarios para los Estados  
-c) Carecen de indicadores  
-d) Tienen metas e indicadores asociados
+P: Una característica esencial de los ODS es que:
+A) Solo afectan a los gobiernos
+B) Son voluntarios para los Estados
+C) Carecen de indicadores
+D) Tienen metas e indicadores asociados *
 
-**9. Los ODS abarcan conjuntamente las dimensiones:**  
-a) Ambiental, tecnológica y fiscal  
-b) Económica, social y medioambiental  
-c) Pública, privada y social  
-d) Financiera, laboral y ecológica
+P: Los ODS abarcan conjuntamente las dimensiones:
+A) Ambiental, tecnológica y fiscal
+B) Económica, social y medioambiental *
+C) Pública, privada y social
+D) Financiera, laboral y ecológica
 
-**10. Un ciudadano contribuye a los ODS principalmente mediante:**  
-a) El voto  
-b) La fiscalidad  
-c) El consumo y el trabajo responsable  
-d) La inversión bursátil
+P: Un ciudadano contribuye a los ODS principalmente mediante:
+A) El voto
+B) La fiscalidad
+C) El consumo y el trabajo responsable *
+D) La inversión bursátil
 
-**11. El Acuerdo de París busca que el calentamiento global no supere:**  
-a) 1 ºC  
-b) 1,5 ºC  
-c) 2 ºC  
-d) 3 ºC
+P: El Acuerdo de París busca que el calentamiento global no supere:
+A) 1 ºC
+B) 1,5 ºC 
+C) 2 ºC*
+D) 3 ºC
 
-**12. Un grupo de interés es:**  
-a) Un accionista mayoritario  
-b) Un colectivo cuyos objetivos dependen de la empresa  
-c) Una ONG ambiental  
-d) Un órgano directivo
+P: Un grupo de interés es:
+A) Un accionista mayoritario
+B) Un colectivo cuyos objetivos dependen de la empresa *
+C) Una ONG ambiental
+D) Un órgano directivo
 
-**13. La influencia entre la empresa y sus grupos de interés es:**  
-a) Unidireccional  
-b) Nula  
-c) Jurídica  
-d) Mutua
+P: La influencia entre la empresa y sus grupos de interés es:
+A) Unidireccional
+B) Nula
+C) Jurídica
+D) Mutua *
 
-**14. ASG hace referencia a aspectos:**  
-a) Ambientales, sociales y de gobernanza  
-b) Activos, solvencia y ganancias  
-c) Auditoría, sistemas y gestión  
-d) Ahorro, sostenibilidad y gasto
+P: ASG hace referencia a aspectos:
+A) Ambientales, sociales y de gobernanza *
+B) Activos, solvencia y ganancias
+C) Auditoría, sistemas y gestión
+D) Ahorro, sostenibilidad y gasto
 
-**15. Un riesgo ASG es:**  
-a) Una multa fiscal  
-b) Una campaña publicitaria fallida  
-c) Una circunstancia que puede afectar negativamente al negocio  
-d) Un conflicto laboral
+P: Un riesgo ASG es:
+A) Una multa fiscal
+B) Una campaña publicitaria fallida
+C) Una circunstancia que puede afectar negativamente al negocio *
+D) Un conflicto laboral
 
-**16. Las Normas Europeas de Información sobre Sostenibilidad sirven para:**  
-a) Calcular impuestos  
-b) Elaborar el estado no financiero  
-c) Diseñar planes de marketing  
-d) Valorar inversiones
+P: Las Normas Europeas de Información sobre Sostenibilidad sirven para:
+A) Calcular impuestos
+B) Elaborar el estado no financiero *
+C) Diseñar planes de marketing
+D) Valorar inversiones
 
-**17. La economía lineal se caracteriza por:**  
-a) Reutilizar materiales  
-b) Cerrar los ciclos productivos  
-c) Desperdiciar valor tras el consumo  
-d) Minimizar residuos
+P: La economía lineal se caracteriza por:
+A) Reutilizar materiales
+B) Cerrar los ciclos productivos
+C) Desperdiciar valor tras el consumo *
+D) Minimizar residuos
 
-**18. La economía circular pretende:**  
-a) Aumentar la producción  
-b) Mantener el valor de recursos y productos  
-c) Sustituir todos los bienes por servicios  
-d) Reducir el comercio
+P: La economía circular pretende:
+A) Aumentar la producción
+B) Mantener el valor de recursos y productos *
+C) Sustituir todos los bienes por servicios
+D) Reducir el comercio
 
-**19. Las “7 R” de la economía circular buscan:**  
-a) Incrementar ventas  
-b) Reducir costes laborales  
-c) Minimizar residuos y uso de recursos  
-d) Digitalizar la empresa
+P: Las “7 R” de la economía circular buscan:
+A) Incrementar ventas
+B) Reducir costes laborales
+C) Minimizar residuos y uso de recursos *
+D) Digitalizar la empresa
 
-**20. Desmaterializar significa:**  
-a) Usar más tecnología  
-b) Eliminar productos  
-c) Sustituir energía fósil  
-d) Reducir la necesidad de materiales
+P: Desmaterializar significa:
+A) Usar más tecnología
+B) Eliminar productos
+C) Sustituir energía fósil
+D) Reducir la necesidad de materiales *
 
-**21. La producción limpia se define como:**  
-a) Fabricación a gran escala  
-b) Uso exclusivo de renovables  
-c) Prevención de daños ambientales  
-d) Externalización de procesos
+P: La producción limpia se define como:
+A) Fabricación a gran escala
+B) Uso exclusivo de renovables
+C) Prevención de daños ambientales *
+D) Externalización de procesos
 
-**22. Una evaluación de producción limpia comienza con:**  
-a) La implementación  
-b) El análisis de viabilidad  
-c) La recogida y análisis de datos  
-d) La evaluación y control
+P: Una evaluación de producción limpia comienza con:
+A) La implementación
+B) El análisis de viabilidad
+C) La recogida y análisis de datos *
+D) La evaluación y control
 
-**23. El ecodiseño consiste en:**  
-a) Diseñar productos baratos  
-b) Integrar aspectos ambientales en el diseño  
-c) Cumplir solo la ley  
-d) Reducir salarios
+P: El ecodiseño consiste en:
+A) Diseñar productos baratos
+B) Integrar aspectos ambientales en el diseño *
+C) Cumplir solo la ley
+D) Reducir salarios
 
-**24. La norma ISO 14006 regula:**  
-a) La producción limpia  
-b) La inversión responsable  
-c) El ecodiseño  
-d) La auditoría ambiental
+P: La norma ISO 14006 regula:
+A) La producción limpia
+B) La inversión responsable
+C) El ecodiseño *
+D) La auditoría ambiental
 
-**25. Un indicador de desempeño sirve para:**  
-a) Medir resultados frente a una meta  
-b) Calcular impuestos  
-c) Certificar productos  
-d) Diseñar campañas
+P: Un indicador de desempeño sirve para:
+A) Medir resultados frente a una meta *
+B) Calcular impuestos
+C) Certificar productos
+D) Diseñar campañas
 
-**26. La norma ISO 14001 regula:**  
-a) La inversión responsable  
-b) La gestión ambiental  
-c) El ecodiseño  
-d) Las memorias de sostenibilidad
+P: La norma ISO 14001 regula:
+A) La inversión responsable
+B) La gestión ambiental *
+C) El ecodiseño
+D) Las memorias de sostenibilidad
 
-**27. Un certificado de sostenibilidad permite a la empresa:**  
-a) Pagar menos impuestos  
-b) Acceder a ayudas  
-c) Comunicar su compromiso ambiental  
-d) Evitar auditorías
+P: Un certificado de sostenibilidad permite a la empresa:
+A) Pagar menos impuestos
+B) Acceder a ayudas
+C) Comunicar su compromiso ambiental *
+D) Evitar auditorías
 
-**28. Una inversión socialmente responsable evalúa:**  
-a) Solo la rentabilidad  
-b) Rentabilidad, riesgo e impacto ASG  
-c) El volumen de ventas  
-d) La liquidez bancaria
+P: Una inversión socialmente responsable evalúa:
+A) Solo la rentabilidad
+B) Rentabilidad, riesgo e impacto ASG *
+C) El volumen de ventas
+D) La liquidez bancaria
 
-**29. Un índice ISR de exclusión elimina empresas de sectores:**  
-a) Rentables  
-b) Tecnológicos  
-c) Estratégicos  
-d) Incompatibles con los ODS
+P: Un índice ISR de exclusión elimina empresas de sectores:
+A) Rentables
+B) Tecnológicos
+C) Estratégicos
+D) Incompatibles con los ODS *
 
-**30. La Directiva europea que regula los informes de sostenibilidad es:**  
-a) ISO 26000  
-b) CSRD  
-c) GRI  
-d) UNE 14001
+P: La Directiva europea que regula los informes de sostenibilidad es:
+A) ISO 26000
+B) CSRD *
+C) GRI
+D) UNE 14001
 
-**31. Las NEIS (ESRS) sirven para:**  
-a) Elaborar el plan de marketing  
-b) Regular impuestos verdes  
-c) Establecer cómo informar sobre sostenibilidad  
-d) Evaluar inversiones
+P: Las NEIS (ESRS) sirven para:
+A) Elaborar el plan de marketing
+B) Regular impuestos verdes
+C) Establecer cómo informar sobre sostenibilidad *
+D) Evaluar inversiones
 
-**32. El plan de sostenibilidad es un documento:**  
-a) Obligatorio  
-b) Fiscal  
-c) Operativo diario  
-d) Estratégico y de planificación
+P: El plan de sostenibilidad es un documento:
+A) Obligatorio
+B) Fiscal
+C) Operativo diario
+D) Estratégico y de planificación *
 
-**33. El horizonte temporal típico de un plan de sostenibilidad es de:**  
-a) 6 meses  
-b) 1 año  
-c) 2 a 4 años  
-d) 10 años
+P: El horizonte temporal típico de un plan de sostenibilidad es de:
+A) 6 meses
+B) 1 año
+C) 2 a 4 años *
+D) 10 años
 
-**34. El principio de doble materialidad considera:**  
-a) Coste y beneficio  
-b) Impacto y factibilidad  
-c) Impacto ambiental y financiero  
-d) Riesgo y rentabilidad
+P: El principio de doble materialidad considera:
+A) Coste y beneficio
+B) Impacto y factibilidad
+C) Impacto ambiental y financiero *
+D) Riesgo y rentabilidad
 
-**35. Una matriz impacto-factibilidad sirve para:**  
-a) Priorizar iniciativas  
-b) Calcular emisiones  
-c) Elaborar indicadores  
-d) Certificar productos
+P: Una matriz impacto-factibilidad sirve para:
+A) Priorizar iniciativas *
+B) Calcular emisiones
+C) Elaborar indicadores
+D) Certificar productos
 
-**36. Una memoria de sostenibilidad muestra:**  
-a) Las cuentas anuales  
-b) Los resultados ASG del año  
-c) El plan estratégico  
-d) Los objetivos futuros
+P: Una memoria de sostenibilidad muestra:
+A) Las cuentas anuales
+B) Los resultados ASG del año *
+C) El plan estratégico
+D) Los objetivos futuros
 
-**37. El estudio de impacto ambiental es:**  
-a) Un documento voluntario  
-b) Un informe financiero  
-c) Un análisis de riesgos de mercado  
-d) Un documento previo a la declaración ambiental
+P: El estudio de impacto ambiental es:
+A) Un documento voluntario
+B) Un informe financiero
+C) Un análisis de riesgos de mercado
+D) Un documento previo a la declaración ambiental *
 
-**38. La huella ecológica mide:**  
-a) La rentabilidad  
-b) El consumo energético  
-c) La presión sobre los ecosistemas  
-d) Las emisiones de CO₂
+P: La huella ecológica mide:
+A) La rentabilidad
+B) El consumo energético
+C) La presión sobre los ecosistemas *
+D) Las emisiones de CO₂
 
-**39. La descarbonización implica:**  
-a) Reducir el uso de materiales  
-b) Eliminar residuos  
-c) Aumentar la eficiencia  
-d) Reducir las emisiones de gases de efecto invernadero
+P: La descarbonización implica:
+A) Reducir el uso de materiales
+B) Eliminar residuos
+C) Aumentar la eficiencia
+D) Reducir las emisiones de gases de efecto invernadero *
 
-**40. Un sistema de gestión ambiental sirve para:**  
-a) Gestionar recursos humanos  
-b) Controlar el desempeño ambiental  
-c) Diseñar productos  
-d) Comunicar al mercado
+P: Un sistema de gestión ambiental sirve para:
+A) Gestionar recursos humanos
+B) Controlar el desempeño ambiental *
+C) Diseñar productos
+D) Comunicar al mercado
 
-**41. Los grupos de interés influyen en la empresa mediante:**  
-a) Solo el mercado  
-b) Normas jurídicas  
-c) Expectativas y decisiones  
-d) Publicidad
+P: Los grupos de interés influyen en la empresa mediante:
+A) Solo el mercado
+B) Normas jurídicas
+C) Expectativas y decisiones *
+D) Publicidad
 
-**42. Una empresa sostenible debe tener en cuenta:**  
-a) Solo el beneficio  
-b) Los ODS relevantes para su sector  
-c) Solo el medio ambiente  
-d) Solo a los accionistas
+P: Una empresa sostenible debe tener en cuenta:
+A) Solo el beneficio
+B) Los ODS relevantes para su sector *
+C) Solo el medio ambiente
+D) Solo a los accionistas
 
-**43. El ecodiseño también se aplica a:**  
-a) Solo bienes físicos  
-b) Solo industrias  
-c) Solo productos tecnológicos  
-d) Servicios
+P: El ecodiseño también se aplica a:
+A) Solo bienes físicos
+B) Solo industrias
+C) Solo productos tecnológicos
+D) Servicios *
 
-**44. El estado no financiero informa sobre:**  
-a) Ventas  
-b) Deudas  
-c) Impactos ASG  
-d) Costes
+P: El estado no financiero informa sobre:
+A) Ventas
+B) Deudas
+C) Impactos ASG *
+D) Costes
 
-**45. Un certificado tipo I según ISO es:**  
-a) Una ecoetiqueta  
-b) Un informe financiero  
-c) Un rating ASG  
-d) Un plan estratégico
+P: Un certificado tipo I según ISO es:
+A) Una ecoetiqueta *
+B) Un informe financiero
+C) Un rating ASG
+D) Un plan estratégico
 
-**46. Un bono verde es un producto de:**  
-a) Marketing  
-b) Producción  
-c) Financiación sostenible  
-d) Fiscalidad
+P: Un bono verde es un producto de:
+A) Marketing
+B) Producción
+C) Financiación sostenible *
+D) Fiscalidad
 
-**47. La Ley 11/2018 regula en España:**  
-a) La economía circular  
-b) La información no financiera  
-c) La inversión responsable  
-d) El ecodiseño
+P: La Ley 11/2018 regula en España:
+A) La economía circular
+B) La información no financiera *
+C) La inversión responsable
+D) El ecodiseño
 
-**48. El GRI es un estándar para:**  
-a) Medir emisiones  
-b) Diseñar procesos  
-c) Informar sobre sostenibilidad  
-d) Certificar productos
+P: El GRI es un estándar para:
+A) Medir emisiones
+B) Diseñar procesos
+C) Informar sobre sostenibilidad *
+D) Certificar productos
 
-**49. Una declaración de impacto ambiental es emitida por:**  
-a) La empresa  
-b) La UE  
-c) Una ONG  
-d) La autoridad medioambiental
+P: Una declaración de impacto ambiental es emitida por:
+A) La empresa
+B) La UE
+C) Una ONG
+D) La autoridad medioambiental *
 
-**50. El objetivo último de la sostenibilidad es:**  
-a) Reducir costes  
-b) Cumplir la ley  
-c) Aumentar beneficios  
-d) Mantener el equilibrio entre sociedad, economía y naturaleza
+P: El objetivo último de la sostenibilidad es:
+A) Reducir costes
+B) Cumplir la ley
+C) Aumentar beneficios
+D) Mantener el equilibrio entre sociedad, economía y naturaleza *

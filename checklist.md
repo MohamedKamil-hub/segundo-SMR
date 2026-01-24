@@ -1,7 +1,5 @@
 
 - [ ] Itinerario personal para la empleabilidad 2
-- [ ] Proyecto intermodular Sistemas Microinformáticos y Redes
-- [ ] Técnico en Sistemas Microinformáticos y Redes (SMR)
 - [ ] Sistemas operativos en red
 - [ ] Seguridad informática
 - [ ] Digitalización aplicada a los sectores productivos
@@ -9,4 +7,4 @@
 - [ ] Aplicaciones web
 - [ ] Inglés profesional GM
 - [ ] Sostenibilidad aplicada al sistema productivo
-- [ ] Módulo profesional optativo 2
+- [ ] Módulo profesional optativo 2 arquitectura en la nube

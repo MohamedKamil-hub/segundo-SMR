@@ -61,7 +61,7 @@
     *   Agilidad y menos burocracia.
     *   El patrimonio personal responde ante las deudas del negocio.
 *   **Sociedad Limitada (S.L.) / Persona Jurídica:**
-    *   Protege el patrimonio personal (sólo se responde con el capital aportado, mínimo 3.000€).
+    *   Protege el patrimonio personal (sólo se responde con el capital aportado,                     mantener mínimo 3.000€).
     *   Más complejidad administrativa (escritura pública, registro mercantil, contabilidad formal).
     *   Imagen más profesional.
 
@@ -70,6 +70,13 @@
 2.  **Alta en la Seguridad Social:** Como autónomo o como administrador de una sociedad.
 3.  **Licencias y Permisos:** Para actividades reguladas o locales físicos.
 4.  **Registro de Propiedad Intelectual/Industrial:** Protección de la **marca** (en la OEPM), patentes y diseños.
+
+
+**tipos de impuestos**
+- **IRPF**: se paga un poco cada trimestre y luego se hace la declaración anual de la renta.
+- **IVA**: se declara cada trimestre y se hace un resumen anual; normalmente lo pagan las empresas, no las personas normales.
+
+
 
 **Gestión de Proyectos**
 *   **Definición:** Planificar, asignar responsabilidades y monitorizar el progreso para cumplir objetivos.
@@ -81,7 +88,18 @@
 *   **Puntos de Atención al Emprendedor (PAE) y CIRCE:** Sistema telemático para crear una empresa de forma rápida y centralizada.
 *   **Calendario Fiscal:** Obligación de presentar declaraciones trimestrales (IVA, IRPF) y anuales (Impuesto de Sociedades).
 
+
+
+**retencion**
+![[Pasted image 20260123234214.png]]
+
+
 ---
+![[Pasted image 20260123234548.png]]
+
+
+
+
 
 **Resumen Final de Conceptos Clave para el Examen:**
 *   Design Thinking: 5 fases (Empatizar, Definir, Idear, Prototipar, Testear) e iteratividad.

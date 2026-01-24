@@ -404,7 +404,7 @@ lo que las hace repetibles, rapidas, autonomas y mas pequeñas que una vm.
 es una plataforma que permite crear probar e implementar aplicaciones ,
 permite ejecutar contenedores
 
-![[{8A233D86-D70C-447F-9012-A652B0D53135}.png]]
+![[Pasted image 20260120205527.png]]
 
 
 **Kubernetes**

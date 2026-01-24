@@ -1,12 +1,8 @@
-Claro, aquí tienes un resumen estructurado del contenido teórico esencial para tu examen, eliminando ejemplos, casos prácticos y consejos operativos.
-
----
-
 ### **Sesión 10: Dato vs Información. Ciclo de Vida del Dato. Big Data y Ciencia de Datos**
 
 **Conceptos Clave:**
 - **Dato:** Registro en bruto (número, texto, marca temporal), sin significado por sí solo.
-- **Información:** Dato + contexto + estructura (ej: 37 → 37°C de temperatura).
+- **Información:** Dato + contexto + estructura + significado + relacion con otros datos (ej: 37 → 37°C de temperatura).
 - **Conocimiento:** Interpretación de la información para tomar decisiones.
 
 **Ciclo de Vida del Dato:**
@@ -29,7 +25,7 @@ Claro, aquí tienes un resumen estructurado del contenido teórico esencial para
 **Data Warehouse:**
 - Datos **estructurados** y consolidados.
 - **Schema-on-write:** Estructura predefinida al cargar.
-- Uso: **Business Intelligence (BI)**, reporting, análisis histórico.
+- Uso: **Business Intelligence (BI)**, informes, análisis histórico.
 
 **Data Lake:**
 - Datos en **bruto** (estructurados y no estructurados).
@@ -79,5 +75,3 @@ Claro, aquí tienes un resumen estructurado del contenido teórico esencial para
 - Componentes de la **tríada CIA**.
 - Identificación de **amenazas cibernéticas** y **medidas de protección**.
 - Conocimiento de los **derechos y obligaciones del RGPD**.
-
-¡Espero que te sea de mucha ayuda para el examen!

@@ -50,6 +50,10 @@
 - **Opciones:** Parámetros adicionales (DNS, gateway, tiempo de concesión).
 - **Reservas:** Asignan una IP fija a una dirección MAC específica.
 
+
+### ip 169.254.x.x en windows
+**Rango APIPA:** 169.254.0.1 – 169.254.255.254
+ocurre cuando windows no puede sacar una ip de DHCP, asi que windows se asigna una a si mismo, asi no hay accso a internet u otras redes y solo te puedes comunicar con otros equipos con APIPA
 ### Puertos
 - Servidor: UDP 67
 - Cliente: UDP 68

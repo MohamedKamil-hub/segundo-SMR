@@ -59,7 +59,7 @@ C) Zonas conectan regiones.
 D) Cada región tiene centros de datos asignados a zonas.
 
 P: Responsabilidad compartida AWS:
-A) Los clientes gestionan sus datos. *
+A) Los clientes gestionan sus datos. 
 B) AWS protege la infraestructura física. *
 C) AWS decide qué cifrar en S3.
 D) AWS configura grupos de seguridad.

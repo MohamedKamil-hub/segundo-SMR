@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9cb57b4068032357",
+        "id": "8331e6de71423bb2",
         "type": "tabs",
         "children": [
           {
-            "id": "522df99ae2088e6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "checklist.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "checklist"
-            }
-          },
-          {
-            "id": "9be4db266799abda",
+            "id": "2ff1ab6e6eccef73",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,15 +167,21 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "9be4db266799abda",
+  "active": "2ff1ab6e6eccef73",
   "lastOpenFiles": [
-    "proyecto intermodular.md",
+    "MPO-Arquitecturas-en-la-nube/notas.md",
+    "MPO-Arquitecturas-en-la-nube/test.md",
+    "MPO-Arquitecturas-en-la-nube/AWS.md",
+    "seguridad-informatica/notas.md",
+    "seguridad-informatica/test.md",
     "checklist.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/notas.md",
+    "README.md",
+    "proyecto intermodular.md",
     "Digitalización-aplicada-a-los-sectores-productivos/notas.md",
     "Digitalización-aplicada-a-los-sectores-productivos/test.md",
     "Digitalización-aplicada-a-los-sectores-productivos/notas_clase.md",
     "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/notas.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/test.md",
     "Sostenibilidad-aplicada-al-sistema-productivo/repaso todo.md",
     "servicios-de-red/test.md",
@@ -204,16 +195,10 @@
     "servicios-de-red/notas.md",
     "sistemas-operativos-en-red/notas.md",
     "aplicaciones-web/notas.md",
-    "MPO-Arquitecturas-en-la-nube/test.md",
-    "seguridad-informatica/notas.md",
-    "seguridad-informatica/test.md",
     "sistemas-operativos-en-red/clases apuntes.md",
-    "MPO-Arquitecturas-en-la-nube/AWS.md",
     "fotos/Pasted image 20260120205527.png",
     "MPO-Arquitecturas-en-la-nube/apuntes.md",
     "Digitalización-aplicada-a-los-sectores-productivos/temas/tema5.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/temas/tema4.md",
-    "MPO-Arquitecturas-en-la-nube/notas.md",
     "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",
     "ingles/Englishcoursev2Students.pdf",
     "Horario.png",

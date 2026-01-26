@@ -1,44 +1,107 @@
-Amazon Route 53 – enrutamiento latencia:
-Dirigir tráfico a región con mejor experiencia.
+**Tipos de servicio en la nube**
 
-¿Qué significa “elasticidad” en la nube?
-Capacidad de ampliar o reducir recursos automáticamente
+**IaaS** mantienes máxima flexibilidad sobre los recursos de IT  
+**PaaS** gestionas datos y aplicaciones pero evitas gestionar sistemas operativos.  
+**SaaS**
 
-¿Qué requisito de TI indica elegir IaaS?
-Mantener la máxima flexibilidad sobre recursos de TI.
+La principal ventaja de la nube (aprovisionamiento en la nube) es que escalas o reduces recursos rápidamente según la demanda.  
+Es elástica, osea amplía o reduce recursos automáticamente.
 
-Ventaja de PaaS sobre otros modelos:
-Evita gestionar sistemas operativos.
+**Las economías de escala** reducen costos variables y permiten escalar más allá de lo local, a más crece un proveedor de nube (AWS, Azure...) más barato le resulta ofrecer cada servicio, lo cual beneficia a los clientes.
 
-Uso válido de grupo de seguridad: Controlar tráfico entrante y saliente de instancias
-Limitar tráfico saliente a servidor específico. 
+---
 
-s3 almacena objetos de datos
+**Perspectiva empresarial del marco AWS**
 
-cloudtrail regitra actividad de la cuenta y llamadas a api
+Se enfoca en **el "por qué" del negocio** justificar la inversión en la nube y priorizar lo que trae más valor, no en los detalles técnicos.  
+Crear argumento de negocio y priorizar (habla de dinero y estrategia).  
+_"vamos a construir un edificio porque dará ganancias"_ (perspectiva empresarial), no _"cómo lo construiremos"_ (eso es otra perspectiva).
 
-En AWS, ¿qué debes hacer para que una subred 10.0.2.0/24 tenga acceso a Internet? Adjuntar una puerta de enlace de Internet a la VPC y actualizar la tabla de rutas
+---
 
-Acceso temporal entre cuentas: rol iam
+**Costos en AWS**
 
-¿Qué es una subred en una VPC? Una división de la VPC para organizar recursos
-una vpc puede abarcar varias zonas de disponibilidad.
+**Explorador de costos de AWS** permite ver por ejemplo, los costos de EC2 los últimos 3 meses.  
+**El panel de facturación para identificar ahorros** muestra servicios con mayor gasto del mes.
 
-Configurar VPC para aplicación web: Crear subred pública y privada.
+---
 
-Las subredes son divisiones del rango de la VPC y no pueden superponerse
+**Infraestructura global de AWS**
 
+Cada región tiene zonas de disponibilidad; cada zona tiene centros de datos.  
+Una región cercana a los usuarios reduce la latencia.
 
-Panel de facturación para identificar ahorros:
-Muestra servicios con mayor gasto del mes.
+---
 
-Protección de datos en tránsito:
-TLS cifra datos en tránsito.
+**Modelo de responsabilidad compartida**
 
-economias de escala **Reducen costos variables y permiten escalar más allá de lo local.**
-
-Este es el beneficio central de las economías de escala en cloud:
-
-- **Menor costo por unidad** (servidor, almacenamiento, transferencia)
+- Los clientes gestionan sus datos
     
-- **Capacidad casi ilimitada** sin inversión inicial grande
+- AWS protege la infraestructura física
+    
+
+---
+
+**Identidad y acceso**
+
+**ROL IAM** da acceso temporal entre cuentas, ya que asume usuarios externos.
+
+---
+
+**Seguridad en red**
+
+Para proteger datos en tránsito se usa el TLS para cifrarlos.
+
+---
+
+**Redes en AWS (VPC)**
+
+Una **VPC** puede abarcar varias zonas de disponibilidad.
+
+Para una aplicación web se suele crear una subred pública y una privada.  
+Una subred en una VPC es una división de la VPC para organizar recursos.
+
+Dividir una subred permite organizar recursos y controlar la disponibilidad y seguridad.
+
+Una subred privada permite que esa subred solo acceda a recursos internos de AWS.
+
+En la VPC 10.0.0.0/16 y las subredes 10.0.1.0/24 y 10.0.2.0/24 las subredes son divisiones del rango de la VPC y no pueden superponerse.
+
+**Cálculo de subredes**  
+**10.0.1.0/24** cuántas IPs privadas hay en esa subred?  
+32 - /24 = 8 → 2 elevado a 8 = 256 pero restamos 5 ya que AWS reserva 5 direcciones de cada subred. así que 251.
+
+Para que una subred tenga acceso a internet tienes que adjuntar una puerta de enlace de internet a la VPC y actualizar la tabla de rutas.
+
+---
+
+**DNS y distribución de contenido**
+
+El enrutamiento de latencia de Amazon Route 53 dirige el tráfico a la región con mejor experiencia.
+
+Una red de entrega de contenido CDN almacena en caché archivos solicitados con frecuencia.
+
+---
+
+**Seguridad en instancias**
+
+Los grupos de seguridad solo aplican a instancias, no aplican a la red, limitan el tráfico entrante y saliente a un servidor (instancia) específico.
+
+---
+
+**Servicios AWS**
+
+- **S3** permite almacenar objetos de datos.
+    
+- **EC2** da servidores, máquinas virtuales, escalables
+    
+- **RDS** da bases de datos relacionales gestionadas. datos que no cambian rápido
+    
+- **Lambda** ejecuta código sin usar servidores
+    
+
+---
+
+**Monitoreo y auditoría**
+
+**AWS CloudTrail** registra actividad de la cuenta y llamadas a API.

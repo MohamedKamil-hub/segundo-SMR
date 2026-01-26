@@ -168,7 +168,7 @@ D) Snort
 
 P: ¿Qué tipo de control detecta incidentes?
 A) Preventivo
-B) Detective *
+B) Detectivo *
 C) Correctivo
 D) Pasivo
 

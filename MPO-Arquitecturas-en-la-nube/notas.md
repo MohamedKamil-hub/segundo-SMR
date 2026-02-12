@@ -91,7 +91,9 @@ Los grupos de seguridad solo aplican a instancias, no aplican a la red, limitan 
 
 **Servicios AWS**
 
-- **S3** permite almacenar objetos de datos.
+- **S3** permite almacenar objetos de datos. debe actualizar todo el archivo
+
+- **EBS** almacena los archivos como bloque, solo cambias lo que quieres del archivo
     
 - **EC2** da servidores, máquinas virtuales, escalables
     

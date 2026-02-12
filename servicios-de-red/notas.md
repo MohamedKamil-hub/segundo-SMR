@@ -17,11 +17,11 @@ image/png para imágenes PNG. y video/mp4 para videos en MP4.
 
 
 **Dovecot** gestiona el acceso a buzones en un servidor de correo, perro guardian del buzon
-formatos de buzon 
+formatos de buzon ,  **buzon**
 - mbox , almacena todos los correos juntos en una caja
 - maildir, almacena cada correo como un archivo individual
 
-**Postfix** recibe correo, decide si aceptarlo, y lo entrega, cartero que habla SMTP, usa           `systemctl status postfix` para ver si esta activo
+**Postfix** recibe correo, decide si aceptarlo, y lo entrega, cartero que habla SMTP, usa           `systemctl status postfix` para ver si esta activo ,es el **cartero**
 
 
 ---
@@ -61,7 +61,7 @@ su tipo de usuario que no existe como cuenta del sistema es el **usuario virtual
 
 
 ---
-
+**virtual host** se usa para que un sitio web sea capaz de gestionar multiples dominios, necesitas un dominio hola.com, el virtualhost seria tienda.hola.com, para ello tiene que apuntar a la IP, su archivo de configuracion es sites-available, y activa el sitio con a2ensite
 
 **HTTPS** funciona en el puerto 443
 **HTTP** funciona en el puerto 80, base del funcionamiento de la web

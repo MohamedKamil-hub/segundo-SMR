@@ -287,3 +287,113 @@ P: (Tema 7) En una práctica donde usas tar para comprimir /home, ¿para qué si
 A) Para liberar memoria RAM
 B) Para hacer copias de seguridad periódicas sin intervención del usuario *
 C) Para acelerar el arranque del sistema
+
+P: ¿Qué se entiende por scripting en administración de sistemas?  
+A) Usar interfaces gráficas para configurar el sistema  
+B) Automatizar tareas mediante scripts *  
+C) Instalar sistemas operativos
+
+P: ¿Para qué se utiliza PowerShell en entornos Windows?  
+A) Para navegar por Internet  
+B) Para automatizar y administrar el sistema mediante comandos y scripts *  
+C) Para editar documentos
+
+P: ¿Qué lenguaje de scripting se usa habitualmente en sistemas Linux?  
+A) PowerShell  
+B) Bash *  
+C) HTML
+
+P: ¿Qué ocurre si ejecutas un script Bash de creación de usuarios sin permisos suficientes?  
+A) Se crean los usuarios igualmente  
+B) Falla la creación de usuarios por falta de privilegios *  
+C) Se reinicia el sistema
+
+P: ¿Qué herramienta de Windows permite ejecutar scripts automáticamente a una hora concreta?  
+A) Administrador de dispositivos  
+B) Programador de Tareas *  
+C) Editor del Registro
+
+P: Si programas una tarea en Windows para las 22:00 todos los días, esta se ejecutará:  
+A) Solo una vez  
+B) Cada día a las 10 PM *  
+C) Cada vez que se reinicie el equipo
+
+P: ¿Qué comando se utiliza en Linux para editar las tareas programadas del usuario?  
+A) cron -e  
+B) crontab -e *  
+C) schedule -e
+
+P: ¿Qué ventaja tiene calcular hashes de procesos o de archivos?  
+A) Reduce el uso de memoria  
+B) Permite detectar cambios o manipulaciones *  
+C) Mejora la velocidad de red
+
+P: En Active Directory, ¿qué ventaja tiene crear usuarios leyendo desde un fichero?  
+A) Es más lento que hacerlo a mano  
+B) Permite crear muchos usuarios de forma automatizada *  
+C) Solo sirve para un usuario
+
+P: ¿Qué es una OU (Unidad Organizativa) en Active Directory?  
+A) Un disco duro virtual  
+B) Un contenedor lógico para organizar usuarios y equipos *  
+C) Un tipo de grupo de seguridad
+
+P: ¿Por qué es importante definir una estructura de OU en Active Directory?  
+A) Para cambiar el idioma del sistema  
+B) Para organizar objetos y aplicar GPO de forma controlada *  
+C) Para aumentar el espacio en disco
+
+P: ¿Qué es Docker Desktop?  
+A) Un editor de texto para contenedores  
+B) Una aplicación para ejecutar y gestionar contenedores en tu máquina *  
+C) Un antivirus para Windows
+
+P: ¿Qué hace el comando docker run?  
+A) Detiene un contenedor  
+B) Crea y ejecuta un contenedor a partir de una imagen *  
+C) Cambia la IP del equipo
+
+P: En -p 8080:80, el puerto 8080 corresponde a:  
+A) El puerto del contenedor  
+B) El puerto del host (tu máquina) *  
+C) Un puerto reservado para DNS
+
+P: En -p 8080:80, el puerto 80 corresponde a:  
+A) El puerto del host  
+B) El puerto del contenedor donde escucha Apache *  
+C) El puerto de SSH
+
+P: Si el contenedor está funcionando, ¿qué deberías ver al abrir [http://localhost:8080](http://localhost:8080)?  
+A) Un mensaje de error de DNS  
+B) La página de bienvenida del servidor Apache *  
+C) La consola de Docker
+
+P: ¿Por qué se usa localhost en la URL [http://localhost:8080](http://localhost:8080)?  
+A) Porque apunta al servidor remoto  
+B) Porque apunta a tu propia máquina (host) *  
+C) Porque es un dominio público de Docker
+
+P: Si al entrar en [http://localhost:8080](http://localhost:8080) no carga nada, una comprobación básica sería:  
+A) Ejecutar ping localhost para ver si Internet funciona  
+B) Ver si el contenedor está en ejecución con docker ps *  
+C) Cambiar el usuario del sistema
+
+P: ¿Qué ocurre si el puerto 8080 ya está siendo usado por otro programa en tu host?  
+A) Docker ignora el conflicto y funciona igual  
+B) El contenedor no podrá publicar el puerto y el comando puede fallar *  
+C) Se cambia automáticamente al puerto 8081
+
+P: ¿Qué significa que el contenedor “escuche” en el puerto 80?  
+A) Que solo acepta conexiones SSH  
+B) Que el servicio web está disponible dentro del contenedor en ese puerto *  
+C) Que el contenedor tiene sonido activado
+
+
+
+
+
+
+
+
+
+

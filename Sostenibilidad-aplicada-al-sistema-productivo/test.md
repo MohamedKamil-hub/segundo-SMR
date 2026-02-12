@@ -259,7 +259,7 @@ D) Servicios *
 P: El estado no financiero informa sobre:
 A) Ventas
 B) Deudas
-C) Impactos ASG *
+C) Impactos ASG y sostenibilidad *
 D) Costes
 
 P: Un certificado tipo I según ISO es:
@@ -297,3 +297,195 @@ A) Reducir costes
 B) Cumplir la ley
 C) Aumentar beneficios
 D) Mantener el equilibrio entre sociedad, economía y naturaleza *
+
+P: ¿Qué es la sostenibilidad?  
+A) El uso ilimitado de recursos  
+B) El equilibrio entre actividad humana y ecosistemas *  
+C) El crecimiento económico sin límites  
+D) El desarrollo industrial
+
+P: El desarrollo sostenible busca:  
+A) Satisfacer solo las necesidades actuales  
+B) Priorizar el crecimiento económico  
+C) Satisfacer necesidades presentes sin comprometer las futuras *  
+D) Eliminar la actividad económica
+
+P: El principal reto medioambiental actual es:  
+A) La industrialización  
+B) El cambio climático *  
+C) La digitalización  
+D) El comercio internacional
+
+P: ¿Cómo afecta el cambio climático a las empresas?  
+A) Reduce costes  
+B) Mejora la competitividad automáticamente  
+C) Provoca daños y aumento de costes *  
+D) No tiene impacto
+
+P: ¿Qué indicador mide el impacto ambiental?  
+A) Producto Interior Bruto  
+B) Huella ecológica *  
+C) Inflación  
+D) Productividad
+
+P: ¿Qué son los ODS?  
+A) Objetivos económicos de las empresas  
+B) Metas globales impulsadas por la ONU *  
+C) Normas medioambientales europeas  
+D) Indicadores financieros
+
+P: ¿En qué año se aprobaron los ODS?  
+A) 1997  
+B) 2005  
+C) 2015 *  
+D) 2020
+
+P: Los ODS se basan en dimensiones:  
+A) Solo medioambiental  
+B) Medioambiental, económica y social *  
+C) Solo económica  
+D) Tecnológica
+
+P: ¿Quién debe cumplir obligatoriamente los ODS?  
+A) Las empresas  
+B) Las personas  
+C) Las administraciones públicas *  
+D) Los consumidores
+
+P: El consumo responsable implica:  
+A) Comprar más  
+B) Tener en cuenta el impacto social y ambiental *  
+C) Elegir siempre el producto más barato  
+D) Evitar el trabajo
+
+P: ¿Qué herramienta ayuda a implantar los ODS en la empresa?  
+A) Agenda 2030  
+B) SDG Compass *  
+C) Protocolo de Kioto  
+D) Pacto Verde
+
+P: ¿Qué es un grupo de interés?  
+A) Un cliente  
+B) Un colectivo afectado por la empresa *  
+C) Un proveedor  
+D) Un competidor
+
+P: La relación empresa-grupos de interés es:  
+A) Unidireccional  
+B) Mutua *  
+C) Económica  
+D) Inexistente
+
+P: ASG significa:  
+A) Ambiental, social y gobernanza *  
+B) Análisis social global  
+C) Actividad sostenible general  
+D) Agenda social
+
+P: Los riesgos ASG son:  
+A) Beneficios  
+B) Circunstancias negativas *  
+C) Políticas  
+D) Indicadores
+
+P: El mapeo de grupos de interés sirve para:  
+A) Eliminar riesgos  
+B) Diseñar estrategias sostenibles *  
+C) Reducir costes  
+D) Cumplir leyes
+
+P: ¿Qué es el ciclo de vida del producto?  
+A) Solo producción  
+B) Todas las fases desde diseño hasta eliminación *  
+C) Solo consumo  
+D) Distribución
+
+P: La economía lineal se basa en:  
+A) Reducir y reutilizar  
+B) Extraer, producir, consumir y desechar *  
+C) Reciclar  
+D) Mantener valor
+
+P: La economía circular busca:  
+A) Generar residuos  
+B) Mantener valor de recursos *  
+C) Aumentar consumo  
+D) Eliminar procesos
+
+P: La producción limpia es:  
+A) Correctiva  
+B) Preventiva *  
+C) Económica  
+D) Reactiva
+
+P: ¿Qué es un indicador de desempeño?  
+A) Certificado  
+B) Dato que mide una meta *  
+C) Etiqueta  
+D) Informe
+
+P: ¿Qué norma regula la gestión ambiental?  
+A) ISO 9001  
+B) ISO 14001 *  
+C) ISO 26000  
+D) UE 2019
+
+P: ¿Para qué sirve la ISR?  
+A) Especular  
+B) Valorar impacto ASG *  
+C) Reducir costes  
+D) Evitar impuestos
+
+P: La ISR evalúa:  
+A) Precio  
+B) Rentabilidad  
+C) Impacto ASG *  
+D) Marketing
+
+P: ¿Qué producto es sostenible?  
+A) Hipoteca  
+B) Bono verde *  
+C) Crédito  
+D) Acción
+
+P: ¿Quién certifica sostenibilidad?  
+A) Clientes  
+B) Organismos *  
+C) Empleados  
+D) Proveedores
+
+P: ¿Qué es la información no financiera?  
+A) Información económica  
+B) Información sobre aspectos ASG *  
+C) Información fiscal  
+D) Información contable
+
+P: ¿Qué estándar internacional es clave en sostenibilidad?  
+A) ISO 9001  
+B) GRI *  
+C) ISO 45001  
+D) UNE
+
+P: ¿Qué es el plan de sostenibilidad?  
+A) Un informe anual  
+B) Un documento de planificación estratégica *  
+C) Un balance contable  
+D) Un certificado
+
+P: ¿Qué es la doble materialidad?  
+A) Doble contabilidad  
+B) Análisis de impacto y financiero *  
+C) Evaluación económica  
+D) Indicador ambiental
+
+P: ¿Qué refleja una memoria de sostenibilidad?  
+A) Objetivos futuros  
+B) Resultados anuales en sostenibilidad *  
+C) Beneficios económicos  
+D) Estrategia financiera
+
+P: ¿Qué documento analiza impactos ambientales de proyectos?  
+A) Memoria de sostenibilidad  
+B) Estudio de impacto ambiental *  
+C) Plan estratégico  
+D) Estado no financiero

@@ -177,3 +177,93 @@ A) Crear regiones
 B) Controlar tráfico entrante y saliente de instancias *
 C) Almacenar datos
 D) Analizar costos de la nube
+
+
+
+![[Pasted image 20260211200921.png]]
+
+se tiene un agente de escucha por zona de disponibilidad
+
+ec2 auto scaling monitoriza si hay una demanda no utilizada el lo evita, o almenos intenta quitando instancias no usadas, puede ser asenndente, lanza instancias o descendente porque elimina instancias
+
+cuales de estas herramientas de aws ayudan a su aplicacion con la escalabilidad ascendente o descendente segun la demanda?
+zonas de disponibilidad
+amazon ec2 auto scaling *
+aws cloudformation
+elastic load balancing *
+aws config
+
+**¿Cuáles de estas herramientas de AWS ayudan a su aplicación con la escalabilidad ascendente o descendente según la demanda? (Elija dos).**
+
+Zonas de disponibilidad
+
+Amazon EC2 Auto Scaling *
+
+AWS CloudFormation
+
+Elastic Load Balancing *
+
+AWS Config
+
+
+¿Qué servicio utilizaría para enviar alertas basadas en las alarmas de Amazon CloudWatch? (Seleccione la mejor respuesta).
+
+Amazon Simple Notification Service (Amazon SNS) *
+AWS CloudTrail 
+AWS Trusted Advisor
+Amazon Route 53
+
+¿Cuáles de estas características corresponden a Amazon EC2 Auto Scaling? 
+(Elija tres).
+Solo admite el escalado dinámico 
+Responde a condiciones cambiantes agregando o terminando instancias *
+Entrega notificaciones push 
+Lanza instancias a partir de una imagen de Amazon Machine (AMI) específica *
+Obliga a ejecutar una cantidad mínima de instancias de Amazon EC2 *
+
+
+¿Cuál de estos elementos debe configurarse en un balanceador de carga de Elastic Load Balancing para aceptar el tráfico entrante? (Seleccione la mejor respuesta). 
+Un puerto 
+Una interfaz de red 
+Un agente de escucha *
+Una instancia
+
+¿Cuáles de estos elementos se utilizan para crear una configuración de lanzamiento de Amazon EC2 Auto Scaling? (Elija tres). 
+Imagen de Amazon Machine (AMI) *
+Balanceador de carga *
+Tipo de instancia 
+Nube virtual privada (VPC) y subredes 
+Volúmenes de Amazon Elastic Block Store (Amazon EBS) *
+
+¿Cuál de estos servicios puede ayudarlo a recopilar métricas importantes sobre las instancias de Amazon Relational Database Service (Amazon RDS) y Amazon Elastic Compute Cloud (Amazon EC2)? (Seleccione la mejor respuesta). 
+Amazon CloudFront 
+Amazon CloudSearch 
+Amazon CloudWatch *
+AWS CloudTrail 
+Amazon EC2 Auto Scaling
+
+¿Cuáles de estos elementos corresponden a un grupo de Auto Scaling? (Elija tres). 
+Tamaño mínimo *
+Comprobaciones de estado 
+Capacidad deseada *
+Tamaño máximo *
+
+Hay una auditoría en su empresa, y necesita un registro de todo el acceso a los recursos de AWS en la cuenta. ¿Cuál de estos servicios puede ayudarlo a proporcionar esta información? (Seleccione la mejor respuesta). 
+Amazon CloudWatch 
+AWS CloudTrail *
+Amazon Elastic Compute Cloud (Amazon EC2) 
+Amazon Simple Notification Service (Amazon SNS)
+
+En Elastic Load Balancing, cuando el balanceador de carga detecta un destino en mal estado, ¿cuáles de estas medidas se cumplen? (Elija tres). 
+Deja de dirigir el tráfico hacia ese destino *
+Activa una alarma 
+Reanuda el direccionamiento del tráfico cuando detecta que el destino está en buen estado nuevamente *
+Reanuda el direccionamiento del tráfico cuando se reinicia de forma manual 
+Dirige el tráfico a un destino en buen estado *
+
+¿Cuáles son los tres tipos de balanceadores de carga que ofrece Elastic Load Balancing? Balanceador de carga de Internet 
+Balanceador de carga de aplicaciones *
+Balanceador de carga de red *
+Balanceador de carga informático 
+Balanceador de carga clásico *
+Balanceador de carga de Auto Scaling

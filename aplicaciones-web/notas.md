@@ -929,3 +929,103 @@ lenguaje cliente javascript
 lenguaje servidor php
 
 antes de base de datos tener apache encendido
+
+
+
+
+
+
+
+
+
+
+# esquema
+web usuario > navegadir web peticion http > navegador web apache nginx > aplicacion web php > base de datos MySQL < respuesta HTML <  navegador web
+
+**usuario** es quien usa la aplicación web, escribe una url, pulsa enlaces y envía formularios.
+
+**navegador web cliente**  el cliente envia peticiones http al servidor, muestra la respuesta recibida HTML y ejecuta código del lado del cliente, HTML, css, JavaScript.
+
+**servidor web** es el programa que recibe las peticiones del navegador, decide que archivo o aplicación ejecutar ej. nginx o apache
+
+**aplicación web** es el código que procesa la info recibida, ejecuta la lógica del programa, accede a la base de datos. ej. php que valida usuarios guarda datos de un formulario y muestra información almacenada.
+
+**respuesta del servidor** el servidor envía al navegador una pagina HTML con estilos css y JavaScript  y el navegador interpreta la respuesta y la muestra al usuario.
+
+
+**bases de datos** almacenan información de usuarios, contraseñas, productos, datos introducidos en formularios ej MYSQL
+
+
+**flujo** 
+1. usuario escribe URL n navegador
+2. navegador envía petición HTTP a servidor
+3. servidor web recibe petición
+4. se ejecuta aplicación web PHP
+5. aplicación consulta base de datos si es necesario
+6. servidor genera respuesta HTML
+7. navegador muestra pagina a usuario.
+
+**aplicaciones web 2.0** paginas y servicios web en los que el usuario deja de ser espectador y pasa a ser parte activa creando, modificando y compartiendo parte del contenido. ej. redes sociales
+el la **1.0** el usuario solo leía contenido estático
+
+
+
+
+**RSS** es un sistema que permite recibir automáticamente las novedades de una pagina web, sin tener que visitarla manualmente. son útiles para noticias, blogs, podcasts, actualizaciones de webs.
+permite al usuario suscribirse a una pagina web y recibir novedades.
+la web genera un XML, feed RSS, con una entrada que contiene un titulo, descripción, enlace o fecha, el usuario usa un lector RSS que lo lee.
+
+**Marcadores Sociales** permiten guardar enlaces a paginas web, organizarlos con etiquetas, compartirlos con otros usuarios, están disponibles desde cualquier dispositivo
+ej. Pinterest
+
+**Blog** es una pagina web donde se publican  contenidos periódicamente, las publicaciones se laman entradas y están ordenadas por fechas.
+pueden ser personales, educativos, profesionales, corporativos.
+se crea con Blogger o WordPress
+
+**wiki** pagina web colaborativa donde muchos usuarios pueden crear y editar contenidos , la info se actualiza continuamente de manera colaborativa por usuarios autorizados.
+
+**podcast** contenido de audio o video que se publica en internet, organizado por episodios, se puede escuchar o descargar, pueden usar RSS para avisar de nuevos episodios o permitir suscripción automática.
+
+
+**herramientas multimedia online** permite crear y editar contenidos desde el navegador,  
+ej. Google slides, canva,
+y almacenar imagenes y fotos, Google photos 
+edicion de video desde el navegador  ej.clipchamp
+edicion de musica online ej. soundtrap
+conversion de archivos y formatos
+
+
+**sistemas de gestion de aprendizaje a distancia** LMS
+es una aplicacion web que permite crear y gestionar usuarios online con roles de alumno y profesor, publicar materiales, proponer actividades, evaluar aprendizaje ej.moodle, google classroom.blackboard
+
+**sistemas operativos online** LMS es una aplicacion web por lo que necesita un servidor con sistema operativo libre como linux
+en propietarios hay que pagar licencia ej. windows
+
+un LMS puede permitir distintos tipos de registro, manual donde el administrador crea usuarios, auto-registro donde del usuario se registra, mediante clave donde el alumno necesita una contraseña
+
+hay 3 tipos de usuario administrador, profesor, alumno
+tiene servicio de mensajeria
+
+LMS las copias de seguridad permiten recuperar cursos, usuarios y evitar perdida de informacion
+
+
+
+**servicio de gestion de archivos web** es una aplicacion web que permite almacenar archivos en un servidor, acceder a ellos desde el navegador, compartir archivos con otros usuarios y gestionar permisos de acceso, similar a la nube pero puede estar en un servidor propio. ej. google drive
+necesita un entorno servidor con SO linux, windows, servidor web apache, lenguaje php, base de datos mysql. cada usuario tiene acceso solo a sus archivos salvo que se compartan
+
+recurso compartido permite que los usuarios accedan a los mismos archivos al mismo tiempo
+
+
+
+**ofimatica web** conjunto de aplicaciones  para documentos, hojas de calculo, presentaciones, desde un navegador web sin instalar programas. ej. google docs
+
+**aplicaciones web de escritotio** son aplicaciones web que sustituyen a programas de escritorio y se usan desde un navegador web sin requerir instalacion en el equipo, ej. ofimatica o correo
+
+
+**instalacion de sistemas de gestion de contenidos CMS** es una aplicacion web que permite crear y publicar contenidos, gestionar usuarios, administrar una web sin saber programar ej. wordpress
+
+**gestion de imagenes web** aplicacion web que permite subir imagenes a un servidor, organizarlas en albumes , compartirlas y gestionar acceso.
+
+**sistemas operativos online** es un entorno que se ejecuta desde el navegador, simula un escritorio tradicional y no requiere instalación local, ej. u
+
+

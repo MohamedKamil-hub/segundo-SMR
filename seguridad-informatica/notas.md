@@ -61,7 +61,7 @@ La principal ventaja del almacenamiento en la nube es la alta disponibilidad.
 
 - **Simétrico** una sola clave maestra que cifra y descifra, es rápida y simple pero si le das esa clave a otra persona y se la roban pueden abrir todo, problema de intercambio de claves. ej. AES
     
-- **Asimétrico** una clave pública para cifrar y comprobar (libre de uso) y una privada que descifra y firma (secreta), es más lento pero su distribución es segura
+- **Asimétrico** una clave pública para cifrar y comprobar (libre de uso) y una privada que descifra y firma (secreta), es más lento pero su distribución es segura RSA
     
 - **HASH** toma datos y de manera unidireccional produce un hash, un resumen único de esa combinación de caracteres, si cambias una sola letra el hash cambia.
     

@@ -20,7 +20,7 @@ El principal beneficio de la **nube** es la escalabilidad y el pago solo por uso
 **SaaS**: **Tus datos y configuraciones**, ej. Gmail o Canva.  
 La nube híbrida combina la nube pública y privada.
 
-La **IA** de hoy en día es ANI, especializada en una sola tarea o área específica.  
+La **IA** de hoy en día es **ANI**, especializada en una sola tarea o área específica.  
 **Machine Learning** permite aprender a partir de datos.  
 **Deep Learning** se basa en redes neuronales profundas.  
 **NLP** permite comprender y generar lenguaje humano.  

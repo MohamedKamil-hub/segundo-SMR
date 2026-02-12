@@ -105,3 +105,6 @@ en Linux puedes crear una entrada en crontab para que un script se ejecute todas
 para crear o editar las tareas programadas del usuario actual usa **contab -e**
 
 puedes tambien hacer copias de seguridad periodicas sin intervencion del usuario  , automatizando con cron la compresion de /home con tar .
+
+
+docker run -d (segundo plano) -p 8080:80 (redireccion de puertos, funciona en el 8080 pero redirige a 80) httpd (instalar httpd)

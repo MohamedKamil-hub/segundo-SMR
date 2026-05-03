@@ -1,6 +1,6 @@
 Mohamed Kamil El Kouarti Mechhidan
 2º SMR ONLINE
-dia-mes-año
+14-02-2026
 # 29-09-2025
 Presentation
 
@@ -642,3 +642,310 @@ would it be possible for you to fix this problem?
 **A:** “Of course. The training is next Tuesday at 10 AM.”
 **B:** “**thank you** for your help.”
 **A:** “**you are welcome** Have a good day!”
+
+# 30-01-2026
+pasado simple
+acciones terminadas
+verbo +ed
+
+p63 
+**Exercise D2: Past Simple Context Selection**
+
+**Complete with Past Simple when describing completed main events:**
+
+**1** Last week, I worked (work) late every day to finish the project.
+
+**2** The client aproved (approve) our proposal after we made (make) the changes.
+
+**3** She called (call) the supplier and solved (solve) the delivery problem.
+
+**4** We met (meet) the deadline because everyone helped (help).
+# 02-02-2026
+presente perfecto, ya paso pero aun es relevante o reciente
+pasado simple
+
+kahoot
+# 09-02-2026
+kahoot
+
+usually presente simple, marcadores temporales
+
+the correct answer is marked with *
+
+P: Which introduction is a standard, friendly introduction for a new team?  
+A) Hi, I’m Lucas. How’s it going?  
+B) Good morning, Mr. Anderson. My name is Lucas Ramírez.  
+C) Hey, I’m Lucas. I work here now.  
+D) Hi everyone, I’m Lucas from Customer Support. I handle client emails and calls. *
+
+P: The meeting today is less _______ than yesterday’s meeting.  
+A) stressful *  
+B) more stressful  
+C) stressfuller  
+D) stressfuless
+
+P: I _______ IT problems quickly.  
+A) am  
+B) solves  
+C) solving  
+D) solve *
+
+P: The new IT intern is less _______ than the senior technician.  
+A) more experienced  
+B) most experienced  
+C) experienced *  
+D) experiencer
+
+P: Peter is _______ team member in terms of organization.  
+A) the most organized *  
+B) more organized  
+C) organizedest  
+D) organized
+
+P: How would you describe a coworker who is friendly and talks to everyone?  
+A) Quiet  
+B) Outgoing *  
+C) Medium build  
+D) Grey hair
+
+P: We ___ the online store at the moment.  
+A) update  
+B) is updating  
+C) updates  
+D) are updating *
+
+P: I _______ responsible for updating the database.  
+A) is  
+B) are  
+C) am *  
+D) be
+
+P: This software is _______ than the old version.  
+A) easy  
+B) easier *  
+C) more easy  
+D) easiest
+
+P: The IT team _______ efficient and hardworking.  
+A) is *  
+B) am  
+C) are  
+D) be
+
+P: This meeting is _______ than the last one.  
+A) more long  
+B) longest  
+C) long  
+D) longer *
+
+P: I ___ with my boss on a video call right now.  
+A) ’m talking *  
+B) are talking  
+C) is talking  
+D) talk
+
+P: He is _______ employee in the company when it comes to reliability.  
+A) the most reliable *  
+B) more reliable  
+C) reliablest  
+D) most reliable
+
+P: She always _______ phone calls from clients.  
+A) answer  
+B) answers *  
+C) answering  
+D) are answered
+
+P: Which word describes a physical feature of a colleague?  
+A) Hardworking  
+B) Mustache *  
+C) Organized  
+D) Easy-going
+
+P: They ___ the sales report right now.  
+A) are reading *  
+B) read  
+C) is reading  
+D) reads
+
+P: This software is _______ than the old version.  
+A) more easy  
+B) easiest  
+C) easier *  
+D) most easy
+
+P: Our manager is _______ person I have ever worked with.  
+A) the most professional *  
+B) more professional  
+C) most professional  
+D) the professionalest
+
+P: Which introduction is too informal for a business situation?  
+A) Good afternoon, Mr. Carter. I’m Mia Santos.  
+B) Hello everyone, I’m Mia the Accounting department.  
+C) Good morning, this is Ms. Santos speaking. *  
+D) Hi, I’m Mia. I work in Accounting. How long have you been here?
+
+P: This system is _______ in the whole office.  
+A) faster  
+B) the fastest *  
+C) fastest  
+D) more fast
+
+P: Which introduction is best for a standard team meeting?  
+A) Good morning, Sir. I’m David Wilson.  
+B) Hey, I’m Dave. What’s up?  
+C) Hi everyone, I’m David from the Sales team. I work with client accounts. *  
+D) Hi, I’m David. How long have you worked here?
+
+P: Our office is _______ than the old building.  
+A) modern  
+B) mordener  
+C) most modern  
+D) more modern *
+
+P: The training session was less _______ than the workshop last month.  
+A) interesting *  
+B) interest  
+C) more interesting  
+D) interestinger
+
+P: What is the most professional way to tell a client about a project manager?  
+A) She’s young and unreliable.  
+B) She’s medium height and boring.  
+C) She’s hot and reliable.  
+D) She’s tall, professional, and very organized. *
+
+P: The engineers ___ a problem in the system now.  
+A) fixed  
+B) fixing  
+C) are fixing *  
+D) fixes
+
+P: The project outcome is _______ than the previous one.  
+A) bad  
+B) badder  
+C) worst  
+D) worse *
+
+P: Which introduction is formal and polite?  
+A) Hi! I’m Ethan. Nice to meet you!  
+B) Hey, I’m Ethan. How’s everything?  
+C) Good morning, Mr. Patel. I’m Ethan Johnson, the new data analyst. I’m very pleased to meet you. *  
+D) Hi there, I’m Ethan from Data.
+
+P: We _______ documents in the shared folder every week.  
+A) save *  
+B) saves  
+C) saving  
+D) is saving
+
+P: What is the most professional way to describe a colleague you like to HR?  
+A) He’s tall and skinny.  
+B) He’s medium height, slim, very friendly and helpful. *  
+C) He’s short, lazy and he is always late.  
+D) He’s middle-aged and bossy
+
+P: She is _______ than her colleague at organizing files.  
+A) organizeder  
+B) most organized  
+C) more organized *  
+D) organized
+
+
+
+
+
+
+
+## 1. Tiempos Verbales: Presente
+- **Present Simple**: Expresa rutinas habituales, hechos generales, procesos constantes (ej. en manuales técnicos) o horarios oficiales. Estructura: Sujeto + verbo base (3ª persona: +s/es). Negativa: Do/Does not + verbo. Interrogativa: Do/Does + sujeto + verbo. Auxiliar para 3ª persona: Does. Adverbios típicos: Usually, seldom. Ejemplos: Acciones diarias en trabajo; verdades universales como "If you heat ice, it melts" (Zero Conditional).
+- **Present Continuous**: Acciones en curso ahora o temporales. Estructura: Am/Is/Are + verbo-ing. Adverbios: Currently, now. Ejemplos: "I am checking the server" (acción momentánea); no con stative verbs como understand, know, need (usa Simple: "I understand the procedure").
+- **Present Perfect Simple**: Acciones completadas con conexión al presente, experiencias (con ever/never) o sin tiempo específico. Estructura: Have/Has + participio pasado. Adverbios: Already (afirmativa), yet (negativa/interrogativa), just. Ejemplos: "I have lost my login code" (resultado actual); "I have written the email" (completada).
+- **Present Perfect Continuous**: Énfasis en duración o esfuerzo de acción reciente. Estructura: Have/Has + been + verbo-ing. Diferencia con Simple: Duración vs. resultado. Ejemplos: "They have been working here since last January" (duración); "I've been coding all morning" (sugiere cansancio/persistencia). Marcadores: Since (punto inicio), for (período).
+
+**Tabla: Comparación Tiempos Presente**
+
+| Tiempo Verbal          | Estructura Principal              | Uso Principal                     | Ejemplo Laboral                  |
+|------------------------|-----------------------------------|-----------------------------------|----------------------------------|
+| Simple                | Sujeto + verbo (does 3ª pers.)   | Rutinas, hechos, horarios        | The train leaves at 8:00.       |
+| Continuous            | Am/Is/Are + V-ing                | Acciones ahora/temporales        | The team is developing a fix.   |
+| Perfect Simple        | Have/Has + participio            | Completadas con relevancia actual| I have already sent the file.   |
+| Perfect Continuous    | Have/Has + been + V-ing          | Duración/efecto reciente         | He has been working for hours.  |
+
+- **Past Simple**: Accdidiones terminadas en punto específico pasado. Estructura: Verbo-ed (irregulares: ej. run → ran, go → went). Negativa: Did not + verbo base. Interrogativa: Did + sujeto + verbo. Marcadores: Yesterday, last week, ago. Ejemplos: "I lost my login code yesterday"; narrar eventos completos.
+- **Past Continuous**: Acciones en curso en pasado, contextualiza interrupciones. Estructura: Was/Were + verbo-ing. Ejemplos: "While I was installing the OS, it crashed" (acción larga interrumpida por corta).
+- **Past Perfect Simple**: "Pasado del pasado", acciones previas a otra en pasado. Estructura: Had + participio. Ejemplos: "When I arrived, the meeting had started" (reunión primero); "I had already sent the file".
+- **Past Perfect Continuous**: Énfasis en duración previa a punto pasado. Estructura: Had + been + verbo-ing. Ejemplos: "He had been working for hours" (duración antes de algo).
+
+**Tabla: Comparación Tiempos Pasado**
+
+| Tiempo Verbal          | Estructura Principal              | Uso Principal                     | Ejemplo                          |
+|------------------------|-----------------------------------|-----------------------------------|----------------------------------|
+| Simple                | Verbo-ed / irregular             | Acciones terminadas específicas  | The phone rang.                 |
+| Continuous            | Was/Were + V-ing                 | Acciones en curso/interrumpidas  | She was typing when it rang.    |
+| Perfect Simple        | Had + participio                 | Previas a otra en pasado         | They had left before 5.         |
+| Perfect Continuous    | Had + been + V-ing               | Duración previa                  | It had been raining all day.    |
+
+## 3. Tiempos Verbales: Futuro
+- **Will**: Predicciones, decisiones instantáneas, opiniones, promesas. Estructura: Will + verbo base. Negativa: Won't. Interrogativa: Will + sujeto. Ejemplos: "I will call you later" (promesa); "I think it will be sunny" (opinión); "Look at those clouds! It will rain" (predicción espontánea).
+- **Going to**: Intenciones/planes basados en evidencia. Estructura: Am/Is/Are + going to + verbo. Interrogativa: Am/Is/Are + sujeto + going to. Ejemplos: "Look at those clouds! It is going to rain" (evidencia visible).
+- **Present Continuous para Futuro**: Arreglos confirmados. Ejemplo: "I am meeting the CEO tomorrow at 9".
+- **Future Continuous**: Acciones en curso en futuro. Estructura: Will be + verbo-ing. Ejemplo: "This time tomorrow, we will be flying to London".
+- **Future Perfect Simple**: Acciones completadas antes de punto futuro. Estructura: Will have + participio. Marcadores: By the end of..., by then. Ejemplo: "By next year, I will have finished my degree".
+- **Future Perfect Continuous**: Duración hasta punto futuro. Estructura: Will have been + verbo-ing. Ejemplo: "I will have been studying for 2 hours by then".
+
+**Tabla: Formas de Futuro**
+
+| Forma                 | Estructura                       | Uso Principal                     | Ejemplo                          |
+|-----------------------|----------------------------------|-----------------------------------|----------------------------------|
+| Will                 | Will + verbo                     | Predicciones, decisiones instante | I will start now.               |
+| Going to             | Am/Is/Are + going to + verbo    | Intenciones/evidencia             | It is going to rain.            |
+| Future Continuous    | Will be + V-ing                  | En curso futuro                   | I will be working at 10:00.     |
+| Future Perfect       | Will have + participio           | Completada antes futuro           | I will have finished by then.   |
+| Future Perfect Cont. | Will have been + V-ing           | Duración hasta futuro             | We will have been waiting.      |
+
+## 4. Condicionales y Estructuras Relacionadas
+- **Zero Conditional**: Verdades generales. Estructura: If + Present Simple, Present Simple. Ejemplo: "If you heat ice, it melts".
+- **First Conditional**: Posibilidades reales futuras. Estructura: If + Present Simple, will + verbo. Ejemplo: "If it rains, we will cancel" (alta probabilidad).
+- **Second Conditional**: Hipotéticas improbables presentes/futuras. Estructura: If + Past Simple, would + verbo. Modal en consecuencia: Would. Ejemplo: "If I were you, I would study".
+- **Third Conditional**: Hipotéticas pasadas imposibles (arrepentimiento). Estructura: If + Past Perfect, would have + participio. Ejemplo: "If I had known, I would have told you".
+- **Mixed Conditional**: Combina tiempos, ej. pasado afectando presente: If + Past Perfect, would + verbo.
+- **Wish/If only**: Deseos/arrepentimientos. Presente: Wish + Past Simple. Pasado: Wish + Past Perfect. Irritante: Wish + would. Ejemplos: "I wish I had more time"; "I wish it would stop raining"; "I wish I hadn't eaten so much" (regret). Negativa: Wish + hadn't.
+- **Unless**: Sustituye "if not" en condicionales.
+
+**Tabla: Tipos de Condicionales**
+
+| Tipo                 | Estructura                              | Uso                              | Ejemplo                          |
+|----------------------|-----------------------------------------|----------------------------------|----------------------------------|
+| Zero                | If + Present, Present                  | Verdades generales               | If it rains, roads get wet.     |
+| First               | If + Present, will + verbo             | Posibilidades reales             | If you arrive, call me.         |
+| Second              | If + Past, would + verbo               | Hipotéticas improbables          | If I won, I would travel.       |
+| Third               | If + Past Perfect, would have + part.  | Pasadas imposibles              | If they had arrived, we would.  |
+| Mixed               | If + Past Perfect, would + verbo       | Pasado afecta presente           | If I had studied, I would know. |
+
+## 5. Voz Pasiva y Reported Speech
+- **Voz Pasiva**: Enfatiza acción/objeto, no sujeto. Estructura: To be + participio pasado. Ejemplo: "The report was written by him". Útil en informes técnicos para objetividad.
+- **Reported Speech**: Cambios: Backshift (tiempos atrás, ej. am → was). Pronombres ajustan. Ejemplo: "I am tired" → He said he was tired.
+
+## 6. Modales y Obligaciones
+- **Mustn't**: Prohibición.
+- **Have to**: Obligación externa.
+- **Should**: Consejo.
+- **Used to**: Hábitos pasados terminados.
+
+## 7. Comparativos, Superlativos y Adverbios
+- **Comparativos**: +er (cortos: tall → taller, easy → easier, far → farther). More + adj (largos: expensive → more expensive). Estructura: As + adj + as (igualdad: "as intelligent as").
+- **Superlativos**: The + est (cortos: tall → tallest, good → the best, bad → the worst). The most + adj (largos).
+- **Adverbios**: Frecuencia (always, still: continúa; yet: no aún). Modo (late → lately). Intensifiers: Refuerzan adjetivos.
+
+## 8. Preposiciones, Conectores y Phrasal Verbs
+- **Preposiciones**: At (horas, office), on (días semana), in (morning, folder). For (responsable for), in (interested in), at (good at), inside (file inside folder).
+- **Conectores**: Contraste fuerte: However, although (aunque). Añadir: In addition, moreover. Consecuencia: Therefore.
+- **Phrasal Verbs**: Look for (buscar), carry out (ejecutar), set up (configurar), give up (rendirse), run out of (quedarse sin), go on (continuar), turn off (apagar).
+- **Prepositional Verbs**: Verbo + preposición fija (ej. responsible for).
+
+## 9. Relative Clauses y Otras Estructuras
+- **Defining Relative Clause**: Identifica sujeto (sin comas).
+- **Non-Defining**: Información extra (con comas: "The car, which is old, broke down").
+- **By the way**: Comentario adicional.

@@ -199,10 +199,10 @@ sudo netplan apply
 
 > **D**iscover → **O**ffer → **R**equest → **A**ck
 
-**Discover** es un broadcast a todo el mundo  pidiendo una IP
+**Discover** cliente emite un broadcast a todo el mundo  pidiendo una IP
 **Offer** el servidor dhcp recibe el broadcast y le dice oye tengo esta Ip libre por si la quieres
-**Request**
-**Ack**
+**Request** el cliente acepta la IP y emite un broadcast diciendo me quedo con ella para que otros servidores dhcp  lo sepan
+**Ack** el servidor DHCP se la concede la IP, puerta de enlace, DBS y mascara de subred
 
 Cuando un cliente recibe IP por DHCP también obtiene:
 
@@ -218,15 +218,15 @@ Cuando un cliente recibe IP por DHCP también obtiene:
 
 **Tipos de registros DNS más usados en el módulo:**
 
-|Registro|Función|
-|---|---|
-|**A**|**Nombre → IP (IPv4)** — el más básico y usado|
-|**AAAA**|Nombre → IPv6|
-|**CNAME**|**Alias** de un nombre existente|
-|**MX**|**Servidor de correo** del dominio|
-|**NS**|**Servidor DNS primario** de la zona|
-|**PTR**|IP → nombre (resolución **inversa**)|
-|**SOA**|Datos de autoridad de la zona|
+| Registro  | Función                                                                  |
+| --------- | ------------------------------------------------------------------------ |
+| **A**     | **Nombre → IP (IPv4)** — el más básico y usado                           |
+| **AAAA**  | Nombre → IPv6 mas As porque es mas largo                                 |
+| **CNAME** | **Alias** de un nombre existente                                         |
+| **MX**    | **Servidor de correo** del dominio                                       |
+| **NS**    | **Servidor DNS primario** de la zona                                     |
+| **PTR**   | IP → nombre (resolución **inversa**) pregunta a quien pertenece esta IP? |
+| **SOA**   | Datos de autoridad de la zona                                            |
 
 **Zona de búsqueda inversa:**
 
@@ -240,13 +240,15 @@ Cuando un cliente recibe IP por DHCP también obtiene:
 
 **Archivos clave de BIND9:**
 
-```bash
-# Archivo donde se declaran las zonas
+
+**Archivo donde se declaran las zonas , nombras que dominios tienes**
 /etc/bind/named.conf.local
 
-# Archivo de zona (ejemplo)
+ **Archivo de zona : aqui es donde declaras los registros del dominio un db para cada dominio**
 /etc/bind/db.smr.local
-```
+
+
+
 
 **Comando para comprobar DNS:**
 
@@ -266,11 +268,11 @@ dig servidor.smr.local
 
 ### Rangos de IP Privadas (RFC 1918)
 
-|Rango|Descripción|
-|---|---|
-|`10.0.0.0/8`|Red privada clase A|
-|`172.16.0.0/12`|Red privada clase B|
-|`192.168.0.0/16`|**Red privada clase C** (la más común en laboratorio)|
+| Rango            | Descripción                                                                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------- |
+| `10.0.0.0/8`     | Red privada clase A permite muchisimos dispositivos ya que solo 8 bits son de red y lo demas es de dispositivo  |
+| `172.16.0.0/12`  | Red privada clase B                                                                                             |
+| `192.168.0.0/16` | **Red privada clase C** (la más común en laboratorio)                                                           |
 
 > [!NOTE] Las IPs como 10.0.0.5 o 192.168.x.x son **IPs privadas**. Las IPs como 8.8.8.8 o 1.1.1.1 son **públicas**.
 
@@ -349,14 +351,14 @@ ssh-copy-id usuario@ip_servidor
 
 ### Comparativa SSH vs RDP
 
-||SSH|RDP|
-|---|---|---|
-|**Sistema**|Linux/Unix|Windows|
-|**Interfaz**|Terminal (texto)|Escritorio gráfico completo|
-|**Puerto**|22|3389|
-|**Protocolo**|SSH|RDP (Microsoft)|
-|**Cliente Windows**|PuTTY|mstsc (Conexión a Escritorio Remoto)|
-|**Cliente Linux**|`ssh usuario@ip`|Remmina, xfreerdp|
+| SSH                 | SSH              | RDP                                  |
+| ------------------- | ---------------- | ------------------------------------ |
+| **Sistema**         | Linux/Unix       | Windows                              |
+| **Interfaz**        | Terminal (texto) | Escritorio gráfico completo          |
+| **Puerto**          | 22               | 3389                                 |
+| **Protocolo**       | SSH              | RDP (Microsoft)                      |
+| **Cliente Windows** | PuTTY            | mstsc (Conexión a Escritorio Remoto) |
+| **Cliente Linux**   | `ssh usuario@ip` | Remmina, xfreerdp                    |
 
 ---
 
@@ -404,11 +406,11 @@ ssh-copy-id usuario@ip_servidor
 
 **Ventajas de AD vs usuarios locales Linux:**
 
-||Active Directory|Linux local|
-|---|---|---|
-|**Alcance**|Usuario de **dominio** (accede desde cualquier PC del dominio)|Usuario **local** (solo en ese servidor)|
-|**Gestión**|Centralizada|Distribuida|
-|**Automatización**|Se pueden crear desde un fichero (scripts) → **crear muchos usuarios a la vez**|Comando por comando|
+|                    | Active Directory                                                                | Linux local                              |
+| ------------------ | ------------------------------------------------------------------------------- | ---------------------------------------- |
+| **Alcance**        | Usuario de **dominio** (accede desde cualquier PC del dominio)                  | Usuario **local** (solo en ese servidor) |
+| **Gestión**        | Centralizada                                                                    | Distribuida                              |
+| **Automatización** | Se pueden crear desde un fichero (scripts) → **crear muchos usuarios a la vez** | Comando por comando                      |
 
 ---
 
@@ -654,7 +656,7 @@ smbstatus
 
 ### Diferencia Samba vs disco en router
 
-||Samba (servidor Linux)|Disco en router|
+| |Samba (servidor Linux)|Disco en router|
 |---|---|---|
 |**Control de acceso**|**Control granular** por usuario/grupo|Básico o inexistente|
 |**Gestión de permisos**|NTFS/Posix completo|Muy limitado|
@@ -812,7 +814,7 @@ crontab -l
 
 > [!IMPORTANT] ¿Qué es PowerShell? Herramienta de Windows para **automatizar y administrar el sistema** mediante comandos y scripts. A diferencia de Bash (que maneja **texto**), PowerShell maneja **objetos .NET**.
 
-||PowerShell|Bash|
+| |PowerShell|Bash|
 |---|---|---|
 |**Sistema**|Windows|Linux/Unix|
 |**Maneja**|**Objetos** (.NET)|**Texto**|
@@ -873,7 +875,7 @@ tar -czf "$BACKUP_DIR/home_$FECHA.tar.gz" /home
 
 ### Diferencia Contenedor vs Máquina Virtual
 
-||Máquina Virtual|Contenedor Docker|
+| |Máquina Virtual|Contenedor Docker|
 |---|---|---|
 |**Incluye**|SO completo + app|Solo lo esencial para la app|
 |**Peso**|Pesado (GB)|Ligero (MB)|

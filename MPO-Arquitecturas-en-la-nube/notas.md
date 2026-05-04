@@ -969,3 +969,34 @@ Internet Gateway (IGW)
 _Apuntes generados para 2º SMR — Módulo: Nube (AWS)_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
 
 
+
+
+![[Pasted image 20260504181651.png]]
+![[Pasted image 20260504181242.png]]
+![[Pasted image 20260504181600.png]]
+
+![[Pasted image 20260504181656.png]]
+![[Pasted image 20260504181857.png]]![[Pasted image 20260504182532.png]]
+![[Pasted image 20260504183047.png]]
+
+![[Pasted image 20260504183113.png]]no confundir ami con iam
+![[Pasted image 20260504185135.png]]
+![[Pasted image 20260504185240.png]]
+¿Qué enunciado describe con precisión cómo se utiliza el escalado automático? A. Auto Scaling permite que una aplicación agregue recursos automáticamente, pero no puede reducirlos automáticamente. B. Auto Scaling es útil para cargas de trabajo impredecibles C. Auto Scaling permite que una aplicación agregue recursos automáticamente, y también puede reducirlos automáticamente. D. Auto Scaling agrega mucho valor para cargas de trabajo dinámicas.
+
+¿Qué enunciado sobre la seguridad de AWS es correcto? A. AWS es responsable de la seguridad de los datos almacenados en S3. B. AWS es responsable de la seguridad de las aplicaciones que se ejecutan en EC2. C. AWS es responsable de la seguridad de la infraestructura subyacente, mientras que el cliente es responsable de la seguridad de los datos y aplicaciones. D. AWS es responsable de la seguridad de los datos almacenados en RDS.
+
+
+![[Pasted image 20260504185730.png]]
+
+se reservan 5 direcciones
+de red aws privada publica y 
+
+
+
+distinguir ips usables y cuantas contiene 
+
+![[Pasted image 20260504190232.png]]
+
+![[Pasted image 20260504190331.png]]
+

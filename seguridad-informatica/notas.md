@@ -32,9 +32,9 @@
 > 
 > |Pilar|Nombre|¿Qué garantiza?|Ataque que lo compromete|
 > |---|---|---|---|
-> |**C**|**Confidencialidad**|Que solo acceda **quien debe** a la información|Acceso no autorizado, phishing, robo de credenciales|
-> |**I**|**Integridad**|Que los datos **no sean alterados** sin autorización|Malware que modifica registros, ataques MITM|
-> |**A**|**Disponibilidad**|Que el sistema **esté accesible** cuando se necesita|DoS/DDoS, caída de servidor, ransomware|
+> |**C**|**Confidencialidad**|Que solo acceda **quien debe** a la información|Acceso no autorizado, phishing, robo de credenciales es cuando alguien mira lo que no debe|
+> |**I**|**Integridad**|Que los datos **no sean alterados** sin autorización|Malware que modifica registros, ataques MITM cuando alguien tocalo que no debe |
+> |**A**|**Disponibilidad**|Que el sistema **esté accesible** cuando se necesita|DoS/DDoS, caída de servidor, ransomware hace que tu no puedas entrar|
 
 > [!TIP] Cómo identificar qué pilar se ve comprometido
 > 
@@ -88,29 +88,32 @@
 
 ### Seguridad Activa vs Pasiva / Física vs Lógica
 
-|Dimensión|Tipo|Ejemplos|
-|---|---|---|
-|**Activa**|Previene o detecta activamente|Firewall, antivirus, autenticación|
-|**Pasiva**|Minimiza daños cuando ocurre el incidente|**Copia de seguridad**, RAID, SAI|
-|**Física**|Protege el hardware y el entorno|Cerraduras, cámaras, control de acceso físico|
-|**Lógica**|Protege accesos y datos digitales|Contraseñas, cifrado, firewalls, permisos|
+| Dimensión  | Tipo                                               | Ejemplos                                      |
+| ---------- | -------------------------------------------------- | --------------------------------------------- |
+| **Activa** | Previene o detecta activamente PREVIENE ANTES      | Firewall, antivirus, autenticación            |
+| **Pasiva** | Minimiza daños cuando ocurre el incidente, DESPUES | **Copia de seguridad**, RAID, SAI             |
+| **Física** | Protege el hardware y el entorno                   | Cerraduras, cámaras, control de acceso físico |
+| **Lógica** | Protege accesos y datos digitales                  | Contraseñas, cifrado, firewalls, permisos     |
+|            |                                                    |                                               |
 
 > [!TIP] La "primera línea de defensa" en una infraestructura Es la **seguridad física**: si alguien puede acceder físicamente al servidor, el cifrado y los firewalls son irrelevantes.
 
----
+preguntate : evita que ocurra?? si si , es activo, si no , es pasivo
 
 ## Bloque 2 — Amenazas, Vulnerabilidades y Ataques
 
 ### Tipos de Malware
 
-|Tipo|Descripción|Clave diferenciadora|
-|---|---|---|
-|**Ransomware**|Cifra los datos y pide rescate|Combina impacto en C + I + A|
-|**Troyano**|**Finge ser software legítimo** para engañar al usuario|No se replica solo|
-|**Gusano**|**Se replica automáticamente** sin intervención del usuario|No necesita archivo huésped|
-|**Rootkit**|**Oculta su presencia** en el sistema comprometido|Muy difícil de detectar|
-|**Spyware**|Espía y roba información del usuario|Actúa en silencio|
-|**Keylogger**|Registra las teclas pulsadas|Roba contraseñas al escribirlas|
+| Tipo           | Descripción                                                 | Clave diferenciadora            |
+| -------------- | ----------------------------------------------------------- | ------------------------------- |
+| **Ransomware** | Cifra los datos y pide rescate                              | Combina impacto en C + I + A    |
+| **Troyano**    | **Finge ser software legítimo** para engañar al usuario     | No se replica solo              |
+| **Gusano**     | **Se replica automáticamente** sin intervención del usuario | No necesita archivo huésped     |
+| **Rootkit**    | **Oculta su presencia** en el sistema comprometido          | Muy difícil de detectar         |
+| **Spyware**    | Espía y roba información del usuario                        | Actúa en silencio               |
+| **Keylogger**  | Registra las teclas pulsadas                                | Roba contraseñas al escribirlas |
+|                |                                                             |                                 |
+|                |                                                             |                                 |
 
 > [!TIP] Diferencia Rootkit vs Troyano
 > 

@@ -98,3 +98,189 @@ Estas notas están diseñadas para cubrir los conceptos clave derivados del mate
 - Practica estructuras con contextos laborales (ej. emails: "I have been working on the project since Monday").
 - Crea tablas personales para irregulares (go: gone, went) y modales.
 - Analiza errores comunes: No "I am needing" (stative); no will + going to juntos; backshift en reported.
+
+
+- Describing people at work (page 12)
+    
+- Present simple (ppt)
+    
+- Introduction formulas (ppt, page 18, 19)
+    
+- Comparatives, superlatives, equatives (ppt)
+    
+- Present continuous (ppt – page 23)
+    
+- Basic phone conversations + useful language (page 27, 28, 29)
+    
+- Present Perfect (ppt – page 30)
+    
+- Polite language and professional courtesy (page 34, 35)
+    
+- Email formality levels + components + structure (ppt – page 37, 38, 39, 40)
+    
+- Essential vocabulary workplace (page 50, 51)
+    
+- Past simple (ppt – page 62,63)
+    
+- Irregular verbs (ppt Kahoot)
+    
+- Listening question*
+    
+- Reading question*
+
+
+presente simple
+presente continuo +ing  now at the moment , si es ahora es p. continuous
+present perfect es pasado  pero actyua al presente, have + 
+past simple 
+to be
+
+
+solo se preguntaran los siguientes verbos irregulares
+### **Tarjeta 1**
+
+- **Pregunta:** He usually ______ (fix) technical problems in the office.
+    
+- **Opciones:** fix, **fixes** (marcada), fixing, is fixing.
+    
+
+### **Tarjeta 2**
+
+- **Pregunta:** They ______ (be) very satisfied with our service.
+    
+- **Opciones:** is, am, **are** (marcada), be.
+    
+
+### **Tarjeta 3**
+
+- **Pregunta:** Peter is ______ (fast) than John when answering emails.
+    
+- **Opciones:** fastest, as fast, more fast, **faster** (marcada).
+    
+
+### **Tarjeta 4**
+
+- **Pregunta:** This project is ______ (complex) than the previous one.
+    
+- **Opciones:** **more complex** (marcada), complexer, complex, complexest.
+    
+
+### **Tarjeta 5**
+
+- **Pregunta:** Today is ______ (good) day to start a new project.
+    
+- **Opciones:** best, gooder, better, **the best** (marcada).
+    
+
+### **Tarjeta 6**
+
+- **Pregunta:** Our team is as ______ (reliable) as the other department at meeting deadlines.
+    
+- **Opciones:** more reliable, the reliablest, **reliable** (marcada), the most reliable.
+    
+
+### **Tarjeta 7**
+
+- **Pregunta:** You don't understand a process. Which is the most polite response?
+    
+- **Opciones:** This is confusing, The procedure is bad, I don't understand, **I'm afraid I don't understand the procedure.** (marcada).
+    
+
+### **Tarjeta 8**
+
+- **Pregunta:** Which introduction is the most professional?
+    
+- **Opciones:** "Hi, I'm Olivia. Nice to meet you.", **"Hello, I'm Olivia Brown from the HR Department."** (marcada), "Hey! I'm Olivia.", "Hi there, I'm Olivia from HR."
+Based on the provided images, here is the text extracted from each question card, including the correct answers indicated by a checkmark:
+
+### **English Grammar and Professional Communication Quiz**
+
+- **Card 1:** The technician __________ (repair) the computer right now.
+    
+    - **Correct Answer:** is repairing
+        
+- **Card 2:** The basic plan is less __________ (expensive) than the professional plan.
+    
+    - **Correct Answer:** expensive
+        
+- **Card 3:** We ______ (launch) a new marketing campaign right now.
+    
+    - **Correct Answer:** are launching
+        
+- **Card 4:** The developer ______ (fix) a bug in the app at the moment.
+    
+    - **Correct Answer:** is fixing
+        
+- **Card 5:** Which adjective describes a personality trait?
+    
+    - **Correct Answer:** helpful
+        
+- **Card 6:** What is the most professional way to describe your manager to a client?
+    
+    - **Correct Answer:** "She's middle-aged with short grey hair and very professional"
+        
+- **Card 7:** Which introduction is the most informal for a coffee break?
+    
+    - **Correct Answer:** "Hi, I'm Ben. I'm in Logistics. How long have you been with the company?"
+        
+- **Card 8:** The company didn't ______ (install) the new software system.
+    
+    - **Correct Answer:** install
+
+Aquí tienes el texto extraído de la imagen, organizado por cada una de las tarjetas de preguntas:
+
+### **Tarjeta 1**
+
+- **Pregunta:** Which adjective describes a well-organized employee?
+    
+- **Opciones:** glasses, blonde, slim, **reliable** (marcada).
+    
+
+### **Tarjeta 2**
+
+- **Pregunta:** Which sentence expresses sympathy?
+    
+- **Opciones:** What exactly is happening?, **I'm sorry to hear that.** (marcada), Let me check, Is that alright?.
+    
+
+### **Tarjeta 3**
+
+- **Pregunta:** Which sentence starts an action you will take?
+    
+- **Opciones:** **Let me check the system** (marcada), Thank you for your help, Good afternoon, Is that alright?.
+    
+
+### **Tarjeta 4**
+
+- **Pregunta:** Which is a correct professional phone opening?
+    
+- **Opciones:** Hello, what do you want?, Who are you?, **Good morning, IT Department. This is Anna speaking.** (marcada), Yes, tell me.
+    
+
+### **Tarjeta 5**
+
+- **Pregunta:** The manager ______ (check) deadlines carefully.
+    
+- **Opciones:** check, checking, **checks** (marcada), checkes.
+    
+
+### **Tarjeta 6**
+
+- **Pregunta:** The manager ______ just ______ (approve) the new marketing plan.
+    
+- **Opciones:** **has / approved** (marcada), have / approved, has / approve, has / approven.
+    
+
+### **Tarjeta 7**
+
+- **Pregunta:** I ______ already ______ (change) my computer password.
+    
+- **Opciones:** has / changing, has / changed, have / change, **have / changed** (marcada).
+    
+
+### **Tarjeta 8**
+
+- **Pregunta:** We have worked in this office ______ 2015.
+    
+- **Opciones:** for, yet, **since** (marcada), never.
+

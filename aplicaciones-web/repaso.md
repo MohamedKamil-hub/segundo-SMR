@@ -1062,3 +1062,85 @@ _Apuntes generados para 2º SMR — Módulo: Aplicaciones Web_ _Basados en el te
 javascript constantes y tipos de variables
 web assembly
  ¿Qué es una PWA (Progressive Web App) según el contexto de aplicaciones modernas?
+
+
+tips del profesor:
+rellenear dni empezando por la derecha
+![[Pasted image 20260505173034.png]]
+
+traer dni boli
+tipex
+
+0.33
+-0.11
+
+
+etiquetas html basicas html5 pasan cosas doctype, body.. title,, metaetiquetas, , img, a, h1, listas,  css diferencia css interno externo como colocar cada uno, herramientas, vscode,  figma, wordpress, xampp, rss, wiki, blog, cms, wordpress.org y .com
+
+simulacro
+![[Pasted image 20260505174756.png]]
+![[Pasted image 20260505174843.png]]
+![[Pasted image 20260505175107.png]]
+![[Pasted image 20260505175409.png]]
+
+![[Pasted image 20260505175618.png]]
+![[Pasted image 20260505175649.png]]
+
+![[Pasted image 20260505175738.png]]
+
+![[Pasted image 20260505175803.png]]
+![[Pasted image 20260505175829.png]]
+![[Pasted image 20260505175854.png]]
+
+![[Pasted image 20260505180032.png]]
+
+![[Pasted image 20260505180044.png]]
+
+
+![[Pasted image 20260505180059.png]]
+
+![[Pasted image 20260505180132.png]]
+
+![[Pasted image 20260505180157.png]]
+
+![[Pasted image 20260505180221.png]]
+
+
+![[Pasted image 20260505180237.png]]
+
+![[Pasted image 20260505180247.png]]
+
+![[Pasted image 20260505180302.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 b 
+2 d
+3  c
+4 b
+5 
+6
+7
+8
+
+
+
+src se mete a la pagina                href  solo apunta
+
+head  lo ve el navegador
+header puede haber varios, lo ve el usuario
+
+tapa las respuestas si encuentras lo que piensas , escogela
+lee tapa y responde , las que sepas antes de destapar responde y ya a la segunda vuelta respondes 

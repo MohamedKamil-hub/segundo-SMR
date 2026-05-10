@@ -7,3 +7,5 @@ Incorrecta
 **Respuesta correcta:** test
 
 **Explicacion:** El present simple (test) expresa una acción rutinaria y habitual. El adverbio 'every morning' es indicador temporal característico de este tiempo verbal para describir procedimientos regulares.
+
+![[horario.png]]

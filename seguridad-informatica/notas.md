@@ -1,8 +1,3 @@
-# 🔐 Guía Definitiva: Seguridad Informática — 2º SMR
-
-> [!NOTE] ¿Cómo usar estos apuntes? Optimizados para **Obsidian**. Los callouts `[!IMPORTANT]` son definiciones clave, `[!TIP]` son trucos de examen, `[!WARNING]` son errores frecuentes y `[!NOTE]` son aclaraciones técnicas. Las tablas comparativas y la sección de **conceptos trampa** al final son fundamentales para el día del examen.
-
----
 
 ## Índice de Contenidos
 
@@ -112,8 +107,7 @@ preguntate : evita que ocurra?? si si , es activo, si no , es pasivo
 | **Rootkit**    | **Oculta su presencia** en el sistema comprometido          | Muy difícil de detectar         |
 | **Spyware**    | Espía y roba información del usuario                        | Actúa en silencio               |
 | **Keylogger**  | Registra las teclas pulsadas                                | Roba contraseñas al escribirlas |
-|                |                                                             |                                 |
-|                |                                                             |                                 |
+
 
 > [!TIP] Diferencia Rootkit vs Troyano
 > 
@@ -348,7 +342,7 @@ nft list ruleset
 **Logs del firewall en Linux:**
 
 ```
-/etc/syslog   (logs del firewall según el examen)
+/var/syslog   (logs del firewall según el examen)
 /var/log/auth.log  (logs de autenticación)
 ```
 
@@ -388,7 +382,7 @@ nft list ruleset
 
 **Comparativa SSH vs Telnet:**
 
-||SSH|Telnet|
+| |SSH|Telnet|
 |---|---|---|
 |Cifrado|✅ Sí|❌ No (texto plano)|
 |Puerto|22|23|
@@ -830,9 +824,9 @@ git reset --soft HEAD~1
 ### Marco Normativo Europeo y Español
 
 ```
-RGPD (Reglamento Europeo)
+RGPD (Reglamento Europeo) dicta como `rpteger datos personales`
     ↓ Se adapta al marco español mediante
-LOPDGDD (Ley Orgánica 3/2018)
+LOPDGDD (Ley Orgánica 3/2018) o LOPD es la adaptacion 
     ↓ Complementada por
 LSSI-CE (Ley de Servicios de la Sociedad de la Información)
 ```
@@ -1111,3 +1105,30 @@ LSSI-CE (Ley de Servicios de la Sociedad de la Información)
 ---
 
 _Apuntes generados para 2º SMR — Módulo: Seguridad Informática_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
+
+
+![[Pasted image 20260507191328.png]]
+![[Pasted image 20260507191558.png]]![[Pasted image 20260507191707.png]]
+![[Pasted image 20260507191921.png]]
+![[Pasted image 20260507191948.png]]![[Pasted image 20260507192036.png]]
+![[Pasted image 20260507192112.png]]
+
+![[Pasted image 20260507192258.png]]
+![[Pasted image 20260507192516.png]]
+
+![[Pasted image 20260507192829.png]]
+
+![[Pasted image 20260507193010.png]]
+![[Pasted image 20260507193048.png]]
+
+![[Pasted image 20260507193107.png]]
+![[Pasted image 20260507193547.png]]
+![[Pasted image 20260507193708.png]]
+
+
+![[Pasted image 20260507193735.png]]
+![[Pasted image 20260507193755.png]]
+![[Pasted image 20260507194000.png]]
+
+![[Pasted image 20260507194630.png]]
+

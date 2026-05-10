@@ -1,9 +1,5 @@
 # ☁️ Guía Definitiva: Nube y AWS — 2º SMR
 
-> [!NOTE] ¿Cómo usar estos apuntes? Optimizados para **Obsidian**. Los callouts `[!IMPORTANT]` son definiciones clave, `[!TIP]` son trucos de examen, `[!WARNING]` son errores frecuentes y `[!NOTE]` son aclaraciones técnicas. La sección de **conceptos trampa** al final y las tablas comparativas son las más útiles el día del examen.
-
----
-
 ## Índice de Contenidos
 
 1. [[#Bloque 1 — Fundamentos de la Nube]]
@@ -67,7 +63,24 @@
 > - "Evitar gestionar sistemas operativos" → **PaaS**
 > - "Correo web / app lista para usar" → **SaaS**
 
----
+### Formas de Interactuar con AWS
+
+> [!IMPORTANT] Las 3 formas principales de acceder a AWS
+>
+> | Herramienta | Qué es | Cuándo usarla |
+> |---|---|---|
+> | **Consola de Administración** | Interfaz **web gráfica** (navegador) para gestionar todos los servicios y recursos de AWS | Exploración, configuración manual, usuarios no técnicos |
+> | **AWS CLI** | Herramienta de **línea de comandos** que permite ejecutar operaciones AWS desde la terminal | Scripts, automatización, administradores de sistemas |
+> | **SDK (Software Development Kit)** | Bibliotecas para lenguajes de programación (Python, Java, JS...) que integran AWS en aplicaciones | Desarrollo de software que usa servicios AWS |
+>
+> Las tres acceden a la misma infraestructura AWS; solo cambia la interfaz.
+
+> [!NOTE] AWS CLI — detalles clave
+> - Se instala en el equipo local (Windows, Linux, macOS)
+> - Requiere configurar **credenciales de acceso** (Access Key ID + Secret Access Key) o un rol IAM
+> - Permite ejecutar cualquier operación que se puede hacer por consola, pero desde la terminal
+> - Ejemplo: `aws s3 ls` lista todos los buckets S3 de la cuenta
+> - Ideal para **automatizar tareas repetitivas** mediante scripts bash o PowerShell
 
 ### Modelos de Despliegue
 
@@ -83,7 +96,18 @@
 
 > [!IMPORTANT] Elasticidad Económica Pagar **únicamente por la capacidad utilizada en cada pico**, no por la capacidad máxima posible. Si el tráfico baja, el coste baja. Si sube, escala y sube proporcionalmente.
 
----
+> [!IMPORTANT] CapEx vs OpEx — terminología financiera clave
+>
+> | Término | Nombre completo | Qué significa | Ejemplo |
+> |---|---|---|---|
+> | **CapEx** | Capital Expenditure (gasto de capital) | Inversión **puntual y grande** en activos físicos | Comprar servidores, instalar CPD propio |
+> | **OpEx** | Operational Expenditure (gasto operativo) | Pago **recurrente y variable** por uso de un servicio | Factura mensual de AWS |
+>
+> **La nube convierte CapEx en OpEx**: en lugar de invertir capital inicial en hardware (CapEx), pagas mes a mes solo por lo que consumes (OpEx). Esto elimina el riesgo de sobredimensionar y libera capital para el negocio.
+
+> [!TIP] Truco de examen — CapEx/OpEx
+> "Convertir gastos de capital en gastos operativos" = pasar de comprar servidores propios a pagar por uso en la nube = **beneficio principal de la nube frente a on-premises**.
+
 
 ## Bloque 2 — Infraestructura Global de AWS
 
@@ -185,6 +209,20 @@
 |**Elastic IP**|Dirección IP pública fija asignada a una instancia|
 
 > [!IMPORTANT] Acceso seguro a instancia Linux Se usa la **clave privada del par de claves SSH**. No se usa contraseña generada automáticamente ni token IAM para la conexión directa.
+
+
+> [!WARNING] ¡Cuidado! AMI ≠ IAM — confusión frecuente de examen
+>
+> | Concepto | Significado | Para qué sirve |
+> |---|---|---|
+> | **AMI** | Amazon **Machine** Image | Define el **SO y software inicial** de una instancia EC2 |
+> | **IAM** | **Identity** and Access Management | Gestiona **usuarios, roles y permisos** en AWS |
+>
+> - **AMI** es una "foto" del sistema operativo → se usa al **lanzar instancias EC2**
+> - **IAM** es el sistema de control de acceso → se usa para **autorizar qué puede hacer cada usuario o servicio**
+>
+> La trampa del examen: preguntan "¿qué define el SO inicial de EC2?" y ponen IAM como opción distractor. La respuesta siempre es **AMI**.
+
 
 ---
 
@@ -357,14 +395,15 @@
 
 #### Clases de Almacenamiento S3
 
-|Clase|Acceso|Coste|Cuándo usar|
-|---|---|---|---|
-|**S3 Standard**|Frecuente|Alto|Datos activos de acceso frecuente|
-|**S3 Intelligent-Tiering**|**Impredecible**|Medio|Se optimiza automáticamente según el patrón de acceso|
-|**S3 Standard-IA**|Infrecuente|Menor|Datos que se acceden pocas veces pero deben estar disponibles rápido|
-|**S3 One Zone-IA**|Infrecuente|Aún menor|Como IA pero en **una sola zona de disponibilidad** (menos redundancia)|
-|**S3 Glacier**|Archivo (minutos/horas)|Muy bajo|**Archivado barato** con recuperación en minutos u horas|
-|**S3 Glacier Deep Archive**|Archivo (horas)|**El más bajo**|Archivado a muy largo plazo, recuperación en horas|
+| Clase                                | Acceso                  | Coste           | Cuándo usar                                                                                 |
+| ------------------------------------ | ----------------------- | --------------- | ------------------------------------------------------------------------------------------- |
+| **S3 Standard**                      | Frecuente               | Alto            | Datos activos de acceso frecuente                                                           |
+| **S3 Intelligent-Tiering**           | **Impredecible**        | Medio           | Se optimiza automáticamente según el patrón de acceso                                       |
+| **S3 Standard-IA**                   | Infrecuente             | Menor           | Datos que se acceden pocas veces pero deben estar disponibles rápido                        |
+| **S3 One Zone-IA**                   | Infrecuente             | Aún menor       | Como IA pero en **una sola zona de disponibilidad** (menos redundancia)                     |
+| **S3 Glacier**                       | Archivo (minutos/horas) | Muy bajo        | **Archivado barato** con recuperación en minutos u horas                                    |
+| Amazon S3 Glacier Flexible Retrieval |                         | bajo            | archivos que pueden esperar<br>desde unos minutos (con recuperación acelerada) hasta horas. |
+| **S3 Glacier Deep Archive**          | Archivo (horas)         | **El más bajo** | Archivado a muy largo plazo, recuperación en horas                                          |
 
 > [!TIP] Truco de examen — Clases de S3
 > 
@@ -384,7 +423,9 @@
 |**Cross-Region Replication (CRR)**|Replicar objetos automáticamente entre buckets en distintas regiones|
 |**S3 Lifecycle Manager**|Mover datos entre clases según reglas automáticas|
 
----
+**S3 Object lock** 
+garantiza que un objeto no pueda ser eliminado ni sobrescrito por nadie, incluso por el usuario raíz, durante un periodo de tiempo determinado
+
 
 ### Amazon EFS (Elastic File System)
 
@@ -401,13 +442,13 @@
 
 ### Resumen Comparativo de Almacenamiento
 
-||EBS|S3|EFS|Instance Store|
+|                       |EBS|S3|EFS|Instance Store|
 |---|---|---|---|---|
-|**Tipo**|Bloque|Objetos|Archivos|Bloque efímero|
-|**Acceso simultáneo**|Una instancia|Cualquiera por URL|Múltiples instancias|Una instancia|
-|**Persistencia**|✅ Sí|✅ Sí|✅ Sí|❌ No (se borra al detener)|
-|**Snapshots en**|S3|—|—|—|
-|**Caso de uso**|Disco de SO / BD|Archivos, web, backup|Archivos compartidos|Caché temporal|
+| **Tipo**              |Bloque|Objetos|Archivos|Bloque efímero|
+| **Acceso simultáneo** |Una instancia|Cualquiera por URL|Múltiples instancias|Una instancia|
+| **Persistencia**      |✅ Sí|✅ Sí|✅ Sí|❌ No (se borra al detener)|
+| **Snapshots en**      |S3|—|—|—|
+| **Caso de uso**       |Disco de SO / BD|Archivos, web, backup|Archivos compartidos|Caché temporal|
 
 ---
 
@@ -442,13 +483,13 @@
 
 ### Componentes de Red Clave
 
-| Componente                 | Función                                                                                                                             |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Internet Gateway (IGW)** | Conecta la VPC con Internet. **Imprescindible** para que una subred sea pública                                                     |
-| **NAT Gateway**            | Permite a subredes privadas acceder a Internet de forma **saliente** (sin exponer la IP privada). Se coloca en subred pública.      |
-| **Tabla de rutas**         | Define hacia dónde se envía el tráfico (ej: tráfico a 0.0.0.0/0 → IGW)                                                              |
-| **Grupos de seguridad**    | **Firewall virtual a nivel de instancia**. Define reglas de entrada y salida. Solo permite, no deniega explícitamente. son stateful |
-| **VPC Peering**            | Conecta dos VPCs entre sí de forma privada                                                                                          |
+| Componente                 | Función                                                                                                                                                                                                       |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Internet Gateway (IGW)** | Conecta la VPC con Internet. **Imprescindible** para que una subred sea pública , es bidireccional                                                                                                            |
+| **NAT Gateway**            | Permite a subredes privadas acceder a Internet de forma **saliente** (sin exponer la IP privada). Se coloca en subred pública. pero las instancias priadas no tienen ip publica, solo usan la del NAT gateway |
+| **Tabla de rutas**         | Define hacia dónde se envía el tráfico (ej: tráfico a 0.0.0.0/0 → IGW)                                                                                                                                        |
+| **Grupos de seguridad**    | **Firewall virtual a nivel de instancia**. Define reglas de entrada y salida. Solo permite, no deniega explícitamente. son stateful                                                                           |
+| **VPC Peering**            | Conecta dos VPCs entre sí de forma privada                                                                                                                                                                    |
 
 > [!TIP] Para que una subred tenga acceso a Internet, necesitas:
 > 
@@ -491,7 +532,27 @@
 
 > [!IMPORTANT] CloudFront — Red de Entrega de Contenido (CDN) **Almacena en caché archivos solicitados con frecuencia** en Edge Locations cercanas al usuario. Reduce la latencia entregando el contenido desde el punto más cercano al usuario final.
 
----
+> [!NOTE] Las 5 direcciones IP que AWS reserva en cada subred
+> En toda subred, AWS reserva automáticamente **5 direcciones** que el cliente no puede usar:
+>
+> | Dirección | Ejemplo en 192.168.10.0/24 | Motivo |
+> |---|---|---|
+> | Primera | 192.168.10.0 | Dirección de red |
+> | Segunda | 192.168.10.1 | Router (gateway de la VPC) |
+> | Tercera | 192.168.10.2 | DNS de AWS |
+> | Cuarta | 192.168.10.3 | Reservada para uso futuro de AWS |
+> | Última | 192.168.10.255 | Dirección de broadcast |
+>
+> **Fórmula para IPs usables:** 2ⁿ − 5 (donde n = bits del host)
+> - Subred /24 → 256 IPs totales − 5 = **251 IPs usables**
+> - Subred /25 → 128 IPs totales − 5 = **123 IPs usables**
+> - Subred /26 → 64 IPs totales − 5 = **59 IPs usables**
+
+> [!TIP] Truco de examen — IPs en una subred
+> La pregunta puede dar el bloque CIDR y pedir IPs **totales** o IPs **usables**. Son cosas distintas:
+> - **/24 total** = 256 | **/24 usables** = 251
+> - Si la pregunta dice "disponibles para instancias" → responde **251**, no 256.
+
 
 ## Bloque 7 — Bases de Datos en AWS
 
@@ -544,9 +605,15 @@
 
 ---
 
+
+
+
+**Redshift**
+es un almacén de datos (Data Warehouse) diseñado para realizar consultas analíticas complejas sobre petabytes de datos
+
 ### Comparativa de Bases de Datos
 
-||RDS / Aurora|DynamoDB|
+| |RDS / Aurora|DynamoDB|
 |---|---|---|
 |**Tipo**|Relacional (SQL)|NoSQL (clave-valor / JSON)|
 |**Esquema**|Rígido (tablas, claves foráneas)|Flexible|
@@ -640,7 +707,27 @@
 
 > Gestiona **credenciales temporales** para servicios y usuarios federados. Para acceso temporal entre cuentas, crear un **rol IAM que puedan asumir usuarios externos**.
 
----
+> [!IMPORTANT] ¿Qué es una política IAM (IAM Policy)?
+> Un **documento JSON que define permisos**: especifica qué acciones están **permitidas (Allow) o denegadas (Deny)** sobre qué recursos de AWS y bajo qué condiciones.
+>
+> Estructura básica de una política:
+> - **Effect**: Allow o Deny
+> - **Action**: qué operación (ej: `s3:GetObject`, `ec2:StartInstances`)
+> - **Resource**: sobre qué recurso (ej: un bucket S3 concreto o `*` para todos)
+>
+> **Tipos de políticas IAM:**
+>
+> | Tipo | Descripción |
+> |---|---|
+> | **Gestionada por AWS** | Políticas predefinidas por AWS (ej: `AmazonS3ReadOnlyAccess`) |
+> | **Gestionada por el cliente** | Políticas personalizadas creadas por la empresa |
+> | **Inline** | Política embebida directamente en un usuario, grupo o rol concreto |
+>
+> Las políticas se **adjuntan** a usuarios, grupos o roles IAM para otorgarles permisos.
+
+> [!WARNING] Regla de denegación explícita
+> Si hay un **Deny explícito**, tiene **prioridad absoluta** sobre cualquier Allow. Por defecto, todo está denegado si no hay un Allow que lo cubra.
+
 ### AWS Artifact — Portal de Cumplimiento
 > [!IMPORTANT] ¿Qué es AWS Artifact? Es un **portal de autoservicio y recurso centralizado para el cumplimiento de normativas**. Permite acceder bajo demanda a informes de seguridad y certificaciones emitidos por auditores externos[reference:0] que verifican el cumplimiento de AWS. Su función principal es **demostrar que la infraestructura de AWS cumple con normativas** como ISO 27001, PCI DSS, SOC o RGPD[reference:1].
 
@@ -677,6 +764,25 @@
 > [!IMPORTANT] Secrets Manager Servicio para **rotar y proteger contraseñas de bases de datos y credenciales** de forma automática. Las aplicaciones obtienen las credenciales actualizadas sin intervención manual.
 
 ---
+
+
+> [!IMPORTANT] AWS WAF — Web Application Firewall
+> Firewall especializado en **capa de aplicación (HTTP/HTTPS)** que protege aplicaciones web filtrando peticiones maliciosas antes de que lleguen al servidor.
+>
+> **Qué puede bloquear WAF:**
+> - Inyecciones SQL (SQL Injection)
+> - Cross-Site Scripting (XSS)
+> - Peticiones de IPs o países bloqueados
+> - Patrones de tráfico anómalos (bots, scrapers)
+>
+> **Dónde se despliega:** delante de CloudFront, un Application Load Balancer o API Gateway.
+
+> [!TIP] Shield vs WAF — diferencia clave
+> - **AWS Shield** → protege contra ataques **DDoS** (volumétricos, capas 3 y 4, saturación de red)
+> - **AWS WAF** → protege contra ataques a la **aplicación web** (capa 7: SQL injection, XSS, bots)
+> - En ataques DDoS a nivel de red → **Shield**. En peticiones HTTP maliciosas → **WAF**.
+
+
 
 ### Seguridad de Datos
 
@@ -724,7 +830,25 @@
 > - "Detectar picos inesperados con IA" → **AWS Cost Anomaly Detection**
 > - "Ver servicios con mayor gasto del mes" → **Panel de Facturación**
 
----
+> [!IMPORTANT] ¿Qué es un Tag (etiqueta) en AWS?
+> Un tag es un **par clave-valor** que se puede asignar a casi cualquier recurso de AWS (instancias EC2, buckets S3, bases de datos RDS, etc.).
+>
+> **Formato:** `Clave: Valor` → Ejemplo: `Proyecto: WebApp`, `Entorno: Producción`, `Departamento: Marketing`
+>
+> **Para qué sirven los tags:**
+>
+> | Uso | Ejemplo |
+> |---|---|
+> | **Filtrar costes** | Ver cuánto gasta el proyecto "WebApp" en el mes |
+> | **Organizar recursos** | Agrupar todos los recursos de un entorno (producción vs dev) |
+> | **Automatización** | Scripts que actúan sobre recursos con un tag concreto |
+> | **Control de acceso** | Políticas IAM que permiten acciones solo sobre recursos con cierto tag |
+> | **Búsqueda** | Encontrar rápidamente recursos entre cientos de servicios |
+
+> [!TIP] Tags en el examen
+> Si la pregunta habla de "organizar recursos por proyecto", "filtrar costes por departamento" o "identificar a qué entorno pertenece un recurso" → la respuesta es **usar tags (etiquetas clave-valor)**.
+> Sin tags bien definidos, es imposible saber qué parte de la factura corresponde a cada equipo o proyecto.
+
 
 ### Estrategias de Ahorro
 
@@ -809,7 +933,20 @@
 
 > [!IMPORTANT] Storage Gateway Servicio que **conecta almacenamiento local (on-premise) con la nube**. Permite a organizaciones con hardware local usar AWS como extensión de su almacenamiento.
 
----
+> [!IMPORTANT] AWS Organizations — Gestión centralizada de múltiples cuentas
+> Servicio que permite **gestionar varias cuentas AWS desde una cuenta principal (management account)**. Es la base de las arquitecturas empresariales en AWS.
+>
+> **Funcionalidades clave:**
+> - **Facturación consolidada**: unifica el pago de todas las cuentas en una sola factura
+> - **SCP (Service Control Policies)**: políticas que limitan qué servicios o acciones pueden usarse en cuentas hijas, aunque tengan permisos IAM
+> - **Estructura jerárquica**: las cuentas se agrupan en **Unidades Organizativas (OU)**
+>
+> **Ejemplo de uso:** una empresa con cuentas separadas para Producción, Desarrollo y QA usa Organizations para centralizar la facturación y aplicar restricciones de seguridad globales.
+
+> [!TIP] Organizations en el examen
+> - "Gestionar múltiples cuentas AWS de forma centralizada" → **AWS Organizations**
+> - "Unificar el pago de varias cuentas en una factura" → **Facturación Consolidada** (función de Organizations)
+> - Las SCP se aplican a cuentas enteras y **prevalecen sobre los permisos IAM individuales*
 
 ## Bloque 12 — Well-Architected Framework y Buenas Prácticas
 
@@ -864,7 +1001,25 @@ Internet Gateway (IGW)
 3. Para que una subred privada acceda a Internet → **NAT Gateway en subred pública**
 4. Múltiples AZs → mayor **resiliencia**
 
----
+### Infraestructura como Código (IaC) — AWS CloudFormation
+
+> [!IMPORTANT] ¿Qué es AWS CloudFormation?
+> Servicio que permite crear y gestionar **infraestructura como código (IaC)**: defines todos tus recursos AWS (instancias, redes, bases de datos, permisos) en un archivo de plantilla (**YAML o JSON**) y CloudFormation los despliega y gestiona automáticamente.
+>
+> **Beneficios clave:**
+> - **Reproducibilidad**: el mismo entorno se puede desplegar en cualquier región o cuenta
+> - **Control de versiones**: las plantillas se guardan en Git como cualquier código
+> - **Automatización**: elimina la configuración manual y los errores humanos
+> - **Rollback automático**: si algo falla durante el despliegue, CloudFormation deshace los cambios
+>
+> **Concepto clave: Stack**
+> Un **stack** es el conjunto de recursos que CloudFormation crea y gestiona a partir de una plantilla. Eliminar el stack elimina todos sus recursos.
+
+> [!TIP] CloudFormation en el examen
+> - "Infraestructura como código" → **CloudFormation**
+> - "Desplegar entornos repetibles desde una plantilla" → **CloudFormation**
+> - No confundir con **AWS SAM** (que es CloudFormation especializado en aplicaciones serverless) ni con **AWS CDK** (que permite escribir IaC en Python/TypeScript en lugar de YAML)
+
 
 ## 🎯 Resumen de Conceptos Trampa para el Examen
 
@@ -968,35 +1123,4 @@ Internet Gateway (IGW)
 
 _Apuntes generados para 2º SMR — Módulo: Nube (AWS)_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
 
-
-
-
-![[Pasted image 20260504181651.png]]
-![[Pasted image 20260504181242.png]]
-![[Pasted image 20260504181600.png]]
-
-![[Pasted image 20260504181656.png]]
-![[Pasted image 20260504181857.png]]![[Pasted image 20260504182532.png]]
-![[Pasted image 20260504183047.png]]
-
-![[Pasted image 20260504183113.png]]no confundir ami con iam
-![[Pasted image 20260504185135.png]]
-![[Pasted image 20260504185240.png]]
-¿Qué enunciado describe con precisión cómo se utiliza el escalado automático? A. Auto Scaling permite que una aplicación agregue recursos automáticamente, pero no puede reducirlos automáticamente. B. Auto Scaling es útil para cargas de trabajo impredecibles C. Auto Scaling permite que una aplicación agregue recursos automáticamente, y también puede reducirlos automáticamente. D. Auto Scaling agrega mucho valor para cargas de trabajo dinámicas.
-
-¿Qué enunciado sobre la seguridad de AWS es correcto? A. AWS es responsable de la seguridad de los datos almacenados en S3. B. AWS es responsable de la seguridad de las aplicaciones que se ejecutan en EC2. C. AWS es responsable de la seguridad de la infraestructura subyacente, mientras que el cliente es responsable de la seguridad de los datos y aplicaciones. D. AWS es responsable de la seguridad de los datos almacenados en RDS.
-
-
-![[Pasted image 20260504185730.png]]
-
-se reservan 5 direcciones
-de red aws privada publica y 
-
-
-
-distinguir ips usables y cuantas contiene 
-
-![[Pasted image 20260504190232.png]]
-
-![[Pasted image 20260504190331.png]]
 

@@ -1445,3 +1445,217 @@ A) Almacenamiento efímero que se elimina al detener la instancia
 B) Almacenamiento en bloque mediante volúmenes EBS *
 C) Almacenamiento de objetos mediante buckets S3
 D) Sistema de archivos distribuido con replicación global
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+P: ¿Qué significa "pago por uso" (pay-as-you-go) en AWS?
+A) Pagas una cuota fija mensual sin importar el consumo
+B) Pagas solo por los recursos que consumes durante el tiempo que los usas *
+C) Pagas por adelantado el hardware físico de AWS
+D) Pagas solo cuando superas un límite de consumo
+
+P: ¿Cuál de estos es un beneficio típico de la nube frente a infraestructura on-premises?
+A) Comprar servidores por si acaso (sobredimensionar)
+B) Convertir gastos de capital (CapEx) en gastos operativos (OpEx) *
+C) Tener que instalar manualmente cada actualización
+D) Evitar el uso de Internet
+
+P: ¿Qué es AWS Organizations?
+A) Un servicio para crear redes privadas globales
+B) Un servicio para gestionar múltiples cuentas AWS de forma centralizada *
+C) Un servicio para desplegar contenedores automáticamente
+D) Un servicio para configurar balanceadores de carga
+
+P: ¿Qué es una "política IAM" (IAM policy)?
+A) Una clave pública para conectarse por SSH
+B) Un documento que define permisos (acciones permitidas/denegadas) sobre recursos *
+C) Una regla de firewall que solo controla tráfico de red
+D) Una región geográfica para alojar datos
+
+P: ¿Cuál es el principio de "mínimo privilegio" (least privilege) en IAM?
+A) Dar permisos de administrador a todos para evitar errores
+B) Dar solo los permisos necesarios para realizar una tarea *
+C) Denegar todos los permisos, siempre
+D) Permitir acceso anónimo para acelerar el trabajo
+
+P: ¿Qué es la "Consola de administración de AWS"?
+A) Una interfaz web para gestionar servicios y recursos de AWS *
+B) Un servicio de almacenamiento de objetos
+C) Un editor de código para Lambda
+D) Un balanceador de carga global
+
+P: ¿Qué es AWS CLI?
+A) Un sistema operativo de AWS
+B) Una herramienta de línea de comandos para interactuar con servicios AWS *
+C) Un servicio de base de datos NoSQL
+D) Un tipo de instancia EC2
+
+P: ¿Cuál es el objetivo principal de AWS CloudTrail?
+A) Medir uso de CPU y memoria en instancias
+B) Registrar eventos y llamadas a la API para auditoría y trazabilidad *
+C) Distribuir contenido estático globalmente
+D) Proteger contra inyecciones SQL automáticamente
+
+P: ¿Cuál es el objetivo principal de Amazon CloudWatch?
+A) Gestionar permisos IAM entre cuentas
+B) Monitorizar métricas, logs y alarmas de recursos y aplicaciones *
+C) Crear redes VPC en varias regiones automáticamente
+D) Administrar certificados SSL/TLS
+
+P: ¿Qué es una "AMI" en Amazon EC2?
+A) Un balanceador de carga de capa 7
+B) Una imagen que contiene configuración para lanzar instancias (SO + software) *
+C) Un volumen de almacenamiento en bloque
+D) Un servicio de DNS administrado
+
+P: ¿Qué característica describe mejor a Amazon S3?
+A) Almacenamiento en bloque para discos de servidores
+B) Almacenamiento de objetos altamente escalable para archivos y datos *
+C) Base de datos relacional administrada
+D) Red privada para conectar centros de datos
+
+P: ¿Cuál es una diferencia típica entre EBS y S3?
+A) EBS es almacenamiento de objetos y S3 es almacenamiento en bloque
+B) EBS se adjunta a instancias (bloque) y S3 almacena objetos vía API *
+C) Ambos son idénticos; solo cambia el nombre
+D) S3 solo funciona dentro de una VPC sin Internet
+
+P: ¿Qué es Amazon EFS?
+A) Un sistema de archivos administrado y compartido (NFS) para múltiples instancias *
+B) Un servicio para ejecutar funciones sin servidor
+C) Un servicio de colas para mensajería
+D) Un servicio de DNS con health checks
+
+P: ¿Qué opción describe mejor Amazon RDS?
+A) Servicio de base de datos relacional administrada *
+B) Servicio de almacenamiento de objetos
+C) Servicio de CDN para contenido
+D) Servicio de IAM para identidades
+
+P: ¿Cuál de estos es un ejemplo de base de datos NoSQL administrada en AWS?
+A) Amazon DynamoDB *
+B) Amazon Aurora (MySQL/PostgreSQL)
+C) Amazon RDS for MariaDB
+D) Amazon Redshift
+
+P: ¿Qué es el "modelo de responsabilidad compartida" en AWS?
+A) AWS es responsable de todo, incluido el código del cliente
+B) El cliente es responsable de todo, incluido el hardware de AWS
+C) AWS asegura la infraestructura; el cliente asegura sus datos, configuraciones y apps *
+D) El cliente solo paga; AWS configura permisos y redes por defecto
+
+P: ¿Qué servicio se utiliza para gestionar usuarios, roles y permisos en AWS?
+A) AWS IAM *
+B) Amazon VPC
+C) Amazon CloudFront
+D) Amazon Route 53
+
+P: ¿Qué es un "Security Group" (grupo de seguridad) en AWS?
+A) Un firewall a nivel de instancia que permite reglas de entrada/salida *
+B) Un servicio para crear usuarios y contraseñas
+C) Un sistema de archivos compartido entre regiones
+D) Un servicio para cifrar objetos en S3
+
+P: ¿Qué componente de VPC permite que una subred pública tenga acceso a Internet?
+A) NAT Gateway
+B) Internet Gateway *
+C) Endpoint de DynamoDB
+D) Network ACL
+
+P: ¿Para qué se utiliza un NAT Gateway en una arquitectura típica?
+A) Permitir que instancias en subred privada salgan a Internet sin ser accesibles desde fuera *
+B) Exponer instancias privadas directamente a Internet
+C) Reemplazar un Security Group
+D) Crear un DNS global para una aplicación
+
+P: ¿Qué es AWS Well-Architected Framework?
+A) Un sistema de tickets para soporte
+B) Un conjunto de buenas prácticas/pilares para diseñar arquitecturas en AWS *
+C) Un servicio para crear plantillas de VPC
+D) Un marketplace de aplicaciones
+
+P: ¿Cuál de estos es un pilar del Well-Architected Framework?
+A) Marketing
+B) Excelencia operativa *
+C) Publicidad
+D) Diseño gráfico
+
+P: ¿Cuál es un uso típico de AWS CloudFormation?
+A) Crear infraestructura como código (IaC) con plantillas *
+B) Monitorizar métricas y crear alarmas
+C) Gestionar credenciales de usuarios finales
+D) Reemplazar Route 53 como DNS
+
+P: ¿Qué enunciado describe con precisión cómo se utiliza el escalado automático?
+A) Auto Scaling permite que una aplicación agregue recursos automáticamente, pero no puede reducirlos automáticamente
+B) Auto Scaling es útil para cargas de trabajo impredecibles
+C) Auto Scaling permite que una aplicación agregue recursos automáticamente, y también puede reducirlos automáticamente *
+D) Auto Scaling agrega mucho valor para cargas de trabajo dinámicas
+
+P: ¿Qué enunciado sobre la seguridad de AWS es correcto?
+A) AWS es responsable de la seguridad de los datos almacenados en S3
+B) AWS es responsable de la seguridad de las aplicaciones que se ejecutan en EC2
+C) AWS es responsable de la seguridad de la infraestructura subyacente, mientras que el cliente es responsable de la seguridad de los datos y aplicaciones *
+D) AWS es responsable de la seguridad de los datos almacenados en RDS
+
+P: ¿Qué es "Elastic Load Balancing (ELB)" en AWS?
+A) Un servicio para cifrar volúmenes EBS
+B) Un servicio para distribuir tráfico entrante entre múltiples destinos *
+C) Un servicio para ejecutar contenedores sin servidor
+D) Un servicio para almacenar archivos estáticos
+
+P: ¿Qué servicio de AWS se usa habitualmente para protección frente a ataques DDoS a nivel de red y transporte?
+A) AWS Shield *
+B) AWS Snowball
+C) Amazon Inspector
+D) AWS X-Ray
+
+P: ¿Qué es AWS WAF?
+A) Un firewall de aplicaciones web para filtrar tráfico HTTP/HTTPS *
+B) Un sistema de archivos para Linux
+C) Un servicio de backups de bases de datos
+D) Una herramienta para crear instancias EC2
+
+P: ¿Qué representa un "tag" (etiqueta) en AWS?
+A) Un protocolo de red para subredes privadas
+B) Un par clave-valor para organizar, buscar y controlar costes de recursos *
+C) Un tipo de cifrado para S3
+D) Una regla de firewall obligatoria
+
+P: Si una subred es 192.168.10.0/24, ¿cuántas IP totales contiene?
+A) 64
+B) 128
+C) 256 *
+D) 512
+
+P: ¿Cuál es el propósito principal de AWS Cost Explorer?
+A) Crear alarmas por uso de CPU
+B) Analizar y visualizar costes y uso para optimización *
+C) Registrar eventos de auditoría de API
+D) Administrar certificados TLS

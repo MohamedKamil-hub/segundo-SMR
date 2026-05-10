@@ -81,7 +81,7 @@ Mucha gente confunde estos tres conceptos. Son distintos y el examen los diferen
 > 2. **Sostenible**: minimizar el impacto ambiental, procesos eficientes, economía circular.
 > 3. **Resiliente**: cadenas de suministro robustas que se **adaptan a crisis** (pandemias, disrupciones...).
 
-||Industria 4.0|Industria 5.0|
+| |Industria 4.0|Industria 5.0|
 |---|---|---|
 |Foco|Eficiencia y automatización|Personas, planeta y resiliencia|
 |Rol humano|Supervisor de máquinas|**Centro del sistema productivo**|
@@ -98,7 +98,7 @@ Mucha gente confunde estos tres conceptos. Son distintos y el examen los diferen
 ### Mapa de las THD principales
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────┐
 │                   TECNOLOGÍAS HABILITADORAS                  │
 ├────────────┬──────────────┬──────────────┬───────────────────┤
 │    IoT     │   IA / ML    │  Blockchain  │   Cloud / Edge    │
@@ -145,7 +145,7 @@ Mucha gente confunde estos tres conceptos. Son distintos y el examen los diferen
 
 ### Realidad Aumentada (RA) y Realidad Virtual (RV)
 
-||Realidad Aumentada (RA)|Realidad Virtual (RV)|
+| |Realidad Aumentada (RA)|Realidad Virtual (RV)|
 |---|---|---|
 |¿Qué hace?|**Superpone información digital sobre el mundo real**|Sumerge al usuario en un mundo **100% virtual**|
 |El usuario ve|El mundo real + capas digitales encima|Solo el entorno virtual (mundo físico bloqueado)|
@@ -472,7 +472,7 @@ Deep Learning         NLP
 
 ### Data Warehouse vs Data Lake
 
-||Data Warehouse|Data Lake|
+| |Data Warehouse|Data Lake|
 |---|---|---|
 |**Estructura**|**Schema-on-write**: estructura definida al escribir|**Schema-on-read**: estructura se aplica al leer|
 |**Tipo de datos**|Estructurados, limpios, organizados|Cualquier tipo: estructurado, semiestructurado, no estructurado|
@@ -664,3 +664,23 @@ Capa humana: Formación, políticas de seguridad
 ---
 
 _Apuntes generados para 2º SMR — Módulo: Digitalización Aplicada a los Sectores Productivos_ _Basados en el test de repaso — Optimizados para Obsidian_
+
+diferencia entre it , ot , iot
+
+
+![[Pasted image 20260506203401.png]]
+![[Pasted image 20260506203536.png]]
+![[Pasted image 20260506203648.png]]
+![[Pasted image 20260506203726.png]]
+![[Pasted image 20260506203832.png]]
+![[Pasted image 20260506204238.png]]
+![[Pasted image 20260506204305.png]]
+![[Pasted image 20260506204422.png]]
+![[Pasted image 20260506204440.png]]
+![[Pasted image 20260506204523.png]]
+![[Pasted image 20260506204543.png]]
+
+![[Pasted image 20260506204641.png]]
+
+
+

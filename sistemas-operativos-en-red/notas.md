@@ -1191,3 +1191,6 @@ sudo ufw status
 ---
 
 _Apuntes generados para 2º SMR — Módulo: Sistemas Operativos en Red_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
+
+get-service
+samba

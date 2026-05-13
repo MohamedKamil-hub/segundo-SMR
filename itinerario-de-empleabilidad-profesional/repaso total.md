@@ -869,3 +869,245 @@ URGENCIA    │(Cuadrante 1│(Cuadrante 3│
 ---
 
 _Apuntes generados para 2º SMR — Módulo: Itinerario de Empleabilidad Personal 2_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
+
+# Guía Maestra de Estudio: Itinerario de Empleabilidad Personal II (2º SMR)
+
+Desde una perspectiva estratégica, el mercado laboral actual no premia la mera ejecución técnica, sino la capacidad de posicionarse como un activo de alto valor. Como su Catedrático, he diseñado esta guía para que usted domine no solo los conceptos, sino la mentalidad necesaria para liderar su carrera y sus proyectos con agilidad y ética.
+
+--------------------------------------------------------------------------------
+
+## 1. Estrategias Avanzadas de Empleabilidad y Marca Personal
+
+### 1.1. El Nuevo Paradigma: Visibilidad y Proactividad
+
+Hemos transitado de un enfoque **pasivo** (esperar la oferta) a un **activo multicanal**. En la era digital, la visibilidad es la moneda de cambio. Usted no "busca" empleo; usted gestiona su marca personal para ser "encontrado".
+
+### 1.2. El Mercado Oculto y el Networking Estratégico
+
+Se estima que entre el **60% y el 80% de las vacantes** son invisibles (Mercado Oculto). Se cubren mediante redes de confianza. El networking no es acumular contactos, sino construir relaciones de beneficio mutuo.
+
+[!STRATEGY] El **70%+ de los reclutadores** rastreará su huella digital antes de contactarle. Su presencia online no es opcional; es su carta de presentación permanente.
+
+### 1.3. LinkedIn: Su Escaparate Profesional 24/7
+
+- **Titular (Headline):** Use palabras clave técnicas. Evite errores fatales como "En búsqueda activa" o frases motivacionales vacías. Defina qué valor aporta.
+- **Acerca de (About):** No replique su CV. Narre su "por qué", sus logros y su propuesta de valor humana.
+
+### 1.4. El CV de Alto Impacto y Sistemas ATS
+
+Las grandes corporaciones utilizan **ATS (Applicant Tracking Systems)** para filtrar perfiles. Un diseño excesivamente complejo puede hacerlo invisible para el software.
+
+[!TIP] Cree un **"Master CV"**. Utilícelo como repositorio exhaustivo de todas sus experiencias y logros para luego extraer y adaptar versiones específicas para cada oferta.
+
+|   |   |
+|---|---|
+|CV Genérico|CV Adaptado (Estratégico)|
+|Documento estático y masivo.|Personalizado con palabras clave de la oferta.|
+|Centrado en tareas rutinarias.|Orientado a **logros cuantificables**.|
+|Diseño con tablas/gráficos complejos.|Formato limpio, optimizado para ATS.|
+
+--------------------------------------------------------------------------------
+
+## 2. Procesos de Selección de Alto Rendimiento
+
+### 2.1. Evaluación Conductual y Predictiva
+
+Las empresas utilizan pruebas situacionales bajo la premisa de que el comportamiento pasado predice el desempeño futuro. Usted debe demostrar criterio, no solo conocimiento.
+
+### 2.2. El Método STAR: Estructura de Excelencia
+
+En entrevistas por competencias, su respuesta debe seguir este rigor:
+
+|   |   |   |
+|---|---|---|
+|Fase|Descripción|El Diferenciador del Experto|
+|**S**ituación|Contexto breve.|Claridad y brevedad.|
+|**T**area|Su responsabilidad.|Definición del reto.|
+|**A**cción|Qué hizo usted.|Iniciativa y herramientas usadas.|
+|**R**esultado|Impacto final.|**Dato Cuantificable:** (Ej: "Reduje errores en un 15%").|
+
+### 2.3. SJTs y Assessment Centers
+
+Las **Pruebas de Juicio Situacional (SJTs)** evalúan su inteligencia social. En los _Assessment Centers_, se valora la capacidad de facilitar el éxito grupal.
+
+- **Valorado:** Escucha activa, mediación, construir sobre ideas ajenas.
+- **Penalizado:** Liderazgo dominante, imposición, bloqueo ante la discrepancia.
+
+### 2.4. Checklist Técnica para Entrevistas Online
+
+1. **Cámara:** A la altura de los ojos; mantenga contacto visual con el lente, no con la pantalla.
+2. **Audio:** Use auriculares con micro para evitar eco.
+3. **Iluminación:** Frontal (nunca a contraluz).
+4. **Entorno:** Fondo neutro y profesional.
+
+--------------------------------------------------------------------------------
+
+## 3. Inteligencia Emocional y Soft Skills en el Entorno Laboral
+
+### 3.1. La IE según Daniel Goleman
+
+La gestión emocional es el pilar de la "empresa saludable". Supera al CI como predictor de éxito en roles de liderazgo y trabajo en equipo.
+
+### 3.2. Los 5 Componentes de la IE
+
+|   |   |   |
+|---|---|---|
+|Componente|Definición|Ejemplo Práctico|
+|**Autoconciencia**|Reconocer la emoción y su efecto.|Saber que el estrés bloquea su creatividad.|
+|**Autorregulación**|Gestionar el impulso.|Decidir no responder un mail desde el enfado.|
+|**Motivación**|Persistencia hacia metas.|Seguir iterando tras un fallo en el código.|
+|**Empatía**|Comprender al otro (no es ceder).|Validar el agobio de un compañero de soporte.|
+|**Habilidades Sociales**|Influencia y diplomacia.|Usar la técnica **DESC** para resolver un conflicto.|
+
+### 3.3. Soft Skills Determinantes
+
+- **Resiliencia:** Aprender del fracaso para evolucionar. (Ej: El caso de 3M y el Post-it).
+- **Asertividad:** Defender sus derechos sin agredir ni someterse.
+- **Escucha Activa:** Comprender el mensaje y la emoción subyacente.
+
+### 3.4. Seguridad Psicológica y Equipos Eficaces
+
+El "Proyecto Aristóteles" de Google determinó que el factor clave es la **Seguridad Psicológica**: la libertad de discrepar y cometer errores sin ser penalizado. Para gestionar conflictos, aplique la técnica **DESC** (Describir, Expresar, Sugerir, Consecuencias).
+
+--------------------------------------------------------------------------------
+
+## 4. Mentalidad Emprendedora e Innovación con Propósito
+
+### 4.1. Entrepreneurial Mindset e Intraemprendimiento
+
+La mentalidad emprendedora es transversal. Implica detectar oportunidades donde otros ven problemas. El **intraemprendimiento** es aplicar esta visión dentro de una empresa existente.
+
+[!STRATEGY] Emule la **"15% Rule" de 3M**: reserve espacio mental para la curiosidad. La innovación nace de permitir que los errores (como el adhesivo débil de Spencer Silver) se conviertan en soluciones (Post-it).
+
+### 4.2. Pilares de la Creación de Valor
+
+1. **Creatividad:** Generar soluciones útiles (pensamiento divergente).
+2. **Resiliencia:** Ver el error como dato, no como derrota.
+3. **Liderazgo Ético:** Construir confianza mediante valores.
+
+### 4.3. Técnica SCAMPER
+
+|   |   |   |
+|---|---|---|
+|Letra|Acción|Pregunta Guía|
+|**S**|Sustituir|¿Qué elemento se puede cambiar?|
+|**C**|Combinar|¿Qué funciones se pueden fusionar?|
+|**A**|Adaptar|¿Cómo aplico esto en otro contexto?|
+|**M**|Modificar|¿Qué se puede ampliar o alterar?|
+|**P**|Poner otro uso|¿Para qué más sirve este producto?|
+|**E**|Eliminar|¿Qué es innecesario? (Simplificar).|
+|**R**|Reordenar|¿Y si invierto el proceso?|
+
+### 4.4. Innovación Frugal (Jugaad)
+
+Originaria de entornos con recursos limitados (como la **India**), busca "hacer más con menos". Es una competencia clave en tiempos de crisis y sostenibilidad.
+
+--------------------------------------------------------------------------------
+
+## 5. Metodologías Ágiles: Lean Startup y Design Thinking
+
+### 5.1. El Mantra: "Enamorarse del Problema"
+
+Evite construir en el vacío. Usted debe identificar su **"Problema-jamón"**: esa necesidad central y jugosa que el cliente realmente quiere resolver.
+
+### 5.2. Ciclo Lean Startup
+
+Basado en el bucle **Construir-Medir-Aprender**.
+
+- **MVP (Producto Mínimo Viable):** Versión simple para obtener aprendizaje validado.
+- **Pivotar vs. Perseverar:** Pivotar es cambiar el enfoque tras aprender del fallo; perseverar es insistir cuando los datos validan la hipótesis.
+- **Métricas:** Diferencie entre **Métricas de Aprendizaje** (valor real) y **Métricas de Vanidad** (números que lucen bien pero no dicen nada).
+
+### 5.3. Design Thinking: Las 5 Fases
+
+1. **Empatizar:** Investigar al usuario (fase inicial crítica).
+2. **Definir:** Sintetizar el reto (POV - Point of View).
+3. **Idear:** Cantidad sobre calidad (sin censura).
+4. **Prototipar:** Materializar rápido y barato.
+5. **Testear:** Validar con usuarios reales.
+
+### 5.4. Lean Canvas y Early Adopters
+
+El Lean Canvas resume su modelo en 9 bloques. Enfóquese en los **Early Adopters**: aquellos que ya sienten el dolor del problema y están buscando o pagando activamente por una solución.
+
+--------------------------------------------------------------------------------
+
+## 6. Estructura Jurídica, Finanzas y Sostenibilidad
+
+### 6.1. Triple Bottom Line (Las 3 P's)
+
+El éxito se mide en **People (Social), Planet (Ambiental) y Profit (Económico)**. La sostenibilidad es una inversión estratégica, como demuestra **Patagonia**, que ha logrado lealtad extrema mediante su coherencia ética.
+
+### 6.2. Formas Jurídicas: Comparativa Crítica
+
+|   |   |   |
+|---|---|---|
+|Característica|Autónomo|Sociedad Limitada (S.L.)|
+|**Personalidad**|Física.|Jurídica.|
+|**Responsabilidad**|**Ilimitada** (patrimonio personal).|**Limitada** al capital aportado.|
+|**Capital Mínimo**|No requerido.|3.000 € (mínimo legal).|
+|**Trámites**|Simples.|**Escritura pública ante notario** y Registro.|
+
+[!WARNING] La **Comunidad de Bienes (CB)** NO tiene personalidad jurídica propia, a diferencia de la S.L. o S.A.
+
+### 6.3. Gestión Financiera y Punto de Equilibrio
+
+- **Costes Fijos:** (Ej: Alquiler). Se pagan venda o no.
+- **Costes Variables:** (Ej: Materias primas). Varían con la producción.
+- **Punto de Equilibrio:** Nivel de ventas donde Ingresos = Costes Totales. Es el umbral de supervivencia.
+
+### 6.4. Marco Legal y ODS
+
+Utilice el sistema **CIRCE** y los puntos **PAE** para trámites telemáticos. Registre su marca en la **OEPM**. Alinee su negocio con los **17 ODS** de la ONU y use herramientas como el **B Impact Assessment** para medir su impacto social.
+
+--------------------------------------------------------------------------------
+
+## 7. Gestión del Tiempo y Productividad Sostenible
+
+### 7.1. Matriz de Eisenhower
+
+1. **C1 (Urgente/Importante):** Crisis. Hacer ya.
+2. **C2 (No Urgente/Importante):** **PLANIFICAR**. Es el cuadrante del alto impacto estratégico.
+3. **C3 (Urgente/No Importante):** DELEGAR.
+4. **C4 (No Urgente/No Importante):** ELIMINAR.
+
+### 7.2. Herramientas Digitales
+
+- **Trello:** Gestión visual mediante tableros Kanban.
+- **Notion:** Centralización de documentación y bases de datos.
+
+--------------------------------------------------------------------------------
+
+## 8. Sección de Oro: Conceptos Trampa y Glosario de Examen
+
+### 8.1. Cuidado en el Examen: Tabla de Errores Frecuentes
+
+|   |   |   |
+|---|---|---|
+|Pregunta Trampa|Error Frecuente|Respuesta Correcta|
+|¿Qué es la Autoconciencia?|Gestionar la emoción.|**Reconocer** la emoción y su efecto.|
+|¿Responsabilidad en S.L.?|Ilimitada (bienes personales).|**Limitada** al capital aportado.|
+|¿Orden de Design Thinking?|Empezar por Idear.|Siempre empieza por **Empatizar**.|
+|¿Qué es Pivotar?|Abandonar el negocio.|**Cambiar enfoque** tras aprender del fallo.|
+|¿La C.B. es pers. jurídica?|Sí.|**No**, es una asociación de autónomos.|
+
+### 8.2. Glosario de Siglas Críticas
+
+- **ATS:** Applicant Tracking System (Filtro automático de CV).
+- **STAR:** Situación, Tarea, Acción, Resultado.
+- **SJT:** Situational Judgement Test (Juicio profesional).
+- **MVP:** Producto Mínimo Viable.
+- **RSC:** Responsabilidad Social Corporativa.
+- **ODS:** Objetivos de Desarrollo Sostenible (ONU).
+- **OEPM / CIRCE / PAE:** Organismos y plataformas de registro y creación de empresas.
+- **OIT:** Organización Internacional del Trabajo (Trabajo digno).
+- **XAI:** Explainable AI (IA Explicable).
+
+### 8.3. Resumen Final
+
+La empleabilidad contemporánea exige una transición del "pedir trabajo" al "ofrecer soluciones". Usted debe gestionar su marca personal con el rigor de un activo estratégico, utilizando el networking para penetrar en el mercado oculto y optimizando su CV para superar los algoritmos ATS.
+
+En el núcleo de esta evolución reside la Inteligencia Emocional. La seguridad psicológica en los equipos y la capacidad de aplicar técnicas como DESC o el método STAR en procesos de selección son las que separan a los técnicos de los líderes. El éxito no es la ausencia de conflictos o errores, sino la resiliencia para transformarlos en aprendizaje validado.
+
+Finalmente, el emprendimiento y la innovación no son fines, sino medios para generar valor ético. Ya sea mediante Lean Startup, Design Thinking o Innovación Frugal, su objetivo es resolver problemas reales ("problemas-jamón") bajo una estructura legal sólida y sostenible. La rentabilidad del siglo XXI solo es posible si se armoniza el beneficio económico con el impacto en las personas y el planeta. ¡A por ello!
+

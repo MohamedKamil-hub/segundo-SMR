@@ -1124,3 +1124,7 @@ Internet Gateway (IGW)
 _Apuntes generados para 2º SMR — Módulo: Nube (AWS)_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
 
 
+/16 es la ms pequeña y mas grande /28 mascaras de subred
+
+tipos de balanceador de carga  capa y corta deficinicion
+

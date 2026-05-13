@@ -1,11 +1,5 @@
 # 🌱 Sostenibilidad Aplicada al Sistema Productivo
 
-### Guía de Estudio Definitiva — 2º SMR
-
-> [!NOTE] Cómo usar estos apuntes Esta guía está organizada por bloques temáticos. Cada sección explica el **concepto**, el **porqué importa** y los **trucos para el examen**. Lee cada callout con atención, son las claves que más salen en los tests.
-
----
-
 ## 📚 Índice de Contenidos
 
 1. [[#BLOQUE 1 — Ecosistemas y Sostenibilidad]]
@@ -529,3 +523,63 @@ el estado no financiero es tecnico y descriptivo y la memoria suele estar hecha 
 
 la fase de analisis del contexto de un plan de sostenibilidad hay que hacer un mapeo de grupos de interes
 
+que es desarrollo aoatenible y sius dimensiones
+pacto verde que es
+
+indiciadores especificos
+
+
+
+
+ods social 
+
+todos los paises deben cumplir con ellas
+
+ids
+agenda 2030
+
+retos y riesgos para las empresas
+sdg compass
+grupos de interes
+
+asg
+
+estado no financiero
+
+
+
+neis
+![[Pasted image 20260511164945.png]]
+
+
+![[Pasted image 20260511165539.png]]
+
+la naranja
+
+
+
+economia circular y linear
+
+ecodiseño
+produccion limpia
+
+certificados de sostenibilidad
+
+ambientales sociales conomicos
+
+ecoetiquetas declaraciones ambientakes, declaraciones de producto   iso 1402x  saber eso
+
+
+
+
+indicadores desempeño
+
+neis
+
+iso
+
+
+etapas del proceso del ecodiseño
+
+
+7 r

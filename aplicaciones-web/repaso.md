@@ -1,21 +1,32 @@
 # 📚 Guía Definitiva: Aplicaciones Web — 2º SMR
 
-> [!NOTE] ¿Cómo usar estos apuntes? Este documento está optimizado para **Obsidian**. Cada sección cubre un bloque temático del módulo. Los callouts `[!TIP]` son **trucos de examen**, los `[!WARNING]` son **errores frecuentes** y los `[!IMPORTANT]` son definiciones clave que memorizar.
+> **¿Cómo usar estos apuntes?** Este documento está optimizado para Obsidian. Cada sección cubre un bloque temático del módulo. Los callouts `[!TIP]` son trucos de examen, los `[!WARNING]` son errores frecuentes y los `[!IMPORTANT]` son definiciones clave que memorizar.
+
+---
+
+## 🗒️ Tips del Profesor — Examen
+
+> [!IMPORTANT]
+> 
+> - Rellenar el DNI **empezando por la derecha**
+> - Traer **DNI** + **boli** + **típex**
+> - Sistema de puntuación: **+0.33** respuesta correcta / **−0.11** respuesta incorrecta
+> - Las respuestas en blanco **no restan**
 
 ---
 
 ## Índice de Contenidos
 
-1. [[#Bloque 1 — La Web y sus Tipos]]
-2. [[#Bloque 2 — Arquitectura Cliente-Servidor]]
-3. [[#Bloque 3 — HTML: Estructura y Etiquetas]]
-4. [[#Bloque 4 — CSS: Estilos y Diseño]]
-5. [[#Bloque 5 — JavaScript y el DOM]]
-6. [[#Bloque 6 — Aplicaciones Web Dinámicas y CMS]]
-7. [[#Bloque 7 — WordPress a Fondo]]
-8. [[#Bloque 8 — Seguridad Web]]
-9. [[#Bloque 9 — Optimización: SEO, Rendimiento y Accesibilidad]]
-10. [[#Bloque 10 — Despliegue y Entornos de Desarrollo]]
+1. [Bloque 1 — La Web y sus Tipos](#bloque-1--la-web-y-sus-tipos)
+2. [Bloque 2 — Arquitectura Cliente-Servidor](#bloque-2--arquitectura-cliente-servidor)
+3. [Bloque 3 — HTML: Estructura y Etiquetas](#bloque-3--html-estructura-y-etiquetas)
+4. [Bloque 4 — CSS: Estilos y Diseño](#bloque-4--css-estilos-y-dise%C3%B1o)
+5. [Bloque 5 — JavaScript y el DOM](#bloque-5--javascript-y-el-dom)
+6. [Bloque 6 — Aplicaciones Web Dinámicas y CMS](#bloque-6--aplicaciones-web-din%C3%A1micas-y-cms)
+7. [Bloque 7 — WordPress a Fondo](#bloque-7--wordpress-a-fondo)
+8. [Bloque 8 — Seguridad Web](#bloque-8--seguridad-web)
+9. [Bloque 9 — Optimización: SEO, Rendimiento y Accesibilidad](#bloque-9--optimizaci%C3%B3n-seo-rendimiento-y-accesibilidad)
+10. [Bloque 10 — Despliegue y Entornos de Desarrollo](#bloque-10--despliegue-y-entornos-de-desarrollo)
 
 ---
 
@@ -23,9 +34,9 @@
 
 ### ¿Qué es la Web 2.0?
 
-La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. La **Web 2.0** introduce la **participación activa del usuario**: puede crear, compartir y colaborar.
+La Web 1.0 era estática: páginas sin interacción, el usuario solo leía. La Web 2.0 introduce la participación activa del usuario: puede crear, compartir y colaborar.
 
-> [!IMPORTANT] Definición clave — Web 2.0 Web donde el usuario **genera y comparte contenido**. Ejemplos: Wikipedia, blogs, foros, redes sociales.
+> [!IMPORTANT] **Web 2.0** — Web donde el usuario genera y comparte contenido. Ejemplos: Wikipedia, blogs, foros, redes sociales.
 
 |Característica|Web 1.0|Web 2.0|
 |---|---|---|
@@ -33,46 +44,40 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |Usuario|Lector pasivo|Creador activo|
 |Ejemplo|Página HTML sin interacción|Wikipedia, Facebook, YouTube|
 
-> [!TIP] Truco de examen Si una opción dice "contenido estático" o "sin interacción" → **NO es Web 2.0**. Si dice "participación del usuario" → **SÍ es Web 2.0**.
-
----
+> [!TIP] Si una opción dice "contenido estático" o "sin interacción" → **NO** es Web 2.0. Si dice "participación del usuario" → **SÍ** es Web 2.0.
 
 ### Tipos de Aplicaciones Web
 
-| Tipo                              | Descripción                                   | Ejemplo                   |
-| --------------------------------- | --------------------------------------------- | ------------------------- |
-| **Estática**                      | HTML fijo, sin BD, se edita el código a mano  | Landing page simple       |
-| **Dinámica**                      | Genera contenido desde BD                     | WordPress, tiendas online |
-| **SPA** (Single Page Application) | Carga una sola página, actualiza sin recargar | Gmail, Google Maps        |
+|Tipo|Descripción|Ejemplo|
+|---|---|---|
+|Estática|HTML fijo, sin BD, se edita el código a mano|Landing page simple|
+|Dinámica|Genera contenido desde BD|WordPress, tiendas online|
+|SPA (Single Page Application)|Carga una sola página, actualiza sin recargar|Gmail, Google Maps|
 
-> [!IMPORTANT] Ventaja de seguridad de webs estáticas No tienen base de datos → **menor superficie de ataque**. Si no hay BD, no hay SQL injection.
+> [!TIP] **Ventaja de seguridad de webs estáticas:** No tienen base de datos → menor superficie de ataque. Si no hay BD, no hay SQL injection.
 
-> [!WARNING] Error frecuente "SPA" no significa que la web tenga una sola sección de contenido. Significa que técnicamente **solo hay una petición inicial al servidor** y el resto se actualiza dinámicamente con JavaScript.
-
----
+> [!WARNING] "SPA" no significa que la web tenga una sola sección de contenido. Significa que técnicamente solo hay una petición inicial al servidor y el resto se actualiza dinámicamente con JavaScript.
 
 ### Tipos de Aplicaciones Web por Función
 
-- **Blog**: Web con entradas ordenadas por fecha. CMS principal → **WordPress**.
-- **Foro**: Para debatir y publicar mensajes. Tiene roles (moderador, usuario, invitado).
-- **Wiki**: Contenido colaborativo (ej. Wikipedia). Predomina el contenido creado por varios.
-- **Gestor de imágenes**: Organiza y comparte imágenes en álbumes (ej. Flickr).
-- **Correo web (Webmail)**: Acceso al correo desde el navegador, sin instalar cliente local.
-- **Ofiimática web**: Google Docs, Office 365. Permite trabajo colaborativo online.
-- **Sistema operativo online**: Simula un escritorio desde el navegador web.
+- **Blog:** Web con entradas ordenadas por fecha. CMS principal → WordPress.
+- **Foro:** Para debatir y publicar mensajes. Tiene roles (moderador, usuario, invitado).
+- **Wiki:** Contenido colaborativo (ej. Wikipedia). Predomina el contenido creado por varios.
+- **Gestor de imágenes:** Organiza y comparte imágenes en álbumes (ej. Flickr).
+- **Correo web (Webmail):** Acceso al correo desde el navegador, sin instalar cliente local.
+- **Ofiimática web:** Google Docs, Office 365. Permite trabajo colaborativo online.
+- **Sistema operativo online:** Simula un escritorio desde el navegador web.
 
-> [!TIP] Diferencia Blog vs Wiki
+> [!TIP] **Diferencia Blog vs Wiki:**
 > 
-> - **Blog** = entradas ordenadas por fecha, autor principal.
-> - **Wiki** = contenido colaborativo entre muchos usuarios.
-
----
+> - Blog = entradas ordenadas por fecha, autor principal.
+> - Wiki = contenido colaborativo entre muchos usuarios.
 
 ### RSS y Feeds
 
-> [!IMPORTANT] ¿Qué es un Feed RSS? Un **archivo XML** que contiene las novedades/actualizaciones de una web. Los lectores de RSS (como **Feedly**) se suscriben a estos feeds para recibir actualizaciones sin visitar cada web.
-
-**Función principal:** recibir actualizaciones de contenido de webs (noticias, blogs...).
+> [!IMPORTANT] **¿Qué es un Feed RSS?** Un archivo XML que contiene las novedades/actualizaciones de una web. Los lectores de RSS (como Feedly) se suscriben a estos feeds para recibir actualizaciones sin visitar cada web.
+> 
+> Función principal: recibir actualizaciones de contenido de webs (noticias, blogs...).
 
 ---
 
@@ -80,7 +85,7 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 
 ### El Modelo Cliente-Servidor
 
-> [!IMPORTANT] Arquitectura base de la web La web funciona bajo el modelo **cliente-servidor**:
+> [!IMPORTANT] **Arquitectura base de la web** — La web funciona bajo el modelo cliente-servidor:
 > 
 > - **Cliente** = navegador (Chrome, Firefox...) → envía peticiones HTTP/HTTPS.
 > - **Servidor** = máquina que escucha peticiones y responde con recursos.
@@ -101,46 +106,40 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 [Navegador renderiza (interpreta y muestra) el resultado]
 ```
 
-> [!NOTE] Pasos del proceso — memorizarlos en orden
+> [!TIP] **Pasos del proceso — memorizarlos en orden:**
 > 
-> 1. **Petición** del cliente
-> 2. **Procesamiento** en el servidor
-> 3. **Respuesta** del servidor
-> 4. **Renderizado** en el navegador
-
----
+> 1. Petición del cliente
+> 2. Procesamiento en el servidor
+> 3. Respuesta del servidor
+> 4. Renderizado en el navegador
 
 ### Servidores Web: Apache vs NGINX
 
-| |Apache HTTP Server|NGINX|
+||Apache HTTP Server|NGINX|
 |---|---|---|
 |Antigüedad|El más veterano del mercado|Más moderno|
 |Característica|Flexible, usa módulos `.htaccess`|Alto rendimiento, muchas conexiones|
 |Uso|Web clásica, PHP|Proxy inverso, webs de alto tráfico|
 
-> [!NOTE] Archivos .htaccess Son **archivos de configuración** de Apache que definen reglas para carpetas específicas (redirecciones, permisos, etc.).
-
----
+> [!TIP] **Archivos .htaccess** — Son archivos de configuración de Apache que definen reglas para carpetas específicas (redirecciones, permisos, etc.).
 
 ### localhost
 
-> [!TIP] ¿Qué es localhost? `http://localhost/` accede al servidor web que **corre en tu propio ordenador**. Es la dirección de loopback local. Se usa en desarrollo con XAMPP.
-
----
+> [!IMPORTANT] **¿Qué es localhost?** `http://localhost/` accede al servidor web que corre en tu propio ordenador. Es la dirección de loopback local. Se usa en desarrollo con XAMPP.
 
 ### Almacenamiento de Datos
 
-- **Datos de la aplicación** → se guardan en la **base de datos** (MariaDB/MySQL).
-- **Sesiones de usuario** → se guardan en el **servidor** (para seguridad).
-- **Cookies** → pequeños archivos guardados en el **navegador del cliente**.
+- Datos de la aplicación → se guardan en la **base de datos** (MariaDB/MySQL).
+- Sesiones de usuario → se guardan en el **servidor** (para seguridad).
+- Cookies → pequeños archivos guardados en el **navegador del cliente**.
 
-> [!IMPORTANT] Cookies vs Sesiones
-> 
-> ||Cookies|Sesiones|
-> |---|---|---|
-> |Dónde se guardan|Navegador del cliente|Servidor|
-> |Ejemplo de uso|Recordar carrito de compra|Mantener login activo|
-> |Seguridad|Menor (accesible en el cliente)|Mayor|
+### Cookies vs Sesiones
+
+||Cookies|Sesiones|
+|---|---|---|
+|Dónde se guardan|Navegador del cliente|Servidor|
+|Ejemplo de uso|Recordar carrito de compra|Mantener login activo|
+|Seguridad|Menor (accesible en el cliente)|Mayor|
 
 ---
 
@@ -148,9 +147,7 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 
 ### ¿Qué es HTML?
 
-> [!IMPORTANT] Definición **HyperText Markup Language** = Lenguaje de **marcado** (no de programación) para definir la **estructura** del contenido web. El navegador lo interpreta para mostrar la página.
-
----
+> [!IMPORTANT] **Definición** — HyperText Markup Language = Lenguaje de marcado (**no** de programación) para definir la estructura del contenido web. El navegador lo interpreta para mostrar la página.
 
 ### Estructura Básica de un Documento HTML
 
@@ -172,11 +169,16 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |`<!DOCTYPE html>`|Declara que es un documento HTML5|
 |`<html>`|Raíz del documento|
 |`<head>`|Metadatos (no visible)|
-|`<body>`|**Todo el contenido visible**|
+|`<body>`|Todo el contenido visible|
 |`<title>`|Título en la pestaña del navegador|
 |`<meta>`|Metadatos (charset, descripción SEO...)|
 
----
+### `<head>` vs `<header>` — Diferencia clave
+
+> [!WARNING] Son completamente distintos y se confunden mucho en el examen:
+> 
+> - **`<head>`** — Lo procesa el navegador internamente; el usuario **nunca lo ve**. Contiene metadatos, título, enlaces a CSS/JS.
+> - **`<header>`** — Es una **sección visible** de la página. La cabecera que el usuario sí ve (logo, menú, etc.).
 
 ### Etiquetas de Contenido Esenciales
 
@@ -188,16 +190,14 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |`<p>`|Párrafo|
 |`<br>`|Salto de línea (sin cierre)|
 |`<hr>`|Línea horizontal (sin cierre)|
-|`<b>`|**Negrita**|
-|`<em>`|_Cursiva/énfasis_|
+|`<b>`|Negrita|
+|`<em>`|Cursiva/énfasis|
 |`<pre>`|Texto preformateado (respeta espacios)|
 
-> [!WARNING] Error frecuente — `<h1>` vs `<header>`
+> [!WARNING] **Error frecuente — `<h1>` vs `<header>`:**
 > 
-> - `<h1>` = etiqueta de **encabezado principal del texto** (nivel de contenido).
-> - `<header>` = etiqueta **semántica** que define la cabecera de la página o sección. Son distintas. En el examen pueden confundirte.
-
----
+> - `<h1>` = etiqueta de encabezado principal del **texto** (nivel de contenido).
+> - `<header>` = etiqueta semántica que define la **cabecera de la página** o sección. Son distintas. En el examen pueden confundirte.
 
 #### Listas
 
@@ -215,13 +215,11 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 </ul>
 ```
 
-> [!TIP] Truco de examen
+> [!TIP]
 > 
 > - `<ol>` = **O**rdenada = números
 > - `<ul>` = **U**nordenada = viñetas
 > - `<li>` = elemento de lista (se usa en ambas)
-
----
 
 #### Imágenes y Multimedia
 
@@ -240,15 +238,13 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 <iframe src="https://..."></iframe>
 ```
 
-> [!IMPORTANT] Atributo `alt` en imágenes El atributo `alt` es fundamental para:
+> [!IMPORTANT] **Atributo `alt` en imágenes** — Es fundamental para:
 > 
 > 1. **Accesibilidad** (lectores de pantalla para personas con discapacidad visual)
 > 2. **SEO** (los buscadores no "ven" imágenes, leen el alt)
 > 3. Mostrar texto si la imagen no carga
 
-> [!NOTE] ¿Por qué múltiples `<source>` en vídeos? Cada navegador soporta distintos formatos/códecs de vídeo (mp4, webm, ogg...). Al poner varias fuentes, el navegador elige la que puede reproducir.
-
----
+> [!TIP] **¿Por qué múltiples `<source>` en vídeos?** Cada navegador soporta distintos formatos/códecs de vídeo (mp4, webm, ogg...). Al poner varias fuentes, el navegador elige la que puede reproducir.
 
 #### Tablas
 
@@ -265,19 +261,17 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 </table>
 ```
 
-| Etiqueta  | Función                                    |
-| --------- | ------------------------------------------ |
-| `<table>` | Define la tabla                            |
-| `<tr>`    | Fila de la tabla                           |
-| `<th>`    | Celda de **cabecera** (negrita y centrada) |
-| `<td>`    | **Celda** normal de datos                  |
+|Etiqueta|Función|
+|---|---|
+|`<table>`|Define la tabla|
+|`<tr>`|Fila de la tabla|
+|`<th>`|Celda de cabecera (negrita y centrada)|
+|`<td>`|Celda normal de datos|
 
-**Atributos especiales:**
+Atributos especiales:
 
-- `colspan="2"` → fusiona **columnas**
-- `rowspan="2"` → fusiona **filas**
-
----
+- `colspan="2"` → fusiona columnas
+- `rowspan="2"` → fusiona filas
 
 #### Formularios y Botones
 
@@ -294,29 +288,40 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |---|---|
 |`<form>`|Agrupa los elementos del formulario|
 |`<button>`|Botón interactivo|
-|`required`|**Obliga** a rellenar el campo|
+|`required`|Obliga a rellenar el campo|
 |`type="email"`|Valida formato de correo electrónico|
 |`type="range"`|Control deslizante para valor numérico|
 |`onclick`|Ejecuta JavaScript al hacer clic|
 
----
-
-#### Atributos Clave
+### Atributos Clave — y Mnemotécnica `src` vs `href`
 
 |Atributo|Función|
 |---|---|
-|`id`|Identificador **único** del elemento|
+|`id`|Identificador único del elemento|
 |`class`|Clase para aplicar estilos CSS (puede repetirse)|
 |`style`|Estilos en línea directamente en el elemento|
 |`href`|URL del hipervínculo `<a>`|
 |`src`|Fuente de imagen o script|
 |`alt`|Texto alternativo de imagen|
 
----
+> [!TIP] **Mnemotécnica `src` vs `href`:**
+> 
+> - **`src`** → **incrusta** el recurso directamente en la página (imagen, script, vídeo). Sin él, el elemento no existe.
+> - **`href`** → solo **señala una referencia** externa (un enlace, una hoja de estilos). Es un puntero, no una incrustación.
+> 
+> Regla rápida: ¿Se descarga y se mete dentro? → `src`. ¿Solo apunta a algo? → `href`.
+
+### Etiqueta `<center>` — Obsoleta ⚠️
+
+> [!WARNING] **`<center>` está obsoleta y no se debe usar.** No es semántica: solo describe apariencia visual, no el significado del contenido. Equivale a usar CSS `text-align: center`.
+> 
+> Contraste con `<nav>`: `<nav>` **sí es semántica** porque describe el _propósito_ (navegación), no la apariencia. Los buscadores y lectores de pantalla entienden que es un menú.
+> 
+> Regla: en HTML moderno, la presentación va en **CSS**, no en etiquetas.
 
 ### Etiquetas Semánticas de HTML5
 
-> [!IMPORTANT] ¿Qué significa "semántico"? Una etiqueta semántica describe el **significado** de su contenido, no solo su apariencia. Ayuda a buscadores (SEO) y a lectores de pantalla (accesibilidad).
+> [!IMPORTANT] **¿Qué significa "semántico"?** Una etiqueta semántica describe el significado de su contenido, no solo su apariencia. Ayuda a buscadores (SEO) y a lectores de pantalla (accesibilidad).
 
 ```
 ┌─────────────────────────────┐
@@ -337,18 +342,16 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |Etiqueta|Cuándo usarla|
 |---|---|
 |`<header>`|Cabecera de página o sección|
-|`<nav>`|**Menú de navegación** del sitio|
-|`<main>`|Contenido **principal y único** de la página|
+|`<nav>`|Menú de navegación del sitio|
+|`<main>`|Contenido principal y único de la página|
 |`<section>`|Agrupación temática de contenido (ej: sección de noticias)|
-|`<article>`|Contenido **independiente** y distribuible (ej: post de blog)|
-|`<aside>`|Contenido **secundario** / barra lateral relacionada|
+|`<article>`|Contenido independiente y distribuible (ej: post de blog)|
+|`<aside>`|Contenido secundario / barra lateral relacionada|
 |`<footer>`|Pie de página con info legal o de contacto|
 
-> [!TIP] ¿`<div>` o etiqueta semántica? `<div>` y `<span>` son **genéricos**, sin significado. Usa etiquetas semánticas siempre que sea posible. `<footer>` **sí es semántica**; `<div>` y `<span>` **no lo son**.
+> [!TIP] **¿`<div>` o etiqueta semántica?** `<div>` y `<span>` son genéricos, sin significado. Usa etiquetas semánticas siempre que sea posible. `<footer>` sí es semántica; `<div>` y `<span>` no lo son.
 
----
-
-#### Scripts y Estilos en HTML
+### Scripts y Estilos en HTML
 
 ```html
 <!-- Incluir JavaScript -->
@@ -364,9 +367,49 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 
 ### ¿Qué es CSS?
 
-> [!IMPORTANT] Definición **Cascading Style Sheets** = Hojas de Estilo en Cascada. Transforma el HTML plano en una **interfaz clara, legible y consistente**. Define colores, fuentes, tamaños, posicionamiento...
+> [!IMPORTANT] **Definición** — Cascading Style Sheets = Hojas de Estilo en Cascada. Transforma el HTML plano en una interfaz clara, legible y consistente. Define colores, fuentes, tamaños, posicionamiento...
 
----
+### Métodos de Inclusión de CSS
+
+Hay **tres formas** de añadir CSS a una página HTML:
+
+#### 1. Inline (en línea) — `style=""`
+
+```html
+<p style="color: red; font-size: 18px;">Texto rojo</p>
+```
+
+#### 2. Interno — `<style>` en `<head>`
+
+```html
+<head>
+  <style>
+    p { color: red; font-size: 18px; }
+  </style>
+</head>
+```
+
+#### 3. Externo — `<link>` a archivo `.css`
+
+```html
+<head>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+```
+
+> [!TIP] **Ventajas del CSS externo (método recomendado):**
+> 
+> - **Reutilización:** un solo archivo aplica a toda la web.
+> - **Mantenimiento:** cambias un archivo y se actualiza en todas las páginas.
+> - **Especificidad:** al estar separado del HTML, el código queda más limpio y organizado.
+> 
+> **Cuándo usar cada uno:**
+> 
+> - Inline → para pruebas rápidas o un ajuste muy puntual (no recomendado en producción).
+> - Interno → si solo tienes una página y no quieres un archivo extra.
+> - Externo → **siempre que sea posible**. Es la práctica profesional.
+
+> [!WARNING] La **especificidad** determina qué regla "gana" cuando hay conflicto: `inline > interno > externo`. El inline es el más específico, pero también el más difícil de mantener.
 
 ### Selectores CSS
 
@@ -375,17 +418,15 @@ La **Web 1.0** era estática: páginas sin interacción, el usuario solo leía. 
 |Etiqueta|`p { }`|Todos los `<p>`|
 |Clase|`.miclase { }`|Todos con `class="miclase"`|
 |ID|`#miid { }`|El elemento con `id="miid"`|
-|Descendiente|`div p { }`|**Todos** los `<p>` dentro de cualquier `<div>`|
-|Hijo directo|`div > p { }`|Solo los `<p>` **hijos directos** de `<div>`|
-|Hermano adyacente|`p + span { }`|El `<span>` **inmediatamente después** de `<p>`|
+|Descendiente|`div p { }`|Todos los `<p>` dentro de cualquier `<div>`|
+|Hijo directo|`div > p { }`|Solo los `<p>` hijos directos de `<div>`|
+|Hermano adyacente|`p + span { }`|El `<span>` inmediatamente después de `<p>`|
 |Hermano general|`p ~ span { }`|Todos los `<span>` hermanos después de `<p>`|
 
-> [!WARNING] Error frecuente — Descendiente vs Hijo Directo
+> [!WARNING] **Descendiente vs Hijo Directo:**
 > 
-> - `div p` = **todos** los `<p>` dentro del div (a cualquier nivel de profundidad) ✅
-> - `div > p` = solo los `<p>` que son **hijos directos** del div
-
----
+> - `div p` = todos los `<p>` dentro del div (a cualquier nivel de profundidad) ✅
+> - `div > p` = solo los `<p>` que son hijos **directos** del div
 
 ### Pseudo-clases y Pseudo-elementos
 
@@ -394,9 +435,7 @@ a:hover { color: red; }      /* Cuando el ratón pasa por encima */
 input:focus { border: 2px; } /* Cuando el elemento tiene el foco */
 ```
 
-> [!IMPORTANT] :hover Se aplica cuando el **ratón pasa sobre un elemento**. Muy usada para efectos en botones y enlaces.
-
----
+> [!TIP] **`:hover`** — Se aplica cuando el ratón pasa sobre un elemento. Muy usada para efectos en botones y enlaces.
 
 ### Propiedades CSS Fundamentales
 
@@ -404,37 +443,33 @@ input:focus { border: 2px; } /* Cuando el elemento tiene el foco */
 
 |Propiedad|Función|Ejemplo|
 |---|---|---|
-|`color`|Color del **texto**|`color: red;`|
-|`font-size`|**Tamaño** del texto|`font-size: 16px;`|
-|`font-weight`|**Grosor** (negrita)|`font-weight: bold;`|
-|`font-style`|**Cursiva**|`font-style: italic;`|
-|`font-family`|**Tipo de letra**|`font-family: Arial;`|
-|`text-align`|**Alineación** del texto|`text-align: center;`|
+|`color`|Color del texto|`color: red;`|
+|`font-size`|Tamaño del texto|`font-size: 16px;`|
+|`font-weight`|Grosor (negrita)|`font-weight: bold;`|
+|`font-style`|Cursiva|`font-style: italic;`|
+|`font-family`|Tipo de letra|`font-family: Arial;`|
+|`text-align`|Alineación del texto horizontal|`text-align: center;`|
 |`text-decoration`|Decoración (subrayado)|`text-decoration: none;`|
 |`letter-spacing`|Espacio entre letras|`letter-spacing: 2px;`|
 |`line-height`|Espacio entre líneas|`line-height: 1.5;`|
-
----
 
 #### Fondo, Bordes y Visibilidad
 
 |Propiedad|Función|Ejemplo|
 |---|---|---|
-|`background-color`|Color de **fondo**|`background-color: #fff;`|
+|`background-color`|Color de fondo|`background-color: #fff;`|
 |`border`|Borde del elemento|`border: 1px solid black;`|
-|`border-radius`|Bordes **redondeados**|`border-radius: 10px;`|
-|`opacity`|**Opacidad** (0=invisible, 1=visible)|`opacity: 0.5;`|
+|`border-radius`|Bordes redondeados|`border-radius: 10px;`|
+|`opacity`|Opacidad (0=invisible, 1=visible)|`opacity: 0.5;`|
 
----
+### El Modelo de Caja (Box Model)
 
-#### El Modelo de Caja (Box Model)
-
-> [!IMPORTANT] Las 4 capas del modelo de caja De dentro hacia fuera:
+> [!IMPORTANT] **Las 4 capas del modelo de caja** — De dentro hacia fuera:
 > 
 > 1. **Contenido** — el texto/imagen en sí
-> 2. **Padding** — espacio **interior** (entre contenido y borde)
+> 2. **Padding** — espacio interior (entre contenido y borde)
 > 3. **Border** — el borde
-> 4. **Margin** — espacio **exterior** (entre el elemento y los demás)
+> 4. **Margin** — espacio exterior (entre el elemento y los demás)
 
 ```
 ┌─────────────────────────────────┐
@@ -451,41 +486,36 @@ input:focus { border: 2px; } /* Cuando el elemento tiene el foco */
 └─────────────────────────────────┘
 ```
 
-| Propiedad   | Qué hace                                             |
-| ----------- | ---------------------------------------------------- |
-| `padding`   | Espacio **interior** (entre contenido y borde)       |
-| `margin`    | Espacio **exterior** (separa del resto de elementos) |
-| `border`    | La línea que rodea el contenido                      |
-| `width`     | Ancho del contenedor                                 |
-| `height`    | Alto del contenedor                                  |
-| ancho total | width (incluye padding y border)                     |
+|Propiedad|Qué hace|
+|---|---|
+|`padding`|Espacio interior (entre contenido y borde)|
+|`margin`|Espacio exterior (separa del resto de elementos)|
+|`border`|La línea que rodea el contenido|
+|`width`|Ancho del contenedor|
+|`height`|Alto del contenedor|
 
-> [!TIP] box-sizing: border-box
-> 
-> ```css
-> box-sizing: border-box;
-> ```
-> 
-> Con esta propiedad, el `width` y `height` declarados **incluyen** el padding y el borde. Sin ella, el padding se suma al ancho total y puede romper el diseño. **Muy recomendada como reset global. el tamaño total de un elemento incluye padding y borde**
+#### box-sizing: border-box
 
----
+```css
+box-sizing: border-box;
+```
 
-#### Display y Visibilidad
+Con esta propiedad, el `width` y `height` declarados **incluyen** el padding y el borde. Sin ella, el padding se suma al ancho total y puede romper el diseño. Muy recomendada como reset global.
+
+### Display y Visibilidad
 
 |Propiedad|Efecto|
 |---|---|
-|`display: none`|El elemento **desaparece completamente** (no ocupa espacio)|
-|`visibility: hidden`|El elemento se **oculta pero mantiene su espacio**|
-|`opacity: 0`|El elemento es invisible pero **sigue ocupando espacio y siendo interactivo**|
+|`display: none`|El elemento desaparece completamente (no ocupa espacio)|
+|`visibility: hidden`|El elemento se oculta pero mantiene su espacio|
+|`opacity: 0`|El elemento es invisible pero sigue ocupando espacio y siendo interactivo|
 
-> [!WARNING] Diferencia clave para el examen
+> [!WARNING] **Diferencia clave para el examen:**
 > 
-> - `display: none` → desaparece, **NO ocupa espacio**
-> - `visibility: hidden` → invisible, **SÍ ocupa espacio**
+> - `display: none` → desaparece, **NO** ocupa espacio
+> - `visibility: hidden` → invisible, **SÍ** ocupa espacio
 
----
-
-#### Flexbox
+### Flexbox
 
 ```css
 .contenedor {
@@ -495,26 +525,22 @@ input:focus { border: 2px; } /* Cuando el elemento tiene el foco */
 }
 ```
 
-> [!TIP] Truco de examen — Flexbox
+> [!TIP] **Truco Flexbox:**
 > 
-> - `justify-content` → eje **principal** (normalmente horizontal)
-> - `align-items` → eje **secundario** (normalmente vertical)
+> - `justify-content` → eje principal (normalmente **horizontal**) — _JUSTO HORIZONTE_
+> - `align-items` → eje secundario (normalmente **vertical**) — _ARRIBA_
 
----
-
-#### Unidades CSS
+### Unidades CSS
 
 |Unidad|Tipo|Descripción|
 |---|---|---|
 |`px`|Absoluta|Píxeles fijos|
-|`em`|**Relativa**|Relativa al tamaño de fuente del elemento padre|
+|`em`|Relativa|Relativa al tamaño de fuente del elemento padre|
 |`rem`|Relativa|Relativa al tamaño de fuente raíz|
 |`%`|Relativa|Porcentaje del elemento contenedor|
 |`cm`, `mm`|Absolutas|Centímetros/milímetros (raramente en web)|
 
-> [!NOTE] `em` es la **unidad relativa** por excelencia en los exámenes. `px` es absoluta.
-
----
+> [!TIP] `em` es la unidad relativa por excelencia en los exámenes. `px` es absoluta.
 
 ### Variables CSS (Custom Properties)
 
@@ -530,13 +556,11 @@ h1 {
 }
 ```
 
-> [!IMPORTANT] ¿Para qué sirven las variables CSS? Para **reutilizar valores** (colores, fuentes) en todo el sitio. Si cambias la variable en un sitio, cambia en todo el CSS. Facilita el mantenimiento enormemente.
-
----
+> [!TIP] **¿Para qué sirven las variables CSS?** Para reutilizar valores (colores, fuentes) en todo el sitio. Si cambias la variable en un sitio, cambia en todo el CSS. Facilita el mantenimiento enormemente.
 
 ### Frameworks CSS
 
-> [!IMPORTANT] ¿Qué es un Framework CSS? Una **colección de estilos y componentes predefinidos** que agilizan el desarrollo web. En lugar de escribir todo el CSS desde cero, usas clases ya hechas.
+> [!IMPORTANT] **¿Qué es un Framework CSS?** Una colección de estilos y componentes predefinidos que agilizan el desarrollo web. En lugar de escribir todo el CSS desde cero, usas clases ya hechas.
 
 #### Bootstrap
 
@@ -549,9 +573,9 @@ h1 {
 
 #### Tailwind CSS
 
-- Framework **utility-first**: en lugar de componentes, ofrece **clases atómicas** que aplican una sola propiedad.
-- El HTML se vuelve **declarativo** (las clases describen las decisiones de diseño directamente).
-- Usa **purgado**: elimina el CSS no utilizado para optimizar el peso final del archivo.
+- Framework **utility-first**: en lugar de componentes, ofrece clases atómicas que aplican una sola propiedad.
+- El HTML se vuelve declarativo (las clases describen las decisiones de diseño directamente).
+- Usa purgado: elimina el CSS no utilizado para optimizar el peso final del archivo.
 
 ```html
 <button class="bg-blue-500 text-white px-4 py-2 rounded">Botón</button>
@@ -563,15 +587,13 @@ h1 {
 |HTML|Limpio con clases semánticas|Clases descriptivas en el HTML|
 |Personalización|Media (temas)|Alta (total control)|
 
----
-
 ### Comentarios en CSS
 
 ```css
 /* Esto es un comentario en CSS */
 ```
 
-> [!WARNING] Sintaxis correcta de comentarios CSS Solo existe una forma: `/* comentario */`. No son válidos `//` ni `#` en CSS.
+> [!WARNING] **Sintaxis correcta de comentarios CSS** — Solo existe una forma: `/* comentario */`. No son válidos `//` ni `#` en CSS.
 
 ---
 
@@ -579,20 +601,74 @@ h1 {
 
 ### ¿Qué es JavaScript?
 
-> [!IMPORTANT] Definición Lenguaje de **scripting interpretado** que el navegador lee y ejecuta **línea a línea** directamente. Su función principal: aportar **dinamismo e interactividad** a las páginas web.
+> [!IMPORTANT] **Definición** — Lenguaje de scripting interpretado que el navegador lee y ejecuta línea a línea directamente. Su función principal: aportar dinamismo e interactividad a las páginas web.
 
-**Permite:**
+Permite:
 
 - Responder a acciones del usuario (clics, teclas, scroll...)
 - Modificar el contenido y el diseño en tiempo real (sin recargar la página)
 - Validar formularios en el lado del cliente
 - Comunicarse con el servidor (AJAX/Fetch)
 
----
+### Variables en JavaScript — `var`, `let`, `const`
+
+> [!IMPORTANT] Las tres palabras clave para declarar variables tienen comportamientos distintos:
+
+||`var`|`let`|`const`|
+|---|---|---|---|
+|Ámbito|Función (function scope)|Bloque `{ }` (block scope)|Bloque `{ }` (block scope)|
+|Reasignable|✅ Sí|✅ Sí|❌ No|
+|Redeclarable|✅ Sí|❌ No|❌ No|
+|Hoisting|Sí (se eleva, vale `undefined`)|Sí (pero no inicializada)|Sí (pero no inicializada)|
+
+```javascript
+var nombre = "Ana";     // Antigua, evitar. Ámbito de función.
+let edad = 25;          // Moderna, para valores que cambian.
+const PI = 3.14;        // Para valores que NO cambian nunca.
+```
+
+> [!TIP] **Regla práctica:**
+> 
+> - Usa `const` por defecto.
+> - Cambia a `let` solo si necesitas reasignar el valor.
+> - **Nunca uses `var`** en código moderno (es una reliquia de JS antiguo).
+
+> [!WARNING] `const` no significa que el valor sea inmutable para siempre: en objetos y arrays, puedes modificar su contenido interno. Solo impide **reasignar** la variable a otro valor.
+
+### Tipos Básicos en JavaScript
+
+|Tipo|Ejemplo|Descripción|
+|---|---|---|
+|`string`|`"Hola"`, `'mundo'`|Cadena de texto|
+|`number`|`42`, `3.14`|Número (entero o decimal)|
+|`boolean`|`true`, `false`|Verdadero o falso|
+|`array`|`[1, 2, 3]`|Lista ordenada de valores|
+|`object`|`{ nombre: "Ana", edad: 25 }`|Colección de pares clave-valor|
+
+```javascript
+// Ejemplos
+const texto = "Hola mundo";          // string
+const numero = 42;                    // number
+const activo = true;                  // boolean
+const lista = ["manzana", "pera"];   // array
+const usuario = {                     // object
+  nombre: "Ana",
+  edad: 25
+};
+```
+
+> [!TIP] Puedes comprobar el tipo de una variable con `typeof`:
+> 
+> ```javascript
+> typeof "Hola"   // "string"
+> typeof 42       // "number"
+> typeof true     // "boolean"
+> typeof [1,2]    // "object"  ← ¡Ojo! Los arrays también devuelven "object"
+> ```
 
 ### El DOM (Document Object Model)
 
-> [!IMPORTANT] ¿Qué es el DOM? La **representación en memoria** de un documento HTML como un **árbol jerárquico** de nodos. Cada etiqueta HTML es un **nodo** del árbol.
+> [!IMPORTANT] **¿Qué es el DOM?** La representación en memoria de un documento HTML como un árbol jerárquico de nodos. Cada etiqueta HTML es un nodo del árbol.
 
 ```
 document
@@ -606,9 +682,7 @@ document
             └── <a>
 ```
 
-> [!NOTE] Metáfora del árbol genealógico El DOM se explica como un **árbol genealógico**: los elementos tienen relaciones de **padres e hijos** (parent/child). Un `<div>` que contiene un `<p>` es el "padre" del párrafo.
-
----
+> [!TIP] **Metáfora del árbol genealógico** — El DOM se explica como un árbol genealógico: los elementos tienen relaciones de padres e hijos (parent/child). Un `<div>` que contiene un `<p>` es el "padre" del párrafo.
 
 ### Selección de Elementos
 
@@ -624,13 +698,11 @@ document.querySelector("#id");
 document.querySelectorAll(".clase");
 ```
 
-> [!TIP] Truco de examen
+> [!TIP]
 > 
-> - `getElementById("nombre")` → **sin # ni punto**, solo el nombre
-> - `querySelector("#nombre")` → **con #** para IDs
-> - `querySelector(".nombre")` → **con punto** para clases
-
----
+> - `getElementById("nombre")` → sin `#` ni punto, solo el nombre
+> - `querySelector("#nombre")` → con `#` para IDs
+> - `querySelector(".nombre")` → con `.` para clases
 
 ### Modificar el DOM
 
@@ -643,11 +715,9 @@ elemento.style.color = "red";
 elemento.style.display = "none";
 ```
 
----
-
 ### Eventos
 
-> [!IMPORTANT] ¿Qué es un evento? Una **respuesta del sistema ante una acción del usuario** (o del navegador). Ejemplos: clic, pulsación de tecla, desplazamiento (scroll), carga de página...
+> [!IMPORTANT] **¿Qué es un evento?** Una respuesta del sistema ante una acción del usuario (o del navegador). Ejemplos: clic, pulsación de tecla, desplazamiento (scroll), carga de página...
 
 ```javascript
 // Método recomendado
@@ -667,26 +737,22 @@ elemento.addEventListener("click", function() {
 |`submit`|Al enviar un formulario|
 |`load`|Cuando la página termina de cargarse|
 
----
-
 ### Validación de Formularios
 
-> [!IMPORTANT] Cliente vs Servidor
-> 
-> - **Validación en el cliente (JS)**: Mejora la **experiencia de usuario**, avisa de errores rápidamente sin ir al servidor.
-> - **Validación en el servidor**: **SIEMPRE es necesaria** por seguridad. La validación de cliente puede saltarse (desactivando JS o manipulando el HTML).
+> [!WARNING] **La validación del cliente NO es suficiente para la seguridad** — Cualquier usuario puede desactivar JavaScript en el navegador. Siempre debe haber validación en el servidor.
 
-> [!WARNING] La validación del cliente NO es suficiente para la seguridad Cualquier usuario puede desactivar JavaScript en el navegador. **Siempre debe haber validación en el servidor**.
+**Cliente vs Servidor:**
 
----
+- **Validación en el cliente (JS):** Mejora la experiencia de usuario, avisa de errores rápidamente sin ir al servidor.
+- **Validación en el servidor:** SIEMPRE es necesaria por seguridad. La validación de cliente puede saltarse (desactivando JS o manipulando el HTML).
 
 ### Consecuencias de Desactivar JavaScript
 
 Si desactivamos JS en el navegador:
 
-- La **interactividad deja de funcionar** (menús, animaciones, formularios dinámicos)
-- Las **validaciones de cliente** no se ejecutan
-- Las **SPAs** quedan inutilizables
+- La interactividad deja de funcionar (menús, animaciones, formularios dinámicos)
+- Las validaciones de cliente no se ejecutan
+- Las SPAs quedan inutilizables
 
 ---
 
@@ -694,37 +760,66 @@ Si desactivamos JS en el navegador:
 
 ### Aplicaciones Web Dinámicas
 
-> [!IMPORTANT] ¿Qué las define? Generan contenido mediante **consultas a bases de datos**. El contenido cambia según el usuario, la fecha, los datos almacenados...
+> [!IMPORTANT] **¿Qué las define?** Generan contenido mediante consultas a bases de datos. El contenido cambia según el usuario, la fecha, los datos almacenados...
 
-**Stack típico en SMR:**
+Stack típico en SMR:
 
-- **Front-end**: HTML + CSS + JavaScript
-- **Back-end**: **PHP** (lenguaje que se ejecuta en el servidor)
-- **Base de datos**: MariaDB / MySQL
+- Front-end: HTML + CSS + JavaScript
+- Back-end: PHP (lenguaje que se ejecuta en el servidor)
+- Base de datos: MariaDB / MySQL
 
----
+### WebAssembly (WASM)
+
+> [!IMPORTANT] **¿Qué es WebAssembly?** Un formato binario que permite ejecutar código de **alto rendimiento** (escrito en C, C++, Rust...) directamente en el navegador, a una velocidad cercana al código nativo.
+
+- No sustituye a JavaScript, sino que lo **complementa** para tareas pesadas.
+- El navegador descarga el archivo `.wasm` y lo ejecuta de forma muy eficiente.
+- **Ejemplo real:** Figma — el editor de diseño funciona en el navegador con fluidez gracias a WebAssembly.
+- También se usa en: videojuegos en el navegador, edición de vídeo/audio online, simulaciones científicas.
+
+> [!TIP] Si en el examen preguntan qué tecnología permite ejecutar aplicaciones de alto rendimiento como Figma en el navegador → **WebAssembly**.
+
+### PWA (Progressive Web App)
+
+> [!IMPORTANT] **¿Qué es una PWA?** Una aplicación web que se comporta como una **app nativa** (de móvil o escritorio), pero corre en el navegador.
+
+Características clave de una PWA:
+
+- **Funciona offline** (sin conexión a internet)
+- **Se puede instalar** en el dispositivo (aparece en la pantalla de inicio como una app)
+- Usa **Service Workers** — scripts que se ejecutan en segundo plano, interceptan peticiones de red y gestionan la caché
+- Recibe **notificaciones push**
+- Es responsive (se adapta a cualquier pantalla)
+
+```
+App web normal                PWA
+     │                         │
+     ├── Necesita internet      ├── Funciona offline (Service Worker)
+     ├── Solo en navegador      ├── Se instala en el dispositivo
+     └── Sin notificaciones     └── Puede enviar notificaciones push
+```
+
+> [!TIP] **Ejemplos de PWA:** Twitter Lite, Starbucks, Uber, Google Maps Go.
 
 ### CMS (Content Management System)
 
-> [!IMPORTANT] Definición **Sistema de Gestión de Contenidos**. Aplicación web que permite **crear y publicar contenido sin necesidad de saber programar**.
+> [!IMPORTANT] **Definición** — Sistema de Gestión de Contenidos. Aplicación web que permite crear y publicar contenido sin necesidad de saber programar.
 
-**Ventaja principal:** Actualizar contenido fácilmente sin tocar código.
+Ventaja principal: Actualizar contenido fácilmente sin tocar código.
 
 |CMS|Uso Principal|
 |---|---|
-|**WordPress**|Blogs, webs corporativas (>40% de la web mundial)|
-|**Moodle**|Plataformas educativas (e-learning)|
-|**MediaWiki**|Wikis colaborativas (como Wikipedia)|
-|**phpBB**|Foros de discusión|
+|WordPress|Blogs, webs corporativas (>40% de la web mundial)|
+|Moodle|Plataformas educativas (e-learning)|
+|MediaWiki|Wikis colaborativas (como Wikipedia)|
+|phpBB|Foros de discusión|
 
-> [!TIP] Truco de examen — CMS por función
+> [!TIP] **CMS por función:**
 > 
-> - Blogs → **WordPress**
-> - Foros → **phpBB**
-> - E-learning → **Moodle**
-> - Wikis → **MediaWiki**
-
----
+> - Blogs → WordPress
+> - Foros → phpBB
+> - E-learning → Moodle
+> - Wikis → MediaWiki
 
 ### Formato de Intercambio de Datos
 
@@ -744,77 +839,64 @@ Las aplicaciones web modernas usan **JSON** (JavaScript Object Notation) como fo
 
 ### WordPress.com vs WordPress.org
 
-|             | WordPress.com                        | WordPress.org                         |
-| ----------- | ------------------------------------ | ------------------------------------- |
-| Alojamiento | **Incluido** (externo, de WordPress) | **Debes contratar** tu propio hosting |
-| Control     | Limitado                             | Total                                 |
-| Coste       | Gratuito (con limitaciones)          | Software gratuito, hosting de pago    |
-|             |                                      |                                       |
+||WordPress.com|WordPress.org|
+|---|---|---|
+|Alojamiento|Incluido (externo, de WordPress)|Debes contratar tu propio hosting|
+|Control|Limitado|Total|
+|Coste|Gratuito (con limitaciones)|Software gratuito, hosting de pago|
 
-> [!WARNING] Error frecuente La diferencia clave NO es que uno sea de pago y otro gratuito. Es que en **.org debes gestionar tu propio alojamiento (hosting)**.
-
----
+> [!WARNING] La diferencia clave **NO** es que uno sea de pago y otro gratuito. Es que en **.org** debes gestionar tu propio alojamiento (hosting).
 
 ### Estructura de WordPress
 
-#### Back-end vs Front-end
+**Back-end vs Front-end:**
 
-- **Front-end**: La parte **visual** que ven los usuarios cuando visitan la web.
-- **Back-end**: El **panel de administración** (`/wp-admin`) donde se gestiona todo el contenido y los ajustes.
+- **Front-end:** La parte visual que ven los usuarios cuando visitan la web.
+- **Back-end:** El panel de administración (`/wp-admin`) donde se gestiona todo el contenido y los ajustes.
 
-#### Dónde se guarda el contenido
-
-> [!IMPORTANT] Almacenamiento en WordPress El contenido (textos, entradas, páginas) se guarda en una **base de datos** gestionada por el servidor (**MariaDB/MySQL**). Las imágenes y archivos se guardan en la carpeta `wp-content/uploads/`.
-
----
+> [!IMPORTANT] **Almacenamiento en WordPress** — El contenido (textos, entradas, páginas) se guarda en una base de datos gestionada por el servidor (MariaDB/MySQL). Las imágenes y archivos se guardan en la carpeta `wp-content/uploads/`.
 
 ### Elementos Clave de WordPress
 
 #### Temas (Themes)
 
 - Controlan el **diseño visual**: colores, tipografías, layout, apariencia.
-- Si cambias el tema, **el contenido se mantiene**, solo cambia el diseño.
-- **Child Theme (Tema Hijo)**: Permite personalizar el diseño sin perder los cambios al actualizar el tema padre.
+- Si cambias el tema, el contenido se mantiene, solo cambia el diseño.
+- **Child Theme (Tema Hijo):** Permite personalizar el diseño sin perder los cambios al actualizar el tema padre.
 
 #### Plugins (Complementos)
 
-> [!IMPORTANT] ¿Qué es un Plugin? Software que **añade funcionalidades extra** a WordPress (formularios de contacto, SEO, tiendas online, seguridad...).
+> [!IMPORTANT] **¿Qué es un Plugin?** Software que añade funcionalidades extra a WordPress (formularios de contacto, SEO, tiendas online, seguridad...).
 
 #### Widgets
 
-> [!IMPORTANT] ¿Qué es un Widget? Un **bloque con una función específica** para barras laterales o pies de página (últimas entradas, buscador, redes sociales...).
-
----
+> [!IMPORTANT] **¿Qué es un Widget?** Un bloque con una función específica para barras laterales o pies de página (últimas entradas, buscador, redes sociales...).
 
 ### Páginas vs Entradas
 
 ||Páginas (Pages)|Entradas (Posts)|
 |---|---|---|
-|Orden|Sin orden temporal|**Ordenadas por fecha**|
+|Orden|Sin orden temporal|Ordenadas por fecha|
 |Uso|Contenido fijo (Sobre mí, Contacto)|Blog, noticias|
 |Categorías|No|Sí|
-
----
 
 ### Roles de Usuario en WordPress
 
 |Rol|Permisos|
 |---|---|
-|**Administrador**|**Control total** del sistema y ajustes|
+|Administrador|Control total del sistema y ajustes|
 |Editor|Revisa y publica entradas de otros|
 |Autor|Solo publica sus propias entradas|
 |Colaborador|Escribe pero no publica|
 |Suscriptor|Solo puede leer y comentar|
 
-> [!TIP] Para el examen: el rol con **control total** es siempre el **Administrador**.
-
----
+> [!TIP] Para el examen: el rol con control total es siempre el **Administrador**.
 
 ### Categorías, Etiquetas (Tags) y el Personalizador
 
-- **Categorías**: Agrupación jerárquica amplia (ej: "Tecnología").
-- **Etiquetas (Tags)**: Palabras clave para **organizar y relacionar contenidos** por temas específicos.
-- **Personalizador**: Panel visual para modificar **colores, fuentes y cabeceras viendo los cambios en vivo**.
+- **Categorías:** Agrupación jerárquica amplia (ej: "Tecnología").
+- **Etiquetas (Tags):** Palabras clave para organizar y relacionar contenidos por temas específicos.
+- **Personalizador:** Panel visual para modificar colores, fuentes y cabeceras viendo los cambios en vivo.
 
 ---
 
@@ -823,52 +905,43 @@ Las aplicaciones web modernas usan **JSON** (JavaScript Object Notation) como fo
 ### Los 4 Pilares de la Seguridad Web
 
 1. **HTTPS** — cifrado de la comunicación
-2. **Contraseñas robustas y bien almacenadas** (hash)
+2. **Contraseñas robustas** y bien almacenadas (hash)
 3. **Copias de seguridad (backups)** regulares
 4. **Validación de datos** en servidor
 
-> [!WARNING] ¿Qué NO es un pilar de seguridad? El diseño de un logotipo o los colores corporativos **no tienen nada que ver con la seguridad**. En el examen puede aparecer esta trampa.
-
----
+> [!WARNING] ¿Qué NO es un pilar de seguridad? El diseño de un logotipo o los colores corporativos no tienen nada que ver con la seguridad. En el examen puede aparecer esta trampa.
 
 ### HTTPS y SSL/TLS
 
-> [!IMPORTANT] ¿Qué hace HTTPS? **Cifra la comunicación** entre el navegador y el servidor mediante certificados **SSL/TLS**. Evita que terceros intercepten los datos (contraseñas, datos bancarios...).
+> [!IMPORTANT] **¿Qué hace HTTPS?** Cifra la comunicación entre el navegador y el servidor mediante certificados SSL/TLS. Evita que terceros intercepten los datos (contraseñas, datos bancarios...).
+> 
+> - El icono del candado en el navegador indica que la conexión viaja cifrada.
+> - HTTP simple → la contraseña viaja en texto plano y puede ser interceptada.
+> - **Let's Encrypt** → iniciativa que ofrece certificados SSL/TLS gratuitos.
 
-- El icono del **candado** en el navegador indica que la conexión **viaja cifrada**.
-- **HTTP simple** → la contraseña viaja en **texto plano** y puede ser interceptada.
-- **Let's Encrypt** → iniciativa que ofrece **certificados SSL/TLS gratuitos**.
-
-> [!TIP] HTTPS y SEO Google **premia las webs con HTTPS** en el posicionamiento. Es un factor de SEO positivo.
-
----
+> [!TIP] **HTTPS y SEO** — Google premia las webs con HTTPS en el posicionamiento. Es un factor de SEO positivo.
 
 ### Almacenamiento Seguro de Contraseñas
 
-> [!IMPORTANT] ¿Cómo se almacenan las contraseñas? **NUNCA en texto plano**. Siempre aplicando un **hash** (función matemática irreversible). Si alguien roba la BD, no puede leer las contraseñas.
-> 
-> ❌ Mal: `contraseña: "miPassword123"` ✅ Bien: `contraseña: "5f4dcc3b5aa765d61d8327deb882cf99"` (hash MD5, ejemplo)
+> [!IMPORTANT] **¿Cómo se almacenan las contraseñas?** NUNCA en texto plano. Siempre aplicando un **hash** (función matemática irreversible). Si alguien roba la BD, no puede leer las contraseñas.
 
----
+❌ Mal: `contraseña: "miPassword123"` ✅ Bien: `contraseña: "5f4dcc3b5aa765d61d8327deb882cf99"` (hash MD5, ejemplo)
 
 ### Cookies y Privacidad
 
-> [!IMPORTANT] RGPD — Reglamento General de Protección de Datos Normativa de la **Unión Europea** que garantiza a los usuarios:
+> [!IMPORTANT] **RGPD — Reglamento General de Protección de Datos** — Normativa de la Unión Europea que garantiza a los usuarios:
 > 
-> - Derecho de **acceso** a sus datos
-> - Derecho de **rectificación**
-> - Derecho de **borrado** ("derecho al olvido")
+> - Derecho de acceso a sus datos
+> - Derecho de rectificación
+> - Derecho de borrado ("derecho al olvido")
 
-**Requisito legal del banner de cookies:** El banner debe permitir **rechazar las cookies no esenciales** de forma clara y sencilla. No es válido obligar a aceptar todo.
-
-**Política de Privacidad:** Explica qué se hace con los datos de los usuarios. Es obligatoria por ley.
-
----
+- Requisito legal del banner de cookies: El banner debe permitir **rechazar** las cookies no esenciales de forma clara y sencilla. No es válido obligar a aceptar todo.
+- **Política de Privacidad:** Explica qué se hace con los datos de los usuarios. Es obligatoria por ley.
 
 ### Validación y Seguridad en Formularios
 
-- La validación en el **cliente (JS)** mejora la UX, pero **no es suficiente para la seguridad**.
-- La validación en el **servidor** es **obligatoria** y la única que garantiza seguridad real.
+- La validación en el cliente (JS) mejora la UX, pero no es suficiente para la seguridad.
+- La validación en el servidor es obligatoria y la única que garantiza seguridad real.
 - Herramienta para probar APIs: **Postman**.
 
 ---
@@ -877,135 +950,112 @@ Las aplicaciones web modernas usan **JSON** (JavaScript Object Notation) como fo
 
 ### Los 3 Pilares de la Optimización Web
 
-> [!IMPORTANT] Tres pilares
-> 
-> 1. **SEO** — posicionamiento en buscadores
-> 2. **Rendimiento** — velocidad de carga
-> 3. **Accesibilidad** — usable por todos
-
----
+1. **SEO** — posicionamiento en buscadores
+2. **Rendimiento** — velocidad de carga
+3. **Accesibilidad** — usable por todos
 
 ### SEO (Search Engine Optimization)
 
-> [!IMPORTANT] Definición Técnicas que ayudan a que una web **aparezca en los primeros resultados** de los buscadores de forma orgánica (sin pagar).
-
-**Elementos clave del SEO:**
+> [!IMPORTANT] **Definición** — Técnicas que ayudan a que una web aparezca en los primeros resultados de los buscadores de forma orgánica (sin pagar).
 
 |Elemento|Descripción|
 |---|---|
-|**Metadatos**|Títulos y descripciones para Google (en `<head>`)|
-|**HTML semántico**|Ayuda a los buscadores a entender la estructura|
-|**Velocidad**|Google penaliza webs lentas (mala experiencia)|
-|**HTTPS**|Factor positivo de posicionamiento|
-|**Contenido único**|El contenido duplicado en varias URLs es penalizado|
-|**Sitemap**|Archivo que indica a Google las páginas del sitio|
-|**Texto alt en imágenes**|Los buscadores no "ven" imágenes|
+|Metadatos|Títulos y descripciones para Google (en `<head>`)|
+|HTML semántico|Ayuda a los buscadores a entender la estructura|
+|Velocidad|Google penaliza webs lentas (mala experiencia)|
+|HTTPS|Factor positivo de posicionamiento|
+|Contenido único|El contenido duplicado en varias URLs es penalizado|
+|Sitemap|Archivo que indica a Google las páginas del sitio|
+|Texto alt en imágenes|Los buscadores no "ven" imágenes|
 
-> [!TIP] Sobre la optimización El trabajo de optimización **nunca termina**. Cuando la web se publica, empieza una fase de mejora continua.
-
----
+> [!TIP] El trabajo de optimización nunca termina. Cuando la web se publica, empieza una fase de **mejora continua**.
 
 ### Rendimiento Web
 
-- La **velocidad de carga** es un **factor de SEO**: Google penaliza webs lentas.
-- Herramienta de análisis: **pestaña Network de las DevTools** del navegador (para observar patrones de carga y descarga de recursos).
-- Las **aplicaciones en la nube** permiten mejoras constantes sin acción del usuario.
+- La velocidad de carga es un factor de SEO: Google penaliza webs lentas.
+- Herramienta de análisis: pestaña **Network** de las DevTools del navegador (para observar patrones de carga y descarga de recursos).
+- Las aplicaciones en la nube permiten mejoras constantes sin acción del usuario.
 - Tecnología que permite el rendimiento de apps complejas (como Figma) en el navegador: **WebAssembly**.
-
----
 
 ### Accesibilidad Web (WCAG)
 
-> [!IMPORTANT] WCAG **Web Content Accessibility Guidelines** = Pautas de accesibilidad del contenido web. Estándar internacional para hacer webs usables por personas con discapacidad.
+> [!IMPORTANT] **WCAG** — Web Content Accessibility Guidelines = Pautas de accesibilidad del contenido web. Estándar internacional para hacer webs usables por personas con discapacidad.
 
-**Reglas básicas de accesibilidad:**
+Reglas básicas de accesibilidad:
 
 - El texto debe tener **contraste suficiente** con el fondo (no mismo color que el fondo).
-- La web debe poder navegarse **solo con el teclado** (sin ratón).
+- La web debe poder navegarse solo con el **teclado** (sin ratón).
 - Las imágenes deben tener atributo `alt`.
 - Usar atributos **ARIA** para mejorar accesibilidad en elementos dinámicos.
 
----
-
 ### Sitemap
 
-> [!IMPORTANT] ¿Qué es un Sitemap? Un **archivo** (normalmente XML) que indica a Google y otros buscadores la **estructura y las páginas del sitio** para facilitar su indexación.
+> [!IMPORTANT] **¿Qué es un Sitemap?** Un archivo (normalmente XML) que indica a Google y otros buscadores la estructura y las páginas del sitio para facilitar su indexación.
 
 ---
 
 ## Bloque 10 — Despliegue y Entornos de Desarrollo
 
-### Entornos de Desarrollo Local
+### Entornos de Desarrollo Local — XAMPP
 
-#### XAMPP
-
-> [!IMPORTANT] ¿Qué incluye XAMPP? Paquete de software que instala en un solo clic todo lo necesario para desarrollo web local:
+> [!IMPORTANT] **¿Qué incluye XAMPP?** Paquete de software que instala en un solo clic todo lo necesario para desarrollo web local:
 > 
 > - **Apache** (servidor web)
 > - **MariaDB** (base de datos)
 > - **PHP** (lenguaje de servidor)
-> - **Perl**
+> - Perl
 > 
 > Ventaja principal: facilita la instalación de todo el software necesario en un solo paso.
 
----
-
 ### Despliegue de Aplicaciones Web
 
-> [!IMPORTANT] ¿Qué significa desplegar? **Publicar la aplicación web** para que sea accesible desde internet (desde cualquier lugar).
-
-#### Opciones de Despliegue
+> [!IMPORTANT] **¿Qué significa desplegar?** Publicar la aplicación web para que sea accesible desde internet (desde cualquier lugar).
 
 |Servicio|Tipo|Características|
 |---|---|---|
-|**GitHub Pages**|Gratuito|**Ideal para webs estáticas** (solo HTML, CSS, JS)|
-|**Netlify**|Freemium|Despliegue sencillo, CI/CD integrado|
+|GitHub Pages|Gratuito|Ideal para webs estáticas (solo HTML, CSS, JS)|
+|Netlify|Freemium|Despliegue sencillo, CI/CD integrado|
 |Servidor propio|De pago|Control total|
 
-#### CI/CD con Netlify (Despliegue Continuo)
-
-> [!IMPORTANT] CI/CD en Netlify Cada cambio que haces en **Git** (GitHub, GitLab...) se **publica automáticamente en la web**. No hay que subir archivos manualmente por FTP.
-
-#### Repositorios Privados para Despliegue
-
-- **Ventaja**: El código fuente permanece **oculto**, pero el sitio final es **públicamente accesible**.
-
----
+> [!TIP] **CI/CD con Netlify** — Cada cambio que haces en Git (GitHub, GitLab...) se publica automáticamente en la web. No hay que subir archivos manualmente por FTP.
 
 ### DevTools del Navegador
 
-> [!IMPORTANT] Herramientas de Desarrollo (DevTools) Panel integrado en todos los navegadores (F12) para **analizar el funcionamiento interno y la carga de la web**.
+> [!IMPORTANT] **Herramientas de Desarrollo (DevTools)** — Panel integrado en todos los navegadores (F12) para analizar el funcionamiento interno y la carga de la web.
 
 |Pestaña|Uso|
 |---|---|
-|**Network**|Observar patrones de carga y descarga de recursos|
-|**Console**|Depurar errores de **JavaScript**|
-|**Elements**|Inspeccionar y editar HTML/CSS en tiempo real|
-|**Sources**|Ver los archivos del sitio|
-
----
+|Network|Observar patrones de carga y descarga de recursos|
+|Console|Depurar errores de JavaScript|
+|Elements|Inspeccionar y editar HTML/CSS en tiempo real|
+|Sources|Ver los archivos del sitio|
 
 ### Google Fonts
 
-> [!NOTE] Google Fonts Servicio gratuito que permite **integrar tipografías web profesionales** de forma sencilla, importándolas con una sola línea en el CSS o HTML.
+**Google Fonts** — Servicio gratuito que permite integrar tipografías web profesionales de forma sencilla, importándolas con una sola línea en el CSS o HTML.
 
 ---
 
 ## 🎯 Resumen de Conceptos "Trampa" para el Examen
-
-> [!WARNING] Los más frecuentes en exámenes
 
 |Concepto|Lo que parece|Lo que es en realidad|
 |---|---|---|
 |`display: none` vs `visibility: hidden`|Ambos ocultan|`none` elimina el espacio; `hidden` lo mantiene|
 |`padding` vs `margin`|Ambos añaden espacio|`padding` es interior; `margin` es exterior|
 |`<h1>` vs `<header>`|Ambos son "encabezado"|`<h1>` es texto; `<header>` es sección semántica|
-|WordPress.com vs .org|Diferencia de precio|Diferencia de **alojamiento**|
-|Validación cliente vs servidor|La del cliente es suficiente|**Siempre** necesitas validación en el servidor|
+|`<head>` vs `<header>`|Parecido escrito|`<head>` nunca lo ve el usuario; `<header>` es visible|
+|`src` vs `href`|Ambos apuntan a recursos|`src` incrusta el recurso; `href` solo referencia|
+|`<center>`|Etiqueta válida|Obsoleta y no semántica; usar CSS en su lugar|
+|`var` vs `let` vs `const`|Son lo mismo|Diferente ámbito y reasignación|
+|WordPress.com vs .org|Diferencia de precio|Diferencia de alojamiento|
+|Validación cliente vs servidor|La del cliente es suficiente|Siempre necesitas validación en el servidor|
 |`div p` vs `div > p`|Ambos seleccionan párrafos en div|`div p` = todos los niveles; `div > p` = solo hijos directos|
-|HTTP vs HTTPS|Solo diferencia de seguridad|HTTPS también afecta al **SEO**|
+|HTTP vs HTTPS|Solo diferencia de seguridad|HTTPS también afecta al SEO|
 |`<ol>` vs `<ul>`|Ambas son listas|`<ol>` = ordenada (números); `<ul>` = desordenada (viñetas)|
-|Cookie vs Sesión|Ambas "recuerdan" al usuario|Cookie en **navegador**; Sesión en **servidor**|
+|Cookie vs Sesión|Ambas "recuerdan" al usuario|Cookie en navegador; Sesión en servidor|
+|CSS inline vs externo|Inline es más potente|Inline gana en especificidad, pero es muy difícil de mantener|
+|WebAssembly|Solo para apps de escritorio|Permite apps de alto rendimiento **en el navegador**|
+|PWA|Es una app nativa|Es una web que **se comporta** como app nativa|
 
 ---
 
@@ -1042,105 +1092,20 @@ Las aplicaciones web modernas usan **JSON** (JavaScript Object Notation) como fo
 
 |Sigla|Significado|
 |---|---|
-|**HTML**|HyperText Markup Language|
-|**CSS**|Cascading Style Sheets|
-|**CMS**|Content Management System|
-|**SEO**|Search Engine Optimization|
-|**RGPD**|Reglamento General de Protección de Datos|
-|**WCAG**|Web Content Accessibility Guidelines|
-|**RSS**|Really Simple Syndication|
-|**DOM**|Document Object Model|
-|**SPA**|Single Page Application|
-|**CI/CD**|Continuous Integration / Continuous Deployment|
-|**SSL/TLS**|Secure Sockets Layer / Transport Layer Security|
+|HTML|HyperText Markup Language|
+|CSS|Cascading Style Sheets|
+|CMS|Content Management System|
+|SEO|Search Engine Optimization|
+|RGPD|Reglamento General de Protección de Datos|
+|WCAG|Web Content Accessibility Guidelines|
+|RSS|Really Simple Syndication|
+|DOM|Document Object Model|
+|SPA|Single Page Application|
+|PWA|Progressive Web App|
+|WASM|WebAssembly|
+|CI/CD|Continuous Integration / Continuous Deployment|
+|SSL/TLS|Secure Sockets Layer / Transport Layer Security|
 
 ---
 
 _Apuntes generados para 2º SMR — Módulo: Aplicaciones Web_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
-
-
-javascript constantes y tipos de variables
-web assembly
- ¿Qué es una PWA (Progressive Web App) según el contexto de aplicaciones modernas?
-
-
-tips del profesor:
-rellenear dni empezando por la derecha
-![[Pasted image 20260505173034.png]]
-
-traer dni boli
-tipex
-
-0.33
--0.11
-
-
-etiquetas html basicas html5 pasan cosas doctype, body.. title,, metaetiquetas, , img, a, h1, listas,  css diferencia css interno externo como colocar cada uno, herramientas, vscode,  figma, wordpress, xampp, rss, wiki, blog, cms, wordpress.org y .com
-
-simulacro
-![[Pasted image 20260505174756.png]]
-![[Pasted image 20260505174843.png]]
-![[Pasted image 20260505175107.png]]
-![[Pasted image 20260505175409.png]]
-
-![[Pasted image 20260505175618.png]]
-![[Pasted image 20260505175649.png]]
-
-![[Pasted image 20260505175738.png]]
-
-![[Pasted image 20260505175803.png]]
-![[Pasted image 20260505175829.png]]
-![[Pasted image 20260505175854.png]]
-
-![[Pasted image 20260505180032.png]]
-
-![[Pasted image 20260505180044.png]]
-
-
-![[Pasted image 20260505180059.png]]
-
-![[Pasted image 20260505180132.png]]
-
-![[Pasted image 20260505180157.png]]
-
-![[Pasted image 20260505180221.png]]
-
-
-![[Pasted image 20260505180237.png]]
-
-![[Pasted image 20260505180247.png]]
-
-![[Pasted image 20260505180302.png]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1 b 
-2 d
-3  c
-4 b
-5 
-6
-7
-8
-
-
-
-src se mete a la pagina                href  solo apunta
-
-head  lo ve el navegador
-header puede haber varios, lo ve el usuario
-
-tapa las respuestas si encuentras lo que piensas , escogela
-lee tapa y responde , las que sepas antes de destapar responde y ya a la segunda vuelta respondes 

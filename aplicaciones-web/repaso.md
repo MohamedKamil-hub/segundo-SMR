@@ -1,10 +1,3 @@
-# 📚 Guía Definitiva: Aplicaciones Web — 2º SMR
-
-> **¿Cómo usar estos apuntes?** Este documento está optimizado para Obsidian. Cada sección cubre un bloque temático del módulo. Los callouts `[!TIP]` son trucos de examen, los `[!WARNING]` son errores frecuentes y los `[!IMPORTANT]` son definiciones clave que memorizar.
-
----
-
-## 🗒️ Tips del Profesor — Examen
 
 > [!IMPORTANT]
 > 
@@ -854,7 +847,7 @@ Las aplicaciones web modernas usan **JSON** (JavaScript Object Notation) como fo
 - **Front-end:** La parte visual que ven los usuarios cuando visitan la web.
 - **Back-end:** El panel de administración (`/wp-admin`) donde se gestiona todo el contenido y los ajustes.
 
-> [!IMPORTANT] **Almacenamiento en WordPress** — El contenido (textos, entradas, páginas) se guarda en una base de datos gestionada por el servidor (MariaDB/MySQL). Las imágenes y archivos se guardan en la carpeta `wp-content/uploads/`.
+> [!IMPORTANT] **Almacenamiento en WordPress** — El contenido (textos, entradas, páginas) se guarda en una base de datos gestionada por el servidor (MariaDB/MySQL). Las imágenes y archivos se guardan en la carpeta **`wp-content/uploads/`.**
 
 ### Elementos Clave de WordPress
 
@@ -1038,24 +1031,24 @@ Reglas básicas de accesibilidad:
 
 ## 🎯 Resumen de Conceptos "Trampa" para el Examen
 
-|Concepto|Lo que parece|Lo que es en realidad|
-|---|---|---|
-|`display: none` vs `visibility: hidden`|Ambos ocultan|`none` elimina el espacio; `hidden` lo mantiene|
-|`padding` vs `margin`|Ambos añaden espacio|`padding` es interior; `margin` es exterior|
-|`<h1>` vs `<header>`|Ambos son "encabezado"|`<h1>` es texto; `<header>` es sección semántica|
-|`<head>` vs `<header>`|Parecido escrito|`<head>` nunca lo ve el usuario; `<header>` es visible|
-|`src` vs `href`|Ambos apuntan a recursos|`src` incrusta el recurso; `href` solo referencia|
-|`<center>`|Etiqueta válida|Obsoleta y no semántica; usar CSS en su lugar|
-|`var` vs `let` vs `const`|Son lo mismo|Diferente ámbito y reasignación|
-|WordPress.com vs .org|Diferencia de precio|Diferencia de alojamiento|
-|Validación cliente vs servidor|La del cliente es suficiente|Siempre necesitas validación en el servidor|
-|`div p` vs `div > p`|Ambos seleccionan párrafos en div|`div p` = todos los niveles; `div > p` = solo hijos directos|
-|HTTP vs HTTPS|Solo diferencia de seguridad|HTTPS también afecta al SEO|
-|`<ol>` vs `<ul>`|Ambas son listas|`<ol>` = ordenada (números); `<ul>` = desordenada (viñetas)|
-|Cookie vs Sesión|Ambas "recuerdan" al usuario|Cookie en navegador; Sesión en servidor|
-|CSS inline vs externo|Inline es más potente|Inline gana en especificidad, pero es muy difícil de mantener|
-|WebAssembly|Solo para apps de escritorio|Permite apps de alto rendimiento **en el navegador**|
-|PWA|Es una app nativa|Es una web que **se comporta** como app nativa|
+| Concepto                                | Lo que parece                     | Lo que es en realidad                                         |
+| --------------------------------------- | --------------------------------- | ------------------------------------------------------------- |
+| `display: none` vs `visibility: hidden` | Ambos ocultan                     | `none` elimina el espacio; `hidden` lo mantiene               |
+| `padding` vs `margin`                   | Ambos añaden espacio              | `padding` es interior; `margin` es exterior                   |
+| `<h1>` vs `<header>`                    | Ambos son "encabezado"            | `<h1>` es texto; `<header>` es sección semántica              |
+| `<head>` vs `<header>`                  | Parecido escrito                  | `<head>` nunca lo ve el usuario; `<header>` es visible        |
+| `src` vs `href`                         | Ambos apuntan a recursos          | `src` incrusta el recurso; `href` solo referencia             |
+| `<center>`                              | Etiqueta válida                   | Obsoleta y no semántica; usar CSS en su lugar                 |
+| `var` vs `let` vs `const`               | Son lo mismo                      | Diferente ámbito y reasignación                               |
+| WordPress.com vs .org                   | Diferencia de precio              | Diferencia de alojamiento                                     |
+| Validación cliente vs servidor          | La del cliente es suficiente      | Siempre necesitas validación en el servidor                   |
+| `div p` vs `div > p`                    | Ambos seleccionan párrafos en div | `div p` = todos los niveles; `div > p` = solo hijos directos  |
+| HTTP vs HTTPS                           | Solo diferencia de seguridad      | HTTPS también afecta al SEO                                   |
+| `<ol>` vs `<ul>`                        | Ambas son listas                  | `<ol>` = ordenada (números); `<ul>` = desordenada (viñetas)   |
+| Cookie vs Sesión                        | Ambas "recuerdan" al usuario      | Cookie en navegador; Sesión en servidor                       |
+| CSS inline vs externo                   | Inline es más potente             | Inline gana en especificidad, pero es muy difícil de mantener |
+| WebAssembly                             | Solo para apps de escritorio      | Permite apps de alto rendimiento **en el navegador**          |
+| PWA                                     | Es una app nativa                 | Es una web que **se comporta** como app nativa                |
 
 ---
 
@@ -1106,6 +1099,37 @@ Reglas básicas de accesibilidad:
 |CI/CD|Continuous Integration / Continuous Deployment|
 |SSL/TLS|Secure Sockets Layer / Transport Layer Security|
 
----
 
-_Apuntes generados para 2º SMR — Módulo: Aplicaciones Web_ _Basados en el test de repaso del módulo — Optimizados para Obsidian_
+![[Pasted image 20260505174756.png]]
+![[Pasted image 20260505174843.png]]
+![[Pasted image 20260505175107.png]]
+![[Pasted image 20260505175409.png]]
+
+![[Pasted image 20260505175618.png]]
+![[Pasted image 20260505175649.png]]
+
+![[Pasted image 20260505175738.png]]
+
+![[Pasted image 20260505175803.png]]
+![[Pasted image 20260505175829.png]]
+![[Pasted image 20260505175854.png]]
+
+![[Pasted image 20260505180032.png]]
+
+![[Pasted image 20260505180044.png]]
+
+
+![[Pasted image 20260505180059.png]]
+
+![[Pasted image 20260505180132.png]]
+
+![[Pasted image 20260505180157.png]]
+
+![[Pasted image 20260505180221.png]]
+
+
+![[Pasted image 20260505180237.png]]
+
+![[Pasted image 20260505180247.png]]
+
+![[Pasted image 20260505180302.png]]

@@ -1127,4 +1127,6 @@ _Apuntes generados para 2º SMR — Módulo: Nube (AWS)_ _Basados en el test de 
 /16 es la ms pequeña y mas grande /28 mascaras de subred
 
 tipos de balanceador de carga  capa y corta deficinicion
+Nota: Recordad máscara /16 a /28
 
+EN subredes /24 nº de ips? 256-2(red y broadcast) -3AWS = 251 disponibles

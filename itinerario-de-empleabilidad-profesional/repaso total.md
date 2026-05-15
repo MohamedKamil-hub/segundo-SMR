@@ -1,8 +1,3 @@
-# 🚀 Guía Definitiva: Itinerario de Empleabilidad Personal 2 — 2º SMR
-
-> [!NOTE] ¿Cómo usar estos apuntes? Optimizados para **Obsidian**. Los callouts `[!IMPORTANT]` son definiciones clave, `[!TIP]` son trucos de examen, `[!WARNING]` son errores frecuentes y `[!NOTE]` son aclaraciones útiles. Las **tablas comparativas** y la sección de **conceptos trampa** al final son las más importantes para el examen.
-
----
 
 ## Índice de Contenidos
 
@@ -1110,4 +1105,51 @@ La empleabilidad contemporánea exige una transición del "pedir trabajo" al "of
 En el núcleo de esta evolución reside la Inteligencia Emocional. La seguridad psicológica en los equipos y la capacidad de aplicar técnicas como DESC o el método STAR en procesos de selección son las que separan a los técnicos de los líderes. El éxito no es la ausencia de conflictos o errores, sino la resiliencia para transformarlos en aprendizaje validado.
 
 Finalmente, el emprendimiento y la innovación no son fines, sino medios para generar valor ético. Ya sea mediante Lean Startup, Design Thinking o Innovación Frugal, su objetivo es resolver problemas reales ("problemas-jamón") bajo una estructura legal sólida y sostenible. La rentabilidad del siglo XXI solo es posible si se armoniza el beneficio económico con el impacto en las personas y el planeta. ¡A por ello!
+
+
+
+
+negocio escalable
+puedec crecer sin mucha mas inversion
+
+
+
+gastos fijos o variables
+
+punto de equilibrio que es, formula, resultados que da y consecuencias
+cuando el negocio no da perdidas
+
+
+fijos / precio ud - coste ud  = unidades necesitas vender para quedar en 0
+
+saberse formula y que va en cada sitio
+
+
+formas de financiacion
+3F
+
+bootstrap
+buissness angel
+venture capital
+crowd funding
+
+
+forma juridica
+autonomo como darse de alra
+persona juridica
+siedad limitada 3000
+sociedad anonima 60000
+seguridad social
+
+juridica tienen que ir al notario 
+
+circe
+
+
+irpf 130 declaracion de la renta
+
+iva 303 390
+
+rtenciones
+
 

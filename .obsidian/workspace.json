@@ -11,6 +11,18 @@
             "id": "a3547792a84afaa5",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "horario.png"
+              },
+              "icon": "lucide-image",
+              "title": "horario"
+            }
+          },
+          {
+            "id": "4c88a989f0c2fd31",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "README.md",
@@ -20,22 +32,44 @@
               "icon": "lucide-file",
               "title": "README"
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "4ce199b9e6e4fcff",
+        "type": "tabs",
+        "children": [
           {
-            "id": "4c88a989f0c2fd31",
+            "id": "e0b0634a9fa7b4f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MPO-Arquitecturas-en-la-nube/notas.md",
+                "file": "itinerario-de-empleabilidad-profesional/repaso total.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "notas"
+              "title": "repaso total"
+            }
+          },
+          {
+            "id": "3f68575bf41027ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "itinerario-de-empleabilidad-profesional/repaso total.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "repaso total"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,29 +215,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "a3547792a84afaa5",
+  "active": "4c88a989f0c2fd31",
   "lastOpenFiles": [
+    "repaso sostenibilidad.md",
+    "itinerario-de-empleabilidad-profesional/repaso total.md",
     "Untitled.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/notas.md",
+    "Sostenibilidad-aplicada-al-sistema-productivo/test.md",
+    "MPO-Arquitecturas-en-la-nube/notas.md",
+    "itinerario-de-empleabilidad-profesional/test.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/notas.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/test.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
+    "Digitalización-aplicada-a-los-sectores-productivos/notas_clase.md",
+    "horario.png",
+    "README.md",
     "seguridad-informatica/notas.md",
     "servicios-de-red/notas.md",
     "sistemas-operativos-en-red/notas.md",
     "aplicaciones-web/test.md",
     "aplicaciones-web/repaso.md",
-    "MPO-Arquitecturas-en-la-nube/notas.md",
-    "horario.png",
     "fotos/Pasted image 20260511164945.png",
     "seguridad-informatica/test.md",
     "seguridad-informatica/temp.md",
-    "itinerario-de-empleabilidad-profesional/repaso total.md",
     "itinerario-de-empleabilidad-profesional/Untitled.md",
-    "README.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/notas.md",
-    "Sostenibilidad-aplicada-al-sistema-productivo/test.md",
-    "itinerario-de-empleabilidad-profesional/test.md",
     "fotos/Pasted image 20260511165539.png",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Untitled 1.md",
     "Pasted image 20260507193755.png",
     "Pasted image 20260507192829.png",
     "fotos/Pasted image 20260508163850.png",
@@ -215,9 +253,6 @@
     "itinerario-de-empleabilidad-profesional/Tarea Evaluable 01 Validando la idea de negocio.md",
     "itinerario-de-empleabilidad-profesional/Untitled 4.md",
     "MPO-Arquitecturas-en-la-nube/test.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/notas.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/repaso total.md",
-    "Digitalización-aplicada-a-los-sectores-productivos/test.md",
     "ingles/Englishcoursev2Students.pdf",
     "Sostenibilidad-aplicada-al-sistema-productivo/plantilla_respuestas_opciones.pdf",
     "servicios-de-red/PREGUNTAS_TIPO_TEST_-_SER-1.pdf",

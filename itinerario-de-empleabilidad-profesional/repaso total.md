@@ -36,7 +36,7 @@
 ### El Mercado Oculto de Empleo
 
 > [!IMPORTANT] ¿Qué es el mercado oculto? Las **vacantes que se cubren por redes de contactos sin publicarse** en ningún portal. Se estima que entre el 60-80% de los puestos se cubren así, sin llegar a publicarse nunca.
-
+[[Untitled]]
 > [!TIP] ¿Cómo se accede al mercado oculto? **Fomentando el networking**: construir relaciones de confianza y beneficio mutuo con profesionales del sector. No sirve acumular contactos aleatorios ni pedir trabajo directamente a todos.
 
 ---
